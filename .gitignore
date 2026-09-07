@@ -1,0 +1,17 @@
+# Audio: nunca en el repositorio. Va como asset de GitHub Release.
+*.mp3
+*.wav
+*.aif
+*.m4a
+
+# Salida generada por build_feed.py — se reconstruye en cada despliegue.
+docs/feed.xml
+docs/index.html
+
+# docs/metrics.json SÍ se versiona: lo commitea el workflow de métricas
+# y debe existir en el repo para que el despliegue lo publique.
+
+__pycache__/
+*.pyc
+.venv/
+.DS_Store

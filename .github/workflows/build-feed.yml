@@ -1,0 +1,71 @@
+name: build feed
+
+# El feed se reconstruye cuando cambia la fuente y, sobre todo, cuando se
+# publica un release: es el momento en que el MP3 existe y la API puede
+# devolver su tamaño real.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'podcast.yml'
+      - 'scripts/**'
+      - 'docs/cover.jpg'
+      - '.github/workflows/build-feed.yml'
+  release:
+    types: [published, edited, deleted]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependencia de construcción
+        run: pip install -r requirements.txt
+
+      - name: Compilar podcast.yml a feed.xml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/build_feed.py
+
+      # Puerta de calidad: si el feed no es conforme, no se despliega.
+      - name: Validar el feed
+        run: python3 scripts/validate_feed.py docs/feed.xml
+
+      - name: Comprobar el techo de 1 GB de GitHub Pages
+        run: |
+          size=$(du -sm docs | cut -f1)
+          echo "docs/ ocupa ${size} MB"
+          if [ "$size" -gt 900 ]; then
+            echo "::error::docs/ supera los 900 MB. GitHub Pages corta en 1 GB."
+            echo "El audio debe vivir en Releases, nunca en docs/."
+            exit 1
+          fi
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

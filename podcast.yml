@@ -1,0 +1,126 @@
+# =============================================================================
+#  medsemiotics — fuente única del podcast
+# =============================================================================
+#  Este archivo es la ÚNICA fuente de verdad. `scripts/build_feed.py` lo compila
+#  a docs/feed.xml (RSS 2.0 + iTunes + Podcasting 2.0) y a docs/index.html.
+#
+#  El audio NO vive en este repositorio: cada episodio es un GitHub Release y el
+#  MP3 es un asset de ese release. El script resuelve la URL y el tamaño en bytes
+#  del enclosure consultando la API de releases. Ver README.md.
+# =============================================================================
+
+show:
+  title: "medsemiotics"
+  subtitle: "Medicina, datos y semiótica clínica"
+  # Descripción del canal. Se publica en <description> y <itunes:summary>.
+  description: >-
+    Conversaciones y ensayos sonoros sobre medicina interna, razonamiento
+    clínico y análisis de datos en salud, producidos desde la plataforma
+    académica powersemiotics.com. Cada episodio corresponde a un tema del
+    banco de contenidos medsemiotics-db y enlaza con su artículo completo.
+
+  author: "Alcy Edmundo"
+  owner_name: "Alcy Edmundo"
+  owner_email: "alcyedmundo@gmail.com"
+  copyright: "CC BY-SA 4.0"
+  language: "es-EC"
+  explicit: false
+  type: "episodic"          # episodic | serial
+
+  # --- Identidad y rutas -----------------------------------------------------
+  # base_url debe terminar en "/". Es la carpeta pública del podcast.
+  base_url: "https://powersemiotics.com/podcast/"
+  # Sitio al que apunta <link> del canal.
+  link: "https://powersemiotics.com/medsemiotics/"
+  # Portada: 3000x3000 px, JPG o PNG, < 500 KB. Vive en docs/ (pesa poco).
+  image: "cover.jpg"
+
+  # --- Repositorio que aloja el audio en Releases -----------------------------
+  audio_repo: "alcyedmundo281/podcast"
+
+  # --- Categorías iTunes (máx. 3; la primera es la principal) -----------------
+  categories:
+    - "Science"
+    - "Health & Fitness > Medicine"
+    - "Education"
+
+  keywords:
+    - medicina interna
+    - razonamiento clínico
+    - ciencia de datos en salud
+    - semiótica médica
+    - POCUS
+
+# =============================================================================
+#  Episodios — el más reciente arriba.
+# =============================================================================
+#  Campos por episodio:
+#    slug        (req) identificador estable. NO cambiarlo nunca: forma el GUID.
+#    title       (req)
+#    description (req) notas del episodio. Admite HTML en <content:encoded>.
+#    pub_date    (req) ISO 8601 con zona horaria. -05:00 = Ecuador.
+#    tag         (req) tag del GitHub Release que contiene el MP3.
+#    audio_file  (req) nombre del asset .mp3 dentro de ese release.
+#    duration    (req) HH:MM:SS
+#    number      (req) número de episodio
+#    season      (opc) por defecto 1
+#    topic       (opc) slug del tema en medsemiotics-db
+#    source_url  (opc) artículo de medsemiotics que origina el episodio
+#    transcript  (opc) ruta relativa a docs/ del archivo de transcripción
+#    size_bytes  (opc) sólo necesario en modo --offline; si no, se toma de la API
+#    explicit    (opc) hereda del canal
+# =============================================================================
+
+episodes:
+  - slug: "ep003-placeholder"
+    number: 3
+    season: 1
+    title: "TÍTULO DEL EPISODIO 3"
+    pub_date: "2026-09-05T08:00:00-05:00"
+    duration: "00:00:00"
+    tag: "ep003"
+    audio_file: "ep003.mp3"
+    topic: "TEMA-EN-MEDSEMIOTICS-DB"
+    source_url: "https://powersemiotics.com/medsemiotics/"
+    description: >-
+      Notas del episodio. Sustituir por el resumen real.
+
+  - slug: "ep002-placeholder"
+    number: 2
+    season: 1
+    title: "TÍTULO DEL EPISODIO 2"
+    pub_date: "2026-08-29T08:00:00-05:00"
+    duration: "00:00:00"
+    tag: "ep002"
+    audio_file: "ep002.mp3"
+    topic: "TEMA-EN-MEDSEMIOTICS-DB"
+    source_url: "https://powersemiotics.com/medsemiotics/"
+    description: >-
+      Notas del episodio. Sustituir por el resumen real.
+
+  - slug: "demencias"
+    number: 1
+    season: 1
+    title: "Demencias: por qué las pistas no rescatan la memoria"
+    pub_date: "2026-09-08T08:00:00-05:00"
+    duration: "00:17:47"
+    tag: "ep001"
+    audio_file: "ep001.mp3"
+    topic: "neurologia/demencias"
+    source_url: "https://powersemiotics.com/medsemiotics/neurologia/demencias.html"
+    description: >-
+      Una profesora jubilada de 74 años repite preguntas, se pierde volviendo
+      del mercado y asegura que no le pasa nada. A partir de ese caso
+      recorremos el abordaje clínico de las demencias en tres movimientos:
+      reunir los datos, cruzar el umbral diagnóstico y actuar. El eje del
+      episodio es semiológico: por qué la pista semántica no rescata el
+      recuerdo, y por qué esa falla distingue un defecto de consolidación
+      hipocampal —el sello de la enfermedad de Alzheimer típica— de un
+      problema de recuperación. En el camino, la anosognosia como dato
+      clínico, la pérdida de autonomía en las actividades instrumentales como
+      frontera entre deterioro leve y mayor, el giro diagnóstico que imponen
+      las alucinaciones no amenazantes con parkinsonismo, y por qué los
+      antipsicóticos típicos están contraindicados en la demencia por cuerpos
+      de Lewy. Cierra con el protocolo mínimo innegociable: laboratorio para
+      causas reversibles, resonancia estructural y seguridad física del
+      paciente.
