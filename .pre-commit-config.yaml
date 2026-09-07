@@ -1,0 +1,53 @@
+# Las puertas corren ANTES del commit, no después en CI.
+#
+# Todos los hooks son `local` y llaman a `uv run` a propósito: así las
+# versiones de ruff y mypy salen de uv.lock, las mismas que usa el workflow.
+# Los mirrors oficiales de pre-commit fijan su propia versión y se
+# desincronizan de CI en silencio — entonces pasa el commit y falla el push,
+# que es justo lo que este archivo existe para evitar.
+default_install_hook_types: [pre-commit]
+fail_fast: false
+
+repos:
+  - repo: local
+    hooks:
+      - id: ruff-format
+        name: ruff — formato
+        entry: uv run ruff format
+        language: system
+        types_or: [python, pyi]
+        require_serial: true
+
+      - id: ruff-check
+        name: ruff — lint
+        entry: uv run ruff check --fix --exit-non-zero-on-fix
+        language: system
+        types_or: [python, pyi]
+        require_serial: true
+
+      - id: mypy
+        name: mypy — tipos (estricto)
+        entry: uv run mypy
+        language: system
+        types_or: [python, pyi]
+        pass_filenames: false     # mypy usa `files` de pyproject.toml
+        require_serial: true
+
+      # Guarda de dominio: ningún MP3 entra al repositorio. El .gitignore ya
+      # los excluye, pero `git add -f` lo salta y GitHub Pages corta en 1 GB.
+      - id: sin-audio
+        name: ningún audio en el repositorio
+        entry: >-
+          bash -c 'echo "Los MP3 van como asset de GitHub Release, nunca en el
+          repo (Pages corta en 1 GB). Ver CLAUDE.md."; exit 1'
+        language: system
+        files: '\.(mp3|wav|aif|aiff|m4a|flac)$'
+
+      # Guarda de dominio: los slugs forman el GUID del feed. Cambiar uno ya
+      # publicado hace que todos los suscriptores redescarguen el episodio.
+      - id: slugs-estables
+        name: los slug de episodio no cambian
+        entry: uv run python scripts/check_slugs.py
+        language: system
+        files: '^podcast\.yml$'
+        pass_filenames: false

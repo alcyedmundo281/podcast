@@ -45,7 +45,7 @@ jobs:
       # el generador sigue produciendo XML conforme aunque no haya releases.
       - name: prueba de humo del generador
         run: |
-          python3 - <<'PY'
+          uv run python - <<'PY'
           import pathlib, yaml
           cfg = yaml.safe_load(pathlib.Path('podcast.yml').read_text())
           for ep in cfg['episodes']:

@@ -3,6 +3,32 @@
 Feed de podcast estático. Una sola fuente (`podcast.yml`) compila a RSS servido
 por GitHub Pages. El audio vive en GitHub Releases, nunca en el repositorio.
 
+## Una sola vez, al clonar
+
+```bash
+uv sync --frozen
+uv run pre-commit install
+```
+
+A partir de ahí las puertas corren solas en cada `git commit`. No hay que
+acordarse de nada: si el commit pasa, el push pasa.
+
+Los hooks son `local` y llaman a `uv run` a propósito, de modo que ruff y mypy
+salen de `uv.lock` — las mismas versiones que usa CI. Los mirrors oficiales de
+pre-commit fijan su propia versión y se desincronizan en silencio: entonces el
+commit pasa y el push falla, que es justo lo que esto evita.
+
+Además de las tres puertas, dos guardas de dominio que no se pueden razonar
+desde el código:
+
+- **`sin-audio`** — ningún `.mp3` entra al repositorio, ni con `git add -f`.
+- **`slugs-estables`** — compara los slugs del índice contra HEAD y falla si
+  desaparece alguno. Renombrar un slug publicado es irreversible desde el feed.
+
+Ambas se saltan con `git commit --no-verify` cuando de verdad toca (por ejemplo,
+un episodio que nunca llegó a publicarse). Que haya que escribirlo a mano es el
+punto: obliga a decidirlo, no a olvidarlo.
+
 ## Antes de dar por terminado cualquier cambio en `scripts/`
 
 Estas tres puertas son obligatorias y se ejecutan en este orden. No propongas
