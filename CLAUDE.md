@@ -87,6 +87,13 @@ episodio, y una publicación urgente no debe tentar a saltarse el linter.
 2. `gh release create epNNN epNNN.mp3 --target main --title "..."`.
 3. Añadir la entrada en `podcast.yml` y hacer push a `main`.
 
-El paso 3 es el que despliega. El evento `release` corre sobre el tag y el
-entorno `github-pages` restringe los despliegues a la rama por defecto, así que
-ese run falla en `deploy` salvo que se añada una regla para tags `ep*`.
+El paso 3 es el que despliega, y el orden importa: `build_feed.py` resuelve el
+tamaño del enclosure contra la API de releases, así que sin el release del paso
+2 el build falla.
+
+`build-feed.yml` no escucha eventos `release` a propósito. Esos runs corren
+sobre el tag, y el entorno `github-pages` sólo permite desplegar desde la rama
+por defecto, así que fallaban siempre en `deploy`. Si alguna vez cambias un
+asset sin tocar `podcast.yml`, lanza el workflow a mano desde `main`
+(Actions -> build feed -> Run workflow); es el único caso que ya no se
+reconstruye solo.

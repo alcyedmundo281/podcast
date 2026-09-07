@@ -1,8 +1,14 @@
 name: build feed
 
-# El feed se reconstruye cuando cambia la fuente y, sobre todo, cuando se
-# publica un release: es el momento en que el MP3 existe y la API puede
-# devolver su tamaño real.
+# El feed se reconstruye cuando cambia la fuente. NO hay disparador `release`:
+# un evento de release corre sobre el tag, y el entorno `github-pages` sólo
+# permite desplegar desde la rama por defecto, de modo que ese run moría
+# siempre en `deploy`. El despliegue lo hace el push de podcast.yml, que es
+# obligatorio de todos modos para que el episodio aparezca en el feed.
+#
+# Si cambia un asset sin tocar podcast.yml (p. ej. resubir un máster), hay que
+# lanzar el workflow a mano desde `main`: pestaña Actions -> build feed ->
+# Run workflow. Es el único caso que ya no se reconstruye solo.
 on:
   push:
     branches: [main]
@@ -11,8 +17,6 @@ on:
       - 'scripts/**'
       - 'docs/cover.jpg'
       - '.github/workflows/build-feed.yml'
-  release:
-    types: [published, edited, deleted]
   workflow_dispatch:
 
 permissions:
