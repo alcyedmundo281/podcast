@@ -81,6 +81,7 @@ episodes:
     tag: "ep001"
     audio_file: "ep001.mp3"
     topic: "neurologia/demencias"
+    transcript: "transcripts/ep001.vtt"
     source_url: "https://powersemiotics.com/medsemiotics/neurologia/demencias.html"
     description: >-
       Una profesora jubilada de 74 años repite preguntas, se pierde volviendo
