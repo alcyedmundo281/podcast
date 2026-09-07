@@ -72,32 +72,6 @@ show:
 # =============================================================================
 
 episodes:
-  - slug: "ep003-placeholder"
-    number: 3
-    season: 1
-    title: "TÍTULO DEL EPISODIO 3"
-    pub_date: "2026-09-05T08:00:00-05:00"
-    duration: "00:00:00"
-    tag: "ep003"
-    audio_file: "ep003.mp3"
-    topic: "TEMA-EN-MEDSEMIOTICS-DB"
-    source_url: "https://powersemiotics.com/medsemiotics/"
-    description: >-
-      Notas del episodio. Sustituir por el resumen real.
-
-  - slug: "ep002-placeholder"
-    number: 2
-    season: 1
-    title: "TÍTULO DEL EPISODIO 2"
-    pub_date: "2026-08-29T08:00:00-05:00"
-    duration: "00:00:00"
-    tag: "ep002"
-    audio_file: "ep002.mp3"
-    topic: "TEMA-EN-MEDSEMIOTICS-DB"
-    source_url: "https://powersemiotics.com/medsemiotics/"
-    description: >-
-      Notas del episodio. Sustituir por el resumen real.
-
   - slug: "demencias"
     number: 1
     season: 1
