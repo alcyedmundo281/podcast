@@ -75,6 +75,9 @@ git add podcast.yml && git commit -m "ep004" && git push
 No se escribe a mano ningún tamaño de archivo ni ninguna URL de descarga:
 `build_feed.py` los toma de la API de releases en cada compilación.
 
+El push del paso 3 es el que despliega. Crear el release no dispara nada por
+sí solo, y es deliberado — ver `CLAUDE.md`.
+
 ---
 
 ## Scripts
