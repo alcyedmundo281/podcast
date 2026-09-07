@@ -49,5 +49,9 @@ repos:
         name: los slug de episodio no cambian
         entry: uv run python scripts/check_slugs.py
         language: system
-        files: '^podcast\.yml$'
+        # always_run en vez de `files:` a propósito: pre-commit lista los
+        # archivos en preparación con --diff-filter=ACMRTUXB, que excluye los
+        # borrados. Con `files:` un `git rm podcast.yml` no dispararía el hook,
+        # justo el caso más grave. El hook es barato: un git show y un parse.
+        always_run: true
         pass_filenames: false

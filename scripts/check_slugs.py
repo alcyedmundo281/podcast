@@ -40,7 +40,14 @@ def main() -> None:
 
     ahora = slugs_de(":0")
     if ahora is None:
-        return
+        # HEAD lo tenía y el índice no: se está borrando el archivo entero.
+        # Es la pérdida máxima de slugs, no un caso neutro.
+        print(
+            "podcast.yml se elimina por completo del índice.\n"
+            f"Eso descarta los {len(antes)} slug(s) publicados y con ellos el feed.",
+            file=sys.stderr,
+        )
+        sys.exit(1)
 
     perdidos = antes - ahora
     if perdidos:
