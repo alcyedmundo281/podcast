@@ -33,7 +33,11 @@ import uuid
 from datetime import datetime
 from email.utils import format_datetime
 from pathlib import Path
+from typing import Any, NoReturn
 from xml.sax.saxutils import escape, quoteattr
+
+# Alias: lo que sale de yaml.safe_load y de la API de GitHub.
+type JSON = dict[str, Any]
 
 try:
     import yaml
@@ -51,7 +55,8 @@ ROOT = Path(__file__).resolve().parent.parent
 #  Utilidades
 # --------------------------------------------------------------------------- #
 
-def die(msg: str) -> None:
+
+def die(msg: str) -> NoReturn:
     sys.exit(f"ERROR: {msg}")
 
 
@@ -74,7 +79,7 @@ def duration_seconds(value: str) -> int:
     return h * 3600 + m * 60 + s
 
 
-def tag(name: str, text, **attrs) -> str:
+def tag(name: str, text: object | None, **attrs: object) -> str:
     a = "".join(f" {k.replace('_', ':')}={quoteattr(str(v))}" for k, v in attrs.items())
     if text is None:
         return f"<{name}{a}/>"
@@ -90,25 +95,31 @@ def cdata(name: str, text: str) -> str:
 #  Resolución de assets de release
 # --------------------------------------------------------------------------- #
 
-def fetch_release_assets(repo: str) -> dict[str, dict[str, dict]]:
+
+def fetch_release_assets(repo: str) -> dict[str, dict[str, JSON]]:
     """{tag_name: {asset_name: {...}}} desde la API de releases de GitHub."""
-    index: dict[str, dict[str, dict]] = {}
+    index: dict[str, dict[str, JSON]] = {}
     page = 1
     token = os.environ.get("GITHUB_TOKEN", "")
     while True:
         url = f"https://api.github.com/repos/{repo}/releases?per_page=100&page={page}"
-        req = urllib.request.Request(url, headers={
-            "Accept": "application/vnd.github+json",
-            "User-Agent": "medsemiotics-feed-builder",
-            **({"Authorization": f"Bearer {token}"} if token else {}),
-        })
+        req = urllib.request.Request(
+            url,
+            headers={
+                "Accept": "application/vnd.github+json",
+                "User-Agent": "medsemiotics-feed-builder",
+                **({"Authorization": f"Bearer {token}"} if token else {}),
+            },
+        )
         try:
             with urllib.request.urlopen(req, timeout=30) as resp:
                 batch = json.load(resp)
         except urllib.error.HTTPError as e:
-            die(f"API de releases devolvió {e.code} para {repo}. "
+            die(
+                f"API de releases devolvió {e.code} para {repo}. "
                 f"¿El repo existe y es público, o falta GITHUB_TOKEN? "
-                f"Puedes construir sin red con --offline.")
+                f"Puedes construir sin red con --offline."
+            )
         except urllib.error.URLError as e:
             die(f"Sin acceso a la API de GitHub ({e.reason}). Usa --offline.")
         if not batch:
@@ -121,11 +132,13 @@ def fetch_release_assets(repo: str) -> dict[str, dict[str, dict]]:
     return index
 
 
-def resolve_enclosure(ep: dict, repo: str, assets: dict | None) -> tuple[str, int]:
+def resolve_enclosure(
+    ep: JSON, repo: str, assets: dict[str, dict[str, JSON]] | None
+) -> tuple[str, int]:
     tag_name, filename = ep["tag"], ep["audio_file"]
     url = f"https://github.com/{repo}/releases/download/{tag_name}/{filename}"
 
-    if assets is None:                                    # modo --offline
+    if assets is None:  # modo --offline
         size = ep.get("size_bytes")
         if not size:
             die(f"[{ep['slug']}] en modo --offline hace falta size_bytes")
@@ -135,8 +148,10 @@ def resolve_enclosure(ep: dict, repo: str, assets: dict | None) -> tuple[str, in
         die(f"[{ep['slug']}] no existe el release con tag {tag_name!r} en {repo}")
     if filename not in assets[tag_name]:
         have = ", ".join(assets[tag_name]) or "(ninguno)"
-        die(f"[{ep['slug']}] el release {tag_name!r} no contiene {filename!r}. "
-            f"Assets presentes: {have}")
+        die(
+            f"[{ep['slug']}] el release {tag_name!r} no contiene {filename!r}. "
+            f"Assets presentes: {have}"
+        )
     return url, int(assets[tag_name][filename]["size"])
 
 
@@ -144,11 +159,19 @@ def resolve_enclosure(ep: dict, repo: str, assets: dict | None) -> tuple[str, in
 #  Construcción del feed
 # --------------------------------------------------------------------------- #
 
-REQUIRED_EP = ("slug", "number", "title", "pub_date", "duration",
-               "tag", "audio_file", "description")
+REQUIRED_EP = (
+    "slug",
+    "number",
+    "title",
+    "pub_date",
+    "duration",
+    "tag",
+    "audio_file",
+    "description",
+)
 
 
-def build_feed(cfg: dict, offline: bool) -> str:
+def build_feed(cfg: JSON, offline: bool) -> str:
     show = cfg["show"]
     base = show["base_url"]
     if not base.endswith("/"):
@@ -173,9 +196,9 @@ def build_feed(cfg: dict, offline: bool) -> str:
 
     # ----- canal -----------------------------------------------------------
     explicit = "true" if show.get("explicit") else "false"
-    channel_guid = str(uuid.uuid5(
-        PODCAST_NS_UUID,
-        feed_url.split("://", 1)[-1].rstrip("/")))
+    channel_guid = str(
+        uuid.uuid5(PODCAST_NS_UUID, feed_url.split("://", 1)[-1].rstrip("/"))
+    )
 
     out: list[str] = []
     out.append('<?xml version="1.0" encoding="UTF-8"?>')
@@ -184,7 +207,8 @@ def build_feed(cfg: dict, offline: bool) -> str:
         'xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" '
         'xmlns:content="http://purl.org/rss/1.0/modules/content/" '
         'xmlns:atom="http://www.w3.org/2005/Atom" '
-        'xmlns:podcast="https://podcastindex.org/namespace/1.0">')
+        'xmlns:podcast="https://podcastindex.org/namespace/1.0">'
+    )
     out.append("<channel>")
 
     out.append(tag("title", show["title"]))
@@ -194,8 +218,9 @@ def build_feed(cfg: dict, offline: bool) -> str:
     out.append(tag("description", " ".join(show["description"].split())))
     out.append(tag("lastBuildDate", format_datetime(datetime.now().astimezone())))
     out.append(tag("generator", "medsemiotics build_feed.py"))
-    out.append(f'<atom:link href={quoteattr(feed_url)} rel="self" '
-               f'type="application/rss+xml"/>')
+    out.append(
+        f'<atom:link href={quoteattr(feed_url)} rel="self" type="application/rss+xml"/>'
+    )
 
     out.append(tag("itunes:author", show["author"]))
     out.append(tag("itunes:summary", " ".join(show["description"].split())))
@@ -203,27 +228,32 @@ def build_feed(cfg: dict, offline: bool) -> str:
         out.append(tag("itunes:subtitle", show["subtitle"]))
     out.append(tag("itunes:explicit", explicit))
     out.append(tag("itunes:type", show.get("type", "episodic")))
-    out.append(f'<itunes:image href={quoteattr(base + show["image"])}/>')
-    out.append("<itunes:owner>"
-               + tag("itunes:name", show["owner_name"])
-               + tag("itunes:email", show["owner_email"])
-               + "</itunes:owner>")
+    out.append(f"<itunes:image href={quoteattr(base + show['image'])}/>")
+    out.append(
+        "<itunes:owner>"
+        + tag("itunes:name", show["owner_name"])
+        + tag("itunes:email", show["owner_email"])
+        + "</itunes:owner>"
+    )
     if show.get("keywords"):
         out.append(tag("itunes:keywords", ",".join(show["keywords"])))
 
     for cat in show.get("categories", []):
         if ">" in cat:
             parent, child = (p.strip() for p in cat.split(">", 1))
-            out.append(f"<itunes:category text={quoteattr(parent)}>"
-                       f"<itunes:category text={quoteattr(child)}/>"
-                       f"</itunes:category>")
+            out.append(
+                f"<itunes:category text={quoteattr(parent)}>"
+                f"<itunes:category text={quoteattr(child)}/>"
+                f"</itunes:category>"
+            )
         else:
             out.append(f"<itunes:category text={quoteattr(cat)}/>")
 
     # Podcasting 2.0: identidad estable del programa, independiente de la URL.
     out.append(tag("podcast:guid", channel_guid))
-    out.append(f'<podcast:locked owner={quoteattr(show["owner_email"])}>yes'
-               f'</podcast:locked>')
+    out.append(
+        f"<podcast:locked owner={quoteattr(show['owner_email'])}>yes</podcast:locked>"
+    )
 
     # ----- episodios --------------------------------------------------------
     for ep in sorted(episodes, key=lambda e: e["number"], reverse=True):
@@ -235,19 +265,26 @@ def build_feed(cfg: dict, offline: bool) -> str:
         item.append(tag("link", ep.get("source_url", show["link"])))
         item.append(tag("description", " ".join(str(ep["description"]).split())))
         item.append(cdata("content:encoded", ep["description"]))
-        item.append(f'<enclosure url={quoteattr(url)} length="{size}" '
-                    f'type="audio/mpeg"/>')
+        item.append(
+            f'<enclosure url={quoteattr(url)} length="{size}" type="audio/mpeg"/>'
+        )
         item.append(tag("itunes:duration", duration_seconds(ep["duration"])))
         item.append(tag("itunes:episode", ep["number"]))
         item.append(tag("itunes:season", ep.get("season", 1)))
         item.append(tag("itunes:episodeType", "full"))
-        item.append(tag("itunes:explicit",
-                        "true" if ep.get("explicit", show.get("explicit")) else "false"))
+        item.append(
+            tag(
+                "itunes:explicit",
+                "true" if ep.get("explicit", show.get("explicit")) else "false",
+            )
+        )
         item.append(tag("itunes:author", show["author"]))
         if ep.get("transcript"):
-            item.append(f'<podcast:transcript '
-                        f'url={quoteattr(base + ep["transcript"])} '
-                        f'type="text/vtt" language="{show["language"]}"/>')
+            item.append(
+                f"<podcast:transcript "
+                f"url={quoteattr(base + ep['transcript'])} "
+                f'type="text/vtt" language="{show["language"]}"/>'
+            )
         item.append("</item>")
         out.append("".join(item))
 
@@ -260,30 +297,32 @@ def build_feed(cfg: dict, offline: bool) -> str:
 #  Página índice
 # --------------------------------------------------------------------------- #
 
-def build_index(cfg: dict) -> str:
+
+def build_index(cfg: JSON) -> str:
     show = cfg["show"]
     base = show["base_url"]
     rows = []
     for ep in sorted(cfg["episodes"], key=lambda e: e["number"], reverse=True):
         d = datetime.fromisoformat(ep["pub_date"]).strftime("%d.%m.%Y")
         src = ep.get("source_url")
-        link = (f'<a href="{html.escape(src)}">Artículo completo &rarr;</a>'
-                if src else "")
+        link = (
+            f'<a href="{html.escape(src)}">Artículo completo &rarr;</a>' if src else ""
+        )
         rows.append(f"""    <article>
-      <h2>{ep['number']}. {html.escape(ep['title'])}</h2>
-      <p class="meta">{d} &middot; {html.escape(str(ep['duration']))}</p>
-      <p>{html.escape(" ".join(str(ep['description']).split()))}</p>
+      <h2>{ep["number"]}. {html.escape(ep["title"])}</h2>
+      <p class="meta">{d} &middot; {html.escape(str(ep["duration"]))}</p>
+      <p>{html.escape(" ".join(str(ep["description"]).split()))}</p>
       <p>{link}</p>
     </article>""")
 
     return f"""<!doctype html>
-<html lang="{show['language']}">
+<html lang="{show["language"]}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{html.escape(show['title'])} — podcast</title>
+<title>{html.escape(show["title"])} — podcast</title>
 <link rel="alternate" type="application/rss+xml"
-      title="{html.escape(show['title'])}" href="{base}feed.xml">
+      title="{html.escape(show["title"])}" href="{base}feed.xml">
 <style>
   :root {{ --bg:#fbfaf8; --fg:#1a1a1a; --mut:#6b6b6b; --rule:#e2ddd6; --acc:#7a3b2e; }}
   @media (prefers-color-scheme:dark) {{
@@ -306,12 +345,12 @@ def build_index(cfg: dict) -> str:
 </head>
 <body>
 <main>
-  <h1>{html.escape(show['title'])}</h1>
-  <p class="sub">{html.escape(show.get('subtitle',''))} &middot;
+  <h1>{html.escape(show["title"])}</h1>
+  <p class="sub">{html.escape(show.get("subtitle", ""))} &middot;
      <a href="{base}feed.xml">Feed RSS</a></p>
 {chr(10).join(rows)}
-  <footer>{html.escape(show.get('copyright',''))} &middot;
-     <a href="{html.escape(show['link'])}">medsemiotics</a></footer>
+  <footer>{html.escape(show.get("copyright", ""))} &middot;
+     <a href="{html.escape(show["link"])}">medsemiotics</a></footer>
 </main>
 </body>
 </html>
@@ -320,12 +359,16 @@ def build_index(cfg: dict) -> str:
 
 # --------------------------------------------------------------------------- #
 
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--config", default=str(ROOT / "podcast.yml"))
     ap.add_argument("--out", default=str(ROOT / "docs"))
-    ap.add_argument("--offline", action="store_true",
-                    help="no consultar la API; usar size_bytes de podcast.yml")
+    ap.add_argument(
+        "--offline",
+        action="store_true",
+        help="no consultar la API; usar size_bytes de podcast.yml",
+    )
     args = ap.parse_args()
 
     cfg = yaml.safe_load(Path(args.config).read_text(encoding="utf-8"))
@@ -336,9 +379,11 @@ def main() -> None:
     (outdir / "feed.xml").write_text(feed, encoding="utf-8")
     (outdir / "index.html").write_text(build_index(cfg), encoding="utf-8")
 
-    print(f"feed.xml     {len(feed):>7,} bytes  "
-          f"{len(cfg['episodes'])} episodios"
-          f"{'  [offline]' if args.offline else ''}")
+    print(
+        f"feed.xml     {len(feed):>7,} bytes  "
+        f"{len(cfg['episodes'])} episodios"
+        f"{'  [offline]' if args.offline else ''}"
+    )
     print(f"index.html   escrito en {outdir}")
 
 

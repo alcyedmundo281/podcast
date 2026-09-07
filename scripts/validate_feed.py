@@ -16,13 +16,18 @@ Uso:
 from __future__ import annotations
 
 import argparse
-import re
 import sys
 import urllib.error
 import urllib.request
 from email.utils import parsedate_to_datetime
 from pathlib import Path
-from xml.etree import ElementTree as ET
+from xml.etree.ElementTree import Element, ParseError
+
+# defusedxml en vez de xml.etree: este validador se apunta a feeds
+# arbitrarios (incluido el publicado, descargado por URL), y ElementTree
+# sigue siendo vulnerable a expansión de entidades. El parser endurecido
+# expone la misma API.
+from defusedxml import ElementTree as ET
 
 NS = {
     "itunes": "http://www.itunes.com/dtds/podcast-1.0.dtd",
@@ -44,8 +49,9 @@ def warn(m: str) -> None:
 
 def head(url: str) -> tuple[int, int | None]:
     """HEAD siguiendo redirecciones — los assets de release devuelven 302."""
-    req = urllib.request.Request(url, method="HEAD",
-                                 headers={"User-Agent": "medsemiotics-validator"})
+    req = urllib.request.Request(
+        url, method="HEAD", headers={"User-Agent": "medsemiotics-validator"}
+    )
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
             length = r.headers.get("Content-Length")
@@ -56,14 +62,16 @@ def head(url: str) -> tuple[int, int | None]:
         return 0, None
 
 
-def check_channel(ch: ET.Element) -> None:
+def check_channel(ch: Element) -> None:
     for field in ("title", "link", "description", "language"):
         if ch.findtext(field) is None:
             err(f"canal: falta <{field}>")
 
     if ch.find("atom:link[@rel='self']", NS) is None:
-        err("canal: falta <atom:link rel='self'> — sin él los directorios "
-            "no pueden verificar la propiedad del feed")
+        err(
+            "canal: falta <atom:link rel='self'> — sin él los directorios "
+            "no pueden verificar la propiedad del feed"
+        )
 
     img = ch.find("itunes:image", NS)
     if img is None or not img.get("href"):
@@ -74,15 +82,19 @@ def check_channel(ch: ET.Element) -> None:
 
     owner = ch.find("itunes:owner", NS)
     if owner is None or owner.findtext("itunes:email", namespaces=NS) is None:
-        err("canal: falta <itunes:owner><itunes:email> — Apple lo usa para "
-            "verificar que el feed es tuyo")
+        err(
+            "canal: falta <itunes:owner><itunes:email> — Apple lo usa para "
+            "verificar que el feed es tuyo"
+        )
 
     if ch.findtext("podcast:guid", namespaces=NS) is None:
-        warn("canal: sin <podcast:guid>; el programa no tendrá identidad "
-             "estable si algún día cambia la URL del feed")
+        warn(
+            "canal: sin <podcast:guid>; el programa no tendrá identidad "
+            "estable si algún día cambia la URL del feed"
+        )
 
 
-def check_items(ch: ET.Element, skip_network: bool) -> None:
+def check_items(ch: Element, skip_network: bool) -> None:
     items = ch.findall("item")
     if not items:
         err("el feed no contiene ningún <item>")
@@ -96,8 +108,10 @@ def check_items(ch: ET.Element, skip_network: bool) -> None:
         if not guid:
             err(f"[{title}] falta <guid>")
         elif guid in guids:
-            err(f"[{title}] GUID duplicado con [{guids[guid]}] — los clientes "
-                f"mostrarán un solo episodio")
+            err(
+                f"[{title}] GUID duplicado con [{guids[guid]}] — los clientes "
+                f"mostrarán un solo episodio"
+            )
         else:
             guids[guid] = title
 
@@ -136,8 +150,10 @@ def check_items(ch: ET.Element, skip_network: bool) -> None:
             elif status >= 400:
                 err(f"[{title}] el enclosure responde HTTP {status}: {url}")
             elif real is not None and real != int(length):
-                err(f"[{title}] length declarado {int(length):,} pero el "
-                    f"archivo mide {real:,} bytes")
+                err(
+                    f"[{title}] length declarado {int(length):,} pero el "
+                    f"archivo mide {real:,} bytes"
+                )
 
 
 def main() -> None:
@@ -152,8 +168,10 @@ def main() -> None:
 
     try:
         root = ET.parse(path).getroot()
-    except ET.ParseError as e:
+    except ParseError as e:
         sys.exit(f"ERROR: XML mal formado — {e}")
+    if root is None:
+        sys.exit(f"ERROR: {path} no contiene ningún elemento raíz")
 
     ch = root.find("channel")
     if ch is None:
@@ -165,14 +183,16 @@ def main() -> None:
     n = len(ch.findall("item"))
     for w in warnings:
         print(f"  aviso   {w}")
-    for e in errors:
-        print(f"  ERROR   {e}")
+    for err in errors:
+        print(f"  ERROR   {err}")
 
     if errors:
         print(f"\n{len(errors)} error(es) en {path} — no se publica.")
         sys.exit(1)
-    print(f"\n{path}: {n} episodio(s), conforme"
-          f"{' (red omitida)' if args.skip_network else ''}.")
+    print(
+        f"\n{path}: {n} episodio(s), conforme"
+        f"{' (red omitida)' if args.skip_network else ''}."
+    )
 
 
 if __name__ == "__main__":

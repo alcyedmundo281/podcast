@@ -86,15 +86,23 @@ No se escribe a mano ningún tamaño de archivo ni ninguna URL de descarga:
 | `scripts/metrics.py` | Descargas por episodio + serie temporal propia |
 
 ```bash
-pip install -r requirements.txt
+uv sync --frozen                              # entorno exacto de uv.lock
 
-python3 scripts/build_feed.py               # consulta la API de releases
-python3 scripts/build_feed.py --offline     # usa size_bytes de podcast.yml
-python3 scripts/validate_feed.py docs/feed.xml
-python3 scripts/metrics.py --dry-run
+uv run python scripts/build_feed.py           # consulta la API de releases
+uv run python scripts/build_feed.py --offline # usa size_bytes de podcast.yml
+uv run python scripts/validate_feed.py docs/feed.xml
+uv run python scripts/metrics.py --dry-run
 ```
 
-La única dependencia de construcción es PyYAML, fijada en `requirements.txt`.
+Las puertas de calidad, obligatorias antes de tocar `scripts/` (ver `CLAUDE.md`):
+
+```bash
+uv run ruff format scripts/
+uv run ruff check --fix scripts/
+uv run mypy                                   # strict, sin excepciones
+```
+
+Dependencias de ejecución: PyYAML y defusedxml, fijadas en `uv.lock`.
 El sitio publicado no depende de nada.
 
 ---

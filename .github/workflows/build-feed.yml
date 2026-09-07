@@ -30,21 +30,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - name: Instalar uv
+        uses: astral-sh/setup-uv@v6
         with:
-          python-version: '3.12'
+          enable-cache: true
 
-      - name: Instalar dependencia de construcción
-        run: pip install -r requirements.txt
+      # --frozen: usa exactamente uv.lock. El entorno de CI es el mismo que
+      # el local, byte a byte.
+      - name: Sincronizar el entorno
+        run: uv sync --frozen
 
       - name: Compilar podcast.yml a feed.xml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python3 scripts/build_feed.py
+        run: uv run python scripts/build_feed.py
 
       # Puerta de calidad: si el feed no es conforme, no se despliega.
       - name: Validar el feed
-        run: python3 scripts/validate_feed.py docs/feed.xml
+        run: uv run python scripts/validate_feed.py docs/feed.xml
 
       - name: Comprobar el techo de 1 GB de GitHub Pages
         run: |

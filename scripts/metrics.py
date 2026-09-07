@@ -24,8 +24,9 @@ import os
 import sys
 import urllib.error
 import urllib.request
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
+from typing import Any, cast
 
 try:
     import yaml
@@ -34,8 +35,11 @@ except ImportError:
 
 ROOT = Path(__file__).resolve().parent.parent
 
+# Alias: lo que devuelve la API de GitHub y lo que guardamos en disco.
+type JSON = dict[str, Any]
 
-def api(path: str) -> list | dict:
+
+def api(path: str) -> list[JSON]:
     token = os.environ.get("GITHUB_TOKEN", "")
     req = urllib.request.Request(
         f"https://api.github.com{path}",
@@ -47,14 +51,14 @@ def api(path: str) -> list | dict:
     )
     try:
         with urllib.request.urlopen(req, timeout=30) as resp:
-            return json.load(resp)
+            return cast("list[JSON]", json.load(resp))
     except urllib.error.HTTPError as e:
         sys.exit(f"ERROR: la API devolvió {e.code} para {path}")
     except urllib.error.URLError as e:
         sys.exit(f"ERROR: sin acceso a la API de GitHub ({e.reason})")
 
 
-def collect(cfg: dict) -> dict:
+def collect(cfg: JSON) -> JSON:
     repo = cfg["show"]["audio_repo"]
     releases = {r["tag_name"]: r for r in api(f"/repos/{repo}/releases?per_page=100")}
 
@@ -63,22 +67,26 @@ def collect(cfg: dict) -> dict:
         rel = releases.get(ep["tag"])
         asset = None
         if rel:
-            asset = next((a for a in rel.get("assets", [])
-                          if a["name"] == ep["audio_file"]), None)
+            asset = next(
+                (a for a in rel.get("assets", []) if a["name"] == ep["audio_file"]),
+                None,
+            )
         downloads = int(asset["download_count"]) if asset else 0
         total += downloads
-        episodes.append({
-            "slug": ep["slug"],
-            "number": ep["number"],
-            "title": ep["title"],
-            "published": ep["pub_date"],
-            "downloads": downloads,
-            "size_bytes": int(asset["size"]) if asset else None,
-            "released": bool(asset),
-        })
+        episodes.append(
+            {
+                "slug": ep["slug"],
+                "number": ep["number"],
+                "title": ep["title"],
+                "published": ep["pub_date"],
+                "downloads": downloads,
+                "size_bytes": int(asset["size"]) if asset else None,
+                "released": bool(asset),
+            }
+        )
 
     return {
-        "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "generated_at": datetime.now(UTC).isoformat(timespec="seconds"),
         "repo": repo,
         "total_downloads": total,
         "episode_count": len(episodes),
@@ -86,10 +94,10 @@ def collect(cfg: dict) -> dict:
     }
 
 
-def update_history(snapshot: dict, path: Path) -> list:
-    history = []
+def update_history(snapshot: JSON, path: Path) -> list[JSON]:
+    history: list[JSON] = []
     if path.exists():
-        history = json.loads(path.read_text(encoding="utf-8"))
+        history = cast("list[JSON]", json.loads(path.read_text(encoding="utf-8")))
 
     today = snapshot["generated_at"][:10]
     entry = {
@@ -104,7 +112,7 @@ def update_history(snapshot: dict, path: Path) -> list:
     return history
 
 
-def add_deltas(snapshot: dict, history: list) -> None:
+def add_deltas(snapshot: JSON, history: list[JSON]) -> None:
     """Descargas nuevas desde la muestra anterior — el dato que de verdad se lee."""
     if len(history) < 2:
         return
@@ -137,16 +145,18 @@ def main() -> None:
 
     out = ROOT / "docs" / "metrics.json"
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps(snapshot, indent=2, ensure_ascii=False) + "\n",
-                   encoding="utf-8")
+    out.write_text(
+        json.dumps(snapshot, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
 
-    print(f"total {snapshot['total_downloads']:,} descargas "
-          f"({snapshot.get('total_delta', 0):+,} desde "
-          f"{snapshot.get('delta_since', 'la primera muestra')})")
+    print(
+        f"total {snapshot['total_downloads']:,} descargas "
+        f"({snapshot.get('total_delta', 0):+,} desde "
+        f"{snapshot.get('delta_since', 'la primera muestra')})"
+    )
     for e in snapshot["episodes"]:
         mark = "" if e["released"] else "  [sin release]"
-        print(f"  ep{e['number']:03d}  {e['downloads']:>7,}"
-              f"  {e['title'][:44]}{mark}")
+        print(f"  ep{e['number']:03d}  {e['downloads']:>7,}  {e['title'][:44]}{mark}")
 
 
 if __name__ == "__main__":

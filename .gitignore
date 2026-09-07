@@ -15,3 +15,7 @@ __pycache__/
 *.pyc
 .venv/
 .DS_Store
+
+# Herramientas
+.ruff_cache/
+.mypy_cache/

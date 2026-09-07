@@ -1,0 +1,71 @@
+[project]
+name = "medsemiotics-podcast"
+version = "1.0.0"
+description = "Feed de podcast estático de medsemiotics: una sola fuente en YAML compila a RSS"
+requires-python = ">=3.12"
+dependencies = [
+    "defusedxml>=0.7.1",
+    "PyYAML>=6.0.2",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.13.0",
+    "mypy>=1.18.0",
+    "types-PyYAML>=6.0.12",
+    "types-defusedxml>=0.7.0.20260504",
+]
+
+[tool.uv]
+package = false
+
+# --------------------------------------------------------------------------- #
+#  ruff — formato y lint. Sustituye a black, isort, flake8 y pyupgrade.
+# --------------------------------------------------------------------------- #
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+src = ["scripts"]
+
+[tool.ruff.lint]
+select = [
+    "E", "W",    # pycodestyle
+    "F",         # pyflakes
+    "I",         # isort — orden de imports
+    "UP",        # pyupgrade — sintaxis moderna
+    "B",         # bugbear — errores sutiles
+    "SIM",       # simplify
+    "RUF",       # reglas propias de ruff
+    "ANN",       # anotaciones de tipo obligatorias
+    "PTH",       # usar pathlib en vez de os.path
+    "RET",       # returns coherentes
+    "C4",        # comprehensions
+    "DTZ",       # datetime sin zona horaria — crítico para pubDate
+    "S",         # bandit — seguridad
+    "T20",       # sin print() ... salvo donde es la interfaz (ver per-file)
+]
+ignore = [
+    "E501",      # longitud de línea: la gobierna el formateador
+    "S310",      # urlopen con esquema no validado: las URLs son nuestras
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Los tres scripts son herramientas de línea de comandos: print() ES su interfaz
+# y sys.exit() su forma de fallar. No son biblioteca.
+"scripts/*.py" = ["T201", "T203"]
+
+[tool.ruff.lint.flake8-annotations]
+suppress-none-returning = false
+
+# --------------------------------------------------------------------------- #
+#  mypy — estricto. El código es pequeño; no hay excusa para menos.
+# --------------------------------------------------------------------------- #
+[tool.mypy]
+python_version = "3.12"
+files = ["scripts"]
+strict = true
+warn_unreachable = true
+warn_return_any = true
+disallow_any_explicit = false      # yaml.safe_load devuelve Any por diseño
+pretty = true
+show_error_codes = true

@@ -17,16 +17,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - name: Instalar uv
+        uses: astral-sh/setup-uv@v6
         with:
-          python-version: '3.12'
+          enable-cache: true
 
-      - run: pip install -r requirements.txt
+      - name: Sincronizar el entorno
+        run: uv sync --frozen
 
       - name: Recolectar descargas
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python3 scripts/metrics.py
+        run: uv run python scripts/metrics.py
 
       - name: Guardar la muestra
         run: |

@@ -1,0 +1,57 @@
+name: calidad
+
+# Deliberadamente SEPARADO de build-feed.yml.
+#
+# Estas puertas vigilan el CÓDIGO; build-feed.yml vigila el FEED. Un fallo de
+# estilo o de tipos no debe impedir que salga un episodio, y un episodio con
+# prisa no debe tentar a saltarse el linter. Cada pipeline falla por lo suyo.
+on:
+  push:
+    branches: [main]
+    paths: ['scripts/**', 'pyproject.toml', 'uv.lock', '.github/workflows/quality.yml']
+  pull_request:
+    paths: ['scripts/**', 'pyproject.toml', 'uv.lock']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  calidad:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalar uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+
+      # --frozen: falla si uv.lock no concuerda con pyproject.toml, en vez de
+      # resolver por su cuenta. El entorno de CI es el mismo que el local.
+      - name: Sincronizar el entorno
+        run: uv sync --frozen
+
+      - name: ruff — formato
+        run: uv run ruff format --check --diff scripts/
+
+      - name: ruff — lint
+        run: uv run ruff check --output-format=github scripts/
+
+      - name: mypy — tipos (estricto)
+        run: uv run mypy
+
+      # El feed se compila con datos reales y se valida sin red: comprueba que
+      # el generador sigue produciendo XML conforme aunque no haya releases.
+      - name: prueba de humo del generador
+        run: |
+          python3 - <<'PY'
+          import pathlib, yaml
+          cfg = yaml.safe_load(pathlib.Path('podcast.yml').read_text())
+          for ep in cfg['episodes']:
+              ep['size_bytes'] = 1
+          pathlib.Path('/tmp/smoke.yml').write_text(
+              yaml.safe_dump(cfg, allow_unicode=True, sort_keys=False))
+          PY
+          uv run python scripts/build_feed.py --config /tmp/smoke.yml --out /tmp/smoke --offline
+          uv run python scripts/validate_feed.py /tmp/smoke/feed.xml --skip-network
