@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-09-07T14:44:12+00:00",
+  "repo": "alcyedmundo281/podcast",
+  "total_downloads": 17,
+  "episode_count": 1,
+  "episodes": [
+    {
+      "slug": "demencias",
+      "number": 1,
+      "title": "Demencias: por qué las pistas no rescatan la memoria",
+      "published": "2026-09-06T09:00:00-05:00",
+      "downloads": 17,
+      "size_bytes": 12800758,
+      "released": true
+    }
+  ]
+}
