@@ -91,9 +91,11 @@ El paso 3 es el que despliega, y el orden importa: `build_feed.py` resuelve el
 tamaño del enclosure contra la API de releases, así que sin el release del paso
 2 el build falla.
 
-`build-feed.yml` no escucha eventos `release` a propósito. Esos runs corren
-sobre el tag, y el entorno `github-pages` sólo permite desplegar desde la rama
-por defecto, así que fallaban siempre en `deploy`. Si alguna vez cambias un
-asset sin tocar `podcast.yml`, lanza el workflow a mano desde `main`
-(Actions -> build feed -> Run workflow); es el único caso que ya no se
-reconstruye solo.
+`build-feed.yml` no escucha el evento `release` a propósito: ese run publicaría
+un feed que aún no contiene el episodio, y además fallaría en `deploy` porque
+corre sobre el tag y el entorno `github-pages` solo admite despliegues desde la
+rama por defecto.
+
+Si alguna vez reemplazas el MP3 de un release ya publicado, su tamaño en bytes
+cambia y el feed queda desfasado sin que `podcast.yml` se haya tocado. Ese es
+el caso de `workflow_dispatch`: *Actions → build feed → Run workflow*.
