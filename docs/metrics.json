@@ -1,17 +1,40 @@
 {
-  "generated_at": "2026-09-07T14:44:12+00:00",
+  "generated_at": "2026-09-08T13:16:20+00:00",
   "repo": "alcyedmundo281/podcast",
-  "total_downloads": 17,
-  "episode_count": 1,
+  "total_downloads": 36,
+  "episode_count": 3,
   "episodes": [
+    {
+      "slug": "paralisis-supranuclear-progresiva",
+      "number": 3,
+      "title": "Parálisis supranuclear progresiva: cuando la mirada vertical delata al parkinsonismo",
+      "published": "2026-09-07T22:30:00-05:00",
+      "downloads": 3,
+      "size_bytes": 15191468,
+      "released": true,
+      "delta": 3
+    },
+    {
+      "slug": "artritis-psoriasica",
+      "number": 2,
+      "title": "Artritis psoriásica: por qué la mejor eficacia no va primero",
+      "published": "2026-09-07T21:00:00-05:00",
+      "downloads": 9,
+      "size_bytes": 10110572,
+      "released": true,
+      "delta": 9
+    },
     {
       "slug": "demencias",
       "number": 1,
       "title": "Demencias: por qué las pistas no rescatan la memoria",
       "published": "2026-09-06T09:00:00-05:00",
-      "downloads": 17,
+      "downloads": 24,
       "size_bytes": 12800758,
-      "released": true
+      "released": true,
+      "delta": 7
     }
-  ]
+  ],
+  "delta_since": "2026-09-07",
+  "total_delta": 19
 }
