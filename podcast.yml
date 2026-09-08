@@ -72,6 +72,36 @@ show:
 # =============================================================================
 
 episodes:
+  - slug: "paralisis-supranuclear-progresiva"
+    number: 3
+    season: 1
+    title: "Parálisis supranuclear progresiva: cuando la mirada vertical delata al parkinsonismo"
+    pub_date: "2026-09-07T22:30:00-05:00"
+    duration: "00:21:05"
+    tag: "ep003"
+    audio_file: "ep003.mp3"
+    topic: "neurologia/trastornos-movimiento-2"
+    transcript: "transcripts/ep003.vtt"
+    source_url: "https://powersemiotics.com/medsemiotics/neurologia/trastornos-movimiento-2.html"
+    description: >-
+      Un hombre de 68 años consulta por un cuadro acinético-rígido bilateral y
+      caídas precoces hacia atrás. A pesar de recibir dosis terapéuticas de
+      levodopa, su motor permanece en silencio: el cerebro no responde al
+      tratamiento cardinal del Parkinson típico. Basado en el sílabo de
+      Neurología de la Universidad Central del Ecuador y en un debate
+      socrático del Hospital de Especialidades Carlos Andrade Marín (HCAM), este
+      episodio desentraña el diagnóstico diferencial de los parkinsonismos
+      atípicos. Analizamos la firma semiológica de la Parálisis Supranuclear
+      Progresiva (PSP o síndrome de Steele-Richardson-Olszewski): la pérdida
+      temprana de sacadas hacia abajo y parálisis de la mirada vertical con
+      preservación oculocefálica, el retrocolis con rigidez axial
+      predominante, la disartria espástica precoz y los signos radiológicos
+      cardinales en resonancia magnética —el signo del colibrí por atrofia del
+      tegmento mesencefálico y las orejas de Mickey Mouse—. Una lección sobre
+      por qué el diagnóstico diferencial correcto salva al paciente de ensayos
+      terapéuticos inútiles y orienta el soporte temprano en deglución y
+      rehabilitación postural.
+
   - slug: "artritis-psoriasica"
     number: 2
     season: 1
