@@ -72,6 +72,31 @@ show:
 # =============================================================================
 
 episodes:
+  - slug: "artritis-psoriasica"
+    number: 2
+    season: 1
+    title: "Artritis psoriásica: por qué la mejor eficacia no va primero"
+    pub_date: "2026-09-07T21:00:00-05:00"
+    duration: "00:14:02"
+    tag: "ep002"
+    audio_file: "ep002.mp3"
+    topic: "reumatologia/artritis-psoriasica"
+    source_url: "https://powersemiotics.com/farmacosemiotics/selecciones/SEL0003-artritis-psoriasica.html"
+    description: >-
+      En el adulto con artritis psoriásica periférica activa, el fármaco con la
+      mejor evidencia de eficacia —guselkumab, con ensayo aleatorizado, certeza
+      alta, NNT 4 para respuesta articular y NNT 2 para aclaramiento cutáneo a
+      las 24 semanas— no es el seleccionado como tratamiento inicial. Este
+      episodio recorre la selección terapéutica comparativa en cuatro ejes
+      (eficacia, seguridad, conveniencia y costo) entre metotrexato,
+      guselkumab, anti-TNF monoclonales e inhibidores de JAK. Analizamos por qué
+      la guía manda agotar un csDMARD oral antes de escalar a terapia biológica,
+      cómo la presencia de manifestaciones no musculoesqueléticas (psoriasis
+      extensa, uveítis o enfermedad inflamatoria intestinal) es lo que realmente
+      gobierna la elección del mecanismo de acción en el segundo escalón, y por
+      qué los inhibidores de JAK quedan reservados al final de la fila debido a
+      las advertencias de seguridad regulatorias.
+
   - slug: "demencias"
     number: 1
     season: 1
