@@ -81,6 +81,7 @@ episodes:
     tag: "ep002"
     audio_file: "ep002.mp3"
     topic: "reumatologia/artritis-psoriasica"
+    transcript: "transcripts/ep002.vtt"
     source_url: "https://powersemiotics.com/farmacosemiotics/selecciones/SEL0003-artritis-psoriasica.html"
     description: >-
       En el adulto con artritis psoriásica periférica activa, el fármaco con la
