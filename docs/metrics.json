@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T13:16:20+00:00",
+  "generated_at": "2026-09-09T13:20:49+00:00",
   "repo": "alcyedmundo281/podcast",
   "total_downloads": 36,
   "episode_count": 3,
@@ -12,7 +12,7 @@
       "downloads": 3,
       "size_bytes": 15191468,
       "released": true,
-      "delta": 3
+      "delta": 0
     },
     {
       "slug": "artritis-psoriasica",
@@ -22,7 +22,7 @@
       "downloads": 9,
       "size_bytes": 10110572,
       "released": true,
-      "delta": 9
+      "delta": 0
     },
     {
       "slug": "demencias",
@@ -32,9 +32,9 @@
       "downloads": 24,
       "size_bytes": 12800758,
       "released": true,
-      "delta": 7
+      "delta": 0
     }
   ],
-  "delta_since": "2026-09-07",
-  "total_delta": 19
+  "delta_since": "2026-09-08",
+  "total_delta": 0
 }
