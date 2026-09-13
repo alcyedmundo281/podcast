@@ -50,5 +50,14 @@
       "artritis-psoriasica": 9,
       "demencias": 24
     }
+  },
+  {
+    "date": "2026-09-13",
+    "total": 36,
+    "by_episode": {
+      "paralisis-supranuclear-progresiva": 3,
+      "artritis-psoriasica": 9,
+      "demencias": 24
+    }
   }
 ]
