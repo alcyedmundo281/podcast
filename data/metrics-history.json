@@ -122,5 +122,15 @@
       "artritis-psoriasica": 9,
       "demencias": 24
     }
+  },
+  {
+    "date": "2026-09-21",
+    "total": 54,
+    "by_episode": {
+      "hipertension-arterial-esencial": 3,
+      "paralisis-supranuclear-progresiva": 8,
+      "artritis-psoriasica": 14,
+      "demencias": 29
+    }
   }
 ]

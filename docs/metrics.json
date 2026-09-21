@@ -1,40 +1,50 @@
 {
-  "generated_at": "2026-09-20T13:25:29+00:00",
+  "generated_at": "2026-09-21T15:37:15+00:00",
   "repo": "alcyedmundo281/podcast",
-  "total_downloads": 36,
-  "episode_count": 3,
+  "total_downloads": 54,
+  "episode_count": 4,
   "episodes": [
+    {
+      "slug": "hipertension-arterial-esencial",
+      "number": 4,
+      "title": "Por qué la hidroclorotiazida gana en hipertensión",
+      "published": "2026-09-21T00:07:00-05:00",
+      "downloads": 3,
+      "size_bytes": 20746969,
+      "released": true,
+      "delta": 3
+    },
     {
       "slug": "paralisis-supranuclear-progresiva",
       "number": 3,
       "title": "Parálisis supranuclear progresiva: cuando la mirada vertical delata al parkinsonismo",
       "published": "2026-09-07T22:30:00-05:00",
-      "downloads": 3,
+      "downloads": 8,
       "size_bytes": 15191468,
       "released": true,
-      "delta": 0
+      "delta": 5
     },
     {
       "slug": "artritis-psoriasica",
       "number": 2,
       "title": "Artritis psoriásica: por qué la mejor eficacia no va primero",
       "published": "2026-09-07T21:00:00-05:00",
-      "downloads": 9,
+      "downloads": 14,
       "size_bytes": 10110572,
       "released": true,
-      "delta": 0
+      "delta": 5
     },
     {
       "slug": "demencias",
       "number": 1,
       "title": "Demencias: por qué las pistas no rescatan la memoria",
       "published": "2026-09-06T09:00:00-05:00",
-      "downloads": 24,
+      "downloads": 29,
       "size_bytes": 12800758,
       "released": true,
-      "delta": 0
+      "delta": 5
     }
   ],
-  "delta_since": "2026-09-19",
-  "total_delta": 0
+  "delta_since": "2026-09-20",
+  "total_delta": 18
 }
