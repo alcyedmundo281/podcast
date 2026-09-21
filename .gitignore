@@ -19,3 +19,6 @@ __pycache__/
 # Herramientas
 .ruff_cache/
 .mypy_cache/
+
+# Material de trabajo para NotebookLM: se regenera con scripts/temas.py
+notebooklm/

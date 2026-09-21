@@ -81,13 +81,48 @@ uv run python scripts/validate_feed.py /tmp/x/feed.xml --skip-network
 Están separados a propósito. Un fallo de estilo no debe impedir publicar un
 episodio, y una publicación urgente no debe tentar a saltarse el linter.
 
+## De dónde sale un episodio
+
+Los temas vienen de **farmacosemiotics** (selecciones y fichas), y el audio lo
+genera **NotebookLM** (Audio Overview). Ese paso vive en el navegador y no se
+puede automatizar desde el repositorio: necesita sesión de Google. Todo lo que
+lo rodea sí es mecánico y lo hace `scripts/temas.py`.
+
+```bash
+# qué temas ya tienen episodio y cuáles faltan
+uv run python scripts/temas.py listar --fuente ../farmacosemiotics --pendientes
+
+# deja el material de un tema en notebooklm/<slug>/
+uv run python scripts/temas.py preparar SEL0024 --fuente ../farmacosemiotics
+```
+
+`preparar` escribe tres archivos:
+
+- **`fuente.md`** — el YAML del tema como texto legible. Va a NotebookLM como
+  «Copied text», **no** como URL: una fuente curada produce mejores Audio
+  Overviews que dejar que rastree la página.
+- **`prompt.txt`** — el prompt de personalización del Audio Overview. Generar
+  sin prompt propio da un resultado genérico.
+- **`entrada.yml`** — el borrador de la entrada de `podcast.yml`. Lo derivable
+  ya está resuelto; lo editorial va marcado `REVISAR` y depende del audio real.
+
+`notebooklm/` está en `.gitignore`: es material de trabajo regenerable desde
+farmacosemiotics en cualquier momento.
+
+El skill de `.claude/skills/notebooklm/` automatiza el paso del navegador, pero
+**sólo funciona en un cliente con la extensión de Claude en Chrome**. En una
+sesión sin navegador —Claude Code en la web, por ejemplo— no hay `computer` ni
+`navigate`, y el paso es manual.
+
 ## Publicar un episodio
 
-1. Masterizar: mono, 96 kbps, −19 LUFS, pico real bajo −1,5 dBTP.
-2. `gh release create epNNN epNNN.mp3 --target main --title "..."`.
-3. Añadir la entrada en `podcast.yml` y hacer push a `main`.
+1. `temas.py preparar <ID>` y generar el Audio Overview en NotebookLM.
+2. Masterizar: mono, 96 kbps, −19 LUFS, pico real bajo −1,5 dBTP.
+3. `gh release create epNNN epNNN.mp3 --target main --title "..."`.
+4. Pegar `entrada.yml` en `podcast.yml`, completar los `REVISAR`, añadir la
+   transcripción en `docs/transcripts/` y hacer push a `main`.
 
-El paso 3 es el que despliega, y el orden importa: `build_feed.py` resuelve el
+El último paso es el que despliega, y el orden importa: `build_feed.py` resuelve el
 tamaño del enclosure contra la API de releases, así que sin el release del paso
 2 el build falla.
 
