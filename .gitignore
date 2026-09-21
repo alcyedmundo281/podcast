@@ -21,4 +21,4 @@ __pycache__/
 .mypy_cache/
 
 # Material de trabajo para NotebookLM: se regenera con scripts/temas.py
-notebooklm/
+/notebooklm/
