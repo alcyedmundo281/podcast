@@ -83,10 +83,12 @@ episodio, y una publicación urgente no debe tentar a saltarse el linter.
 
 ## De dónde sale un episodio
 
-Los temas vienen de **farmacosemiotics** (selecciones y fichas), y el audio lo
-genera **NotebookLM** (Audio Overview). Ese paso vive en el navegador y no se
-puede automatizar desde el repositorio: necesita sesión de Google. Todo lo que
-lo rodea sí es mecánico y lo hace `scripts/temas.py`.
+Los temas vienen del ecosistema **Powersemiotics** —ep001 y ep003 de
+medsemiotics, ep002 y ep004 de farmacosemiotics— y el audio lo genera **NotebookLM**
+(Audio Overview). Ese paso vive en el navegador y no se puede automatizar
+desde el repositorio: necesita sesión de Google. Para los temas de
+farmacosemiotics (selecciones y fichas), todo lo que lo rodea es mecánico y lo
+hace `scripts/temas.py`.
 
 ```bash
 # qué temas ya tienen episodio y cuáles faltan
@@ -109,11 +111,16 @@ uv run python scripts/temas.py preparar SEL0024 --fuente ../farmacosemiotics
 `notebooklm/` está en `.gitignore`: es material de trabajo regenerable desde
 farmacosemiotics en cualquier momento.
 
-El `source_url` de un episodio es el **YAML del tema en el repositorio de
-farmacosemiotics** (`github.com/alcyedmundo281/farmacosemiotics/blob/main/…`),
-no una página de powersemiotics.com, que es el portal general de la
-organización. ep002 enlaza aún la página del sitio; `temas.py` reconoce las
-dos formas para no darlo por pendiente.
+Un episodio puede salir de **cualquier proyecto del ecosistema
+Powersemiotics** (medsemiotics, medsemiotics-db, farmacosemiotics,
+biosemiotics…); farmacosemiotics es sólo el que tiene puente mecánico.
+`source_url` apunta al material concreto del que sale el episodio, dentro de
+su proyecto: una página bajo `powersemiotics.com/<proyecto>/` (ep001–ep003) o
+el archivo en el repositorio del proyecto (ep004). La portada de
+powersemiotics.com es el portal general de la organización, no una fuente.
+Para los temas de farmacosemiotics, `temas.py` propone el YAML del tema en su
+repositorio (`github.com/alcyedmundo281/farmacosemiotics/blob/main/…`) y
+reconoce también la página del sitio, que es como lo cita ep002.
 
 El skill de `.claude/skills/notebooklm/` automatiza el paso del navegador, pero
 **sólo funciona en un cliente con la extensión de Claude en Chrome**. En una
