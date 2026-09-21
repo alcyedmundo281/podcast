@@ -16,6 +16,11 @@ dev = [
     "types-defusedxml>=0.7.0.20260504",
     "pre-commit>=4.6.2",
 ]
+transcripcion = [
+    "faster-whisper>=1.1",
+    "nvidia-cublas-cu12>=12.4 ; sys_platform == 'linux' or sys_platform == 'win32'",
+    "nvidia-cudnn-cu12>=9.1,<10 ; sys_platform == 'linux' or sys_platform == 'win32'",
+]
 
 [tool.uv]
 package = false

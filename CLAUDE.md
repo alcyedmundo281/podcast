@@ -114,13 +114,59 @@ El skill de `.claude/skills/notebooklm/` automatiza el paso del navegador, pero
 sesión sin navegador —Claude Code en la web, por ejemplo— no hay `computer` ni
 `navigate`, y el paso es manual.
 
+## Transcribir un episodio
+
+Cada episodio publica dos transcripciones en `docs/transcripts/`: `epNNN.vtt`,
+que el feed enlaza como `<podcast:transcript>`, y `epNNN.md`, la misma en
+párrafos para leer. Las dos salen de `scripts/transcribir.py`, con Whisper
+`large-v3` (faster-whisper) en local, sobre el **MP3 masterizado**, que es el
+que oyen los suscriptores y cuyos tiempos tienen que coincidir con el VTT.
+
+```bash
+# una vez: dependencia opcional y pesada (modelo ~3 GB, CUDA). CI no la instala.
+uv sync --group transcripcion
+
+uv run --group transcripcion python scripts/transcribir.py \
+    notebooklm/<slug>/epNNN.mp3 --numero N \
+    --titulo "<título de podcast.yml>" --tema "<nombre corto del tema>" \
+    --fuente notebooklm/<slug>/fuente.md
+```
+
+`--fuente` le da a Whisper el vocabulario del tema (DCI, siglas, ensayos,
+el id `SEL`/`FT`) y al final lista los términos que no aparecen: son los
+primeros sitios que revisar. En una RTX 4080, 29 minutos tardan unos 2.
+
+La salida es un **borrador** y se revisa antes de publicar, con estas reglas:
+
+- **Se corrige terminología y errores evidentes de transcripción**: DCI mal
+  oídas («amblodipino»), siglas («IGA» → IECA, «Al-Hat» → ALLHAT), el id del
+  tema, PMID partidos, palabras que no existen. Cada corrección se aplica
+  igual en el `.vtt` y en el `.md`.
+- **Nunca se corrige lo que dijeron los presentadores**, aunque sea
+  impreciso o contradiga la fuente. La transcripción documenta el audio; si
+  el audio dice una cifra mal, eso es un hallazgo para el autor, no una
+  errata que tapar. **Excepción: el autor decide.** Si ordena alinear una
+  cifra con la fuente, se corrige en los dos archivos (ep004: «12 miligramos»
+  → 12,5, como dice SEL0024).
+- **La duda se resuelve con el audio**, no con la fuente. Si dos pasadas de
+  Whisper discrepan, la versión que coincide con la otra pasada o con el
+  audio es la buena.
+- Sin marcas de hablante: los episodios publicados no las llevan.
+
+`transcribir.py` no sobrescribe una transcripción existente sin `--forzar`,
+porque pisaría las correcciones hechas a mano.
+
 ## Publicar un episodio
 
 1. `temas.py preparar <ID>` y generar el Audio Overview en NotebookLM.
+   Decisión del autor: el modelo **puede descargar el audio** de NotebookLM
+   sin pedir confirmación. La duración la fija NotebookLM; no se consulta ni
+   se regenera por ella.
 2. Masterizar: mono, 96 kbps, −19 LUFS, pico real bajo −1,5 dBTP.
 3. `gh release create epNNN epNNN.mp3 --target main --title "..."`.
 4. Pegar `entrada.yml` en `podcast.yml`, completar los `REVISAR`, añadir la
-   transcripción en `docs/transcripts/` y hacer push a `main`.
+   transcripción en `docs/transcripts/` (ver «Transcribir un episodio») y
+   hacer push a `main`.
 
 El último paso es el que despliega, y el orden importa: `build_feed.py` resuelve el
 tamaño del enclosure contra la API de releases, así que sin el release del paso
