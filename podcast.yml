@@ -72,6 +72,38 @@ show:
 # =============================================================================
 
 episodes:
+  - slug: "hipertension-arterial-esencial"
+    number: 4
+    season: 1
+    title: "Por qué la hidroclorotiazida gana en hipertensión"
+    pub_date: "2026-09-21T00:07:00-05:00"
+    duration: "00:28:49"
+    tag: "ep004"
+    audio_file: "ep004.mp3"
+    topic: "cardiologia/hipertension-arterial-esencial"
+    transcript: "transcripts/ep004.vtt"
+    source_url: "https://github.com/alcyedmundo281/farmacosemiotics/blob/main/selecciones/SEL0024-hipertension-arterial-esencial.yaml"
+    description: >-
+      En el adulto con hipertensión arterial esencial que inicia monoterapia
+      sin indicaciones imperiosas, los cuatro candidatos de la Lista Modelo
+      —hidroclorotiazida, amlodipino, enalapril y losartán— empatan en
+      mortalidad total. Este episodio recorre el informe de selección SEL0024
+      para mostrar dónde se rompe ese empate. En ALLHAT, el antagonista del
+      calcio pierde en insuficiencia cardiaca (10,2 % frente a 7,7 %; RR 1,38)
+      y el IECA pierde en ictus, insuficiencia cardiaca y enfermedad
+      cardiovascular combinada: la tiazida es la única que no pierde en
+      ningún desenlace duro, aunque esa evidencia se lea desde clortalidona y
+      lisinopril. Después, la paradoja de la tolerancia: pese a la
+      hipopotasemia, la hiponatremia y la hiperuricemia, la revisión Cochrane
+      muestra menos abandonos por efectos adversos con la tiazida que con el
+      IECA (RR 0,73) y que con el amlodipino (RR 0,81). Analizamos por qué el
+      amlodipino queda como alternativa donde no hay laboratorio, por qué el
+      enalapril sólo pasa al frente ante una indicación imperiosa, y por qué
+      el losartán, sin comparación directa y con su evidencia limitada al
+      ensayo LIFE frente a atenolol, queda reservado. Cierra con la dosis:
+      12,5 a 25 mg al día, porque por encima se gana daño metabólico sin
+      ganancia tensional.
+
   - slug: "paralisis-supranuclear-progresiva"
     number: 3
     season: 1

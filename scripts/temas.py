@@ -56,7 +56,11 @@ COLECCIONES = {
     "fichas": "FT",
 }
 
-BASE_FUENTE = "https://powersemiotics.com/farmacosemiotics"
+# La fuente canónica de un episodio es el YAML del tema en el repositorio de
+# farmacosemiotics. Los primeros episodios enlazaban la página del sitio; se
+# siguen reconociendo para que `listar` no los dé por pendientes.
+BASE_FUENTE = "https://github.com/alcyedmundo281/farmacosemiotics/blob/main"
+BASE_SITIO = "https://powersemiotics.com/farmacosemiotics"
 
 # Campos que no aportan nada a un guion de audio: metadatos de control
 # documental, autoría y licencia. Se excluyen de fuente.md para que NotebookLM
@@ -87,7 +91,18 @@ class Tema:
 
     @property
     def url(self) -> str:
-        return f"{BASE_FUENTE}/{self.coleccion}/{self.ruta.stem}.html"
+        return f"{BASE_FUENTE}/{self.coleccion}/{self.ruta.name}"
+
+    @property
+    def urls(self) -> tuple[str, str]:
+        """Todas las formas con que un episodio puede citar este tema."""
+        return self.url, f"{BASE_SITIO}/{self.coleccion}/{self.ruta.stem}.html"
+
+    def episodio(self, publicados: dict[str, int]) -> int | None:
+        for url in self.urls:
+            if url in publicados:
+                return publicados[url]
+        return None
 
 
 def morir(msg: str) -> None:
@@ -330,7 +345,7 @@ def cmd_listar(args: argparse.Namespace) -> int:
     pendientes = 0
     coleccion_actual = ""
     for tema in temas:
-        numero = publicados.get(tema.url.rstrip("/"))
+        numero = tema.episodio(publicados)
         if numero is None:
             pendientes += 1
         elif args.pendientes:
@@ -362,10 +377,11 @@ def cmd_preparar(args: argparse.Namespace) -> int:
 
     config = Path(args.config)
     publicados = episodios_por_url(config)
-    if tema.url.rstrip("/") in publicados:
+    numero_publicado = tema.episodio(publicados)
+    if numero_publicado is not None:
         morir(
-            f"{tema.ident} ya es el episodio "
-            f"{publicados[tema.url.rstrip('/')]}. Los temas no se republican."
+            f"{tema.ident} ya es el episodio {numero_publicado}. "
+            "Los temas no se republican."
         )
 
     cfg = yaml.safe_load(config.read_text(encoding="utf-8")) if config.exists() else {}

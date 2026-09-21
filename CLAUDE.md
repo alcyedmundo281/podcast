@@ -109,6 +109,12 @@ uv run python scripts/temas.py preparar SEL0024 --fuente ../farmacosemiotics
 `notebooklm/` está en `.gitignore`: es material de trabajo regenerable desde
 farmacosemiotics en cualquier momento.
 
+El `source_url` de un episodio es el **YAML del tema en el repositorio de
+farmacosemiotics** (`github.com/alcyedmundo281/farmacosemiotics/blob/main/…`),
+no una página de powersemiotics.com, que es el portal general de la
+organización. ep002 enlaza aún la página del sitio; `temas.py` reconoce las
+dos formas para no darlo por pendiente.
+
 El skill de `.claude/skills/notebooklm/` automatiza el paso del navegador, pero
 **sólo funciona en un cliente con la extensión de Claude en Chrome**. En una
 sesión sin navegador —Claude Code en la web, por ejemplo— no hay `computer` ni
