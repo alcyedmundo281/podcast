@@ -35,10 +35,9 @@ import sys
 import textwrap
 import unicodedata
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
-from zoneinfo import ZoneInfo
 
 try:
     import yaml
@@ -284,7 +283,9 @@ def construir_entrada(tema: Tema, datos: JSON, numero: int) -> str:
         break_on_hyphens=False,
         break_long_words=False,
     )
-    ahora = datetime.now(ZoneInfo("America/Guayaquil"))
+    # Offset fijo y no ZoneInfo: en Windows no hay base de zonas sin el paquete
+    # tzdata, y Ecuador no tiene horario de verano.
+    ahora = datetime.now(timezone(timedelta(hours=-5)))
     refs = datos.get("refs") or []
 
     return f"""\
