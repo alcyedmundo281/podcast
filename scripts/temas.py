@@ -1,13 +1,22 @@
 #!/usr/bin/env python3
 """
-temas.py — puente entre farmacosemiotics y el podcast.
+temas.py — puente entre el ecosistema Powersemiotics y el podcast.
 
 El audio de cada episodio lo genera NotebookLM (Audio Overview) a partir de un
-tema de farmacosemiotics. Ese paso vive en el navegador y no se puede
-automatizar desde el repositorio: necesita una sesión de Google. Lo que sí es
-mecánico es todo lo que lo rodea, y es lo que hace este script.
+tema publicado. Ese paso vive en el navegador y no se puede automatizar desde el
+repositorio: necesita una sesión de Google. Lo que sí es mecánico es todo lo que
+lo rodea, y es lo que hace este script.
 
-  listar     qué temas de farmacosemiotics ya tienen episodio y cuáles no
+Fuentes que entiende `--fuente`:
+
+  farmacosemiotics   un clon del repositorio: selecciones (SEL) y fichas (FT).
+  medsemiotics       el sitio publicado (https://powersemiotics.com/medsemiotics/)
+                     o un clon del repositorio. Son candidatos los artículos del
+                     blog que ya tienen caso socrático publicado (HM####): el
+                     caso da el hilo del episodio y la evidencia de
+                     medsemiotics-db, las cifras.
+
+  listar     qué temas ya tienen episodio y cuáles no
   preparar   deja listo el material de un tema para pegarlo en NotebookLM
 
 `preparar` escribe tres archivos en notebooklm/<slug>/:
@@ -26,18 +35,24 @@ Uso:
   python3 scripts/temas.py listar   --fuente ../farmacosemiotics
   python3 scripts/temas.py listar   --fuente ../farmacosemiotics --pendientes
   python3 scripts/temas.py preparar SEL0003 --fuente ../farmacosemiotics
+  python3 scripts/temas.py listar   --fuente https://powersemiotics.com/medsemiotics/
+  python3 scripts/temas.py preparar HM6001 --fuente https://powersemiotics.com/medsemiotics/
 """
 
 from __future__ import annotations
 
 import argparse
+import json
+import re
 import sys
 import textwrap
 import unicodedata
+import urllib.request
+from collections.abc import Callable
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from typing import Any
+from typing import Any, NoReturn
 
 try:
     import yaml
@@ -62,6 +77,13 @@ COLECCIONES = {
 BASE_FUENTE = "https://github.com/alcyedmundo281/farmacosemiotics/blob/main"
 BASE_SITIO = "https://powersemiotics.com/farmacosemiotics"
 
+# medsemiotics se lee de lo PUBLICADO: el índice del blog y el JSON de cada
+# artículo, que ya incluye su caso socrático. La fuente canónica del episodio es
+# la página del artículo, como en ep001 y ep003.
+SITIO_MED = "https://powersemiotics.com/medsemiotics"
+INDICE_MED = "assets/data/blog-index.json"
+AGENTE = "medsemiotics-podcast/1.0 (+https://powersemiotics.com/podcast/)"
+
 # Campos que no aportan nada a un guion de audio: metadatos de control
 # documental, autoría y licencia. Se excluyen de fuente.md para que NotebookLM
 # no los tome por contenido.
@@ -81,22 +103,21 @@ OMITIR = frozenset(
 
 @dataclass(frozen=True)
 class Tema:
-    """Un tema de farmacosemiotics: una selección o una ficha."""
+    """Un tema publicable: selección o ficha de farmacosemiotics, o caso de medsemiotics."""
 
     ident: str
     coleccion: str
-    ruta: Path
     slug: str
     titulo: str
+    # Todas las formas con que un episodio puede citar este tema; la primera es
+    # la canónica y es la que va a `source_url`.
+    urls: tuple[str, ...]
+    cargar: Callable[[], JSON]
+    especialidad: str = "REVISAR"
 
     @property
     def url(self) -> str:
-        return f"{BASE_FUENTE}/{self.coleccion}/{self.ruta.name}"
-
-    @property
-    def urls(self) -> tuple[str, str]:
-        """Todas las formas con que un episodio puede citar este tema."""
-        return self.url, f"{BASE_SITIO}/{self.coleccion}/{self.ruta.stem}.html"
+        return self.urls[0]
 
     def episodio(self, publicados: dict[str, int]) -> int | None:
         for url in self.urls:
@@ -105,7 +126,7 @@ class Tema:
         return None
 
 
-def morir(msg: str) -> None:
+def morir(msg: str) -> NoReturn:
     sys.exit(f"ERROR: {msg}")
 
 
@@ -121,7 +142,65 @@ def titulo_de(datos: JSON, coleccion: str) -> str:
     return str(datos.get("titulo") or datos.get("indicacion") or "(sin título)")
 
 
-def cargar_temas(fuente: Path) -> list[Tema]:
+def slugificar(texto: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", sin_acentos(texto).lower()).strip("-")
+
+
+def es_medsemiotics(fuente: str) -> bool:
+    if fuente.startswith(("https://", "http://")):
+        return True
+    return (Path(fuente) / INDICE_MED).is_file()
+
+
+def leer_json(fuente: str, relativa: str) -> object:
+    """Un JSON de medsemiotics, del sitio publicado o de un clon local."""
+    if fuente.startswith(("https://", "http://")):
+        url = f"{fuente.rstrip('/')}/{relativa}"
+        peticion = urllib.request.Request(url, headers={"User-Agent": AGENTE})
+        with urllib.request.urlopen(peticion, timeout=30) as respuesta:
+            return json.loads(respuesta.read().decode("utf-8"))
+    return json.loads((Path(fuente) / relativa).read_text(encoding="utf-8"))
+
+
+def cargar_casos(fuente: str) -> list[Tema]:
+    """Artículos de medsemiotics con caso socrático publicado."""
+    indice = leer_json(fuente, INDICE_MED)
+    if not isinstance(indice, list):
+        morir(f"{INDICE_MED} de {fuente} no es una lista de artículos")
+    temas: list[Tema] = []
+    for articulo in indice:
+        if not articulo.get("has_caso"):
+            continue
+        grounding = articulo["grounding"]
+        slug_articulo = str(articulo["slug"])
+        relativa = f"assets/data/posts/{slug_articulo}.json"
+
+        def cargar(relativa: str = relativa) -> JSON:
+            datos = leer_json(fuente, relativa)
+            if not isinstance(datos, dict):
+                morir(f"{relativa} de {fuente} no es un artículo")
+            return datos
+
+        temas.append(
+            Tema(
+                ident=str(grounding["condicion_id"]).replace(":", ""),
+                coleccion="casos",
+                slug=slugificar(str(grounding["condicion_nombre"])),
+                titulo=str(grounding["condicion_nombre"]),
+                urls=(f"{SITIO_MED}/post.html?slug={slug_articulo}",),
+                cargar=cargar,
+                especialidad=str(articulo.get("category") or "REVISAR"),
+            )
+        )
+    if not temas:
+        morir(f"{fuente} no tiene artículos con caso socrático publicado")
+    return sorted(temas, key=lambda t: t.ident)
+
+
+def cargar_temas(fuente_txt: str) -> list[Tema]:
+    if es_medsemiotics(fuente_txt):
+        return cargar_casos(fuente_txt)
+    fuente = Path(fuente_txt)
     if not fuente.is_dir():
         morir(f"no existe el directorio de farmacosemiotics: {fuente}")
 
@@ -136,13 +215,22 @@ def cargar_temas(fuente: Path) -> list[Tema]:
             ident, _, slug = ruta.stem.partition("-")
             if not ident.startswith(prefijo):
                 continue
+
+            def cargar(ruta: Path = ruta) -> JSON:
+                datos: JSON = yaml.safe_load(ruta.read_text(encoding="utf-8")) or {}
+                return datos
+
             temas.append(
                 Tema(
                     ident=ident,
                     coleccion=coleccion,
-                    ruta=ruta,
                     slug=slug,
                     titulo=titulo_de(datos, coleccion),
+                    urls=(
+                        f"{BASE_FUENTE}/{coleccion}/{ruta.name}",
+                        f"{BASE_SITIO}/{coleccion}/{ruta.stem}.html",
+                    ),
+                    cargar=cargar,
                 )
             )
     if not temas:
@@ -210,7 +298,67 @@ def render(valor: object, nivel: int = 0) -> list[str]:
     return lineas
 
 
+def _lineas_datos(datos: list[JSON]) -> list[str]:
+    return [f"- {d['etiqueta']}: {d['valor']}" for d in datos]
+
+
+def construir_fuente_caso(tema: Tema, articulo: JSON) -> str:
+    """Artículo de medsemiotics: el caso da el hilo; la evidencia, las cifras."""
+    caso: JSON = articulo["caso"]
+    triada: JSON = articulo.get("triada") or {}
+    partes = [
+        f"# {tema.titulo}",
+        f"Artículo de medsemiotics ({tema.ident}). Fuente canónica: {tema.url}",
+        "Las cifras de evidencia (cocientes de verosimilitud, sensibilidad, "
+        "especificidad e intervalos) provienen de medsemiotics-db y cada una "
+        "está anclada a una referencia de PubMed. Cuando un hallazgo figura como "
+        "«LR no medido» o «LR no medible», ese cociente no existe: no lo inventes "
+        "ni lo estimes. El paciente del caso es ficticio.",
+        "## Tríada semiótica",
+        f"- Signo: {triada.get('significante', '')}",
+        f"- Interpretación: {triada.get('significado', '')}",
+        f"- Decisión: {triada.get('decision', '')}",
+        "## Caso clínico socrático",
+        "Objetivos de aprendizaje:",
+        *(f"- {o}" for o in caso["objetivos"]),
+        f"### {caso['vineta']['titulo']}",
+        str(caso["vineta"]["texto"]),
+        *_lineas_datos(caso["vineta"]["datos"]),
+    ]
+    for etapa in caso["etapas"]:
+        partes.append(
+            f"### Etapa {etapa['numero']} · {etapa['fase_etiqueta']}: {etapa['titulo']}"
+        )
+        if etapa.get("informacion"):
+            partes.append(str(etapa["informacion"]))
+        partes.extend(_lineas_datos(etapa["datos"]))
+        for h in etapa["hallazgos"]:
+            cifras = "; ".join(h["cifras"]) or h["estado"]
+            notas = " ".join(
+                str(h[k]) for k in ("decision", "motivo", "advertencia") if h.get(k)
+            )
+            poblacion = f" Población: {h['poblacion']}." if h.get("poblacion") else ""
+            partes.append(
+                f"- Evidencia de medsemiotics-db · {h['nombre']} ({h['rol']}): "
+                f"{cifras}.{poblacion} {notas}".rstrip()
+            )
+        for p in etapa["preguntas"]:
+            partes.append(f"Pregunta socrática: {p['pregunta']}")
+            partes.append(f"Razonamiento esperado: {p['clave']}")
+    partes += [
+        "### Cierre",
+        str(caso["cierre"]["sintesis"]),
+        "Lo que la evidencia aún no responde:",
+        *(f"- {n}" for n in caso["cierre"]["necesidades_aprendizaje"]),
+        "## Ficha de evidencia completa (medsemiotics-db)",
+        str(articulo.get("body") or ""),
+    ]
+    return "\n\n".join(partes) + "\n"
+
+
 def construir_fuente(tema: Tema, datos: JSON) -> str:
+    if tema.coleccion == "casos":
+        return construir_fuente_caso(tema, datos)
     cuerpo = "\n".join(render(datos))
     return (
         f"# {tema.titulo}\n\n"
@@ -262,6 +410,14 @@ ENCUADRES = {
         "El interés del episodio está en el criterio decisorio —por qué gana "
         "el que gana—, no en recitar la tabla de candidatos uno por uno."
     ),
+    "casos": (
+        "Este documento es un caso clínico socrático de medsemiotics construido "
+        "sobre la evidencia de medsemiotics-db. Sigue el caso etapa por etapa: "
+        "plantea cada pregunta al oyente y deja un silencio breve antes de "
+        "razonarla. El eje del episodio es cuánto cambia la probabilidad con cada "
+        "hallazgo —y por qué a veces no se puede saber—: si la base declara un "
+        "LR no medido o no medible, explica qué significa en vez de dar un número."
+    ),
     "fichas": (
         "Este documento es una ficha de farmacoterapia: la molécula ya está "
         "elegida y lo que sigue es usarla bien —cribado previo, posología, "
@@ -284,8 +440,18 @@ def construir_prompt(tema: Tema) -> str:
 # --------------------------------------------------------------------------- #
 
 
-def construir_entrada(tema: Tema, datos: JSON, numero: int) -> str:
+def pista_y_refs(tema: Tema, datos: JSON) -> tuple[str, list[str]]:
+    """Punto de partida de las notas del episodio y referencias de la fuente."""
+    if tema.coleccion == "casos":
+        caso: JSON = datos["caso"]
+        refs = [str(r["id"]) for r in caso.get("referencias") or []]
+        return str(caso["cierre"]["sintesis"]), refs
     pista = datos.get("conclusion") or datos.get("pregunta") or ""
+    return str(pista), [str(r) for r in datos.get("refs") or []]
+
+
+def construir_entrada(tema: Tema, datos: JSON, numero: int) -> str:
+    pista, refs = pista_y_refs(tema, datos)
     # El YAML del feed pliega la descripción con `>-`; se envuelve a mano para
     # no dejar una línea de 400 caracteres entre entradas de 75.
     pista_txt = textwrap.fill(
@@ -301,7 +467,6 @@ def construir_entrada(tema: Tema, datos: JSON, numero: int) -> str:
     # Offset fijo y no ZoneInfo: en Windows no hay base de zonas sin el paquete
     # tzdata, y Ecuador no tiene horario de verano.
     ahora = datetime.now(timezone(timedelta(hours=-5)))
-    refs = datos.get("refs") or []
 
     return f"""\
 # Borrador para podcast.yml — tema {tema.ident}
@@ -320,7 +485,7 @@ def construir_entrada(tema: Tema, datos: JSON, numero: int) -> str:
     duration: "REVISAR"          # HH:MM:SS, del MP3 ya masterizado
     tag: "ep{numero:03d}"
     audio_file: "ep{numero:03d}.mp3"
-    topic: "REVISAR/{tema.slug}"   # <especialidad>/<slug>, como en medsemiotics-db
+    topic: "{tema.especialidad}/{tema.slug}"   # <especialidad>/<slug>; completar si dice REVISAR
     transcript: "transcripts/ep{numero:03d}.vtt"
     source_url: "{tema.url}"
     description: >-
@@ -329,7 +494,7 @@ def construir_entrada(tema: Tema, datos: JSON, numero: int) -> str:
 
 {pista_txt}
 
-# Referencias del documento fuente ({len(refs)}): {", ".join(str(r) for r in refs) or "(ninguna)"}
+# Referencias del documento fuente ({len(refs)}): {", ".join(refs) or "(ninguna)"}
 """
 
 
@@ -339,7 +504,7 @@ def construir_entrada(tema: Tema, datos: JSON, numero: int) -> str:
 
 
 def cmd_listar(args: argparse.Namespace) -> int:
-    temas = cargar_temas(Path(args.fuente))
+    temas = cargar_temas(args.fuente)
     publicados = episodios_por_url(Path(args.config))
 
     pendientes = 0
@@ -363,8 +528,8 @@ def cmd_listar(args: argparse.Namespace) -> int:
 
 
 def cmd_preparar(args: argparse.Namespace) -> int:
-    temas = cargar_temas(Path(args.fuente))
-    ident = args.ident.upper()
+    temas = cargar_temas(args.fuente)
+    ident = args.ident.upper().replace(":", "")
 
     elegidos = [
         t for t in temas if t.ident == ident or sin_acentos(t.slug) == ident.lower()
@@ -388,7 +553,7 @@ def cmd_preparar(args: argparse.Namespace) -> int:
     numeros = [int(e["number"]) for e in (cfg or {}).get("episodes") or []]
     numero = max(numeros, default=0) + 1
 
-    datos = yaml.safe_load(tema.ruta.read_text(encoding="utf-8")) or {}
+    datos = tema.cargar()
     destino = Path(args.salida) / tema.slug
     destino.mkdir(parents=True, exist_ok=True)
 
@@ -416,6 +581,12 @@ def cmd_preparar(args: argparse.Namespace) -> int:
     return 0
 
 
+AYUDA_FUENTE = (
+    "clon de farmacosemiotics, o medsemiotics: su sitio publicado "
+    f"({SITIO_MED}/) o un clon"
+)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument(
@@ -426,13 +597,13 @@ def main() -> None:
     sub = ap.add_subparsers(dest="cmd", required=True)
 
     pl = sub.add_parser("listar", help="temas con y sin episodio")
-    pl.add_argument("--fuente", required=True, help="clon de farmacosemiotics")
+    pl.add_argument("--fuente", required=True, help=AYUDA_FUENTE)
     pl.add_argument("--pendientes", action="store_true", help="solo los que faltan")
     pl.set_defaults(func=cmd_listar)
 
     pp = sub.add_parser("preparar", help="material de un tema para NotebookLM")
-    pp.add_argument("ident", help="id del tema (p. ej. SEL0003) o su slug")
-    pp.add_argument("--fuente", required=True, help="clon de farmacosemiotics")
+    pp.add_argument("ident", help="id del tema (p. ej. SEL0003, HM6001) o su slug")
+    pp.add_argument("--fuente", required=True, help=AYUDA_FUENTE)
     pp.add_argument("--salida", default=str(RAIZ / "notebooklm"))
     pp.set_defaults(func=cmd_preparar)
 
