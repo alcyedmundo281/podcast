@@ -86,16 +86,24 @@ episodio, y una publicación urgente no debe tentar a saltarse el linter.
 Los temas vienen del ecosistema **Powersemiotics** —ep001 y ep003 de
 medsemiotics, ep002 y ep004 de farmacosemiotics— y el audio lo genera **NotebookLM**
 (Audio Overview). Ese paso vive en el navegador y no se puede automatizar
-desde el repositorio: necesita sesión de Google. Para los temas de
-farmacosemiotics (selecciones y fichas), todo lo que lo rodea es mecánico y lo
-hace `scripts/temas.py`.
+desde el repositorio: necesita sesión de Google. Todo lo que lo rodea es
+mecánico y lo hace `scripts/temas.py`, que tiene puente con dos proyectos:
+
+- **farmacosemiotics** (selecciones y fichas), desde un clon del repositorio.
+- **medsemiotics** (artículos del blog con caso socrático publicado, `HM####`),
+  desde el **sitio publicado** o desde un clon. No hay bandeja de entrada: un
+  tema entra al podcast cuando su caso se publica en el blog, y `listar` lo
+  muestra como pendiente. El caso da el hilo del episodio; la evidencia de
+  medsemiotics-db, las cifras.
 
 ```bash
 # qué temas ya tienen episodio y cuáles faltan
 uv run python scripts/temas.py listar --fuente ../farmacosemiotics --pendientes
+uv run python scripts/temas.py listar --fuente https://powersemiotics.com/medsemiotics/ --pendientes
 
 # deja el material de un tema en notebooklm/<slug>/
 uv run python scripts/temas.py preparar SEL0024 --fuente ../farmacosemiotics
+uv run python scripts/temas.py preparar HM6001 --fuente https://powersemiotics.com/medsemiotics/
 ```
 
 `preparar` escribe tres archivos:
@@ -113,14 +121,18 @@ farmacosemiotics en cualquier momento.
 
 Un episodio puede salir de **cualquier proyecto del ecosistema
 Powersemiotics** (medsemiotics, medsemiotics-db, farmacosemiotics,
-biosemiotics…); farmacosemiotics es sólo el que tiene puente mecánico.
+biosemiotics…); farmacosemiotics y medsemiotics son los que tienen puente
+mecánico.
 `source_url` apunta al material concreto del que sale el episodio, dentro de
 su proyecto: una página bajo `powersemiotics.com/<proyecto>/` (ep001–ep003) o
 el archivo en el repositorio del proyecto (ep004). La portada de
 powersemiotics.com es el portal general de la organización, no una fuente.
 Para los temas de farmacosemiotics, `temas.py` propone el YAML del tema en su
 repositorio (`github.com/alcyedmundo281/farmacosemiotics/blob/main/…`) y
-reconoce también la página del sitio, que es como lo cita ep002.
+reconoce también la página del sitio, que es como lo cita ep002. Para los de
+medsemiotics propone la página del artículo
+(`powersemiotics.com/medsemiotics/post.html?slug=…`) y el `topic`
+`<especialidad>/<slug>` con la categoría del blog.
 
 El skill de `.claude/skills/notebooklm/` automatiza el paso del navegador, pero
 **sólo funciona en un cliente con la extensión de Claude en Chrome**. En una
