@@ -38,7 +38,7 @@ import importlib
 import os
 import re
 import sys
-from collections.abc import Iterable, Sequence
+from collections.abc import Iterable, Iterator, Sequence
 from dataclasses import dataclass
 from pathlib import Path
 from typing import NoReturn, Protocol
@@ -121,13 +121,13 @@ def habilitar_cuda_windows() -> None:
         os.environ["PATH"] = os.pathsep.join([*carpetas, os.environ.get("PATH", "")])
 
 
-def cargar_modelo(dispositivo: str) -> Modelo:
+def cargar_modelo(dispositivo: str, precision: str | None = None) -> Modelo:
     habilitar_cuda_windows()
     try:
         fw = importlib.import_module("faster_whisper")
     except ModuleNotFoundError:
         morir("falta faster-whisper: uv sync --group transcripcion")
-    tipo = "float16" if dispositivo == "cuda" else "int8"
+    tipo = precision or ("float16" if dispositivo == "cuda" else "int8")
     modelo: Modelo = fw.WhisperModel(MODELO, device=dispositivo, compute_type=tipo)
     return modelo
 
@@ -202,6 +202,15 @@ def ausentes(terminos: Sequence[str], transcripcion: str) -> list[str]:
 # --------------------------------------------------------------------------- #
 #  Segmentos de Whisper -> cues -> VTT y Markdown
 # --------------------------------------------------------------------------- #
+
+
+def con_progreso(segmentos: Iterable[Segmento], total: float) -> Iterator[Segmento]:
+    """faster-whisper transcribe en diferido, al iterar: sin esto un
+    episodio largo en CPU corre horas sin dar señal de vida."""
+    for seg in segmentos:
+        pct = 100 * seg.end / total if total else 0.0
+        print(f"  {duracion_corta(seg.end)}  {pct:3.0f} %", file=sys.stderr, flush=True)
+        yield seg
 
 
 def a_cues(segmentos: Iterable[Segmento]) -> list[Cue]:
@@ -325,6 +334,12 @@ def main() -> None:
     ap.add_argument("--out", type=Path, default=Path("docs/transcripts"))
     ap.add_argument("--dispositivo", choices=["cuda", "cpu"], default="cuda")
     ap.add_argument(
+        "--precision",
+        choices=["float16", "int8_float16", "int8", "float32"],
+        help="compute_type de CTranslate2 (por defecto float16 en cuda, int8 en "
+        "cpu). Una GPU sin float16 eficiente, como la MX330, necesita int8",
+    )
+    ap.add_argument(
         "--forzar",
         action="store_true",
         help="sobrescribir una transcripción existente (pierde las correcciones)",
@@ -345,7 +360,7 @@ def main() -> None:
 
     terminos = terminos_de(args.fuente) if args.fuente else []
     vocabulario = vocabulario_de(args.fuente) if args.fuente else []
-    modelo = cargar_modelo(args.dispositivo)
+    modelo = cargar_modelo(args.dispositivo, args.precision)
     print(f"transcribiendo {audio} con {MODELO} en {args.dispositivo}…")
     segmentos, info = modelo.transcribe(
         str(audio),
@@ -359,7 +374,7 @@ def main() -> None:
         # antepone a todas.
         hotwords=prompt_inicial([*terminos, *vocabulario]),
     )
-    cues = a_cues(segmentos)
+    cues = a_cues(con_progreso(segmentos, info.duration))
     if not cues:
         morir("Whisper no devolvió texto")
 
