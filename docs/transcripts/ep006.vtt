@@ -1,0 +1,2294 @@
+WEBVTT
+
+NOTE
+Transcripción del episodio 6 de medsemiotics — Hepatitis viral aguda.
+Generada automáticamente y corregida en terminología clínica.
+Puede contener errores; la fuente autorizada es el audio.
+
+1
+00:00:00.000 --> 00:00:04.220
+Bienvenidos a nuestra inmersión profunda en la
+
+2
+00:00:04.220 --> 00:00:08.220
+evidencia clínica de hoy. Vamos a desarmar un caso
+
+3
+00:00:08.220 --> 00:00:11.700
+clínico directamente de la base de datos de medsemiotics.
+
+4
+00:00:12.020 --> 00:00:16.080
+Y la idea es responder a una pregunta que, la verdad, de entrada
+
+5
+00:00:16.080 --> 00:00:17.240
+parece una locura.
+
+6
+00:00:17.300 --> 00:00:20.000
+Sí, porque desafía bastante lo que nos enseñan.
+
+7
+00:00:20.000 --> 00:00:24.300
+Totalmente. Queremos ver qué sucede en el razonamiento médico cuando
+
+8
+00:00:24.300 --> 00:00:28.620
+los signos, digamos los más obvios y clásicos de una enfermedad,
+
+9
+00:00:28.640 --> 00:00:31.920
+resultan ser estadísticamente inútiles.
+
+10
+00:00:32.220 --> 00:00:36.640
+Ah, ese es un punto fascinante, porque normalmente existe esta
+
+11
+00:00:36.640 --> 00:00:39.880
+expectativa de que la medicina funciona un poco como la ingeniería, ¿no?
+
+12
+00:00:40.040 --> 00:00:41.280
+O sea, causa y efecto.
+
+13
+00:00:41.280 --> 00:00:45.700
+Exacto. Si un paciente se cae, le duele la pierna, tomamos una radiografía,
+
+14
+00:00:45.720 --> 00:00:50.160
+vemos una línea blanca irregular en el hueso, señalamos y decimos, bueno,
+
+15
+00:00:50.280 --> 00:00:51.220
+ahí está la fractura.
+
+16
+00:00:51.400 --> 00:00:55.040
+Claro, tienes una prueba totalmente independiente que confirma la sospecha.
+
+17
+00:00:55.180 --> 00:00:59.520
+Pero cuando entramos en el terreno de la semiología clínica y la medicina basada en
+
+18
+00:00:59.520 --> 00:01:03.960
+la evidencia, especialmente con enfermedades hepáticas, esa
+
+19
+00:01:03.960 --> 00:01:06.560
+claridad radiográfica desaparece por completo.
+
+20
+00:01:06.560 --> 00:01:10.580
+Se esfuma. Y por eso nuestra misión en esta sesión
+
+21
+00:01:10.580 --> 00:01:14.980
+no es repasar lo básico que cualquiera puede leer en un
+
+22
+00:01:14.980 --> 00:01:15.960
+manual de patología.
+
+23
+00:01:16.220 --> 00:01:17.020
+No, para nada.
+
+24
+00:01:17.240 --> 00:01:21.540
+Lo que queremos es deconstruir exactamente cómo los hallazgos
+
+25
+00:01:21.540 --> 00:01:25.960
+físicos modifican la probabilidad pretest y por qué a veces
+
+26
+00:01:25.960 --> 00:01:29.900
+la estadística médica choca de frente con nuestra intuición.
+
+27
+00:01:29.900 --> 00:01:34.240
+Y ese choque ocurre precisamente porque, pues los clínicos estamos
+
+28
+00:01:34.240 --> 00:01:36.760
+entrenados para buscar certezas cuantificables.
+
+29
+00:01:37.020 --> 00:01:38.460
+Queremos el número duro.
+
+30
+00:01:38.520 --> 00:01:43.020
+Exacto. Queremos saber exactamente qué tanto peso tiene un síntoma para confirmar
+
+31
+00:01:43.020 --> 00:01:44.220
+o descartar una enfermedad.
+
+32
+00:01:44.260 --> 00:01:44.640
+Ajá.
+
+33
+00:01:44.740 --> 00:01:48.580
+Pero en este caso clínico que vamos a analizar, la evidencia nos obliga a
+
+34
+00:01:48.580 --> 00:01:53.060
+enfrentarnos a lagunas de información y a paradojas matemáticas que,
+
+35
+00:01:53.160 --> 00:01:57.620
+digamos, desafían la forma en que tradicionalmente diagnosticamos.
+
+36
+00:01:57.620 --> 00:02:01.720
+Bueno, para entender cómo la evidencia choca con estos límites,
+
+37
+00:02:01.880 --> 00:02:06.180
+quiero que pongas sobre la mesa los detalles de este caso socrático que
+
+38
+00:02:06.180 --> 00:02:09.180
+tenemos en las fuentes. ¿A quién estamos evaluando hoy?
+
+39
+00:02:09.460 --> 00:02:12.400
+A ver, tenemos a un varón de 26 años.
+
+40
+00:02:12.560 --> 00:02:14.500
+Y su ocupación es clave aquí.
+
+41
+00:02:15.220 --> 00:02:17.840
+Trabaja como ayudante de cocina en un restaurante.
+
+42
+00:02:17.960 --> 00:02:20.740
+Uy, ¿eso ya enciende algunas alarmas epidemiológicas?
+
+43
+00:02:20.740 --> 00:02:25.060
+Sí, sin duda. El motivo de consulta principal, o sea, lo que lo
+
+44
+00:02:25.060 --> 00:02:29.320
+trae a urgencias, es que desde hace dos días ha notado que su orina tiene un
+
+45
+00:02:29.320 --> 00:02:30.960
+color de té muy oscuro.
+
+46
+00:02:31.400 --> 00:02:35.620
+Y además, sus compañeros de trabajo le comentaron que tiene los ojos amarillos.
+
+47
+00:02:35.760 --> 00:02:36.920
+¿Y sobre los antecedentes?
+
+48
+00:02:37.300 --> 00:02:41.300
+Pues, al indagar, relata que hace aproximadamente un mes
+
+49
+00:02:41.300 --> 00:02:43.640
+regresó de un viaje a una zona rural.
+
+50
+00:02:44.000 --> 00:02:47.840
+Y ahí admite haber consumido agua sin tratar de un pozo.
+
+51
+00:02:47.840 --> 00:02:51.400
+Ok. Agua no potable hace un mes.
+
+52
+00:02:51.700 --> 00:02:54.880
+Ajá. No tiene antecedentes de consumo habitual de alcohol.
+
+53
+00:02:55.160 --> 00:02:57.820
+No toma ningún tipo de medicamento crónico.
+
+54
+00:02:58.420 --> 00:03:02.240
+Niega rotundamente el uso de productos de herbolario o suplementos.
+
+55
+00:03:02.360 --> 00:03:05.480
+Que siempre hay que preguntarlo en temas hepáticos, claro.
+
+56
+00:03:05.500 --> 00:03:09.720
+Sí, siempre. Y tampoco reporta conductas sexuales de riesgo ni uso de
+
+57
+00:03:09.720 --> 00:03:10.580
+drogas intravenosas.
+
+58
+00:03:10.580 --> 00:03:14.920
+A ver, si nos detenemos solo en ese motivo de consulta
+
+59
+00:03:14.920 --> 00:03:19.020
+y en los antecedentes, la mente de cualquier clínico que nos
+
+60
+00:03:19.020 --> 00:03:21.680
+escucha ya está corriendo hacia un diagnóstico.
+
+61
+00:03:21.800 --> 00:03:22.740
+Es casi automático.
+
+62
+00:03:23.000 --> 00:03:27.400
+Pero retrocedamos un poco al pródromo, a lo
+
+63
+00:03:27.400 --> 00:03:30.360
+que pasó antes de que el paciente se pusiera amarillo.
+
+64
+00:03:30.500 --> 00:03:32.080
+Ese es un detalle súper importante.
+
+65
+00:03:32.340 --> 00:03:36.080
+El paciente refiere que una semana antes de notar la orina oscura,
+
+66
+00:03:36.120 --> 00:03:39.240
+comenzó con un cuadro de malestar general insidioso.
+
+67
+00:03:39.520 --> 00:03:40.080
+Ajá.
+
+68
+00:03:40.080 --> 00:03:44.200
+Presentó astenia profunda, anorexia, algunas náuseas esporádicas
+
+69
+00:03:44.200 --> 00:03:48.460
+y una sensación febril que no llegó a cuantificarse con
+
+70
+00:03:48.460 --> 00:03:48.940
+termómetro.
+
+71
+00:03:49.260 --> 00:03:53.300
+Bueno, quiero hacer una pausa aquí y cuestionar un poco este punto.
+
+72
+00:03:53.800 --> 00:03:58.180
+Si miramos esa primera semana de forma aislada, o sea, eso parece un síndrome
+
+73
+00:03:58.180 --> 00:03:59.460
+viral inespecífico.
+
+74
+00:03:59.560 --> 00:04:00.100
+Sí, totalmente.
+
+75
+00:04:00.100 --> 00:04:04.520
+Podría ser influenza, un adenovirus o, literalmente, cualquier
+
+76
+00:04:04.520 --> 00:04:05.760
+gripe estacional.
+
+77
+00:04:06.220 --> 00:04:10.660
+¿Cómo justificamos siquiera la sospecha de que el hígado está fallando
+
+78
+00:04:10.660 --> 00:04:11.920
+en esa etapa temprana?
+
+79
+00:04:12.200 --> 00:04:12.980
+Es difícil.
+
+80
+00:04:13.440 --> 00:04:17.340
+Porque, digo, mucho antes de que aparezca la ictericia o la orina oscura,
+
+81
+00:04:17.440 --> 00:04:21.720
+si me llega la consulta el día 3 con fiebre y cansancio, yo no pienso en el
+
+82
+00:04:21.720 --> 00:04:22.000
+hígado.
+
+83
+00:04:22.140 --> 00:04:24.860
+Y estarías haciendo lo correcto empíricamente.
+
+84
+00:04:24.860 --> 00:04:28.980
+Exactamente. Si evalúas el pródromo de forma aislada, esos síntomas sistémicos
+
+85
+00:04:28.980 --> 00:04:31.700
+son compatibles con cientos de infecciones virales.
+
+86
+00:04:31.920 --> 00:04:32.100
+Claro.
+
+87
+00:04:32.320 --> 00:04:35.880
+La sospecha hepática en esta fase no nace de los síntomas en sí.
+
+88
+00:04:36.180 --> 00:04:40.060
+Este nace puramente del contexto epidemiológico sumado a la incubación.
+
+89
+00:04:40.320 --> 00:04:41.540
+El viaje y el agua.
+
+90
+00:04:41.940 --> 00:04:46.220
+Exacto. El viaje reciente y la ingesta de agua no tratada hace un mes
+
+91
+00:04:46.220 --> 00:04:50.680
+coinciden con el periodo de incubación típico de virus de transmisión entérica.
+
+92
+00:04:50.680 --> 00:04:55.060
+Pero siendo muy rigurosos, la sospecha real no se ancla
+
+93
+00:04:55.060 --> 00:04:59.460
+sino hasta que ese cuadro inespecífico culmina con el signo pivote.
+
+94
+00:04:59.660 --> 00:05:00.720
+La orina oscura.
+
+95
+00:05:00.800 --> 00:05:01.300
+Así es.
+
+96
+00:05:01.420 --> 00:05:05.740
+Lo cual nos lleva a la primera bofetada estadística que nos da la base de datos
+
+97
+00:05:05.740 --> 00:05:06.460
+de medsemiotics.
+
+98
+00:05:06.760 --> 00:05:11.180
+Al revisar la evidencia clínica, síntomas como la fiebre, la astenia y la
+
+99
+00:05:11.180 --> 00:05:15.440
+anorexia figuran como elementos de apoyo diagnóstico para la hepatitis viral
+
+100
+00:05:15.440 --> 00:05:15.900
+aguda.
+
+101
+00:05:16.000 --> 00:05:17.080
+Sí están listados ahí.
+
+102
+00:05:17.080 --> 00:05:21.560
+Sin embargo, los tres tienen una etiqueta que dice LRR
+
+103
+00:05:21.560 --> 00:05:25.560
+no medido, o sea, un cociente de verosimilitud
+
+104
+00:05:25.560 --> 00:05:26.740
+no medido.
+
+105
+00:05:27.180 --> 00:05:31.600
+Y para quienes nos escuchan y utilizan el teorema de Bayes en
+
+106
+00:05:31.600 --> 00:05:35.540
+su práctica diaria, pues sabemos que necesitamos ese cociente de
+
+107
+00:05:35.540 --> 00:05:39.320
+verosimilitud para tomar nuestra probabilidad pre-test y
+
+108
+00:05:39.320 --> 00:05:42.160
+convertirla en una probabilidad post-test, ¿no?
+
+109
+00:05:42.260 --> 00:05:43.800
+Claro, tras encontrar un síntoma.
+
+110
+00:05:43.800 --> 00:05:46.420
+Pero aquí no tenemos número.
+
+111
+00:05:46.620 --> 00:05:51.100
+¿Qué significa operativamente en la consulta que esto
+
+112
+00:05:51.100 --> 00:05:53.560
+sea un LR no medido?
+
+113
+00:05:53.780 --> 00:05:58.080
+Significa literalmente que existe una laguna enorme en la
+
+114
+00:05:58.080 --> 00:06:01.700
+literatura médica mundial. O sea, nadie ha publicado un estudio
+
+115
+00:06:01.700 --> 00:06:05.940
+prospectivo y riguroso que cuantifique de manera específica
+
+116
+00:06:05.940 --> 00:06:06.260
+esto.
+
+117
+00:06:06.420 --> 00:06:09.660
+Nadie ha medido cuánto cambia la probabilidad.
+
+118
+00:06:09.660 --> 00:06:14.100
+¿No? No sabemos cuánto modifican la fiebre o la anorexia, la
+
+119
+00:06:14.100 --> 00:06:17.840
+probabilidad de tener una hepatitis viral aguda, frente a otras causas de malestar
+
+120
+00:06:17.840 --> 00:06:18.160
+general.
+
+121
+00:06:18.440 --> 00:06:19.020
+¡Guau!
+
+122
+00:06:19.120 --> 00:06:23.300
+Sabemos por pura fisiopatología y por décadas de observación clínica
+
+123
+00:06:23.300 --> 00:06:26.240
+que estos síntomas apoyan el diagnóstico.
+
+124
+00:06:26.360 --> 00:06:29.060
+Sí, porque la viremia desencadena inflamación.
+
+125
+00:06:29.300 --> 00:06:33.640
+Exactamente. Hay una respuesta inflamatoria sistémica antes de que el virus
+
+126
+00:06:33.640 --> 00:06:35.820
+genere necrosis masiva en los hepatocitos.
+
+127
+00:06:35.820 --> 00:06:39.640
+Pero, digamos, no se les puede asignar un peso numérico.
+
+128
+00:06:39.800 --> 00:06:41.780
+Es un vacío puro en la evidencia.
+
+129
+00:06:41.880 --> 00:06:46.060
+Es frustrante, la verdad. Es como tener una brújula que te dice que
+
+130
+00:06:46.060 --> 00:06:49.140
+vayas al norte, pero no tiene marcados los granos.
+
+131
+00:06:49.140 --> 00:06:50.420
+Sí, buena analogía.
+
+132
+00:06:50.560 --> 00:06:53.040
+Así que no sabes exactamente cuánto desviar el timón.
+
+133
+00:06:53.400 --> 00:06:57.120
+Si los síntomas tempranos no tienen este peso numérico asignado,
+
+134
+00:06:57.560 --> 00:07:01.860
+imagino que el instinto natural de cualquier médico es esperar a que la enfermedad
+
+135
+00:07:01.860 --> 00:07:02.240
+avance.
+
+136
+00:07:02.380 --> 00:07:04.560
+Ajá, a que se vuelva visualmente obvia.
+
+137
+00:07:04.560 --> 00:07:08.260
+Exacto. Y buscar signos físicos contundentes en la exploración.
+
+138
+00:07:08.480 --> 00:07:12.100
+Pues, vamos a la exploración física de este paciente entonces.
+
+139
+00:07:12.960 --> 00:07:17.420
+En urgencias se registra una temperatura de 37.9 grados Celsius.
+
+140
+00:07:18.080 --> 00:07:19.040
+Febrícula, ok.
+
+141
+00:07:19.320 --> 00:07:23.800
+Se observa una ictericia franca y evidente tanto en las escleras como
+
+142
+00:07:23.800 --> 00:07:24.320
+en la piel.
+
+143
+00:07:24.920 --> 00:07:29.220
+El paciente además aporta una muestra de orina que confirma visualmente la coluria.
+
+144
+00:07:29.440 --> 00:07:30.680
+Bien oscuro como té.
+
+145
+00:07:30.680 --> 00:07:35.100
+Así es. Y en la anamnesis dirigida, añade que desde ayer
+
+146
+00:07:35.100 --> 00:07:39.220
+ha notado acolia. O sea, sus heces son de un color pálido, casi
+
+147
+00:07:39.220 --> 00:07:39.780
+blanco.
+
+148
+00:07:41.400 --> 00:07:41.960
+Interesante.
+
+149
+00:07:42.220 --> 00:07:45.740
+A la palpación del abdomen presenta dolor moderado en el hipocondrio derecho.
+
+150
+00:07:45.980 --> 00:07:50.480
+Y al palpar el hígado, se detecta un borde hepático romo que
+
+151
+00:07:50.480 --> 00:07:51.880
+rebasa el reborde costal.
+
+152
+00:07:52.380 --> 00:07:53.320
+Hepatomegalia, claro.
+
+153
+00:07:53.320 --> 00:07:55.700
+Y francamente doloroso para el paciente.
+
+154
+00:07:55.880 --> 00:08:00.100
+No se palpa el vaso y no hay estigmas de hepatopatía crónica como
+
+155
+00:08:00.100 --> 00:08:02.260
+arañas vasculares o eritema palmar.
+
+156
+00:08:02.480 --> 00:08:06.520
+A ver, detengámonos a deconstruir la fisiopatología
+
+157
+00:08:06.520 --> 00:08:10.700
+de estos hallazgos, empezando por ese hígado doloroso,
+
+158
+00:08:10.800 --> 00:08:14.980
+porque siempre me ha parecido curioso por qué duele un hígado
+
+159
+00:08:14.980 --> 00:08:19.420
+inflamado si el parenquim hepático en sí mismo carece de receptores
+
+160
+00:08:19.420 --> 00:08:19.780
+de dolor.
+
+161
+00:08:19.780 --> 00:08:23.980
+Ah, es que el dolor no proviene de los hepatocitos que se están
+
+162
+00:08:23.980 --> 00:08:26.780
+necrosando. Proviene de la cápsula de Glisson.
+
+163
+00:08:27.000 --> 00:08:29.320
+La membrana fibrosa que envuelve al hígado.
+
+164
+00:08:29.600 --> 00:08:34.100
+Esa misma. La inflamación aguda severa genera un edema tremendo en
+
+165
+00:08:34.100 --> 00:08:37.320
+el tejido hepático, lo que distiende rápidamente esta cápsula.
+
+166
+00:08:37.580 --> 00:08:39.260
+Y ahí están los nervios.
+
+167
+00:08:39.260 --> 00:08:43.740
+Exacto. Esa distensión aguda de las terminaciones nerviosas capsulares
+
+168
+00:08:43.740 --> 00:08:48.140
+es lo que genera el dolor en el hipocondrio derecho, y es lo que hace que el borde
+
+169
+00:08:48.140 --> 00:08:49.920
+se palpe romo y no afilado.
+
+170
+00:08:50.200 --> 00:08:54.260
+Ahora vamos con las estrellas del cuadro, digamos, la
+
+171
+00:08:54.260 --> 00:08:55.580
+coluria y la acolia.
+
+172
+00:08:55.980 --> 00:09:00.160
+Cuando aparecen juntas, como en este joven ayudante de cocina, me
+
+173
+00:09:00.160 --> 00:09:04.380
+gustaría que expliquemos cómo funcionan como un mapa anatómico del
+
+174
+00:09:04.380 --> 00:09:05.540
+problema de la bilirrubina.
+
+175
+00:09:05.760 --> 00:09:06.140
+Claro.
+
+176
+00:09:06.360 --> 00:09:09.060
+Hagamos una analogía visual, a ver qué te parece.
+
+177
+00:09:09.260 --> 00:09:12.240
+Para mí, el riñón funciona como un filtro de café de papel.
+
+178
+00:09:12.640 --> 00:09:17.120
+Si intentas filtrar algo que es puramente grasa, digamos aceite de motor,
+
+179
+00:09:17.400 --> 00:09:18.700
+el filtro lo bloquea.
+
+180
+00:09:18.820 --> 00:09:20.320
+Sí, no pasa nada al otro lado.
+
+181
+00:09:20.500 --> 00:09:23.960
+Exacto. Pero si filtras agua con azúcar, pues pasa directamente.
+
+182
+00:09:24.420 --> 00:09:27.260
+¿Cómo aplica esto a la bilirrubina y a la coluria?
+
+183
+00:09:27.520 --> 00:09:30.860
+Es una analogía anatómica y bioquímica muy precisa.
+
+184
+00:09:31.200 --> 00:09:35.300
+Cuando los glóbulos rojos se destruyen, liberan bilirrubina no
+
+185
+00:09:35.300 --> 00:09:35.960
+conjugada.
+
+186
+00:09:35.960 --> 00:09:38.180
+Y esta molécula es lipofílica.
+
+187
+00:09:38.500 --> 00:09:40.780
+Es, este, como tu aceite de motor.
+
+188
+00:09:41.000 --> 00:09:42.380
+Ajá. ¿No se disuelve en agua?
+
+189
+00:09:42.860 --> 00:09:47.140
+Exacto. Como no se disuelve en agua, tiene que viajar por la sangre unida a la
+
+190
+00:09:47.140 --> 00:09:47.600
+albúmina.
+
+191
+00:09:47.720 --> 00:09:51.160
+Y al llegar a los glomérulos del riñón, pues no puede filtrarse.
+
+192
+00:09:51.220 --> 00:09:53.300
+Por lo tanto, nunca llega a la orina.
+
+193
+00:09:53.460 --> 00:09:54.480
+Nunca. Ok.
+
+194
+00:09:54.820 --> 00:09:59.200
+Pero, una vez que el hígado capta esa bilirrubina, entra en juego la
+
+195
+00:09:59.200 --> 00:10:00.740
+enzima glucuroniltransferasa.
+
+196
+00:10:00.740 --> 00:10:05.020
+Esta le añade ácido glucurónico y la convierte en
+
+197
+00:10:05.020 --> 00:10:06.340
+bilirrubina conjugada.
+
+198
+00:10:06.420 --> 00:10:09.100
+Que esta nueva molécula sí es hidrosoluble.
+
+199
+00:10:09.220 --> 00:10:11.160
+Es tu agua con azúcar del ejemplo.
+
+200
+00:10:11.380 --> 00:10:11.980
+Perfecto.
+
+201
+00:10:12.040 --> 00:10:16.160
+Si por alguna razón esta bilirrubina hidrosoluble no puede
+
+202
+00:10:16.160 --> 00:10:20.520
+fluir hacia los conductos biliares y se acumula en la sangre, pasará sin
+
+203
+00:10:20.520 --> 00:10:22.240
+problemas por el filtro del riñón.
+
+204
+00:10:22.340 --> 00:10:26.380
+Tiñendo la orina de ese color pardo oscuro, la famosa coluria.
+
+205
+00:10:26.620 --> 00:10:27.240
+Así es.
+
+206
+00:10:27.240 --> 00:10:31.640
+Lo cual, clínicamente, la verdad, nos ayuda a descartar causas de manera
+
+207
+00:10:31.640 --> 00:10:32.240
+instantánea.
+
+208
+00:10:33.080 --> 00:10:36.000
+Aleja de inmediato cualquier causa prehepática pura.
+
+209
+00:10:36.060 --> 00:10:40.440
+O sea, si un paciente tiene una hemólisis masiva, destruyendo glóbulos
+
+210
+00:10:40.440 --> 00:10:44.280
+rojos por millones, tendrá mucha bilirrubina no conjugada en sangre.
+
+211
+00:10:44.520 --> 00:10:45.560
+Estará muy ictérico.
+
+212
+00:10:45.780 --> 00:10:49.700
+Estará ictérico, pero su orina será de color normal, porque esa
+
+213
+00:10:49.700 --> 00:10:52.100
+bilirrubina lipofílica no puede filtrarse.
+
+214
+00:10:52.240 --> 00:10:54.320
+¿Y la colia completa, el mapa aquí?
+
+215
+00:10:54.320 --> 00:10:58.360
+Sí, la colia ocurre porque esa bilirrubina conjugada
+
+216
+00:10:58.360 --> 00:11:01.820
+debería estar viajando por los conductos biliares hacia el intestino.
+
+217
+00:11:01.900 --> 00:11:06.000
+Que es lo que le da el color marrón a las heces al oxidarse a estercobilina, ¿no?
+
+218
+00:11:06.460 --> 00:11:08.700
+Exactamente. Pero aquí no está llegando.
+
+219
+00:11:08.800 --> 00:11:13.000
+El flujo está bloqueado ya sea porque los hepatocitos están tan inflamados que los
+
+220
+00:11:13.000 --> 00:11:16.720
+canalículos biliares colapsan o porque hay una obstrucción física más abajo.
+
+221
+00:11:16.900 --> 00:11:19.080
+Bueno, aquí tengo que ser un poco de abogada del diablo.
+
+222
+00:11:19.240 --> 00:11:19.720
+A ver.
+
+223
+00:11:19.720 --> 00:11:23.940
+Si la coluria y la colia son herramientas deductivas tan perfectas desde la
+
+224
+00:11:23.940 --> 00:11:28.000
+fisiopatología, si nos permiten ubicar el trastorno en la
+
+225
+00:11:28.000 --> 00:11:32.360
+excreción hepatocelular de una forma tan visual, ¿por qué nuestra
+
+226
+00:11:32.360 --> 00:11:36.660
+fuente clínica de medsemiotics también las cataloga con un LR no
+
+227
+00:11:36.660 --> 00:11:37.080
+medido?
+
+228
+00:11:37.080 --> 00:11:41.200
+¡Ay! Porque la elegancia fisiopatológica no garantiza la validación
+
+229
+00:11:41.200 --> 00:11:42.060
+estadística.
+
+230
+00:11:42.160 --> 00:11:42.560
+¡Auch!
+
+231
+00:11:42.760 --> 00:11:45.440
+Ubican el problema anatómicamente, sí.
+
+232
+00:11:45.520 --> 00:11:49.900
+Nos dicen que el problema está en la conjugación o en la excreción biliar.
+
+233
+00:11:50.060 --> 00:11:54.400
+Pero su capacidad aislada para distinguir específicamente una hepatitis
+
+234
+00:11:54.400 --> 00:11:58.860
+viral aguda, de, digamos, una coledocolitiasis o un tumor
+
+235
+00:11:58.860 --> 00:11:59.150
+periampular…
+
+236
+00:11:59.820 --> 00:12:02.500
+O sea, algo obstructivo extrahepático.
+
+237
+00:12:02.500 --> 00:12:06.900
+Exacto. Esa capacidad no ha sido cuantificada formalmente en estudios
+
+238
+00:12:06.900 --> 00:12:09.580
+amplios frente a un estándar de referencia eteológico.
+
+239
+00:12:09.740 --> 00:12:10.940
+Falta la data dura.
+
+240
+00:12:11.220 --> 00:12:14.800
+No existe en la literatura un ensayo riguroso que ponga a prueba el signo de la
+
+241
+00:12:14.800 --> 00:12:17.760
+coluria frente a la serología IgM para hepatitis A,
+
+242
+00:12:17.840 --> 00:12:21.920
+que nos diga algo como, la coluria multiplica por 4.5 tu
+
+243
+00:12:21.920 --> 00:12:23.820
+probabilidad pretest de hepatitis viral.
+
+244
+00:12:24.060 --> 00:12:27.840
+O sea, tenemos otra brecha enorme entre la utilidad
+
+245
+00:12:27.840 --> 00:12:31.420
+fisiopatológica diaria y la cuantificación estadística estricta.
+
+246
+00:12:31.420 --> 00:12:32.560
+Lamentablemente, sí.
+
+247
+00:12:32.680 --> 00:12:37.080
+Pero, fíjate, me confieso genuinamente sorprendida con otro dato
+
+248
+00:12:37.080 --> 00:12:37.760
+de la fuente.
+
+249
+00:12:38.220 --> 00:12:42.280
+Si la falta de números para la coluria parece una limitación muy
+
+250
+00:12:42.280 --> 00:12:42.900
+académica,
+
+251
+00:12:43.600 --> 00:12:47.860
+los datos sobre la simple detección visual de la ictericia son
+
+252
+00:12:47.860 --> 00:12:51.200
+directamente un ataque a la confianza de cualquier médico.
+
+253
+00:12:51.840 --> 00:12:52.400
+Totalmente.
+
+254
+00:12:52.540 --> 00:12:56.800
+Yo siempre he pensado que, pues, si un paciente tiene la bilirrubina alta, se le
+
+255
+00:12:56.800 --> 00:12:58.580
+notan los ojos amarillos y punto.
+
+256
+00:12:58.680 --> 00:12:59.940
+No hay mucha ciencia.
+
+257
+00:12:59.940 --> 00:13:01.440
+Todos pensamos eso.
+
+258
+00:13:01.560 --> 00:13:05.240
+La ictericia escleral suele considerarse el signo cardinal en la exploración
+
+259
+00:13:05.240 --> 00:13:09.340
+física. Sin embargo, los números reportados en la revisión de medsemiotics
+
+260
+00:13:09.340 --> 00:13:11.720
+obligan a reconsiderar nuestra agudeza visual.
+
+261
+00:13:12.060 --> 00:13:13.280
+Cuéntame de esos números.
+
+262
+00:13:13.840 --> 00:13:18.120
+Mira, con una bilirrubina sérica total de 2.5 miligramos por decilitro,
+
+263
+00:13:18.180 --> 00:13:22.140
+solo la reconoció el 58% de los examinadores clínicos.
+
+264
+00:13:22.140 --> 00:13:26.360
+Espera, ¿cómo? Eso significa que casi la mitad de los
+
+265
+00:13:26.360 --> 00:13:30.760
+médicos pasaron por alto la ictericia teniendo la bilirrubina ya por
+
+266
+00:13:30.760 --> 00:13:34.780
+encima del rango normal, que suele ser hasta 1 o 1.2.
+
+267
+00:13:34.960 --> 00:13:39.260
+Así es. Y el intervalo de confianza del 95% de ese dato
+
+268
+00:13:39.260 --> 00:13:41.900
+va del 33 al 80%.
+
+269
+00:13:41.900 --> 00:13:43.720
+Es altísimo el margen de error.
+
+270
+00:13:43.720 --> 00:13:48.640
+Y, fíjate, incluso si subimos la bilirrubina total a 3.1
+
+271
+00:13:48.640 --> 00:13:53.620
+mg por decilitro, que ya es un aumento considerable, apenas el 68%
+
+272
+00:13:53.620 --> 00:13:57.820
+de los examinadores logró detectarla visualmente, con un intervalo de
+
+273
+00:13:57.820 --> 00:14:00.280
+confianza del 46 al 85%.
+
+274
+00:14:00.280 --> 00:14:04.580
+En términos generales, cuando se evalúa frente al patrón de oro que es la
+
+275
+00:14:04.580 --> 00:14:08.520
+medición de bilirrubina en laboratorio, la sensibilidad y la especificidad de la
+
+276
+00:14:08.520 --> 00:14:12.140
+detección clínica de la ictericia rondan apenas el 70%.
+
+277
+00:14:12.140 --> 00:14:16.560
+A ver, estamos perdiendo a 3 de cada 10 pacientes
+
+278
+00:14:16.560 --> 00:14:21.000
+que genuinamente tienen hiperbilirubinemia si solo dependemos
+
+279
+00:14:21.000 --> 00:14:21.700
+de nuestros ojos.
+
+280
+00:14:22.040 --> 00:14:22.460
+Tal cual.
+
+281
+00:14:22.660 --> 00:14:26.500
+¿Por qué fallamos tanto en algo que parece tan
+
+282
+00:14:26.500 --> 00:14:28.720
+aparentemente visual y obvio?
+
+283
+00:14:28.980 --> 00:14:31.620
+Hay múltiples variables que la estadística agrupa aquí.
+
+284
+00:14:32.220 --> 00:14:35.380
+La iluminación de la sala es crítica, por ejemplo.
+
+285
+00:14:35.580 --> 00:14:37.640
+Claro, los hospitales tienen luces raras.
+
+286
+00:14:37.640 --> 00:14:42.120
+Exacto. Examinar escleras bajo luz fluorescente blanca o amarilla de
+
+287
+00:14:42.120 --> 00:14:46.500
+un hospital enmascara el tono amarillento en comparación con, pues, la
+
+288
+00:14:46.500 --> 00:14:51.000
+luz natural del sol. También influye muchísimo el tono de piel del paciente,
+
+289
+00:14:51.080 --> 00:14:53.400
+la congestión conjuntival concomitante.
+
+290
+00:14:53.540 --> 00:14:57.540
+Y, por supuesto, la experiencia del observador para distinguir entre la grasa
+
+291
+00:14:57.540 --> 00:15:01.020
+subconjuntival normal y un depósito verdadero de bilirrubina.
+
+292
+00:15:01.020 --> 00:15:03.480
+Sí, la pingüécula y todo eso.
+
+293
+00:15:03.660 --> 00:15:07.960
+Bueno, si nuestros ojos nos engañan el 30% de las
+
+294
+00:15:07.960 --> 00:15:12.180
+veces y carecemos de cocientes de verosimilitud útiles para
+
+295
+00:15:12.180 --> 00:15:16.280
+signos tan clásicos, la reacción natural de todos nosotros
+
+296
+00:15:16.280 --> 00:15:20.000
+será recurrir directamente al laboratorio bioquímico para buscar,
+
+297
+00:15:20.240 --> 00:15:22.100
+no sé, tierra firme.
+
+298
+00:15:22.100 --> 00:15:25.820
+Es lo más lógico. La fosfatasa alcalina está en 190
+
+299
+00:15:25.820 --> 00:15:27.480
+unidades por litro.
+
+300
+00:15:27.500 --> 00:15:32.340
+Y el tiempo de protrombina, medido como INR, es de 1.1,
+
+301
+00:15:32.460 --> 00:15:33.320
+lo cual es normal.
+
+302
+00:15:33.680 --> 00:15:36.640
+Ok, tenemos números muy contundentes.
+
+303
+00:15:36.920 --> 00:15:39.660
+Esto es un patrón de daño hepatocelular masivo.
+
+304
+00:15:39.800 --> 00:15:43.840
+O sea, transaminasas disparadas casi a 2,000 unidades,
+
+305
+00:15:44.240 --> 00:15:46.280
+bilirrubina conjugada por las nubes.
+
+306
+00:15:46.520 --> 00:15:47.280
+Sin duda.
+
+307
+00:15:47.280 --> 00:15:51.640
+Si tengo números, entonces asumo que, ahora sí, puedo usar una
+
+308
+00:15:51.640 --> 00:15:55.940
+calculadora bayesiana para determinar mi probabilidad post-test de hepatitis viral,
+
+309
+00:15:56.120 --> 00:15:56.220
+¿no?
+
+310
+00:15:56.360 --> 00:16:00.720
+Pues aquí es donde la fuente arroja la limitación más profunda y confusa de todo
+
+311
+00:16:00.720 --> 00:16:01.560
+este análisis.
+
+312
+00:16:01.740 --> 00:16:02.620
+¡Ay, no! ¿Otra vez?
+
+313
+00:16:02.880 --> 00:16:07.160
+Sí. El texto advierte explícitamente que no se puede calcular un
+
+314
+00:16:07.160 --> 00:16:09.980
+cociente de verosimilitud para estos laboratorios.
+
+315
+00:16:10.040 --> 00:16:12.160
+Y fíjate, usa un término distinto.
+
+316
+00:16:12.320 --> 00:16:12.720
+A ver.
+
+317
+00:16:12.720 --> 00:16:17.040
+Antes hablábamos de un LR no medido, pero para las
+
+318
+00:16:17.040 --> 00:16:20.960
+transaminasas, la fuente dice que es un LR no medible.
+
+319
+00:16:21.220 --> 00:16:24.140
+Espera, no medido frente a no medible.
+
+320
+00:16:24.300 --> 00:16:28.680
+Me tienes que explicar la diferencia detalladamente, porque a simple vista
+
+321
+00:16:28.680 --> 00:16:30.420
+suenan exactamente igual.
+
+322
+00:16:30.820 --> 00:16:34.740
+Sí, puede ser confuso, pero esta es probablemente la trampa
+
+323
+00:16:34.740 --> 00:16:38.200
+epistemológica más grande en el razonamiento diagnóstico moderno.
+
+324
+00:16:38.520 --> 00:16:39.960
+Wow, ¿ok?
+
+325
+00:16:39.960 --> 00:16:44.380
+Un LR no medido, como el que discutimos para la coluria o
+
+326
+00:16:44.380 --> 00:16:47.940
+la hepatomegalia, representa una falta de datos empíricos.
+
+327
+00:16:48.400 --> 00:16:50.660
+Nadie ha financiado ni realizado el estudio.
+
+328
+00:16:50.960 --> 00:16:55.360
+Pero en teoría, alguien podría diseñar un protocolo mañana, juntar a
+
+329
+00:16:55.360 --> 00:16:57.040
+mil pacientes y darnos el número.
+
+330
+00:16:57.380 --> 00:17:01.800
+O sea, es una cuestión de que falta investigación, falta voluntad o
+
+331
+00:17:01.800 --> 00:17:02.100
+dinero.
+
+332
+00:17:02.100 --> 00:17:06.460
+Exactamente. Por el contrario, un LR no medible
+
+333
+00:17:06.460 --> 00:17:10.800
+es un muro de contención absoluto construido por la lógica misma
+
+334
+00:17:10.800 --> 00:17:12.060
+del método científico.
+
+335
+00:17:12.140 --> 00:17:12.880
+¿Cómo así?
+
+336
+00:17:13.340 --> 00:17:17.480
+Es matemáticamente imposible de calcular debido a un fenómeno
+
+337
+00:17:17.480 --> 00:17:19.700
+conocido como sesgo de incorporación.
+
+338
+00:17:19.860 --> 00:17:24.000
+Sesgo de incorporación. Explícame la mecánica de
+
+339
+00:17:24.000 --> 00:17:26.820
+eso en este paciente en particular.
+
+340
+00:17:26.820 --> 00:17:31.300
+¿Por qué no puedo simplemente, digamos, tomar la
+
+341
+00:17:31.300 --> 00:17:35.680
+ALT de 1850 y ver estadísticamente
+
+342
+00:17:35.680 --> 00:17:37.620
+cómo predice la hepatitis?
+
+343
+00:17:37.880 --> 00:17:42.000
+Porque para calcular el rendimiento de cualquier prueba diagnóstica, necesitas
+
+344
+00:17:42.000 --> 00:17:45.380
+evaluar esa prueba de forma totalmente independiente frente a un patrón de
+
+345
+00:17:45.380 --> 00:17:47.980
+referencia, lo que llamamos el estándar de oro.
+
+346
+00:17:48.260 --> 00:17:49.920
+Ajá, hasta ahí estamos claros.
+
+347
+00:17:50.080 --> 00:17:54.120
+El problema es que el propio síndrome clínico de hepatitis viral aguda se define
+
+348
+00:17:54.120 --> 00:17:56.640
+médicamente por la presencia de inflamación hepática.
+
+349
+00:17:56.820 --> 00:18:00.960
+Y nosotros objetivamos esa inflamación como elevación de transaminasas e
+
+350
+00:18:00.960 --> 00:18:02.060
+hiperbilirrubinemia.
+
+351
+00:18:02.220 --> 00:18:02.520
+Ah.
+
+352
+00:18:03.200 --> 00:18:06.820
+Los hallazgos de laboratorio son parte constitutiva de la definición misma de la
+
+353
+00:18:06.820 --> 00:18:07.320
+enfermedad.
+
+354
+00:18:07.480 --> 00:18:10.680
+Claro. Entiendo la paradoja perfectamente.
+
+355
+00:18:10.940 --> 00:18:15.260
+O sea, si intento usar las transaminasas altas como una
+
+356
+00:18:15.260 --> 00:18:19.700
+pista para adivinar si el paciente tiene hepatitis, estoy cometiendo un
+
+357
+00:18:19.700 --> 00:18:20.540
+error lógico.
+
+358
+00:18:20.660 --> 00:18:21.300
+Exacto.
+
+359
+00:18:21.300 --> 00:18:25.580
+Es como, fíjate, es como intentar calificar la precisión y el
+
+360
+00:18:25.580 --> 00:18:29.860
+rigor de un examen escolar, pero permitiendo que el propio alumno sea
+
+361
+00:18:29.860 --> 00:18:33.960
+quien redacte la hoja de respuestas correctas antes de empezar a contestar.
+
+362
+00:18:34.100 --> 00:18:38.120
+Es un gran ejemplo. Obviamente, el alumno sacará un 100%,
+
+363
+00:18:38.120 --> 00:18:40.820
+pero esa calificación es una ilusión.
+
+364
+00:18:40.820 --> 00:18:44.940
+Evaluar un criterio diagnóstico contra una enfermedad que requiere ese
+
+365
+00:18:44.940 --> 00:18:49.340
+mismísimo criterio para existir, pues infla artificialmente la
+
+366
+00:18:49.340 --> 00:18:52.280
+sensibilidad y especificidad a cifras absurdas.
+
+367
+00:18:52.360 --> 00:18:56.460
+El sesgo de incorporación corrompe el cálculo matemático por completo.
+
+368
+00:18:56.460 --> 00:19:00.960
+Totalmente. Y la base de datos asume una postura muy rigurosa en
+
+369
+00:19:00.960 --> 00:19:05.140
+este aspecto. Nos dice, básicamente, que es preferible aceptar que el
+
+370
+00:19:05.140 --> 00:19:09.580
+LR es no medible antes que inventar o calcular un número viciado que
+
+371
+00:19:09.580 --> 00:19:12.760
+introduzca falsas certezas en el algoritmo mental del clínico.
+
+372
+00:19:12.760 --> 00:19:17.120
+¡Qué fuerte! Pero esto nos deja en una posición bien precaria
+
+373
+00:19:17.120 --> 00:19:17.880
+en la urgencia.
+
+374
+00:19:18.020 --> 00:19:18.640
+Sí, bastante.
+
+375
+00:19:19.180 --> 00:19:24.200
+Si las transaminasas en 1850 y la bilirrubina en 6.8
+
+376
+00:19:24.200 --> 00:19:26.860
+no definen la etiología por culpa de este sesgo,
+
+377
+00:19:27.360 --> 00:19:31.380
+porque, a ver, un patrón hepatocelular agudo así podría deberse a una
+
+378
+00:19:31.380 --> 00:19:33.360
+intoxicación por paracetamol,
+
+379
+00:19:33.400 --> 00:19:37.340
+a una hepatitis isquémica por un choque o a un brote autoinmune.
+
+380
+00:19:37.560 --> 00:19:38.240
+Cualquier cosa.
+
+381
+00:19:38.240 --> 00:19:40.900
+Entonces, ¿cuál es el verdadero juez final aquí?
+
+382
+00:19:41.320 --> 00:19:42.880
+¿Quién dicta la sentencia?
+
+383
+00:19:43.080 --> 00:19:46.960
+El único patrón de referencia verdadero, el estándar de oro independiente que
+
+384
+00:19:46.960 --> 00:19:49.740
+dictamina el apellido de la enfermedad, es la serología.
+
+385
+00:19:50.160 --> 00:19:51.360
+Los anticuerpos.
+
+386
+00:19:51.580 --> 00:19:56.000
+A, el antígeno de superficie, y la IgM anti-core para
+
+387
+00:19:56.000 --> 00:19:56.820
+la hepatitis B.
+
+388
+00:19:57.100 --> 00:20:01.500
+Y dependiendo del terreno epidemiológico, pues anticuerpos contra la hepatitis C
+
+389
+00:20:01.500 --> 00:20:02.560
+y E, claro.
+
+390
+00:20:03.080 --> 00:20:07.200
+Exacto. La semiología y la bioquímica básica arman el marco del
+
+391
+00:20:07.200 --> 00:20:07.960
+rompecabezas.
+
+392
+00:20:08.240 --> 00:20:12.720
+O sea, nos confirman que hay necrosis hepatocelular y colestasis intrahepática,
+
+393
+00:20:12.880 --> 00:20:16.840
+pero solo la serología nos dice qué agente disparó el daño.
+
+394
+00:20:16.980 --> 00:20:19.740
+Llegamos entonces a los resultados de este paciente.
+
+395
+00:20:19.900 --> 00:20:24.280
+El laboratorio reporta una IgM contra el virus de la hepatitis A que
+
+396
+00:20:24.280 --> 00:20:26.280
+resulta francamente positiva.
+
+397
+00:20:26.500 --> 00:20:27.320
+Ahí lo tenemos.
+
+398
+00:20:27.680 --> 00:20:30.760
+Ahora el diagnóstico etiológico es definitivo.
+
+399
+00:20:30.760 --> 00:20:35.060
+Fija que hemos transitado desde la inespecificidad del
+
+400
+00:20:35.060 --> 00:20:39.220
+pródromo viral, reconociendo nuestra incapacidad clínica para
+
+401
+00:20:39.220 --> 00:20:42.620
+detectar la ictericia en un 30% de los casos,
+
+402
+00:20:42.840 --> 00:20:47.120
+hasta chocar con el sesgo de incorporación en los laboratorios
+
+403
+00:20:47.120 --> 00:20:47.660
+básicos.
+
+404
+00:20:48.060 --> 00:20:50.380
+Ha sido todo un viaje metodológico.
+
+405
+00:20:50.380 --> 00:20:53.860
+Pero la inmersión no termina en la abstracción matemática.
+
+406
+00:20:54.020 --> 00:20:58.460
+El objetivo final de usar esta evidencia es tomar decisiones sobre la
+
+407
+00:20:58.460 --> 00:21:00.900
+persona de carne y hueso que tenemos enfrente.
+
+408
+00:21:01.040 --> 00:21:04.180
+¿Qué hacemos hoy con este hombre de 26 años?
+
+409
+00:21:04.560 --> 00:21:07.460
+Bueno, la primera decisión de peso es el sitio de atención.
+
+410
+00:21:07.820 --> 00:21:10.940
+Tenemos a un paciente con hepatitis A aguda confirmada.
+
+411
+00:21:11.080 --> 00:21:15.100
+Está alerta, responde con coherencia, su tolerancia a los alimentos
+
+412
+00:21:15.100 --> 00:21:17.180
+sólidos y líquidos por vía oral es buena.
+
+413
+00:21:17.180 --> 00:21:22.180
+Y lo más importante que vimos en sus laboratorios, tiene un INR de 1.1.
+
+414
+00:21:22.320 --> 00:21:24.040
+Ese dilema clásico de triaje.
+
+415
+00:21:24.260 --> 00:21:28.660
+¿Lo mandamos a su casa con indicaciones o requiere una cama de hospitalización?
+
+416
+00:21:29.060 --> 00:21:31.000
+¿Qué nos dice la evidencia para este caso?
+
+417
+00:21:31.280 --> 00:21:35.280
+Con el cuadro actual, el manejo es estrictamente de soporte y ambulatorio.
+
+418
+00:21:35.480 --> 00:21:38.220
+No hay antivirales específicos para la hepatitis A.
+
+419
+00:21:38.220 --> 00:21:42.020
+Se debe asegurar el estado de hidratación y, muy importante,
+
+420
+00:21:42.360 --> 00:21:46.200
+proscribir de forma tajante el consumo de alcohol o cualquier fármaco
+
+421
+00:21:46.200 --> 00:21:47.220
+hepatotóxico.
+
+422
+00:21:47.840 --> 00:21:48.920
+Paracetamol, fuera.
+
+423
+00:21:49.180 --> 00:21:53.280
+Cero. Pero el clínico debe prever en qué momento este caso benigno se
+
+424
+00:21:53.280 --> 00:21:54.600
+convierte en una catástrofe.
+
+425
+00:21:54.760 --> 00:21:58.640
+Existen criterios de alarma muy puntuales que indican que el hígado está
+
+426
+00:21:58.640 --> 00:22:01.280
+claudicando hacia una insuficiencia hepática aguda.
+
+427
+00:22:01.420 --> 00:22:03.100
+¿Y si alguno de estos aparece?
+
+428
+00:22:03.100 --> 00:22:06.660
+La decisión cambia de ambulatorio a ingreso hospitalario inmediato,
+
+429
+00:22:06.760 --> 00:22:09.560
+potencialmente en una unidad de cuidados intensivos.
+
+430
+00:22:10.800 --> 00:22:15.040
+Mencionaste el INR de 1.1 como un factor tranquilizador.
+
+431
+00:22:15.720 --> 00:22:20.180
+¿Por qué el tiempo de protrombina prolongado es el primer criterio de
+
+432
+00:22:20.180 --> 00:22:22.020
+gravedad al que le prestamos atención?
+
+433
+00:22:22.540 --> 00:22:26.520
+Porque el hígado sintetiza la gran mayoría de los factores de coagulación
+
+434
+00:22:26.520 --> 00:22:30.980
+dependientes de vitamina K, y el factor 7 tiene la vida media más corta de
+
+435
+00:22:30.980 --> 00:22:32.620
+todos, apenas unas 6 horas.
+
+436
+00:22:33.100 --> 00:22:34.480
+O sea que cae rapidísimo.
+
+437
+00:22:34.700 --> 00:22:38.820
+Si la necrosis viral es tan masiva que el hígado pierde su función de síntesis
+
+438
+00:22:38.820 --> 00:22:39.460
+hoy mismo,
+
+439
+00:22:39.720 --> 00:22:43.860
+los niveles de albúmina tardarán semanas en bajar debido a su vida media-larga,
+
+440
+00:22:43.920 --> 00:22:46.480
+pero el factor 7 se agota casi de inmediato.
+
+441
+00:22:46.760 --> 00:22:47.800
+Ajá, claro.
+
+442
+00:22:48.120 --> 00:22:52.540
+Esto hace que el tiempo de protrombina se prolongue rápidamente y el INR se
+
+443
+00:22:52.540 --> 00:22:52.980
+dispare.
+
+444
+00:22:53.360 --> 00:22:56.480
+Es nuestro mejor radar temprano de falla hepática fulminante.
+
+445
+00:22:56.840 --> 00:22:59.340
+Entendido. Falla de síntesis aguda.
+
+446
+00:22:59.780 --> 00:23:03.000
+¿Qué otros criterios clínicos nos obligan a ingresar al paciente?
+
+447
+00:23:03.100 --> 00:23:06.060
+El segundo es cualquier asomo de encefalopatía hepática.
+
+448
+00:23:06.360 --> 00:23:07.620
+Por mínimo que sea.
+
+449
+00:23:07.860 --> 00:23:12.220
+Sí, desde sutiles cambios en el ciclo sueño-vigilia o somnolencia
+
+450
+00:23:12.220 --> 00:23:16.700
+diurna, hasta confusión franca o la aparición de asterixis, ese temblor
+
+451
+00:23:16.700 --> 00:23:19.100
+aleteante en las manos al extender las muñecas.
+
+452
+00:23:19.240 --> 00:23:23.060
+Y para conectar un poco la fisiopatología, esa
+
+453
+00:23:23.060 --> 00:23:27.440
+asterixis y encefalopatía ocurren porque el hígado inflamado
+
+454
+00:23:27.440 --> 00:23:31.700
+ya no puede depurar el amoníaco que generan las bacterias en el intestino.
+
+455
+00:23:31.720 --> 00:23:32.040
+Ajá.
+
+456
+00:23:32.040 --> 00:23:36.520
+Ese amoníaco cruza la barrera hematoencefálica y altera directamente
+
+457
+00:23:36.520 --> 00:23:38.120
+la neurotransmisión cerebral.
+
+458
+00:23:38.360 --> 00:23:41.580
+Así es. Es una toxina endógena actuando sin control.
+
+459
+00:23:41.900 --> 00:23:42.740
+¿Qué más tenemos?
+
+460
+00:23:43.060 --> 00:23:46.740
+Los otros dos criterios de ingreso son más mecánicos, pero igual de graves.
+
+461
+00:23:46.940 --> 00:23:51.260
+La intolerancia persistente a la vía oral por náuseas y vómitos intratables
+
+462
+00:23:51.260 --> 00:23:52.940
+que pongan en riesgo la hidratación.
+
+463
+00:23:53.520 --> 00:23:57.580
+Y por último, un empeoramiento rápido, progresivo y
+
+464
+00:23:57.580 --> 00:23:58.900
+sostenido de la ictericia.
+
+465
+00:23:58.900 --> 00:24:02.780
+Como nuestro paciente no presenta nada de esto, se va a casa.
+
+466
+00:24:03.080 --> 00:24:04.780
+Ok, se va a casa.
+
+467
+00:24:04.900 --> 00:24:09.080
+Sin embargo, creo que estamos pasando por alto un detalle crítico de su
+
+468
+00:24:09.080 --> 00:24:12.760
+historia clínica que altera por completo nuestro plan de acción.
+
+469
+00:24:13.400 --> 00:24:17.840
+No olvidemos que este joven es ayudante de cocina, corta, prepara
+
+470
+00:24:17.840 --> 00:24:21.140
+y sirve alimentos para decenas de personas diariamente.
+
+471
+00:24:21.680 --> 00:24:25.860
+Uf, ese factor convierte un diagnóstico individual en una crisis
+
+472
+00:24:25.860 --> 00:24:27.460
+potencial de salud pública.
+
+473
+00:24:27.460 --> 00:24:27.880
+Sí.
+
+474
+00:24:28.100 --> 00:24:32.500
+La hepatitis A es un virus desnudo, altamente resistente en el medio
+
+475
+00:24:32.500 --> 00:24:35.540
+ambiente, y su vía de transmisión es fecal oral.
+
+476
+00:24:35.780 --> 00:24:36.220
+Clásico.
+
+477
+00:24:36.480 --> 00:24:40.520
+El virus excreta en las heces del paciente desde la fase prodrómica, fíjate,
+
+478
+00:24:40.600 --> 00:24:43.540
+días antes de que empiece a notar la orina oscura.
+
+479
+00:24:43.760 --> 00:24:47.880
+Que es justo cuando es más contagioso y él ni sabía que estaba enfermo.
+
+480
+00:24:48.440 --> 00:24:52.720
+Exacto. El riesgo de generar un brote epidémico a través de la contaminación
+
+481
+00:24:52.720 --> 00:24:55.100
+cruzada de alimentos es inmenso.
+
+482
+00:24:55.100 --> 00:24:59.600
+Entonces, ¿cómo se articula la acción clínica integral más allá del paciente
+
+483
+00:24:59.600 --> 00:25:04.060
+mismo? O sea, ¿qué pasos debemos tomar de inmediato ahí mismo
+
+484
+00:25:04.060 --> 00:25:04.720
+en urgencias?
+
+485
+00:25:04.940 --> 00:25:07.040
+Hay cuatro acciones innegociables.
+
+486
+00:25:07.340 --> 00:25:07.860
+A ver.
+
+487
+00:25:08.120 --> 00:25:12.500
+Primero, la notificación epidemiológica obligatoria a las autoridades sanitarias
+
+488
+00:25:12.500 --> 00:25:14.620
+locales para iniciar el rastreo.
+
+489
+00:25:14.820 --> 00:25:15.460
+Lógico.
+
+490
+00:25:15.520 --> 00:25:19.800
+Segundo, emitir una incapacidad que indique la suspensión laboral temporal y
+
+491
+00:25:19.800 --> 00:25:24.060
+absoluta de cualquier manipulación de alimentos hasta que pase la ventana de
+
+492
+00:25:24.060 --> 00:25:24.540
+contagio.
+
+493
+00:25:24.540 --> 00:25:26.360
+¿Nada de acercarse a la cocina?
+
+494
+00:25:26.420 --> 00:25:26.640
+Nada.
+
+495
+00:25:27.340 --> 00:25:31.280
+Tercero, educación exhaustiva sobre lavado estricto de manos con agua y jabón.
+
+496
+00:25:31.360 --> 00:25:35.640
+Y esto es vital porque los desinfectantes con base de alcohol no siempre inactivan
+
+497
+00:25:35.640 --> 00:25:37.960
+eficientemente a estos virus sin envoltura lipídica.
+
+498
+00:25:38.180 --> 00:25:39.440
+Ah, eso es súper importante.
+
+499
+00:25:39.660 --> 00:25:42.420
+El gel antibacterial no es suficiente aquí.
+
+500
+00:25:42.720 --> 00:25:45.200
+¿Y qué sucede con los contactos cercanos?
+
+501
+00:25:45.780 --> 00:25:49.980
+Compañeros de cocina, familiares que viven en su misma casa, ¿cómo
+
+502
+00:25:49.980 --> 00:25:51.980
+intervenimos médicamente en ellos?
+
+503
+00:25:52.340 --> 00:25:53.660
+Ese es el cuarto paso.
+
+504
+00:25:53.660 --> 00:25:56.340
+Evaluar la profilaxis post-exposición.
+
+505
+00:25:56.500 --> 00:26:00.840
+Tenemos dos herramientas, la vacuna contra la hepatitis A o la
+
+506
+00:26:00.840 --> 00:26:02.640
+administración de inmunoglobulina.
+
+507
+00:26:02.780 --> 00:26:04.800
+¿Y de qué depende usar una u otra?
+
+508
+00:26:05.100 --> 00:26:09.600
+La decisión depende de la edad, del estado inmunológico del contacto y del
+
+509
+00:26:09.600 --> 00:26:13.880
+tiempo transcurrido desde la exposición, que idealmente debe ser menor a dos
+
+510
+00:26:13.880 --> 00:26:14.180
+semanas.
+
+511
+00:26:14.500 --> 00:26:14.960
+Ok.
+
+512
+00:26:14.960 --> 00:26:19.260
+La vacuna confiere inmunidad activa, estimulando al cuerpo a
+
+513
+00:26:19.260 --> 00:26:23.460
+crear sus propias defensas. Pero en pacientes mayores de 40 años, o
+
+514
+00:26:23.460 --> 00:26:27.660
+inmunocomprometidos, o aquellos con enfermedad hepática crónica subyacente,
+
+515
+00:26:27.760 --> 00:26:29.720
+preferimos usar la inmunoglobulina.
+
+516
+00:26:29.940 --> 00:26:32.920
+Que provee inmunidad pasiva inmediata, me imagino.
+
+517
+00:26:33.100 --> 00:26:37.200
+Así es, aportando anticuerpos neutralizantes ya formados para
+
+518
+00:26:37.200 --> 00:26:38.660
+bloquear la progresión del virus.
+
+519
+00:26:38.660 --> 00:26:43.160
+Es asombroso cómo tirar del hilo de una simple queja
+
+520
+00:26:43.160 --> 00:26:47.180
+sobre orina oscura termina activando mecanismos moleculares de
+
+521
+00:26:47.180 --> 00:26:50.800
+virología y un protocolo tan complejo a nivel comunitario.
+
+522
+00:26:50.940 --> 00:26:53.280
+La medicina nunca opera en el vacío.
+
+523
+00:26:53.440 --> 00:26:57.640
+Para ir cerrando este análisis profundo de nuestras fuentes, quiero
+
+524
+00:26:57.640 --> 00:27:02.060
+sintetizar el concepto clave que quienes nos escuchan deben llevarse para aplicar
+
+525
+00:27:02.060 --> 00:27:03.080
+en su práctica de mañana.
+
+526
+00:27:03.340 --> 00:27:03.860
+Adelante.
+
+527
+00:27:03.860 --> 00:27:08.140
+El mensaje fundamental es que la audiencia clínica no debe sentirse
+
+528
+00:27:08.140 --> 00:27:12.260
+frustrada por la falta de cocientes de verosimilitud numéricos en un cuadro
+
+529
+00:27:12.260 --> 00:27:16.600
+clínico clásico. La lección profunda de esta base de datos es que, en
+
+530
+00:27:16.600 --> 00:27:20.500
+medicina, la ausencia de un número también transmite información
+
+531
+00:27:20.500 --> 00:27:21.860
+metodológica crucial.
+
+532
+00:27:21.860 --> 00:27:26.080
+Sí, nos enseña a reconocer los límites de cada herramienta
+
+533
+00:27:26.080 --> 00:27:30.420
+diagnóstica. La semiología de la hepatitis viral aguda, este,
+
+534
+00:27:30.580 --> 00:27:35.000
+evaluar el pródromo, detectar la ictericia, confirmar la coluria y
+
+535
+00:27:35.000 --> 00:27:39.320
+la acolia. Todo eso sirve de manera magistral para plantear la
+
+536
+00:27:39.320 --> 00:27:40.260
+sospecha del síndrome.
+
+537
+00:27:40.720 --> 00:27:45.180
+Y localizar de forma anatómica el bloqueo en el metabolismo de la bilirrubina.
+
+538
+00:27:45.380 --> 00:27:46.100
+Exactamente.
+
+539
+00:27:46.100 --> 00:27:50.580
+Pero, a pesar de toda su elegancia fisiopatológica, no
+
+540
+00:27:50.580 --> 00:27:54.840
+sirven para alimentar calculadoras bayesianas precisas, ya sea
+
+541
+00:27:54.840 --> 00:27:59.100
+porque los estudios pertinentes nunca se hicieron y el LR no está medido,
+
+542
+00:27:59.180 --> 00:28:03.660
+o porque la naturaleza misma del diagnóstico incurre en un sesgo
+
+543
+00:28:03.660 --> 00:28:08.040
+de incorporación, haciendo que los resultados de laboratorio sean estadísticamente
+
+544
+00:28:08.040 --> 00:28:08.860
+no medibles.
+
+545
+00:28:09.360 --> 00:28:13.520
+El apellido de la enfermedad, la etiqueta viral definitiva, le
+
+546
+00:28:13.520 --> 00:28:15.760
+pertenece de manera exclusiva a la serología.
+
+547
+00:28:16.100 --> 00:28:20.340
+La clínica sigue siendo la brújula que orienta la sospecha inicial, pero
+
+548
+00:28:20.340 --> 00:28:24.700
+debemos ser muy conscientes de que es el laboratorio serológico quien aporta el
+
+549
+00:28:24.700 --> 00:28:26.800
+mapa detallado para confirmar la etiología.
+
+550
+00:28:27.180 --> 00:28:31.480
+Y bueno, quiero dejarlos con un pensamiento final, una provocación que
+
+551
+00:28:31.480 --> 00:28:35.980
+surge precisamente de esas áreas grises en la literatura que exploramos hoy.
+
+552
+00:28:36.060 --> 00:28:36.300
+A ver.
+
+553
+00:28:36.720 --> 00:28:41.180
+Hablamos de la imposibilidad de calcular la probabilidad post-test debido a
+
+554
+00:28:41.180 --> 00:28:41.900
+estos sesgos.
+
+555
+00:28:42.240 --> 00:28:45.880
+Pero el teorema de Bayes requiere un punto de partida.
+
+556
+00:28:46.100 --> 00:28:47.800
+Una probabilidad pre-test.
+
+557
+00:28:48.020 --> 00:28:49.140
+Claro, el ancla.
+
+558
+00:28:49.280 --> 00:28:53.760
+Así que les pregunto, ¿cuál es realmente la probabilidad basal, la
+
+559
+00:28:53.760 --> 00:28:57.660
+prevalencia exacta de hepatitis viral en adultos que se presentan
+
+560
+00:28:57.660 --> 00:29:01.500
+espontáneamente con ictericia en nuestro entorno clínico específico?
+
+561
+00:29:01.880 --> 00:29:05.660
+Uf, esa es la pregunta que desencadena todo el raciocinio posterior.
+
+562
+00:29:06.020 --> 00:29:10.520
+Y es un dato crítico que según las bases de datos de evidencia aún no está
+
+563
+00:29:10.520 --> 00:29:13.380
+sólidamente registrado en muchos sistemas de salud.
+
+564
+00:29:13.380 --> 00:29:17.540
+Esto significa que todo nuestro andamiaje diagnóstico inicial está
+
+565
+00:29:17.540 --> 00:29:21.400
+condicionado por una prevalencia que la mayoría de las veces
+
+566
+00:29:21.400 --> 00:29:22.740
+estimamos a ciegas.
+
+567
+00:29:23.240 --> 00:29:25.620
+Basándonos solo en nuestra experiencia empírica.
+
+568
+00:29:25.900 --> 00:29:30.260
+Así es. Es una invitación para que quienes nos escuchan mantengan su
+
+569
+00:29:30.260 --> 00:29:32.900
+escepticismo siempre activo frente a la literatura.
+
+570
+00:29:32.900 --> 00:29:37.400
+A veces, las aguas más oscuras del diagnóstico, esas donde las
+
+571
+00:29:37.400 --> 00:29:41.580
+certezas numéricas fracasan, son precisamente el lugar donde el juicio
+
+572
+00:29:41.580 --> 00:29:43.920
+clínico estructurado es insustituible.

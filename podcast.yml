@@ -72,6 +72,62 @@ show:
 # =============================================================================
 
 episodes:
+  - slug: "hepatitis-viral-aguda"
+    number: 6
+    season: 1
+    title: "Hepatitis viral aguda: sesgos, paradojas y la ausencia de números"
+    pub_date: "2026-09-22T17:00:00-05:00"
+    duration: "00:29:44"
+    tag: "ep006"
+    audio_file: "ep006.mp3"
+    topic: "gastroenterologia/hepatitis-viral-aguda"
+    transcript: "transcripts/ep006.vtt"
+    source_url: "https://powersemiotics.com/medsemiotics/post.html?slug=hepatitis-viral-aguda-precision-semiotica"
+    description: >-
+      Un ayudante de cocina de 26 años acude a urgencias por coluria, acolia,
+      ictericia franca y dolor en hipocondrio derecho por distensión de la
+      cápsula de Glisson, tras regresar de una zona rural con consumo de agua de
+      pozo. A partir del caso HM6001 de medsemiotics, este episodio desentraña
+      por qué los signos más intuitivos de la hepatitis viral aguda chocan con la
+      estadística clínica. Revisamos la baja sensibilidad visual de la
+      ictericia (el 42 % de los médicos no la detecta con bilirrubina en 2,5
+      mg/dL) y explicamos por qué los cocientes de verosimilitud de la fiebre,
+      la coluria y las transaminasas figuran como «no medidos» o «no medibles»:
+      el sesgo de incorporación impide calcular el rendimiento diagnóstico de
+      pruebas que forman parte de la propia definición del síndrome. Analizamos
+      el patrón de referencia etiológico en la serología, los criterios de
+      alarma que dictan el ingreso frente al manejo ambulatorio (INR prolongado,
+      encefalopatía por amoníaco e intolerancia oral) y las cuatro acciones
+      inmediatas de salud pública ante un manipulador de alimentos.
+
+  - slug: "esclerosis-multiple-neuromielitis-optica"
+    number: 5
+    season: 1
+    title: "Esclerosis múltiple o neuromielitis óptica: por qué confundirlas es peligroso"
+    pub_date: "2026-09-22T12:00:00-05:00"
+    duration: "00:26:30"
+    tag: "ep005"
+    audio_file: "ep005.mp3"
+    topic: "neurologia/enfermedades_desmielinizantes"
+    transcript: "transcripts/ep005.vtt"
+    source_url: "https://powersemiotics.com/medsemiotics/neurologia/enfermedades_desmielinizantes.html"
+    description: >-
+      Una mujer de 27 años acude a urgencias con parestesias ascendentes desde
+      el ombligo, nivel sensitivo en T10, signo de Lhermitte y una neuritis óptica
+      retrobulbar previa con defecto pupilar aferente relativo (Marcus Gunn) y
+      fenómeno de Uhthoff. A partir de un caso clínico socrático de la Cátedra de
+      Neurología de la Universidad Central del Ecuador en el Hospital Carlos
+      Andrade Marín (HCAM), este episodio desmenuza el diagnóstico diferencial de
+      los síndromes desmielinizantes. Recorremos los criterios de McDonald 2017
+      —dedos de Dawson perivenulares, diseminación en espacio y tiempo, y bandas
+      oligoclonales en LCR— y advertimos sobre la trampa diagnóstica de la
+      neuromielitis óptica (NMOSD): una astrocitopatía por anticuerpos anti-AQP4
+      donde las terapias de esclerosis múltiple (interferón beta, fingolimod o
+      natalizumab) no solo fracasan, sino que desencadenan exacerbaciones
+      catastróficas. Analizamos también el manejo agudo con pulsos de
+      metilprednisolona y la regla de oro en guardia: solicitar un EMO antes de
+      asumir un brote nuevo ante un pseudobrote térmico inducido por infección.
+
   - slug: "hipertension-arterial-esencial"
     number: 4
     season: 1
