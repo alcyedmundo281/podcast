@@ -84,7 +84,7 @@ sí solo, y es deliberado — ver `CLAUDE.md`.
 
 | Script | Qué hace |
 |---|---|
-| `scripts/temas.py` | Temas de farmacosemiotics → material para NotebookLM |
+| `scripts/temas.py` | Temas de farmacosemiotics, medsemiotics y medsemiotics-copilot → material para NotebookLM |
 | `scripts/build_feed.py` | `podcast.yml` → `docs/feed.xml` + `docs/index.html` |
 | `scripts/validate_feed.py` | Puerta de calidad previa al despliegue |
 | `scripts/metrics.py` | Descargas por episodio + serie temporal propia |

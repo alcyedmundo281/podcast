@@ -87,7 +87,7 @@ Los temas vienen del ecosistema **Powersemiotics** —ep001 y ep003 de
 medsemiotics, ep002 y ep004 de farmacosemiotics— y el audio lo genera **NotebookLM**
 (Audio Overview). Ese paso vive en el navegador y no se puede automatizar
 desde el repositorio: necesita sesión de Google. Todo lo que lo rodea es
-mecánico y lo hace `scripts/temas.py`, que tiene puente con dos proyectos:
+mecánico y lo hace `scripts/temas.py`, que tiene puente con tres proyectos:
 
 - **farmacosemiotics** (selecciones y fichas), desde un clon del repositorio.
 - **medsemiotics** (artículos del blog con caso socrático publicado, `HM####`),
@@ -95,6 +95,15 @@ mecánico y lo hace `scripts/temas.py`, que tiene puente con dos proyectos:
   tema entra al podcast cuando su caso se publica en el blog, y `listar` lo
   muestra como pendiente. El caso da el hilo del episodio; la evidencia de
   medsemiotics-db, las cifras.
+- **medsemiotics-copilot** (casos socráticos de clase de la cátedra UCE / HCAM,
+  `docs/caso_clinico_socratico_<tema>.md`), desde un clon. Cada caso se cruza
+  con el sílabo oficial para saber curso y semana; su `source_url` canónica es
+  el módulo web de esa semana (como ep001 y ep003) y `fuente.md` lleva el caso
+  seguido de la guía clínica ampliada, sin diagramas. El id es
+  `<CURSO>-<TOPIC-ID>` (p. ej. `NEURO-DESMIELINIZANTES-EM`). Un caso entra al
+  podcast en cuanto se prepara la clase; `listar` lo muestra como pendiente.
+  El slug propuesto es el `topic_id` del sílabo: revísalo antes del primer
+  release, porque después ya no se puede cambiar.
 
 ```bash
 # qué temas ya tienen episodio y cuáles faltan
@@ -104,6 +113,8 @@ uv run python scripts/temas.py listar --fuente https://powersemiotics.com/medsem
 # deja el material de un tema en notebooklm/<slug>/
 uv run python scripts/temas.py preparar SEL0024 --fuente ../farmacosemiotics
 uv run python scripts/temas.py preparar HM6001 --fuente https://powersemiotics.com/medsemiotics/
+uv run python scripts/temas.py listar --fuente ../medsemiotics-copilot --pendientes
+uv run python scripts/temas.py preparar NEURO-DESMIELINIZANTES-EM --fuente ../medsemiotics-copilot
 ```
 
 `preparar` escribe tres archivos:
@@ -121,8 +132,8 @@ farmacosemiotics en cualquier momento.
 
 Un episodio puede salir de **cualquier proyecto del ecosistema
 Powersemiotics** (medsemiotics, medsemiotics-db, farmacosemiotics,
-biosemiotics…); farmacosemiotics y medsemiotics son los que tienen puente
-mecánico.
+biosemiotics…); farmacosemiotics, medsemiotics y medsemiotics-copilot son los
+que tienen puente mecánico.
 `source_url` apunta al material concreto del que sale el episodio, dentro de
 su proyecto: una página bajo `powersemiotics.com/<proyecto>/` (ep001–ep003) o
 el archivo en el repositorio del proyecto (ep004). La portada de
