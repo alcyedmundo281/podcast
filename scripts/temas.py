@@ -15,6 +15,11 @@ Fuentes que entiende `--fuente`:
                      blog que ya tienen caso socrático publicado (HM####): el
                      caso da el hilo del episodio y la evidencia de
                      medsemiotics-db, las cifras.
+  medsemiotics-copilot
+                     un clon del repositorio de la cátedra (UCE / HCAM). Son
+                     candidatos los casos socráticos de clase
+                     (docs/caso_clinico_socratico_<tema>.md), cruzados con el
+                     sílabo oficial; su guía clínica ampliada va detrás del caso.
 
   listar     qué temas ya tienen episodio y cuáles no
   preparar   deja listo el material de un tema para pegarlo en NotebookLM
@@ -37,6 +42,8 @@ Uso:
   python3 scripts/temas.py preparar SEL0003 --fuente ../farmacosemiotics
   python3 scripts/temas.py listar   --fuente https://powersemiotics.com/medsemiotics/
   python3 scripts/temas.py preparar HM6001 --fuente https://powersemiotics.com/medsemiotics/
+  python3 scripts/temas.py listar   --fuente ../medsemiotics-copilot --pendientes
+  python3 scripts/temas.py preparar NEURO-DESMIELINIZANTES-EM --fuente ../medsemiotics-copilot
 """
 
 from __future__ import annotations
@@ -83,6 +90,13 @@ BASE_SITIO = "https://powersemiotics.com/farmacosemiotics"
 SITIO_MED = "https://powersemiotics.com/medsemiotics"
 INDICE_MED = "assets/data/blog-index.json"
 AGENTE = "medsemiotics-podcast/1.0 (+https://powersemiotics.com/podcast/)"
+
+# medsemiotics-copilot se lee de un clon: los casos socráticos de clase y el
+# sílabo oficial que los ubica. La fuente canónica del episodio es el módulo web
+# de esa semana, como en ep001 y ep003; el caso en GitHub se reconoce también.
+BASE_COPILOT = "https://github.com/alcyedmundo281/medsemiotics-copilot/blob/main"
+PATRON_CASO_COPILOT = "caso_clinico_socratico_*.md"
+ESPECIALIDADES = {"NEURO": "neurologia", "GASTRO": "gastroenterologia"}
 
 # Campos que no aportan nada a un guion de audio: metadatos de control
 # documental, autoría y licencia. Se excluyen de fuente.md para que NotebookLM
@@ -197,7 +211,74 @@ def cargar_casos(fuente: str) -> list[Tema]:
     return sorted(temas, key=lambda t: t.ident)
 
 
+def es_copilot(fuente: str) -> bool:
+    raiz = Path(fuente)
+    return (raiz / "config" / "syllabi").is_dir() and any(
+        (raiz / "docs").glob(PATRON_CASO_COPILOT)
+    )
+
+
+def semanas_del_silabo(raiz: Path) -> dict[str, JSON]:
+    """{topic_id: semana} de todos los sílabos oficiales, con el curso incrustado."""
+    semanas: dict[str, JSON] = {}
+    for ruta in sorted((raiz / "config" / "syllabi").glob("*/silabo_*_v2.yaml")):
+        silabo = yaml.safe_load(ruta.read_text(encoding="utf-8")) or {}
+        info = silabo.get("course_info") or {}
+        for semana in silabo.get("schedule_18_weeks") or []:
+            semanas[str(semana["topic_id"])] = {
+                **semana,
+                "course_code": str(info.get("code", "")),
+                "course_name": str(info.get("name", "")),
+                "web_hub": str(info.get("web_hub", "")),
+            }
+    return semanas
+
+
+def cargar_casos_copilot(fuente: str) -> list[Tema]:
+    """Casos socráticos de clase de medsemiotics-copilot, ubicados en su sílabo."""
+    raiz = Path(fuente)
+    semanas = semanas_del_silabo(raiz)
+    temas: list[Tema] = []
+    for ruta in sorted((raiz / "docs").glob(PATRON_CASO_COPILOT)):
+        clave = ruta.stem.removeprefix("caso_clinico_socratico_")
+        topic_id = clave.replace("_", "-")
+        semana = semanas.get(topic_id, {})
+        curso = str(semana.get("course_code") or "")
+        prefijo = curso.lower() or "*"
+        guias = sorted((raiz / "docs").glob(f"guia_clinica_{prefijo}_{clave}.md"))
+        urls = [f"{BASE_COPILOT}/docs/{ruta.name}"]
+        # El módulo propio de la semana es la fuente canónica; el hub del curso no
+        # identifica a ningún tema y no sirve como source_url.
+        modulo = str(semana.get("web_module") or "")
+        if modulo and modulo != semana.get("web_hub"):
+            urls.insert(0, modulo)
+
+        def cargar(
+            caso: Path = ruta, guias: list[Path] = guias, semana: JSON = semana
+        ) -> JSON:
+            return {
+                "caso": caso.read_text(encoding="utf-8"),
+                "guia": guias[0].read_text(encoding="utf-8") if guias else "",
+                "semana": semana,
+            }
+
+        temas.append(
+            Tema(
+                ident=f"{curso or 'CASO'}-{topic_id}".upper(),
+                coleccion="copilot",
+                slug=topic_id,
+                titulo=str(semana.get("title") or topic_id),
+                urls=tuple(urls),
+                cargar=cargar,
+                especialidad=ESPECIALIDADES.get(curso, "REVISAR"),
+            )
+        )
+    return temas
+
+
 def cargar_temas(fuente_txt: str) -> list[Tema]:
+    if es_copilot(fuente_txt):
+        return cargar_casos_copilot(fuente_txt)
     if es_medsemiotics(fuente_txt):
         return cargar_casos(fuente_txt)
     fuente = Path(fuente_txt)
@@ -356,9 +437,44 @@ def construir_fuente_caso(tema: Tema, articulo: JSON) -> str:
     return "\n\n".join(partes) + "\n"
 
 
+def sin_diagramas(markdown: str) -> str:
+    """Quita los bloques de código (diagramas mermaid): en audio sólo son ruido."""
+    return re.sub(r"```.*?```\n?", "", markdown, flags=re.DOTALL).strip()
+
+
+def construir_fuente_copilot(tema: Tema, datos: JSON) -> str:
+    """Caso socrático de clase: el caso da el hilo; la guía ampliada, el contexto."""
+    semana: JSON = datos["semana"]
+    ubicacion = (
+        f"{semana['course_name']}, semana {semana['week']} ({semana['date']})"
+        if semana
+        else "caso de clase sin semana en el sílabo"
+    )
+    partes = [
+        f"# {tema.titulo}",
+        f"Caso socrático de medsemiotics-copilot ({tema.ident}): {ubicacion}. "
+        f"Fuente canónica: {tema.url}",
+        "El paciente del caso es sintético. Este material es docente y no trae "
+        "cocientes de verosimilitud de medsemiotics-db: no inventes LR, "
+        "sensibilidades ni cifras que no aparezcan aquí. Las dosis son referencia "
+        "académica sujeta al protocolo institucional; no las presentes como "
+        "indicación para un paciente real.",
+        "## Caso clínico socrático",
+        sin_diagramas(str(datos["caso"])),
+    ]
+    if datos.get("guia"):
+        partes += [
+            "## Guía clínica ampliada de la clase",
+            sin_diagramas(str(datos["guia"])),
+        ]
+    return "\n\n".join(partes) + "\n"
+
+
 def construir_fuente(tema: Tema, datos: JSON) -> str:
     if tema.coleccion == "casos":
         return construir_fuente_caso(tema, datos)
+    if tema.coleccion == "copilot":
+        return construir_fuente_copilot(tema, datos)
     cuerpo = "\n".join(render(datos))
     return (
         f"# {tema.titulo}\n\n"
@@ -418,6 +534,15 @@ ENCUADRES = {
         "hallazgo —y por qué a veces no se puede saber—: si la base declara un "
         "LR no medido o no medible, explica qué significa en vez de dar un número."
     ),
+    "copilot": (
+        "Este documento es un caso clínico socrático de la cátedra de la "
+        "Universidad Central del Ecuador en el Hospital Carlos Andrade Marín, "
+        "seguido de la guía clínica de esa clase. Recorre el caso etapa por etapa "
+        "(KNOW, REASON, ACT): plantea cada pregunta al oyente, deja un silencio "
+        "breve y luego razónala con la clave docente. El eje del episodio es la "
+        "semiología que decide el diagnóstico y el error concreto que un clínico "
+        "razonable cometería; la guía aporta el contexto, no una lista que recitar."
+    ),
     "fichas": (
         "Este documento es una ficha de farmacoterapia: la molécula ya está "
         "elegida y lo que sigue es usarla bien —cribado previo, posología, "
@@ -446,6 +571,20 @@ def pista_y_refs(tema: Tema, datos: JSON) -> tuple[str, list[str]]:
         caso: JSON = datos["caso"]
         refs = [str(r["id"]) for r in caso.get("referencias") or []]
         return str(caso["cierre"]["sintesis"]), refs
+    if tema.coleccion == "copilot":
+        # La viñeta de entrada (citas «>» del caso) es el gancho natural de las notas.
+        vineta = [
+            linea.lstrip("> ").strip()
+            for linea in str(datos["caso"]).splitlines()
+            if linea.startswith(">") and "sintético" not in linea
+        ]
+        _, _, bibliografia = str(datos.get("guia") or "").partition("Referencias")
+        refs = [
+            linea[2:].strip()
+            for linea in bibliografia.splitlines()
+            if linea.startswith("- ")
+        ]
+        return " ".join(vineta).replace("**", ""), refs
     pista = datos.get("conclusion") or datos.get("pregunta") or ""
     return str(pista), [str(r) for r in datos.get("refs") or []]
 
@@ -582,8 +721,8 @@ def cmd_preparar(args: argparse.Namespace) -> int:
 
 
 AYUDA_FUENTE = (
-    "clon de farmacosemiotics, o medsemiotics: su sitio publicado "
-    f"({SITIO_MED}/) o un clon"
+    "clon de farmacosemiotics, medsemiotics (su sitio publicado "
+    f"{SITIO_MED}/ o un clon) o clon de medsemiotics-copilot"
 )
 
 
