@@ -72,6 +72,35 @@ show:
 # =============================================================================
 
 episodes:
+  - slug: "cirrosis-hepatica"
+    number: 7
+    season: 1
+    title: "Fisiopatología de la cirrosis y falla sistémica"
+    pub_date: "2026-09-22T22:00:00-05:00"
+    duration: "00:25:04"
+    tag: "ep007"
+    audio_file: "ep007.mp3"
+    topic: "gastroenterologia/cirrosis"
+    transcript: "transcripts/ep007.vtt"
+    source_url: "https://powersemiotics.com/medsemiotics/gastroenterologia/cirrosis.html"
+    description: >-
+      Un paciente con cirrosis hepática descompensada llega con ascitis a tensión,
+      encefalopatía hepática grado II y oliguria progresiva. A partir de la plataforma
+      educativa de cirrosis de medsemiotics, este episodio recorre la cascada
+      fisiopatológica que conecta la fibrosis hepática con la falla orgánica sistémica.
+      Analizamos cómo la hipertensión portal activa el sistema renina-angiotensina-
+      aldosterona y el sistema nervioso simpático para retener sodio y agua, generando
+      la paradoja hemodinámica de la cirrosis: vasodilatación esplácnica con
+      vasoconstricción renal y cerebral. Explicamos los criterios diagnósticos del
+      síndrome hepatorrenal (SHR-AKI: creatinina > 0,3 mg/dL en 48 h o > 50 % en
+      7 días, sin respuesta a expansión de volumen con albúmina 1 g/kg por 2 días),
+      el papel de la albúmina intravenosa en la prevención de la disfunción circulatoria
+      post-paracentesis, y los umbrales de la escala MELD-Na que guían la priorización
+      en lista de trasplante. También abordamos el sangrado variceal: la profilaxis
+      primaria con betabloqueantes no selectivos (propranolol, carvedilol) y el manejo
+      agudo con terlipresina más bandas elásticas, y el papel del TIPS en hemorragia
+      refractaria.
+
   - slug: "hepatitis-viral-aguda"
     number: 6
     season: 1
