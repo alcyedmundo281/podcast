@@ -168,5 +168,18 @@
       "artritis-psoriasica": 19,
       "demencias": 34
     }
+  },
+  {
+    "date": "2026-09-25",
+    "total": 88,
+    "by_episode": {
+      "cirrosis-hepatica": 2,
+      "hepatitis-viral-aguda": 6,
+      "esclerosis-multiple-neuromielitis-optica": 6,
+      "hipertension-arterial-esencial": 8,
+      "paralisis-supranuclear-progresiva": 13,
+      "artritis-psoriasica": 19,
+      "demencias": 34
+    }
   }
 ]
