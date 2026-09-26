@@ -1,0 +1,1578 @@
+WEBVTT
+
+NOTE
+Transcripción del episodio 8 de medsemiotics — meningitis aguda.
+Generada automáticamente y corregida en terminología clínica.
+Puede contener errores; la fuente autorizada es el audio.
+
+1
+00:00:00.000 --> 00:00:02.100
+Vamos a arrancar directamente con el escenario de hoy.
+
+2
+00:00:02.440 --> 00:00:06.880
+Imaginemos esto, un paciente varón de 34 años entra caminando a la sala
+
+3
+00:00:06.880 --> 00:00:07.340
+de urgencias.
+
+4
+00:00:07.640 --> 00:00:09.660
+El típico caso de la madrugada.
+
+5
+00:00:09.860 --> 00:00:13.800
+Exacto. Tiene fiebre, digamos unos 38.7 grados centígrados,
+
+6
+00:00:14.680 --> 00:00:16.860
+frecuencia cardíaca de 104 latidos por minuto
+
+7
+00:00:16.860 --> 00:00:20.720
+y una presión arterial completamente normal de 128 sobre 74
+
+8
+00:00:20.720 --> 00:00:22.140
+milímetros de mercurio.
+
+9
+00:00:22.240 --> 00:00:24.960
+Y me imagino que su estado mental está intacto.
+
+10
+00:00:25.320 --> 00:00:28.380
+Totalmente lúcido. Un Glasgow de 15 colabora en todo.
+
+11
+00:00:28.380 --> 00:00:32.840
+Pero, y aquí está el detalle, refiere tener la peor cefalea de su vida.
+
+12
+00:00:33.040 --> 00:00:37.240
+Es un dolor intenso, continuo, lleva ya 18 horas evolucionando,
+
+13
+00:00:37.320 --> 00:00:40.920
+no tolera la luz de la sala y, de hecho, ha vomitado unas tres veces.
+
+14
+00:00:41.360 --> 00:00:44.760
+Claro, un cuadro que enciende alarmas, pero que visualmente puede engañar.
+
+15
+00:00:44.760 --> 00:00:48.680
+Ahí es donde quiero llegar, porque lo exploras y su cuello se mueve
+
+16
+00:00:48.680 --> 00:00:51.180
+perfectamente. No hay rigidez en absoluto.
+
+17
+00:00:51.540 --> 00:00:55.300
+Si el clínico que lo atiende confía ciegamente en los libros de texto clásicos de
+
+18
+00:00:55.300 --> 00:00:59.600
+semiología, pues le da paracetamol, una palmadita en la espalda y lo manda a casa.
+
+19
+00:00:59.860 --> 00:01:03.800
+Sí. Y ese paciente, con su cuello maravillosamente flexible,
+
+20
+00:01:04.120 --> 00:01:06.220
+podría morir en cuestión de horas.
+
+21
+00:01:06.320 --> 00:01:10.440
+Es un escenario aterrador precisamente porque castiga esa confianza
+
+22
+00:01:10.440 --> 00:01:12.920
+excesiva que tenemos en lo que podemos ver y tocar.
+
+23
+00:01:12.920 --> 00:01:17.380
+Y por eso hoy vamos a hacer una inmersión clínica profunda
+
+24
+00:01:17.380 --> 00:01:21.880
+en este caso. Vamos a usar la evidencia de la plataforma medsemiotics-db para la
+
+25
+00:01:21.880 --> 00:01:26.240
+meningitis aguda bacteriana. Nuestra misión hoy, digamos, es desglosar la
+
+26
+00:01:26.240 --> 00:01:29.360
+matemática clínica real detrás de estos signos físicos.
+
+27
+00:01:29.360 --> 00:01:33.780
+Exacto. Queremos ver exactamente cuánto cambia la probabilidad diagnóstica
+
+28
+00:01:33.780 --> 00:01:36.240
+con cada hallazgo en la cabecera del paciente.
+
+29
+00:01:36.420 --> 00:01:40.520
+Y, lo que me parece más fascinante, ¿por qué a veces la evidencia nos
+
+30
+00:01:40.520 --> 00:01:44.380
+obliga a aceptar que simplemente no podemos calcular esa probabilidad?
+
+31
+00:01:44.640 --> 00:01:46.380
+Ok, vamos a desglosar esto.
+
+32
+00:01:46.660 --> 00:01:50.660
+Las apariencias de este examen físico pueden ser una trampa mortal si no entendemos
+
+33
+00:01:50.660 --> 00:01:51.020
+los números.
+
+34
+00:01:51.240 --> 00:01:55.400
+Pero antes de meternos de lleno, establezcamos una regla básica sobre cómo vamos a
+
+35
+00:01:55.400 --> 00:01:56.480
+interpretar la evidencia hoy.
+
+36
+00:01:56.480 --> 00:02:00.940
+Sí, es crucial. Vamos a mencionar mucho el concepto de cociente de verosimilitud,
+
+37
+00:02:01.080 --> 00:02:03.880
+o LR, por sus siglas en inglés, likelihood ratio.
+
+38
+00:02:04.440 --> 00:02:08.620
+Para que sea súper visual, pensemos en el LR como un
+
+39
+00:02:08.620 --> 00:02:10.480
+multiplicador de apuestas en un casino.
+
+40
+00:02:10.760 --> 00:02:15.080
+Me gusta esa analogía. O sea, si el LR es mayor a 1, tus sospechas aumentan.
+
+41
+00:02:16.120 --> 00:02:20.240
+Exactamente. Estás apostando más fuerte a que la enfermedad sí está presente.
+
+42
+00:02:20.640 --> 00:02:23.320
+Si es menor a 1, tus sospechas disminuyen.
+
+43
+00:02:23.720 --> 00:02:27.620
+Pero, y esto es clave, si el LR es exactamente
+
+44
+00:02:27.620 --> 00:02:32.120
+1.0, tu apuesta no se mueve ni un solo milímetro.
+
+45
+00:02:32.280 --> 00:02:34.260
+El hallazgo es inútil, básicamente.
+
+46
+00:02:34.780 --> 00:02:37.080
+Totalmente inútil para cambiar tu nivel de certeza.
+
+47
+00:02:37.340 --> 00:02:39.020
+Es como si no hubieras examinado nada.
+
+48
+00:02:39.020 --> 00:02:43.180
+Bien, con eso en mente, volvamos a nuestro paciente en la puerta de urgencias.
+
+49
+00:02:43.920 --> 00:02:46.880
+Fiebre y la peor cefalea de su vida en un adulto joven.
+
+50
+00:02:47.020 --> 00:02:50.520
+Aquí lanzo la primera pregunta socrática para quien nos escucha, para que la
+
+51
+00:02:50.520 --> 00:02:51.460
+piensen mientras hablamos.
+
+52
+00:02:51.820 --> 00:02:55.940
+¿Qué diagnósticos no es permisible pasar por alto en este escenario y con qué
+
+53
+00:02:55.940 --> 00:02:56.320
+urgencia?
+
+54
+00:02:56.880 --> 00:03:00.060
+Dejemos un par de segundos para que nuestra audiencia haga su lista mental.
+
+55
+00:03:00.320 --> 00:03:02.700
+Sí, es un ejercicio de reflejo clínico fundamental.
+
+56
+00:03:03.380 --> 00:03:07.800
+Mi instinto inicial al ver una cefalea febril es pensar que nueve de cada
+
+57
+00:03:07.800 --> 00:03:08.300
+10 veces.
+
+58
+00:03:08.300 --> 00:03:11.780
+Entonces, va a ser un cuadro viral sistémico, una gripe fuerte o algo así.
+
+59
+00:03:11.960 --> 00:03:14.580
+Claro, y estadísticamente no te equivocas.
+
+60
+00:03:14.700 --> 00:03:18.260
+Pero la medicina de urgencias no opera solo por probabilidades crudas.
+
+61
+00:03:18.340 --> 00:03:22.760
+El razonamiento aquí no busca la certeza diagnóstica inmediata, sino que se
+
+62
+00:03:22.760 --> 00:03:24.820
+basa en lo que llamamos el umbral de acción.
+
+63
+00:03:24.960 --> 00:03:26.940
+El famoso umbral de acción.
+
+64
+00:03:27.180 --> 00:03:31.520
+Ajá, y la respuesta que encabeza esa lista de manera indiscutible es la
+
+65
+00:03:31.520 --> 00:03:33.280
+meningitis aguda bacteriana.
+
+66
+00:03:33.280 --> 00:03:37.700
+Porque si te equivocas y retrasas el tratamiento, el pronóstico neurológico y la
+
+67
+00:03:37.700 --> 00:03:40.240
+supervivencia caen en picada en cuestión de horas.
+
+68
+00:03:40.700 --> 00:03:43.820
+Es, digamos, como jugar a la defensiva en el ajedrez.
+
+69
+00:03:44.180 --> 00:03:47.540
+No te defiendes del movimiento más probable que va a ser tu oponente.
+
+70
+00:03:47.680 --> 00:03:50.200
+Te defiendes del movimiento que te hace jaque mate.
+
+71
+00:03:50.440 --> 00:03:52.540
+Esa es la mentalidad exacta.
+
+72
+00:03:52.560 --> 00:03:56.520
+En esa misma liga de gravedad entran la encefalitis, la hemorragia
+
+73
+00:03:56.520 --> 00:04:00.880
+subaracnoidea, un absceso cerebral o incluso una trombosis de senos
+
+74
+00:04:00.880 --> 00:04:01.140
+venosos.
+
+75
+00:04:01.140 --> 00:04:05.280
+La prioridad es delimitar ese campo minado antes de dar un
+
+76
+00:04:05.280 --> 00:04:06.340
+diagnóstico definitivo.
+
+77
+00:04:06.540 --> 00:04:10.100
+De acuerdo. Ahora, miremos los síntomas que el paciente nos cuenta.
+
+78
+00:04:10.300 --> 00:04:13.480
+Tiene cefalea, tiene náuseas y tiene vómitos.
+
+79
+00:04:13.940 --> 00:04:16.020
+Y aquí viene nuestra segunda pregunta socrática.
+
+80
+00:04:16.500 --> 00:04:20.960
+Estos síntomas orientan a irritación meníngea, pero ¿cuánto aumentan
+
+81
+00:04:20.960 --> 00:04:24.660
+realmente la probabilidad de meningitis según los datos de medsemiotics-db?
+
+82
+00:04:24.900 --> 00:04:26.040
+Pensemos en esto un segundo.
+
+83
+00:04:26.520 --> 00:04:28.800
+Es una pregunta trampa si te soy sincera.
+
+84
+00:04:29.400 --> 00:04:33.280
+Totalmente. Porque cuando revisé la base de datos, me generó un cortocircuito.
+
+85
+00:04:33.560 --> 00:04:37.740
+La evidencia marca que la cefalea tiene una sensibilidad de 0.5,
+
+86
+00:04:37.940 --> 00:04:42.320
+las náuseas tienen una sensibilidad de 0.3 y los vómitos también de
+
+87
+00:04:42.320 --> 00:04:42.900
+0.3.
+
+88
+00:04:43.140 --> 00:04:46.780
+Uno pensaría que sumando todo eso, el multiplicador se dispara.
+
+89
+00:04:47.100 --> 00:04:51.560
+Exacto. Pero en lugar de darnos un cociente de verosimilitud altísimo, la
+
+90
+00:04:51.560 --> 00:04:56.060
+base de datos etiqueta el estado de estos síntomas individuales como LR no medido,
+
+91
+00:04:56.120 --> 00:04:57.720
+o sea, cero multiplicador.
+
+92
+00:04:57.720 --> 00:05:00.680
+¿Por qué la base no hace el cálculo matemático y ya?
+
+93
+00:05:01.100 --> 00:05:05.600
+Porque medsemiotics-db prefiere la honestidad intelectual antes que inventar números
+
+94
+00:05:05.600 --> 00:05:06.740
+que parezcan bonitos.
+
+95
+00:05:07.270 --> 00:05:10.910
+Para calcular el LR, necesitas dos piezas del rompecabezas.
+
+96
+00:05:11.320 --> 00:05:15.780
+Necesitas la sensibilidad, que es la frecuencia del hallazgo en los enfermos, y
+
+97
+00:05:15.780 --> 00:05:18.540
+la especificidad, la frecuencia en los sanos.
+
+98
+00:05:18.720 --> 00:05:22.640
+La fuente original, que es una revisión rigurosa, publica las
+
+99
+00:05:22.640 --> 00:05:24.560
+sensibilidades agrupadas de estos síntomas,
+
+100
+00:05:24.560 --> 00:05:26.880
+Pero no publica la especificidad.
+
+101
+00:05:27.060 --> 00:05:30.960
+Y sin especificidad, matemáticamente no existe el cociente de
+
+102
+00:05:30.960 --> 00:05:31.640
+verosimilitud.
+
+103
+00:05:31.920 --> 00:05:36.040
+Pero, a ver, si agrupan datos de un montón de estudios, ¿no pueden, no sé,
+
+104
+00:05:36.180 --> 00:05:37.440
+estimarlo de alguna forma?
+
+105
+00:05:37.820 --> 00:05:42.320
+Es que sería como intentar calcular el área de un rectángulo sabiendo solo
+
+106
+00:05:42.320 --> 00:05:44.540
+el perímetro. La matemática no te deja.
+
+107
+00:05:44.940 --> 00:05:47.880
+Además, hay un detalle metodológico tremendo aquí.
+
+108
+00:05:48.120 --> 00:05:52.240
+Las fuentes suelen agrupar las náuseas y los vómitos en una sola estimación de
+
+109
+00:05:52.240 --> 00:05:52.720
+sensibilidad.
+
+110
+00:05:52.720 --> 00:05:54.920
+Ah, los fusionan.
+
+111
+00:05:54.960 --> 00:05:56.420
+No son independientes.
+
+112
+00:05:56.520 --> 00:05:57.000
+Exacto.
+
+113
+00:05:57.180 --> 00:06:01.480
+Entonces no puedes aplicar una fórmula para derivar un riesgo cuando los datos de
+
+114
+00:06:01.480 --> 00:06:04.580
+origen vienen mezclados así y sin la especificidad.
+
+115
+00:06:05.000 --> 00:06:07.060
+Sería un castillo de naipes estadístico.
+
+116
+00:06:07.220 --> 00:06:08.060
+Qué locura.
+
+117
+00:06:08.180 --> 00:06:11.780
+Esto rompe mucho con la intuición médica de ir sumando puntitos en la cabeza.
+
+118
+00:06:12.020 --> 00:06:13.480
+Tiene náuseas, un punto.
+
+119
+00:06:13.620 --> 00:06:14.980
+Vomitó, otro punto.
+
+120
+00:06:15.280 --> 00:06:19.680
+Pero quiero volver a ese 0.5 de sensibilidad de la cefalea.
+
+121
+00:06:19.680 --> 00:06:22.720
+Porque ahí hay una trampa brutal que debemos discutir.
+
+122
+00:06:23.000 --> 00:06:24.900
+Sí, la trampa del 50%.
+
+123
+00:06:24.900 --> 00:06:29.700
+Claro. Si un médico lo lee rápido, una sensibilidad de 0.5
+
+124
+00:06:29.700 --> 00:06:32.260
+suena a lanzar una moneda, cara o cruz.
+
+125
+00:06:32.880 --> 00:06:36.840
+El peligro es que llegue un paciente con fiebre que, por alguna razón, no reporta
+
+126
+00:06:36.840 --> 00:06:37.400
+dolor de cabeza.
+
+127
+00:06:37.760 --> 00:06:42.220
+Y el médico dice, bueno, sin cefalea no es meningitis, lo cual
+
+128
+00:06:42.220 --> 00:06:43.160
+es un error garrafal.
+
+129
+00:06:43.740 --> 00:06:47.700
+Esa sensibilidad de 0.5 significa llanamente que una gran
+
+130
+00:06:47.700 --> 00:06:50.800
+proporción de los enfermos confirmados no la presenta.
+
+131
+00:06:50.940 --> 00:06:55.380
+O sea, su ausencia no te autoriza, bajo ningún concepto, a descartar la
+
+132
+00:06:55.380 --> 00:06:55.840
+enfermedad.
+
+133
+00:06:55.940 --> 00:07:00.280
+Para nada. El problema es que en la facultad memorizamos los síntomas clásicos casi
+
+134
+00:07:00.280 --> 00:07:03.400
+como si fueran constantes universales de la física, y no lo son.
+
+135
+00:07:03.600 --> 00:07:07.940
+Lo cual nos lleva directo al examen físico, que es el momento del caso donde se
+
+136
+00:07:07.940 --> 00:07:09.640
+caen los clásicos de la medicina.
+
+137
+00:07:09.640 --> 00:07:13.980
+Nuestro paciente está en la camilla con fiebre, pero con un estado mental
+
+138
+00:07:13.980 --> 00:07:16.100
+normal y el cuello libre.
+
+139
+00:07:16.420 --> 00:07:19.660
+Y esto nos lleva a la tercera pregunta socrática de este análisis.
+
+140
+00:07:20.420 --> 00:07:24.840
+La regla clínica construida sobre la triada de fiebre, rigidez de
+
+141
+00:07:24.840 --> 00:07:28.700
+nuca y alteración del estado mental tiene reglas estrictas.
+
+142
+00:07:29.240 --> 00:07:32.740
+¿Qué afirma exactamente esta regla y qué no afirma?
+
+143
+00:07:32.940 --> 00:07:34.800
+Demos un momento para recordarla.
+
+144
+00:07:35.300 --> 00:07:39.060
+Es vital tenerla clara porque rige muchas decisiones de guardia.
+
+145
+00:07:39.060 --> 00:07:43.240
+A ver, en la escuela de medicina nos tatúan esta triada clásica, y la
+
+146
+00:07:43.240 --> 00:07:47.000
+tentación de firmar el alta cuando faltan dos de los tres componentes es gigante.
+
+147
+00:07:47.460 --> 00:07:49.220
+¿Cuál es el razonamiento real aquí?
+
+148
+00:07:49.840 --> 00:07:54.300
+El razonamiento es que esta regla afirma que la ausencia simultánea de
+
+149
+00:07:54.300 --> 00:07:56.920
+los tres componentes descarta la meningitis.
+
+150
+00:07:57.960 --> 00:08:00.720
+Simultánea. Las tres cosas ausentes al mismo tiempo.
+
+151
+00:08:00.720 --> 00:08:02.560
+Ese es el requisito.
+
+152
+00:08:02.780 --> 00:08:07.180
+La sensibilidad de la presencia de al menos uno de esos tres signos es altísima.
+
+153
+00:08:07.280 --> 00:08:10.200
+Va de 0.99 a 1.0.
+
+154
+00:08:10.440 --> 00:08:12.100
+Por eso sirve para descartar.
+
+155
+00:08:12.140 --> 00:08:15.020
+Pero, ojo, no sirve para confirmar.
+
+156
+00:08:15.340 --> 00:08:17.340
+Y en nuestro caso, el paciente ya tiene fiebre.
+
+157
+00:08:17.420 --> 00:08:19.060
+Así que ya tiene uno de los tres.
+
+158
+00:08:19.660 --> 00:08:20.140
+Exactamente.
+
+159
+00:08:20.260 --> 00:08:22.300
+La regla ya no lo excluye.
+
+160
+00:08:22.700 --> 00:08:24.400
+Pero hay algo más fuerte aún.
+
+161
+00:08:24.540 --> 00:08:29.040
+La propia fuente advierte que si tienes una alta sospecha clínica, un alto
+
+162
+00:08:29.040 --> 00:08:29.460
+riesgo,
+
+163
+00:08:29.460 --> 00:08:31.700
+Vas directo a la punción lumbar.
+
+164
+00:08:31.720 --> 00:08:33.180
+Te saltas la regla por completo.
+
+165
+00:08:33.560 --> 00:08:36.300
+O sea, ni te molestas en usar la triada para descartar.
+
+166
+00:08:36.540 --> 00:08:39.840
+Ahora, tengo una duda metodológica sobre la base de datos.
+
+167
+00:08:40.440 --> 00:08:44.580
+En las fichas, la fiebre sola o la alteración de conciencia sola
+
+168
+00:08:44.580 --> 00:08:46.700
+aparecen como LR no medido.
+
+169
+00:08:46.940 --> 00:08:50.780
+Pero la regla combinada sí tiene esos números perfectos de sensibilidad.
+
+170
+00:08:51.080 --> 00:08:52.180
+¿Por qué pasa eso?
+
+171
+00:08:52.420 --> 00:08:56.540
+Es un principio clínico y epidemiológico muy elegante.
+
+172
+00:08:56.540 --> 00:09:00.760
+Exactamente. El rendimiento de una regla combinada no se hereda a sus partes por
+
+173
+00:09:00.760 --> 00:09:05.140
+separado. El estudio original midió el desempeño del grupo completo, pero
+
+174
+00:09:05.140 --> 00:09:08.840
+no calcularon el cociente aislado de la fiebre en esa misma cohorte.
+
+175
+00:09:09.360 --> 00:09:13.340
+Claro, usar el éxito del grupo para validar a un solo individuo sería hacer trampa
+
+176
+00:09:13.340 --> 00:09:14.060
+con la estadística.
+
+177
+00:09:14.440 --> 00:09:17.180
+Sería metodológicamente fraudulento, sí.
+
+178
+00:09:17.520 --> 00:09:20.180
+Y eso nos lleva a la exploración física detallada, ¿no?
+
+179
+00:09:20.560 --> 00:09:23.060
+Sí, al punto de quiebre absoluto.
+
+180
+00:09:23.060 --> 00:09:24.600
+Vamos a explorar ese cuello.
+
+181
+00:09:24.700 --> 00:09:26.920
+El paciente está en decúbito supino.
+
+182
+00:09:27.140 --> 00:09:29.440
+Hacemos la flexión cervical libre.
+
+183
+00:09:29.780 --> 00:09:31.780
+El mentón toca el pecho sin ningún dolor.
+
+184
+00:09:32.200 --> 00:09:33.880
+Pasamos a los signos epónimos.
+
+185
+00:09:34.060 --> 00:09:35.700
+Signo de Kernig, negativo.
+
+186
+00:09:35.900 --> 00:09:37.800
+Signo de Brudzinski, negativo.
+
+187
+00:09:38.460 --> 00:09:40.360
+Aquí va la cuarta pregunta socrática.
+
+188
+00:09:40.980 --> 00:09:44.200
+El paciente tiene los tres grandes signos meníngeos negativos.
+
+189
+00:09:44.500 --> 00:09:48.440
+¿Se puede descartar la meningitis y mandarlo a casa con analgesia?
+
+190
+00:09:48.540 --> 00:09:49.900
+Un segundo para meditarlo.
+
+191
+00:09:49.900 --> 00:09:53.700
+Aquí es donde incluso los clínicos más razonables suelen equivocarse.
+
+192
+00:09:54.040 --> 00:09:58.140
+Totalmente. Mi instinto, si veo todo negativo, es pensar que no hay irritación
+
+193
+00:09:58.140 --> 00:09:58.560
+meníngea.
+
+194
+00:09:58.620 --> 00:10:00.640
+Pero, ¿qué dicen los números reales?
+
+195
+00:10:00.840 --> 00:10:03.480
+Las cifras son devastadoras.
+
+196
+00:10:03.620 --> 00:10:05.500
+Vamos a ver los multiplicadores de apuestas.
+
+197
+00:10:05.980 --> 00:10:10.440
+La rigidez de nuca tiene un LR positivo de 0.94, con una
+
+198
+00:10:10.440 --> 00:10:12.340
+sensibilidad de apenas 0.3.
+
+199
+00:10:12.540 --> 00:10:12.920
+¡Wow!
+
+200
+00:10:12.920 --> 00:10:18.080
+Y espera, el signo de Kernig tiene un LR positivo de 0.97
+
+201
+00:10:18.080 --> 00:10:22.100
+y su sensibilidad es de un ínfimo 0.05.
+
+202
+00:10:22.700 --> 00:10:23.460
+5%.
+
+203
+00:10:23.460 --> 00:10:24.120
+5%.
+
+204
+00:10:24.120 --> 00:10:26.300
+Y el Brudzinski es un calco.
+
+205
+00:10:26.360 --> 00:10:30.600
+LR positivo de 0.97 y sensibilidad de 0.05.
+
+206
+00:10:30.980 --> 00:10:33.680
+A ver, detengámonos en esto, porque es gravísimo.
+
+207
+00:10:34.140 --> 00:10:38.260
+Un LR de 0.97 o 0.94 es, a efectos
+
+208
+00:10:38.260 --> 00:10:40.200
+matemáticos prácticos, 1.0.
+
+209
+00:10:40.280 --> 00:10:41.300
+Es la unidad, sí.
+
+210
+00:10:41.300 --> 00:10:43.500
+O sea, multiplicas tu sospecha inicial por uno.
+
+211
+00:10:43.560 --> 00:10:45.080
+La probabilidad no se mueve.
+
+212
+00:10:45.140 --> 00:10:47.580
+El hallazgo no aporta absolutamente ninguna información.
+
+213
+00:10:47.960 --> 00:10:50.080
+Si encuentras un Kernig, no confirmas nada.
+
+214
+00:10:50.260 --> 00:10:54.280
+Y si no lo encuentras, que es lo que ocurre el 95% de las veces, tampoco
+
+215
+00:10:54.280 --> 00:10:55.020
+descartas nada.
+
+216
+00:10:55.360 --> 00:10:58.340
+Es un golpe directo al ego del médico explorador.
+
+217
+00:10:58.700 --> 00:11:02.420
+Llevamos más de un siglo doblando cuellos y piernas en las camas de hospital
+
+218
+00:11:02.420 --> 00:11:05.700
+basándonos en signos descritos en el siglo XIX.
+
+219
+00:11:06.160 --> 00:11:08.320
+Pero entonces, ¿por qué se hicieron tan famosos?
+
+220
+00:11:08.460 --> 00:11:09.940
+¿Por qué funcionaban en su época?
+
+221
+00:11:09.940 --> 00:11:14.300
+Porque Kernig y Brudzinski describieron esto en pacientes que estaban en
+
+222
+00:11:14.300 --> 00:11:18.720
+fase terminal, sin antibióticos, con una inflamación meníngea que llevaba
+
+223
+00:11:18.720 --> 00:11:23.160
+semanas destruyendo todo. Hoy en día vemos a los pacientes en urgencias en las
+
+224
+00:11:23.160 --> 00:11:27.600
+primeras horas o días. Que el cuello esté libre hoy es exactamente lo
+
+225
+00:11:27.600 --> 00:11:32.080
+esperable. Descartar una meningitis por un cuello que se mueve bien es
+
+226
+00:11:32.080 --> 00:11:33.680
+un error histórico grave.
+
+227
+00:11:33.680 --> 00:11:35.880
+Y entonces surge la gran pregunta.
+
+228
+00:11:36.100 --> 00:11:40.540
+Si estos signos tienen un cociente de 1 y no discriminan nada, ¿para
+
+229
+00:11:40.540 --> 00:11:44.100
+qué perder el tiempo explorándolos? Es puro teatro para que el paciente sienta que
+
+230
+00:11:44.100 --> 00:11:44.980
+lo estamos atendiendo.
+
+231
+00:11:45.360 --> 00:11:49.100
+No diría teatro, pero su uso actual es muy, muy
+
+232
+00:11:49.100 --> 00:11:53.140
+específico. Sirven solo para documentar el estado basal del paciente.
+
+233
+00:11:53.380 --> 00:11:54.460
+Ah, para la evolución.
+
+234
+00:11:54.820 --> 00:11:59.180
+Exacto. Si lo anotas ahora y en 6 horas vas a revaluarlo y ese
+
+235
+00:11:59.180 --> 00:12:03.460
+cuello parece una tabla de madera, detectas un deterioro innegable.
+
+236
+00:12:03.680 --> 00:12:08.020
+Pero lo que no debes hacer nunca es usar esa exploración para decidir si le
+
+237
+00:12:08.020 --> 00:12:09.820
+haces o no la punción lumbar.
+
+238
+00:12:09.920 --> 00:12:14.280
+Usarlos como filtro para la punción lumbar es una negligencia basada en una
+
+239
+00:12:14.280 --> 00:12:16.280
+ilusión estadística. Me queda clarísimo.
+
+240
+00:12:16.920 --> 00:12:21.100
+Bueno, pero la semiología también ha intentado modernizarse,
+
+241
+00:12:21.120 --> 00:12:21.600
+¿verdad?
+
+242
+00:12:21.920 --> 00:12:24.960
+Pasemos a la maniobra de sacudida cefálica.
+
+243
+00:12:25.260 --> 00:12:27.120
+El famoso jolt accentuation.
+
+244
+00:12:27.480 --> 00:12:28.220
+Ese mismo.
+
+245
+00:12:29.000 --> 00:12:31.340
+Quinta pregunta socrática de la inmersión clínica.
+
+246
+00:12:31.340 --> 00:12:35.120
+Le pides al paciente que gire la cabeza horizontalmente dos o tres veces por
+
+247
+00:12:35.120 --> 00:12:35.380
+segundo.
+
+248
+00:12:35.940 --> 00:12:39.400
+Nuestro paciente lo hace y el dolor de cabeza empeora brutalmente.
+
+249
+00:12:40.000 --> 00:12:44.360
+La evidencia dice que esta maniobra tiene una sensibilidad de 0.653
+
+250
+00:12:44.360 --> 00:12:47.420
+y una especificidad de 0.704.
+
+251
+00:12:47.720 --> 00:12:48.840
+Tenemos los dos números.
+
+252
+00:12:49.240 --> 00:12:53.280
+Pero medsemiotics-db dice que el LR es no medible.
+
+253
+00:12:53.900 --> 00:12:57.300
+¿Por qué no podemos simplemente dividir los números y sacar el cociente?
+
+254
+00:12:57.680 --> 00:13:00.700
+Y si la prueba es positiva o negativa, ¿qué hacemos?
+
+255
+00:13:01.340 --> 00:13:02.860
+Pensemos un poco en esta contradicción.
+
+256
+00:13:03.060 --> 00:13:06.520
+Parece contradictorio, pero es pura integridad de los datos.
+
+257
+00:13:06.700 --> 00:13:09.560
+La base de datos no hace aritmética basura.
+
+258
+00:13:09.900 --> 00:13:11.940
+Aritmética basura. Explícame eso.
+
+259
+00:13:12.140 --> 00:13:16.460
+Mira, la revisión sistemática que publica esos números les asigna una certeza
+
+260
+00:13:16.460 --> 00:13:18.780
+de evidencia GRADE muy baja.
+
+261
+00:13:18.940 --> 00:13:22.360
+Son estimaciones agrupadas de estudios súper heterogéneos.
+
+262
+00:13:22.720 --> 00:13:26.900
+Si tú tomas una sensibilidad agrupada por un lado, una especificidad por otro,
+
+263
+00:13:26.900 --> 00:13:31.360
+Ambas con certeza muy baja y las divides para forzar un cociente.
+
+264
+00:13:31.560 --> 00:13:34.680
+Creas un número que parece muy científico, pero que es fragilísimo.
+
+265
+00:13:34.980 --> 00:13:37.600
+Exacto. Un espejismo matemático.
+
+266
+00:13:38.000 --> 00:13:42.060
+Durante mucho tiempo se enseñó que esto tenía un LR de 2.2,
+
+267
+00:13:42.660 --> 00:13:45.900
+basado en un estudio viejísimo con una muestra pequeñita.
+
+268
+00:13:46.460 --> 00:13:48.420
+La evidencia moderna destrozó eso.
+
+269
+00:13:48.520 --> 00:13:52.500
+Así que derivar un número hoy sería engañoso.
+
+270
+00:13:52.600 --> 00:13:55.860
+Ya veo. ¿Y qué hacemos entonces con nuestro paciente?
+
+271
+00:13:55.860 --> 00:13:57.740
+La sacudida le dolió muchísimo.
+
+272
+00:13:58.080 --> 00:13:59.760
+La prueba es positiva.
+
+273
+00:13:59.860 --> 00:14:04.200
+Con esa especificidad de 0.704, la prueba está
+
+274
+00:14:04.200 --> 00:14:05.380
+llena de falsos positivos.
+
+275
+00:14:05.520 --> 00:14:09.980
+A cualquiera con una migraña o una gripe fuerte le va a doler la cabeza si
+
+276
+00:14:09.980 --> 00:14:10.740
+se la sacudes así.
+
+277
+00:14:11.040 --> 00:14:13.540
+Así que no te confirma la meningitis.
+
+278
+00:14:13.840 --> 00:14:16.020
+¿Y si no le hubiera dolido?
+
+279
+00:14:16.080 --> 00:14:17.140
+¿Si fuera negativa?
+
+280
+00:14:17.400 --> 00:14:21.060
+La decisión innegociable sigue siendo ir a la punción lumbar.
+
+281
+00:14:21.180 --> 00:14:25.160
+Ni una prueba positiva ni una negativa cambian el destino de ese paciente.
+
+282
+00:14:25.160 --> 00:14:27.400
+Nada reemplaza a la aguja.
+
+283
+00:14:27.580 --> 00:14:32.080
+Lo que nos lleva al tercer movimiento de este análisis, la trinchera real.
+
+284
+00:14:32.500 --> 00:14:34.940
+¿Qué hacer con todo esto en la consulta?
+
+285
+00:14:35.060 --> 00:14:36.380
+El momento de la verdad.
+
+286
+00:14:36.700 --> 00:14:37.800
+Llega el hemograma.
+
+287
+00:14:37.800 --> 00:14:41.980
+Hay leucocitosis con neutrofilia y la proteína C reactiva está muy elevada.
+
+288
+00:14:42.460 --> 00:14:43.800
+Y recuerdo el contexto clínico.
+
+289
+00:14:43.960 --> 00:14:48.380
+Cero focalidad neurológica, no hay debilidad, no hay crisis, no
+
+290
+00:14:48.380 --> 00:14:51.800
+hay inmunodepresión y el fondo de ojo no tiene papiledema.
+
+291
+00:14:52.220 --> 00:14:53.860
+Sexta y última pregunta socrática.
+
+292
+00:14:53.860 --> 00:14:57.560
+¿Cuál es el orden de las actuaciones en la próxima hora y por qué?
+
+293
+00:14:57.640 --> 00:14:58.600
+Demos unos segundos.
+
+294
+00:14:58.980 --> 00:15:02.320
+Esta secuencia es literalmente lo que salva el tejido cerebral.
+
+295
+00:15:02.640 --> 00:15:03.280
+A ver, dándosla.
+
+296
+00:15:03.540 --> 00:15:05.140
+Es innegociable.
+
+297
+00:15:05.300 --> 00:15:09.260
+Primero, extracción de hemocultivos y punción lumbar sin ninguna demora.
+
+298
+00:15:09.320 --> 00:15:13.580
+Y tratamiento antibiótico empírico inmediatamente después de extraer el líquido.
+
+299
+00:15:13.740 --> 00:15:18.200
+El orden es sagrado. El retraso en el antibiótico es el mayor predictor
+
+300
+00:15:18.200 --> 00:15:18.980
+de mortalidad aquí.
+
+301
+00:15:18.980 --> 00:15:21.780
+Claro, pero pongamos los pies en la tierra.
+
+302
+00:15:21.980 --> 00:15:25.220
+En un hospital real, a veces la punción se retrasa.
+
+303
+00:15:25.520 --> 00:15:29.580
+Anatomía difícil, el médico está en un paro cardíaco al lado o faltan
+
+304
+00:15:29.580 --> 00:15:30.940
+insumos. ¿Qué pasa ahí?
+
+305
+00:15:31.240 --> 00:15:34.760
+Si hay cualquier retraso, el antibiótico va primero, inmediatamente.
+
+306
+00:15:35.140 --> 00:15:39.620
+Los hemocultivos que ya tomaste van a mantener cierta rentabilidad para aislar el
+
+307
+00:15:39.620 --> 00:15:42.520
+bicho. Pero ese cerebro inflamado no puede esperar.
+
+308
+00:15:42.880 --> 00:15:43.840
+El tiempo es cerebro.
+
+309
+00:15:43.840 --> 00:15:46.000
+Totalmente. Y ojo con este detalle.
+
+310
+00:15:46.080 --> 00:15:50.020
+Se debe añadir dexametasona intravenosa junto con la primera dosis de
+
+311
+00:15:50.020 --> 00:15:51.440
+antibiótico. O justo antes.
+
+312
+00:15:51.680 --> 00:15:53.220
+Eso es para la respuesta inflamatoria.
+
+313
+00:15:53.420 --> 00:15:57.220
+Exacto. Para mitigar la tormenta inflamatoria que se desata cuando el antibiótico
+
+314
+00:15:57.220 --> 00:16:00.700
+destruye masivamente a las bacterias en el espacio subaracnoideo.
+
+315
+00:16:01.280 --> 00:16:05.380
+Buenísimo. Ahora, quiero hacer una pausa gigante para destacar lo que no
+
+316
+00:16:05.380 --> 00:16:06.420
+se debe hacer.
+
+317
+00:16:06.720 --> 00:16:09.280
+Porque es un vicio casi universal en los hospitales.
+
+318
+00:16:09.860 --> 00:16:14.340
+Tienes a este paciente, sin focalidad, alerta, inmunocompetente y
+
+319
+00:16:14.340 --> 00:16:15.200
+sin papiledema.
+
+320
+00:16:15.460 --> 00:16:18.920
+El impulso de casi todo el mundo es pedir una tomografía craneal antes de la
+
+321
+00:16:18.920 --> 00:16:20.560
+punción, para evitar una herniación.
+
+322
+00:16:20.860 --> 00:16:23.080
+Es un error sistémico gravísimo.
+
+323
+00:16:23.280 --> 00:16:27.720
+En este paciente específico, pedir la tomografía previa solo añade un
+
+324
+00:16:27.720 --> 00:16:28.400
+retraso fatal.
+
+325
+00:16:28.860 --> 00:16:32.960
+Tienes que sumarle el tiempo de transporte, la adquisición de la imagen, que el
+
+326
+00:16:32.960 --> 00:16:34.120
+radiólogo la lea.
+
+327
+00:16:34.600 --> 00:16:37.320
+Todo ese tiempo el cerebro se está friendo.
+
+328
+00:16:37.720 --> 00:16:38.240
+Literalmente.
+
+329
+00:16:38.240 --> 00:16:42.300
+Y el riesgo real de herniación sin esos signos de alarma clínicos que
+
+330
+00:16:42.300 --> 00:16:46.380
+mencionaste es ínfimo, ínfimo en comparación con el daño seguro de
+
+331
+00:16:46.380 --> 00:16:47.920
+retrasar el tratamiento dos horas.
+
+332
+00:16:48.400 --> 00:16:52.720
+Esto cambia por completo las reglas del juego de cómo vemos al paciente febril
+
+333
+00:16:52.720 --> 00:16:54.100
+con cefalea intensa.
+
+334
+00:16:54.240 --> 00:16:57.220
+Hay que redefinir lo que esperamos de la exploración meníngea.
+
+335
+00:16:57.320 --> 00:16:59.520
+No es una herramienta para evitar la punción.
+
+336
+00:17:00.000 --> 00:17:00.520
+Exacto.
+
+337
+00:17:00.700 --> 00:17:04.940
+El hallazgo que realmente decide el caso, el que marca la diferencia entre la vida
+
+338
+00:17:04.940 --> 00:17:07.440
+y la muerte, no está en cómo se flexiona el cuello.
+
+339
+00:17:07.440 --> 00:17:10.740
+Está en el recuento celular del líquido cefalorraquídeo.
+
+340
+00:17:10.840 --> 00:17:13.780
+La demostración de pleocitosis es lo que manda.
+
+341
+00:17:14.120 --> 00:17:18.260
+Entonces, saber que nuestra clínica de cabecera es tan matemáticamente débil
+
+342
+00:17:18.260 --> 00:17:20.220
+es paradójicamente una ventaja.
+
+343
+00:17:20.320 --> 00:17:24.400
+Te obliga a ser más agresivo con la indicación de la punción y más rápido con el
+
+344
+00:17:24.400 --> 00:17:25.140
+tratamiento empírico.
+
+345
+00:17:25.440 --> 00:17:27.000
+Esa es la actitud correcta.
+
+346
+00:17:27.040 --> 00:17:29.500
+La duda te empuja a actuar, no a esperar.
+
+347
+00:17:29.900 --> 00:17:32.240
+Bien, vamos llegando al cierre de este análisis.
+
+348
+00:17:32.440 --> 00:17:36.460
+Si la persona que nos escucha hoy, digamos el residente que va a entrar de guardia
+
+349
+00:17:36.460 --> 00:17:36.900
+esta noche,
+
+350
+00:17:37.440 --> 00:17:40.280
+¿Sólo pudiera llevarse una cosa para recordar mañana?
+
+351
+00:17:40.620 --> 00:17:41.380
+¿Cuál sería?
+
+352
+00:17:41.880 --> 00:17:45.460
+A mí me parece que la mayor lección de este caso es puramente negativa.
+
+353
+00:17:45.620 --> 00:17:48.920
+Lo es. Es una lección sobre destruir falsas seguridades.
+
+354
+00:17:49.480 --> 00:17:53.740
+Los signos clásicos, el Kernig, el Brudzinski, la
+
+355
+00:17:53.740 --> 00:17:56.700
+rigidez de nuca, son falsos amigos clínicos.
+
+356
+00:17:57.020 --> 00:18:01.480
+Con cocientes cercanos a uno, ni confirman con su presencia ni, lo que es
+
+357
+00:18:01.480 --> 00:18:04.400
+muchísimo más peligroso, descartan con su ausencia.
+
+358
+00:18:04.400 --> 00:18:08.700
+O sea, la única regla con poder para descartar es la ausencia simultánea de la
+
+359
+00:18:08.700 --> 00:18:09.380
+triada completa.
+
+360
+00:18:10.260 --> 00:18:14.440
+Exactamente. Sin fiebre, sin rigidez, sin alteración mental.
+
+361
+00:18:14.860 --> 00:18:18.080
+E incluso eso se anula si tu riesgo clínico general es alto.
+
+362
+00:18:18.800 --> 00:18:22.500
+La moraleja no es que debes aprender a explorar el cuello con más técnica.
+
+363
+00:18:22.700 --> 00:18:27.180
+La moraleja es que debes puncionar y tratar mucho antes de lo que te enseñaron.
+
+364
+00:18:27.360 --> 00:18:29.060
+Una conclusión contundente.
+
+365
+00:18:29.380 --> 00:18:33.260
+Pero antes de irnos, quiero dejar un pensamiento final provocativo flotando en el
+
+366
+00:18:33.260 --> 00:18:33.440
+aire.
+
+367
+00:18:33.440 --> 00:18:37.340
+Porque después de revisar toda esta evidencia con lupa, hay un límite
+
+368
+00:18:37.340 --> 00:18:39.420
+clarísimo que los propios datos exponen.
+
+369
+00:18:39.520 --> 00:18:43.620
+Sí, el gran elefante en la habitación de la medicina basada en la evidencia.
+
+370
+00:18:43.920 --> 00:18:44.500
+Exacto.
+
+371
+00:18:44.790 --> 00:18:48.880
+El artículo de medsemiotics-db revela que ninguna de las fuentes, ninguna,
+
+372
+00:18:49.120 --> 00:18:51.560
+publica la probabilidad basal de esta enfermedad.
+
+373
+00:18:51.660 --> 00:18:52.700
+La prevalencia real.
+
+374
+00:18:52.980 --> 00:18:56.600
+Ajá. Nadie publica cuál es el porcentaje exacto de adultos que llegan a urgencias
+
+375
+00:18:56.600 --> 00:19:00.360
+por cefalea y fiebre que realmente terminan teniendo meningitis aguda.
+
+376
+00:19:00.360 --> 00:19:04.200
+Y si no tienes ese número de partida, el teorema de Bayes se queda cojo.
+
+377
+00:19:04.340 --> 00:19:05.560
+Es un vacío crítico.
+
+378
+00:19:05.760 --> 00:19:10.160
+La calculadora bayesiana te dice, bueno, este signo multiplica tu sospecha por
+
+379
+00:19:10.160 --> 00:19:10.400
+dos.
+
+380
+00:19:10.620 --> 00:19:13.160
+Pero, ¿multiplica por dos a partir de qué número?
+
+381
+00:19:13.660 --> 00:19:17.100
+Estás aplicando un multiplicador a una probabilidad inicial fantasma.
+
+382
+00:19:17.560 --> 00:19:21.580
+Tienes que adivinarla tú mismo basándote en tu hospital, en tu experiencia, en el
+
+383
+00:19:21.580 --> 00:19:21.940
+clima.
+
+384
+00:19:22.180 --> 00:19:24.320
+Y la pregunta que le dejo a quien nos escuche es esta.
+
+385
+00:19:24.620 --> 00:19:27.240
+En plena era de la medicina basada en la evidencia,
+
+386
+00:19:27.240 --> 00:19:31.220
+¿Cómo calibramos nuestra intuición inicial en la puerta de urgencias cuando la
+
+387
+00:19:31.220 --> 00:19:33.820
+literatura científica ni siquiera nos da el número de partida?
+
+388
+00:19:34.040 --> 00:19:35.720
+Es un interrogante que da vértigo.
+
+389
+00:19:35.760 --> 00:19:39.660
+Es algo para reflexionar profundamente la próxima vez que te toque evaluar a un
+
+390
+00:19:39.660 --> 00:19:43.920
+paciente joven con el peor dolor de cabeza de su vida y un cuello que engañosamente
+
+391
+00:19:43.920 --> 00:19:44.960
+se mueve a la perfección.
+
+392
+00:19:45.320 --> 00:19:47.060
+Gracias por acompañarnos en este análisis.
+
+393
+00:19:47.340 --> 00:19:48.140
+Hasta la próxima.

@@ -72,6 +72,36 @@ show:
 # =============================================================================
 
 episodes:
+  - slug: "meningitis-aguda"
+    number: 8
+    season: 1
+    title: "Meningitis y la trampa del cuello flexible"
+    pub_date: "2026-09-25T19:00:00-05:00"
+    duration: "00:19:48"
+    tag: "ep008"
+    audio_file: "ep008.mp3"
+    topic: "neurologia/meningitis-aguda"
+    transcript: "transcripts/ep008.vtt"
+    source_url: "https://powersemiotics.com/medsemiotics/post.html?slug=meningitis-aguda-sacudida-cefalica"
+    description: >-
+      Un varón de 34 años llega a urgencias con fiebre, la peor cefalea de su
+      vida, fotofobia y vómitos, alerta y con un cuello que se mueve
+      perfectamente. A partir del caso HM6004 de medsemiotics, este episodio
+      recorre etapa por etapa por qué la exploración meníngea no decide nada.
+      La rigidez de nuca (LR+ 0,94; sensibilidad 0,3) y los signos de Kernig y
+      de Brudzinski (LR+ 0,97; sensibilidad 0,05) tienen cocientes que rondan
+      la unidad: no confirman, y su ausencia no descarta. Explicamos por qué la
+      cefalea, las náuseas y los vómitos figuran como «LR no medido» —la fuente
+      publica sensibilidad sin especificidad— y por qué la sacudida cefálica,
+      con sensibilidad 0,653 y especificidad 0,704 de certeza muy baja, no
+      tiene cociente calculable y su negatividad no evita la punción lumbar.
+      Revisamos la única regla con poder para descartar, la ausencia
+      simultánea de fiebre, rigidez de nuca y alteración del estado mental, y
+      su advertencia ante el riesgo clínico alto. Cierra con la secuencia de la
+      primera hora: hemocultivos, punción lumbar y antibiótico empírico sin
+      demora, dexametasona con la primera dosis y sin tomografía previa cuando
+      no hay focalidad, crisis, inmunodepresión ni papiledema.
+
   - slug: "cirrosis-hepatica"
     number: 7
     season: 1
