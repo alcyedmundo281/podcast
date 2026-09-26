@@ -57,9 +57,27 @@ ejecución. Es XML y HTML estáticos: nada que se apague solo.
 ## Publicar un episodio
 
 ```bash
-# 1. Normalizar el audio a -19 LUFS (mono, voz) y codificar a 96 kbps
-ffmpeg -i crudo.wav -af loudnorm=I=-19:TP=-1.5:LRA=11 \
-       -ac 1 -b:a 96k -codec:a libmp3lame ep004.mp3
+# 1. Masterizar: mono, -19 LUFS, pico real bajo -1,5 dBTP, 96 kbps.
+#    Dos pasadas de loudnorm y el MP3 al final, desde un WAV intermedio.
+#    Con una sola pasada, o normalizando directo a MP3, los sobrepicos de
+#    la codificación dejan el pico real por encima de 0 dBTP (ep007 salió
+#    así). Por eso el máster apunta a -2,5 dBTP: el MP3 recupera ~0,3 dB.
+
+# 1a. Medir el crudo (m4a de NotebookLM) ya en mono
+ffmpeg -i crudo.m4a -af "pan=mono|c0=0.5*c0+0.5*c1,loudnorm=I=-19:TP=-1.5:LRA=11:print_format=json" \
+       -f null -
+#     → anota input_i, input_tp, input_lra, input_thresh y target_offset
+
+# 1b. Normalizar con esas medidas a un WAV intermedio
+ffmpeg -i crudo.m4a -af "pan=mono|c0=0.5*c0+0.5*c1,loudnorm=I=-19:TP=-2.5:LRA=11:\
+measured_I=<input_i>:measured_TP=<input_tp>:measured_LRA=<input_lra>:\
+measured_thresh=<input_thresh>:offset=<target_offset>,aresample=44100" \
+       -c:a pcm_s16le master.wav
+
+# 1c. Codificar y verificar sobre el MP3 final: input_i ≈ -19,
+#     input_tp < -1,5. Si no, no se publica.
+ffmpeg -i master.wav -codec:a libmp3lame -b:a 96k ep004.mp3
+ffmpeg -i ep004.mp3 -af loudnorm=print_format=json -f null -
 
 # 2. Crear el release con el MP3 como asset. El tag es lo que enlaza
 #    el episodio con su audio: debe coincidir con `tag:` en podcast.yml.
