@@ -72,6 +72,110 @@ show:
 # =============================================================================
 
 episodes:
+  - slug: "aneurisma-de-aorta-abdominal"
+    number: 12
+    season: 1
+    title: "Tus manos mienten ante el aneurisma abdominal"
+    pub_date: "2026-09-25T19:50:00-05:00"
+    duration: "00:15:09"
+    tag: "ep012"
+    audio_file: "ep012.mp3"
+    topic: "vascular/aneurisma-de-aorta-abdominal"
+    transcript: "transcripts/ep012.vtt"
+    source_url: "https://powersemiotics.com/medsemiotics/post.html?slug=aneurisma-aorta-abdominal-palpacion-semiotica"
+    description: >-
+      Un varón de 71 años, fumador activo, con cardiopatía isquémica y un
+      hermano operado de aneurisma, acude a renovar recetas de su
+      hipertensión. A partir del caso HM6006 de medsemiotics, este episodio
+      recorre por qué la palpación abdominal es una prueba de una sola vía.
+      La pulsación aórtica ensanchada tiene LR+ 12,0 para aneurismas de
+      3,0 cm o más y LR+ 15,6 para los de 4,0 cm o más: no son dos
+      intensidades del signo, sino dos definiciones de enfermedad, y la
+      probabilidad basal del cribado de veteranos (0,014) sólo se cruza con
+      la de 4 cm. Su negatividad casi no descarta (LR− 0,72 y 0,51; la
+      sensibilidad para aneurismas de 3,0 a 3,9 cm es 0,29), así que nunca
+      cancela la ecografía que el cribado ya indicaba. Cierra con la conducta
+      ante un aneurisma de 4,6 cm, la advertencia sobre la sospecha de rotura
+      y los límites de una evidencia construida sobre hombres.
+
+  - slug: "derrame-pleural-exudativo"
+    number: 11
+    season: 1
+    title: "Falsos exudados pleurales por diuréticos"
+    pub_date: "2026-09-25T19:40:00-05:00"
+    duration: "00:22:06"
+    tag: "ep011"
+    audio_file: "ep011.mp3"
+    topic: "neumologia/derrame-pleural-exudativo"
+    transcript: "transcripts/ep011.vtt"
+    source_url: "https://powersemiotics.com/medsemiotics/post.html?slug=derrame-pleural-exudado-criterios-light-colesterol"
+    description: >-
+      Un exfumador de 68 años con insuficiencia cardíaca en tratamiento con
+      furosemida consulta por disnea progresiva, dolor sordo en el costado y
+      pérdida de peso, sin signos de congestión. A partir del caso HM6005 de
+      medsemiotics, este episodio explica por qué los criterios de Light son
+      una red para descartar (LR− 0,04) sin LR positivo documentado, y cómo
+      el diurético concentra proteínas y LDH hasta fabricar un falso
+      exudado. Revisamos los marcadores que confirman: LDH pleural por
+      encima de 200 (LR+ 18), cociente de colesterol pleural/sérico mayor de
+      0,3 (LR+ 14) y colesterol pleural por encima de 55 mg/dL, cuyo rango
+      de 7,1 a 250 no autoriza a quedarse con el extremo alto. Por qué no se
+      multiplican cocientes que miden el mismo fenómeno, y qué estudio exige
+      un exudado linfocitario en un exfumador que adelgaza.
+
+  - slug: "mononucleosis-infecciosa"
+    number: 10
+    season: 1
+    title: "Signos y lógica para diagnosticar mononucleosis infecciosa"
+    pub_date: "2026-09-25T19:30:00-05:00"
+    duration: "00:29:14"
+    tag: "ep010"
+    audio_file: "ep010.mp3"
+    topic: "infectologia/mononucleosis-infecciosa"
+    transcript: "transcripts/ep010.vtt"
+    source_url: "https://powersemiotics.com/medsemiotics/post.html?slug=mononucleosis-infecciosa-adenopatias-linfocitos-atipicos"
+    description: >-
+      Una universitaria de 19 años lleva diez días con odinofagia, fiebre y
+      una astenia que la tiene en cama. A partir del caso HM6003 de
+      medsemiotics, este episodio parte de una probabilidad basal de 0,077 y
+      recorre qué hallazgos la mueven y cuáles no: la odinofagia y la
+      astenia, con sensibilidad 0,81, no discriminan; la ausencia de
+      adenopatías es lo que más la baja (LR− entre 0,23 y 0,44); la
+      adenopatía cervical posterior da LR+ 3,1 y las petequias en el paladar,
+      LR+ 5,3. Los linfocitos atípicos funcionan por umbrales (≥ 10 %,
+      LR+ 11,4; ≥ 20 %, LR+ 26), y el criterio combinado de LR+ 54 tiene un
+      intervalo de 8,4 a 189. Por qué no se multiplican cocientes que
+      expresan la misma proliferación linfoide, por qué la esplenomegalia
+      cambia hoy mismo el consejo sobre deportes de contacto, por qué no se
+      da amoxicilina y qué hacer si la serología de Epstein-Barr sale
+      negativa.
+
+  - slug: "sindrome-de-intestino-irritable"
+    number: 9
+    season: 1
+    title: "Diagnóstico en positivo del intestino irritable"
+    pub_date: "2026-09-25T19:20:00-05:00"
+    duration: "00:30:00"
+    tag: "ep009"
+    audio_file: "ep009.mp3"
+    topic: "gastroenterologia/sindrome-de-intestino-irritable"
+    transcript: "transcripts/ep009.vtt"
+    source_url: "https://powersemiotics.com/medsemiotics/post.html?slug=sindrome-de-intestino-irritable-precision-semiotica"
+    description: >-
+      Una contadora de 29 años lleva ocho meses con dolor abdominal que
+      mejora al evacuar, hábito alternante y distensión que empeora en los
+      cierres de mes. A partir del caso HM6002 de medsemiotics, este
+      episodio defiende el intestino irritable como diagnóstico en positivo
+      y no de exclusión, y enfrenta su paradoja: el dolor, la diarrea y el
+      estreñimiento que lo definen figuran como «LR no medido», y el único
+      cociente publicado es el LR− 0,29 de la ausencia de dolor abdominal
+      bajo. Revisamos las banderas rojas —anemia y pérdida de peso
+      sostenidas por consenso, la hematoquesia disputada entre Hammer 2004 y
+      Park 2010—, por qué no se pide una colonoscopia para tranquilizar, cómo
+      se comunica el diagnóstico y el manejo inicial. Cierra con una
+      incomodidad: Roma IV no tiene en estas fuentes un LR prospectivo,
+      mientras que los viejos criterios de Kruis alcanzan LR+ 8,6.
+
   - slug: "meningitis-aguda"
     number: 8
     season: 1

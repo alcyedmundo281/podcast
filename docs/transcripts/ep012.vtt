@@ -1,0 +1,1262 @@
+WEBVTT
+
+NOTE
+Transcripción del episodio 12 de medsemiotics — aneurisma de aorta abdominal.
+Generada automáticamente y corregida en terminología clínica.
+Puede contener errores; la fuente autorizada es el audio.
+
+1
+00:00:00.000 --> 00:00:04.340
+Nos encanta creer que la medicina clínica es, digamos, como la ingeniería mecánica.
+
+2
+00:00:04.380 --> 00:00:04.580
+Claro.
+
+3
+00:00:04.800 --> 00:00:05.720
+O sea, piensa en esto.
+
+4
+00:00:06.180 --> 00:00:10.560
+Apoyas el estetoscopio en el pecho de un paciente, escuchas un soplo sistólico y
+
+5
+00:00:10.560 --> 00:00:10.980
+activo,
+
+6
+00:00:11.000 --> 00:00:14.000
+y tu cerebro automáticamente dice, bueno, ahí está el problema.
+
+7
+00:00:14.280 --> 00:00:14.980
+Es nítido.
+
+8
+00:00:15.340 --> 00:00:17.300
+Exacto, es nítido, es reconfortante.
+
+9
+00:00:17.580 --> 00:00:20.200
+En la clínica nos gusta que las cosas sean así, de tangibles.
+
+10
+00:00:20.320 --> 00:00:20.820
+Sí, totalmente.
+
+11
+00:00:21.140 --> 00:00:25.200
+Y la verdad es que ese tipo de hallazgos nos dan una falsa sensación de que todo en
+
+12
+00:00:25.200 --> 00:00:26.380
+el examen físico es binario.
+
+13
+00:00:26.440 --> 00:00:28.380
+O lo escuchas o no lo escuchas.
+
+14
+00:00:28.380 --> 00:00:29.860
+Lo palpas o no lo palpas.
+
+15
+00:00:30.000 --> 00:00:33.940
+Pero hoy vamos a hacer un análisis profundo de la evidencia, usando nuestras
+
+16
+00:00:33.940 --> 00:00:38.300
+fuentes de medsemiotics y la base de medsemiotics-db, sobre
+
+17
+00:00:38.300 --> 00:00:42.440
+una situación clínica donde esa certeza mecánica desaparece por completo.
+
+18
+00:00:42.680 --> 00:00:43.300
+Así es.
+
+19
+00:00:43.560 --> 00:00:47.720
+Vamos a hablar de una condición que es, literalmente, una bomba de tiempo
+
+20
+00:00:47.720 --> 00:00:51.800
+estadística, y además completamente silente, el aneurisma de aorta abdominal.
+
+21
+00:00:52.120 --> 00:00:54.100
+Un tema fascinante y peligroso.
+
+22
+00:00:54.100 --> 00:00:58.200
+Muy peligroso. Y creo que lo más perturbador de esta inmersión en el razonamiento
+
+23
+00:00:58.200 --> 00:01:02.360
+clínico que haremos hoy es ver cómo tus propias manos te pueden
+
+24
+00:01:02.360 --> 00:01:03.420
+mentir en la cara.
+
+25
+00:01:03.600 --> 00:01:06.060
+Te mienten si no entiendes los números que hay detrás, claro.
+
+26
+00:01:06.420 --> 00:01:09.840
+Porque pone a prueba no solo tu técnica manual, sino todo tu razonamiento
+
+27
+00:01:09.840 --> 00:01:10.100
+probabilístico.
+
+28
+00:01:10.840 --> 00:01:11.280
+Exacto.
+
+29
+00:01:11.280 --> 00:01:12.820
+Las manos te dan información, sí.
+
+30
+00:01:13.020 --> 00:01:17.400
+Pero la forma en que el cerebro procesa esa información táctil en el abdomen es de
+
+31
+00:01:17.400 --> 00:01:18.520
+todo menos directa.
+
+32
+00:01:18.520 --> 00:01:21.980
+Y para que quienes nos escuchan, que seguramente están lidiando con esto en
+
+33
+00:01:21.980 --> 00:01:26.220
+medicina interna o urgencias, les saquen el mayor provecho, vamos a
+
+34
+00:01:26.220 --> 00:01:27.520
+estructurar esto de forma socrática.
+
+35
+00:01:28.260 --> 00:01:29.100
+Me parece perfecto.
+
+36
+00:01:29.160 --> 00:01:32.880
+Vamos a plantear preguntas, daremos un breve segundo para que ustedes hagan una
+
+37
+00:01:32.880 --> 00:01:35.200
+pausa mental e intenten responderlas.
+
+38
+00:01:35.280 --> 00:01:37.020
+Y luego desglosamos el porqué.
+
+39
+00:01:37.100 --> 00:01:37.900
+Vamos a ello.
+
+40
+00:01:38.320 --> 00:01:41.060
+Entonces, vamos directo a la realidad de la consulta.
+
+41
+00:01:41.720 --> 00:01:44.440
+Visualicemos este escenario típico de atención primaria.
+
+42
+00:01:44.440 --> 00:01:47.860
+Tienes a un paciente varón, 71 años,
+
+43
+00:01:48.000 --> 00:01:50.980
+acude a su control semestral por hipertensión arterial.
+
+44
+00:01:51.280 --> 00:01:53.080
+El hombre se siente fantástico.
+
+45
+00:01:53.220 --> 00:01:57.480
+Está completamente asintomático, cero dolor abdominal, cero dolor
+
+46
+00:01:57.480 --> 00:02:00.120
+lumbar, no reporta ningún tipo de cambio al esfuerzo.
+
+47
+00:02:00.280 --> 00:02:03.220
+La típica consulta de 15 minutos para renovar recetas.
+
+48
+00:02:03.580 --> 00:02:07.840
+Exacto. Y si miramos un poco más de cerca, fuma alrededor de
+
+49
+00:02:07.840 --> 00:02:10.080
+un paquete diario desde los 18 años.
+
+50
+00:02:10.340 --> 00:02:12.000
+Uy, factor de riesgo enorme.
+
+51
+00:02:12.000 --> 00:02:13.560
+Gigante. Y no lo ha dejado.
+
+52
+00:02:14.120 --> 00:02:16.600
+Además, hace seis años tuvo un infarto de miocardio.
+
+53
+00:02:16.800 --> 00:02:20.700
+Tiene un stent coronario y toma aspirina, una estatina por
+
+54
+00:02:20.700 --> 00:02:23.140
+hipercolesterolemia y dos antihipertensivos.
+
+55
+00:02:23.340 --> 00:02:25.280
+Todo un perfil vascular, digamos.
+
+56
+00:02:25.600 --> 00:02:28.340
+Así es. Físicamente mide 1,84.
+
+57
+00:02:28.740 --> 00:02:32.960
+Es bastante delgado. Su índice de masa corporal es de 23, con un
+
+58
+00:02:32.960 --> 00:02:34.980
+perímetro abdominal de 88 centímetros.
+
+59
+00:02:35.320 --> 00:02:36.200
+Delgado y alto.
+
+60
+00:02:36.200 --> 00:02:38.240
+Y signos vitales, pues, estables.
+
+61
+00:02:38.540 --> 00:02:42.580
+Presión en 146 sobre 84 y frecuencia cardíaca de 68
+
+62
+00:02:42.580 --> 00:02:47.020
+latidos por minuto. Dato clave, nunca se le ha hecho una ecografía abdominal.
+
+63
+00:02:47.480 --> 00:02:48.860
+Eso es importante retenerlo.
+
+64
+00:02:49.180 --> 00:02:53.380
+Y hay un fantasma familiar. Su hermano mayor fue operado de un aneurisma de aorta
+
+65
+00:02:53.380 --> 00:02:54.560
+abdominal hace tres años.
+
+66
+00:02:54.800 --> 00:02:56.300
+Ah, bueno, eso cambia las cosas.
+
+67
+00:02:56.740 --> 00:03:00.500
+Y aquí lanzo la primera pregunta socrática, para que quienes nos escuchan lo
+
+68
+00:03:00.500 --> 00:03:01.120
+piensen un segundo.
+
+69
+00:03:01.120 --> 00:03:03.960
+El paciente viene únicamente a controlar su tensión.
+
+70
+00:03:04.200 --> 00:03:08.340
+No le duele nada. ¿Por qué este es un buen momento para pensar en su aorta
+
+71
+00:03:08.340 --> 00:03:08.640
+abdominal?
+
+72
+00:03:09.500 --> 00:03:11.040
+Hagamos una pausa mental aquí.
+
+73
+00:03:11.500 --> 00:03:15.720
+Porque, a ver, jugando de abogado del diablo, en una consulta de 15 minutos, donde
+
+74
+00:03:15.720 --> 00:03:19.300
+el paciente viene súper bien, ¿no es buscar problemas donde no los hay?
+
+75
+00:03:19.820 --> 00:03:24.060
+Pues te diría que en este escenario específico, buscar el problema asintomático es
+
+76
+00:03:24.060 --> 00:03:26.080
+la definición misma de supervivencia.
+
+77
+00:03:26.320 --> 00:03:26.920
+¿Tan así?
+
+78
+00:03:26.920 --> 00:03:31.160
+Tan así. El aneurisma de aorta abdominal es súper traicionero.
+
+79
+00:03:31.240 --> 00:03:35.680
+Es una dilatación progresiva que no genera ningún síntoma hasta que ocurre
+
+80
+00:03:35.680 --> 00:03:36.700
+la complicación temida.
+
+81
+00:03:36.880 --> 00:03:37.900
+Que es la rotura.
+
+82
+00:03:38.200 --> 00:03:41.540
+Exacto, la rotura. Y esto tiene una altísima mortalidad.
+
+83
+00:03:41.700 --> 00:03:46.060
+Si tú esperas a que este hombre de 71 años te diga que tiene dolor lumbar súbito,
+
+84
+00:03:46.140 --> 00:03:48.260
+pues estadísticamente ya llegaste tarde.
+
+85
+00:03:48.680 --> 00:03:50.960
+Básicamente, si duele, ya perdimos el partido.
+
+86
+00:03:50.960 --> 00:03:54.240
+Literalmente. Y mira la evidencia de nuestras fuentes.
+
+87
+00:03:54.380 --> 00:03:57.240
+Este paciente es una bomba de tiempo estadística.
+
+88
+00:03:57.320 --> 00:04:00.400
+El tabaquismo activo aquí es el factor de mayor peso.
+
+89
+00:04:00.680 --> 00:04:01.700
+¿De cuánto estamos hablando?
+
+90
+00:04:02.080 --> 00:04:06.100
+La base documenta un odds ratio de 5.57.
+
+91
+00:04:06.400 --> 00:04:11.120
+O sea, casi 6 veces más riesgo, específicamente para aneurismas de 4.0
+
+92
+00:04:11.120 --> 00:04:15.600
+centímetros o mayores. Y con un intervalo de confianza del 95%
+
+93
+00:04:15.600 --> 00:04:18.720
+entre 4.24 y 7.31.
+
+94
+00:04:18.720 --> 00:04:21.100
+¡Guau! Y a eso hay que sumarle todo lo demás.
+
+95
+00:04:21.260 --> 00:04:25.460
+La edad, que es alto, la cardiopatía, la hipertensión y,
+
+96
+00:04:25.520 --> 00:04:26.620
+bueno, el hermano.
+
+97
+00:04:27.160 --> 00:04:31.440
+Claro, el antecedente familiar de primer grado por sí solo aporta un odds
+
+98
+00:04:31.440 --> 00:04:34.540
+ratio de 1.95. Te duplica el riesgo basal.
+
+99
+00:04:34.640 --> 00:04:38.680
+Ya veo. Y eso nos lleva a la segunda pregunta socrática para la audiencia.
+
+100
+00:04:38.920 --> 00:04:43.380
+Si buscamos en el artículo la probabilidad basal, la probabilidad antes
+
+101
+00:04:43.380 --> 00:04:46.640
+de tocarlo, ¿a qué pacientes y a qué aneurisma se refiere exactamente?
+
+102
+00:04:46.640 --> 00:04:46.900
+Exactamente.
+
+103
+00:04:47.660 --> 00:04:50.040
+Pensemos en esa probabilidad basal un momento.
+
+104
+00:04:50.360 --> 00:04:53.220
+Porque aquí siento que hay una trampa sutil en la evidencia.
+
+105
+00:04:53.280 --> 00:04:58.540
+Si revisas la base, te da un valor de 0.014, o sea, un 1.4%.
+
+106
+00:04:58.540 --> 00:04:59.160
+Ajá.
+
+107
+00:04:59.160 --> 00:05:01.700
+Y 1.4% suena bajísimo.
+
+108
+00:05:01.780 --> 00:05:03.520
+Suena a que no deberíamos ni estresarnos.
+
+109
+00:05:03.920 --> 00:05:06.560
+Bueno, suena bajo hasta que entiendes de dónde sale.
+
+110
+00:05:06.860 --> 00:05:11.940
+Esa cifra viene de un cribado masivo ecográfico en 73,451
+
+111
+00:05:11.940 --> 00:05:12.620
+veteranos.
+
+112
+00:05:12.720 --> 00:05:13.360
+Todos hombres.
+
+113
+00:05:13.600 --> 00:05:16.480
+Hombres, sí, de 50 a 79 años.
+
+114
+00:05:16.640 --> 00:05:20.980
+Pero el detalle crítico, el que te cambia todo, es que esa prevalencia
+
+115
+00:05:20.980 --> 00:05:25.100
+es exclusivamente para aneurismas de 4.0 centímetros o mayores.
+
+116
+00:05:25.260 --> 00:05:27.380
+O sea, no aplica para dilataciones menores.
+
+117
+00:05:27.820 --> 00:05:32.320
+Exacto. La fuente primaria no publica en su resumen la prevalencia para
+
+118
+00:05:32.320 --> 00:05:34.460
+los de 3.0 centímetros o mayores.
+
+119
+00:05:34.840 --> 00:05:38.580
+Claro, y si nuestra probabilidad de partida está atada a un tamaño físico tan
+
+120
+00:05:38.580 --> 00:05:42.920
+específico de 4 centímetros, eso va a condicionar matemáticamente todo lo que
+
+121
+00:05:42.920 --> 00:05:44.660
+hagamos con las manos a continuación en la camilla.
+
+122
+00:05:44.660 --> 00:05:46.620
+Por obligación matemática, así es.
+
+123
+00:05:46.880 --> 00:05:50.400
+Y aquí viene nuestra tercera pregunta socrática, para adentrarnos en la palpación.
+
+124
+00:05:50.740 --> 00:05:54.600
+Antes de poner las manos sobre el paciente, ¿qué pregunta responde exactamente a la
+
+125
+00:05:54.600 --> 00:05:57.720
+palpación y cómo afecta la fisionomía de nuestro paciente en particular?
+
+126
+00:05:58.100 --> 00:06:00.440
+Tómense un segundo para analizar la fisionomía.
+
+127
+00:06:00.780 --> 00:06:02.940
+Porque él mide 1.84 y es delgado.
+
+128
+00:06:03.120 --> 00:06:07.320
+Y eso es vital. A ver, la palpación no mide centímetros
+
+129
+00:06:07.320 --> 00:06:09.880
+exactos. Tus manos no son un calibrador.
+
+130
+00:06:10.080 --> 00:06:10.500
+Claro.
+
+131
+00:06:10.500 --> 00:06:14.700
+La maniobra solo responde a si la aorta parece más ancha de lo normal.
+
+132
+00:06:15.020 --> 00:06:18.540
+Y en cuanto a la fisonomía, pues este paciente es el escenario ideal.
+
+133
+00:06:18.920 --> 00:06:20.020
+Porque no tiene grasa abdominal.
+
+134
+00:06:20.700 --> 00:06:25.180
+Exacto. La fuente documenta que la obesidad abdominal es el modificador que
+
+135
+00:06:25.180 --> 00:06:27.160
+más reduce la sensibilidad de la maniobra.
+
+136
+00:06:27.500 --> 00:06:32.000
+Bien, entonces lo acostamos en la camilla, decúbito supino, le pedimos
+
+137
+00:06:32.000 --> 00:06:36.280
+que flexione las rodillas para relajar el abdomen, palpamos por encima del ombligo.
+
+138
+00:06:36.380 --> 00:06:37.040
+Con firmeza.
+
+139
+00:06:37.040 --> 00:06:41.480
+Con firmeza, sí. Y el hallazgo clínico exacto que documenta la fuente es, cito
+
+140
+00:06:41.480 --> 00:06:44.860
+textual, pulsación aórtica ensanchada a la palpación.
+
+141
+00:06:45.060 --> 00:06:46.040
+Ese es el signo.
+
+142
+00:06:46.160 --> 00:06:49.320
+Y aquí es donde mi intuición de médico empieza a pelear con la estadística.
+
+143
+00:06:49.700 --> 00:06:53.900
+Cuarta pregunta socrática. El artículo da dos cocientes de verosimilitud
+
+144
+00:06:53.900 --> 00:06:58.280
+positivos para este signo, un LR positivo de 12.0 y un
+
+145
+00:06:58.280 --> 00:07:00.080
+LR positivo de 15.6.
+
+146
+00:07:00.340 --> 00:07:01.580
+¿Qué significa eso?
+
+147
+00:07:01.960 --> 00:07:04.040
+Otra pausa para que la audiencia lo medita.
+
+148
+00:07:04.460 --> 00:07:08.520
+Porque mi intuición me dice, a ver, esto debe ser como el volumen de una radio.
+
+149
+00:07:09.000 --> 00:07:13.380
+Si el LR es 15.6, es porque el latido me empuja las manos con mucha
+
+150
+00:07:13.380 --> 00:07:13.960
+más violencia.
+
+151
+00:07:14.160 --> 00:07:17.440
+O lo siento más ancho que en el escenario del 12.0.
+
+152
+00:07:17.620 --> 00:07:18.220
+¿Es así?
+
+153
+00:07:18.460 --> 00:07:21.920
+Pues te entiendo perfecto, pero esa intuición es completamente falsa.
+
+154
+00:07:22.020 --> 00:07:22.700
+¿En serio?
+
+155
+00:07:22.940 --> 00:07:25.780
+En serio. Este es el punto contraintuitivo principal.
+
+156
+00:07:26.000 --> 00:07:28.480
+No son dos intensidades distintas del signo.
+
+157
+00:07:28.860 --> 00:07:29.340
+¿Entonces?
+
+158
+00:07:29.340 --> 00:07:32.700
+Es exactamente la misma maniobra y el mismo resultado táctil.
+
+159
+00:07:32.760 --> 00:07:36.740
+La diferencia está en contra de qué definición de enfermedad midieron los
+
+160
+00:07:36.740 --> 00:07:38.020
+investigadores esa maniobra.
+
+161
+00:07:38.260 --> 00:07:39.280
+A ver, explícame eso.
+
+162
+00:07:39.600 --> 00:07:43.860
+Mira, el LR positivo de 12.0, con su intervalo del
+
+163
+00:07:43.860 --> 00:07:47.740
+95% entre 7.4 y 19.5, es el
+
+164
+00:07:47.740 --> 00:07:51.940
+rendimiento para diagnosticar un aneurisma de 3.0 centímetros o mayor.
+
+165
+00:07:52.140 --> 00:07:52.600
+Ok.
+
+166
+00:07:52.600 --> 00:07:56.880
+Pero el LR positivo de 15.6 con intervalo entre
+
+167
+00:07:56.880 --> 00:08:01.380
+8.6 y 28.5 es para un aneurisma de 4.0
+
+168
+00:08:01.380 --> 00:08:02.360
+centímetros o mayor.
+
+169
+00:08:02.580 --> 00:08:06.680
+El rendimiento sube simplemente porque es más fácil que tu mano atrape un tubo más
+
+170
+00:08:06.680 --> 00:08:06.960
+grande.
+
+171
+00:08:07.440 --> 00:08:11.320
+¡Guau! Claro, no es que yo palpe diferente, es que el objetivo es más fácil de
+
+172
+00:08:11.320 --> 00:08:12.240
+chocar contra mis dedos.
+
+173
+00:08:12.840 --> 00:08:13.400
+Exactamente.
+
+174
+00:08:13.580 --> 00:08:16.880
+Pero entonces tenemos un problema de cálculo bayesiano, porque tenemos una
+
+175
+00:08:16.880 --> 00:08:20.700
+probabilidad basal de 1.4% y dos multiplicadores diferentes.
+
+176
+00:08:21.060 --> 00:08:21.640
+¿Cuál uso?
+
+177
+00:08:21.640 --> 00:08:24.060
+Y aquí es donde muchos se equivocan.
+
+178
+00:08:24.160 --> 00:08:28.100
+Como la probabilidad basal de 0.014 era para
+
+179
+00:08:28.100 --> 00:08:32.560
+aneurismas de 4 centímetros o más, por pura obligación matemática tienes
+
+180
+00:08:32.560 --> 00:08:35.200
+que usar el LR positivo de 15.6.
+
+181
+00:08:35.420 --> 00:08:37.220
+O sea, alinear peras con peras.
+
+182
+00:08:37.340 --> 00:08:41.360
+Exacto. Cruzar la prevalencia de 4 centímetros con el LR de 3
+
+183
+00:08:41.360 --> 00:08:45.040
+centímetros crearía un número sin ningún significado clínico real.
+
+184
+00:08:45.280 --> 00:08:46.520
+Un desastre matemático.
+
+185
+00:08:46.520 --> 00:08:49.220
+Totalmente. Y hay que aclarar algo.
+
+186
+00:08:49.580 --> 00:08:54.060
+Incluso usando el LR de 15.6, partiendo de una probabilidad tan baja
+
+187
+00:08:54.060 --> 00:08:57.660
+de 1.4%, no llegas a la certeza diagnóstica.
+
+188
+00:08:58.020 --> 00:08:59.920
+Seguimos bajos en probabilidad posprueba.
+
+189
+00:09:00.060 --> 00:09:04.420
+Sí. La fuente nos dice que el valor predictivo positivo en las series es solo del
+
+190
+00:09:04.420 --> 00:09:05.340
+43%.
+
+191
+00:09:05.340 --> 00:09:09.820
+O sea, menos de la mitad de las veces que palpas algo ensanchado realmente es un
+
+192
+00:09:09.820 --> 00:09:10.340
+aneurisma.
+
+193
+00:09:10.340 --> 00:09:13.840
+Así es. La palpación positiva indica ecografía.
+
+194
+00:09:13.880 --> 00:09:18.380
+Te dice ve a buscarlo, pero no diagnostica por sí sola de ninguna manera.
+
+195
+00:09:18.700 --> 00:09:22.460
+Y eso nos empuja a la otra cara de la moneda, que creo que es el peligro real en
+
+196
+00:09:22.460 --> 00:09:23.800
+urgencias o en la consulta.
+
+197
+00:09:24.100 --> 00:09:28.020
+Quinta pregunta socrática. ¿Qué hubiera pasado si la palpación de nuestro paciente
+
+198
+00:09:28.020 --> 00:09:29.600
+delgado resultaba negativa?
+
+199
+00:09:29.980 --> 00:09:30.940
+Piénsenlo muy bien.
+
+200
+00:09:31.240 --> 00:09:35.300
+Si yo hundo las manos y no siento nada, ¿puedo descartar el aneurisma y mandarlo a
+
+201
+00:09:35.300 --> 00:09:35.520
+su casa?
+
+202
+00:09:36.060 --> 00:09:37.700
+Rotundamente no. Jamás.
+
+203
+00:09:37.700 --> 00:09:38.920
+¿Por los LR negativos?
+
+204
+00:09:38.920 --> 00:09:41.740
+Por los LR negativos, que son malísimos.
+
+205
+00:09:41.860 --> 00:09:46.200
+El LR negativo para aneurismas de 3.0 centímetros o
+
+206
+00:09:46.200 --> 00:09:51.100
+más es de 0.72, con un intervalo de 0.65
+
+207
+00:09:51.100 --> 00:09:52.500
+a 0.81.
+
+208
+00:09:52.880 --> 00:09:54.280
+Eso no baja nada la probabilidad.
+
+209
+00:09:54.440 --> 00:09:58.520
+Nada. Y para los de 4.0 centímetros es de 0.51.
+
+210
+00:09:58.980 --> 00:10:03.300
+Sigue siendo muy pobre. Un LR negativo de 0.72 deja
+
+211
+00:10:03.300 --> 00:10:04.900
+tu duda casi intacta.
+
+212
+00:10:05.020 --> 00:10:07.840
+Pero ¿por qué somos tan malos palpando esto si no lo sentimos?
+
+213
+00:10:07.840 --> 00:10:10.520
+Por la sensibilidad desglosada por diámetro.
+
+214
+00:10:10.680 --> 00:10:14.640
+Para aneurismas pequeños, entre 3.0 y 3.9 centímetros,
+
+215
+00:10:14.760 --> 00:10:18.300
+la sensibilidad de tus manos es de apenas 0.29.
+
+216
+00:10:18.680 --> 00:10:20.020
+Detectamos menos de un tercio.
+
+217
+00:10:20.180 --> 00:10:25.200
+Menos de un tercio, así es. E incluso para masas gigantes, aneurismas de 5.0
+
+218
+00:10:25.200 --> 00:10:28.900
+centímetros o mayores, la sensibilidad es solo de 0.76.
+
+219
+00:10:29.340 --> 00:10:32.700
+Espera, casi un cuarto de los aneurismas enormes se escapan a la palpación.
+
+220
+00:10:32.700 --> 00:10:37.160
+Se escapan porque están pegados a la columna, detrás de asas intestinales,
+
+221
+00:10:37.160 --> 00:10:39.860
+gas, epiplón. Se esconden demasiado bien.
+
+222
+00:10:40.080 --> 00:10:43.520
+Y aquí quiero tocar un mito clínico que frena mucho a la gente que está en la
+
+223
+00:10:43.520 --> 00:10:47.180
+clínica. El miedo a palpar fuerte por si se rompe la aorta bajo tus manos.
+
+224
+00:10:47.420 --> 00:10:48.040
+Un clásico.
+
+225
+00:10:48.220 --> 00:10:50.100
+¿Qué nos dice la evidencia sobre ese miedo?
+
+226
+00:10:50.100 --> 00:10:53.340
+La fuente tiene una nota de uso explícita.
+
+227
+00:10:53.560 --> 00:10:57.160
+No se ha descrito que la palpación precipite la rotura.
+
+228
+00:10:57.340 --> 00:11:01.020
+Hay que palpar con firmeza, sin miedo, porque si palpas
+
+229
+00:11:01.020 --> 00:11:05.000
+superficialmente, esta sensibilidad malísima va a ser peor todavía.
+
+230
+00:11:05.440 --> 00:11:07.780
+Bien, entonces llegamos al momento de tomar decisiones.
+
+231
+00:11:07.780 --> 00:11:10.700
+Ya le hicimos la maniobra. Sexta pregunta socrática.
+
+232
+00:11:11.040 --> 00:11:14.800
+Mandamos la ecografía de confirmación y resulta que sí, tiene una aorta
+
+233
+00:11:14.800 --> 00:11:19.200
+infrarrenal de 4.6 centímetros con trombo mural sin complicaciones.
+
+234
+00:11:19.630 --> 00:11:19.880
+Bien.
+
+235
+00:11:19.960 --> 00:11:24.120
+Y aquí mi pregunta es, ¿la ecografía se pidió solo por la palpación positiva?
+
+236
+00:11:24.660 --> 00:11:27.680
+Les doy un segundo para responder esto mentalmente.
+
+237
+00:11:28.060 --> 00:11:30.660
+Porque la tentación es pensar que la palpación nos salvó el día.
+
+238
+00:11:30.820 --> 00:11:34.200
+Si no hubiéramos palpado, nos perdíamos un bulto de 4.6 centímetros.
+
+239
+00:11:34.420 --> 00:11:37.240
+Y ese es un error conceptual gigantesco.
+
+240
+00:11:37.360 --> 00:11:37.860
+¿Por qué?
+
+241
+00:11:38.000 --> 00:11:41.260
+Porque la ecografía estaba indicada de todos modos.
+
+242
+00:11:41.460 --> 00:11:43.140
+Ah, por los criterios de cribado.
+
+243
+00:11:43.140 --> 00:11:47.580
+Claro, un varón de 65 a 75 años con antecedente de
+
+244
+00:11:47.580 --> 00:11:50.840
+tabaquismo es candidato directo a cribado ecográfico.
+
+245
+00:11:50.940 --> 00:11:53.660
+Entonces la palpación positiva solo le dio prisa al asunto.
+
+246
+00:11:54.000 --> 00:11:58.220
+Añadió urgencia, pero, y esto es vital, una palpación negativa
+
+247
+00:11:58.220 --> 00:12:02.640
+jamás debió haber cancelado la ecografía debido a su pésimo LR
+
+248
+00:12:02.640 --> 00:12:03.120
+negativo.
+
+249
+00:12:03.580 --> 00:12:08.080
+Entendido. Y con este hallazgo de 4.6 centímetros, que está por debajo del umbral
+
+250
+00:12:08.080 --> 00:12:11.980
+típico de cirugía electiva, ¿cuál es nuestra conducta en atención primaria?
+
+251
+00:12:11.980 --> 00:12:16.120
+Pues primero se deriva a cirugía vascular para su seguimiento ecográfico.
+
+252
+00:12:16.160 --> 00:12:16.700
+Lógico.
+
+253
+00:12:16.760 --> 00:12:20.200
+Pero el tratamiento clínico empieza ahí mismo en tu consulta.
+
+254
+00:12:20.220 --> 00:12:24.120
+Hay que suspender el tabaco, que acelera el crecimiento y el riesgo de ruptura,
+
+255
+00:12:24.650 --> 00:12:29.120
+control estricto de la presión arterial y, claro, mantener su aspirina y estatina
+
+256
+00:12:29.120 --> 00:12:30.520
+por su cardiopatía isquémica.
+
+257
+00:12:30.700 --> 00:12:32.700
+Y supongo que avisarle a la familia.
+
+258
+00:12:33.380 --> 00:12:33.960
+Fundamental.
+
+259
+00:12:34.200 --> 00:12:36.840
+Hay que iniciar cribado en sus familiares de primer grado.
+
+260
+00:12:37.000 --> 00:12:38.520
+Recuerda que el hermano ya lo tuvo.
+
+261
+00:12:39.040 --> 00:12:39.620
+Totalmente.
+
+262
+00:12:39.620 --> 00:12:43.720
+Y para contrastar esto, quiero plantear una séptima y última pregunta
+
+263
+00:12:43.720 --> 00:12:46.320
+socrática. El escenario opuesto.
+
+264
+00:12:46.460 --> 00:12:47.180
+A ver.
+
+265
+00:12:47.400 --> 00:12:49.280
+Imagina un paciente que llega a urgencias.
+
+266
+00:12:49.420 --> 00:12:53.580
+Es obeso, 74 años, dolor lumbar súbito,
+
+267
+00:12:53.720 --> 00:12:57.000
+empapado en sudor y con hipotensión franca.
+
+268
+00:12:57.300 --> 00:12:58.340
+Un cuadro de shock.
+
+269
+00:12:58.620 --> 00:13:02.840
+Sí, shock. Le palpas el abdomen y la palpación aórtica es
+
+270
+00:13:02.840 --> 00:13:04.540
+negativa. ¿Qué hacemos?
+
+271
+00:13:05.020 --> 00:13:08.580
+Piénselo bien, quienes nos escuchan, porque aquí se juega en la vida del paciente.
+
+272
+00:13:09.320 --> 00:13:11.200
+¿Cambia algo esa palpación negativa?
+
+273
+00:13:11.540 --> 00:13:15.360
+En ese escenario, la palpación tiene un rol de exactamente cero.
+
+274
+00:13:15.540 --> 00:13:19.820
+Cero absoluto. La advertencia explícita de la base es que no
+
+275
+00:13:19.820 --> 00:13:23.560
+puede usarse para excluir, mucho menos si la rotura está en tu diagnóstico
+
+276
+00:13:23.560 --> 00:13:24.140
+diferencial.
+
+277
+00:13:24.140 --> 00:13:25.760
+Y menos si es obeso.
+
+278
+00:13:25.860 --> 00:13:28.740
+Menos si es obeso, porque ahí la sensibilidad baja todavía más.
+
+279
+00:13:28.960 --> 00:13:33.320
+En ese caso, avisas a cirugía vascular y le haces una ecografía a pie de cama o
+
+280
+00:13:33.320 --> 00:13:34.640
+una tomografía si está estable.
+
+281
+00:13:35.160 --> 00:13:36.820
+Ignoras tus manos por completo.
+
+282
+00:13:37.340 --> 00:13:38.880
+Excelente lección de humildad clínica.
+
+283
+00:13:39.020 --> 00:13:41.500
+Y con esto llegamos al final de este análisis profundo.
+
+284
+00:13:41.680 --> 00:13:45.300
+Si nuestra audiencia debe recordar una sola cosa mañana en la clínica, creo que es
+
+285
+00:13:45.300 --> 00:13:47.860
+el concepto contraintuitivo de la palpación.
+
+286
+00:13:48.100 --> 00:13:51.940
+Sí, que es una prueba de una sola vía, una prueba específica.
+
+287
+00:13:52.160 --> 00:13:53.340
+Exacto, de una sola vía.
+
+288
+00:13:53.340 --> 00:13:57.640
+Si hay pulsación aórtica ensanchada a la palpación, esto desplaza fuertemente tu
+
+289
+00:13:57.640 --> 00:14:01.040
+probabilidad hacia el diagnóstico por sus altos LR positivos.
+
+290
+00:14:01.140 --> 00:14:02.200
+Te enciende las alarmas.
+
+291
+00:14:02.360 --> 00:14:06.560
+Pero si es negativa, apenas descarta nada por un LR negativo muy
+
+292
+00:14:06.560 --> 00:14:06.920
+pobre.
+
+293
+00:14:07.060 --> 00:14:10.280
+Y la mayoría de aneurismas pequeños simplemente se te escapan.
+
+294
+00:14:10.580 --> 00:14:11.360
+Así es.
+
+295
+00:14:11.820 --> 00:14:15.420
+Y recalcar la lección epistemológica.
+
+296
+00:14:15.460 --> 00:14:19.780
+No se puede mezclar la probabilidad basal de una definición, la de 4 centímetros,
+
+297
+00:14:19.920 --> 00:14:22.820
+con el rendimiento de otra definición de 3 centímetros.
+
+298
+00:14:22.820 --> 00:14:24.600
+Hay que ser coherentes con la evidencia.
+
+299
+00:14:24.980 --> 00:14:25.500
+Definitivamente.
+
+300
+00:14:25.680 --> 00:14:29.500
+Y me gustaría terminar dejando un pensamiento final provocativo para quienes nos
+
+301
+00:14:29.500 --> 00:14:32.060
+escuchan sobre los límites de la evidencia.
+
+302
+00:14:32.180 --> 00:14:33.000
+Es un buen ejercicio.
+
+303
+00:14:33.200 --> 00:14:37.420
+Todo lo que hemos discutido hoy, todos estos números tan precisos, se basan en una
+
+304
+00:14:37.420 --> 00:14:39.800
+cohorte de veteranos masculinos de los años 90.
+
+305
+00:14:40.380 --> 00:14:42.380
+Completamente sesgado al sexo masculino.
+
+306
+00:14:42.480 --> 00:14:46.240
+La evidencia sobre la aplicación del cribado ecográfico y la prevalencia exacta en
+
+307
+00:14:46.240 --> 00:14:49.360
+mujeres está poquísimo representada en estas fuentes.
+
+308
+00:14:49.560 --> 00:14:51.020
+Y la biología puede ser distinta.
+
+309
+00:14:51.020 --> 00:14:55.360
+Así que la pregunta que les dejo es, ¿cómo ajustan ustedes este
+
+310
+00:14:55.360 --> 00:14:59.840
+rigor matemático? ¿Cómo calibran su intuición cuando la paciente que entra por la
+
+311
+00:14:59.840 --> 00:15:03.500
+puerta es una mujer y no encaja para nada en la cohorte del estudio original?
+
+312
+00:15:04.100 --> 00:15:05.180
+Queda para pensarlo.
+
+313
+00:15:05.260 --> 00:15:06.540
+Muchísimo para reflexionar.
+
+314
+00:15:06.680 --> 00:15:09.500
+Sin duda. Gracias por acompañarnos en esta inmersión.

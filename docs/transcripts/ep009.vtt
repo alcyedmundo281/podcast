@@ -1,0 +1,2266 @@
+WEBVTT
+
+NOTE
+Transcripción del episodio 9 de medsemiotics — síndrome de intestino irritable.
+Generada automáticamente y corregida en terminología clínica.
+Puede contener errores; la fuente autorizada es el audio.
+
+1
+00:00:00.000 --> 00:00:03.680
+¿Sabes? Usualmente, cuando hablamos de un diagnóstico médico,
+
+2
+00:00:03.900 --> 00:00:08.000
+existe esta expectativa enorme de que todo funcione con una
+
+3
+00:00:08.000 --> 00:00:09.640
+precisión casi matemática.
+
+4
+00:00:09.760 --> 00:00:10.700
+Sí, como en la ingeniería.
+
+5
+00:00:10.920 --> 00:00:15.280
+Exacto. O sea, te rompes el brazo, te toman la radiografía, ves
+
+6
+00:00:15.280 --> 00:00:18.900
+esa línea blanca irregular atravesando el hueso y el médico simplemente la señala y
+
+7
+00:00:18.900 --> 00:00:20.180
+dice, bueno, ahí está el problema.
+
+8
+00:00:20.360 --> 00:00:23.020
+Claro, es un sistema binario. ¿Estás roto o no estás roto?
+
+9
+00:00:23.020 --> 00:00:24.200
+¿Estás sano o enfermo?
+
+10
+00:00:24.200 --> 00:00:28.540
+Y psicológicamente eso es súper reconfortante, tanto para nosotros de este lado del
+
+11
+00:00:28.540 --> 00:00:30.540
+escritorio como para quien recibe el diagnóstico.
+
+12
+00:00:31.180 --> 00:00:31.580
+Totalmente.
+
+13
+00:00:31.700 --> 00:00:35.120
+A todos nos gusta que las cosas sean visibles, cuantificables y fáciles de meter en
+
+14
+00:00:35.120 --> 00:00:35.580
+una cajita.
+
+15
+00:00:35.960 --> 00:00:39.880
+Pero, a ver, luego entras al mundo de los síntomas funcionales, y
+
+16
+00:00:39.880 --> 00:00:41.200
+específicamente en la gastroenterología.
+
+17
+00:00:42.280 --> 00:00:46.280
+Y de repente, digamos que esa máquina de rayos X metafórica
+
+18
+00:00:46.280 --> 00:00:47.940
+se descompone por completo.
+
+19
+00:00:48.260 --> 00:00:51.640
+Nos enfrentamos a un panorama que es, la verdad, bastante turbio.
+
+20
+00:00:51.940 --> 00:00:53.980
+Bastante. Y frustrante en el día a día.
+
+21
+00:00:54.200 --> 00:00:58.380
+Sí, y es justo por eso que hoy, en este análisis profundo, vamos a
+
+22
+00:00:58.380 --> 00:01:01.840
+sumergirnos directamente en la base de datos de medsemiotics-db,
+
+23
+00:01:02.560 --> 00:01:06.540
+porque nuestra misión hoy es tomar toda esta evidencia clínica
+
+24
+00:01:06.540 --> 00:01:09.140
+rigurosa y aplicarla a un escenario real.
+
+25
+00:01:09.360 --> 00:01:13.300
+Y ver qué pasa cuando la matemática detrás de nuestra certeza se desmorona un poco.
+
+26
+00:01:13.980 --> 00:01:18.460
+Exacto. Y para hacerlo súper dinámico, vamos a construir este análisis alrededor de
+
+27
+00:01:18.460 --> 00:01:19.680
+un caso clínico socrático.
+
+28
+00:01:19.680 --> 00:01:23.760
+La idea es que a medida que desglosamos el caso, planteemos estas disyuntivas
+
+29
+00:01:23.760 --> 00:01:25.360
+reales que surgen en la consulta.
+
+30
+00:01:25.380 --> 00:01:29.440
+Sí, para que quien nos escucha pueda ir procesando su propia respuesta mental,
+
+31
+00:01:29.560 --> 00:01:32.920
+¿verdad? Antes de que nosotros desmenucemos qué dice realmente la evidencia.
+
+32
+00:01:33.220 --> 00:01:36.340
+Esa es la idea. Así que vamos directo al caso.
+
+33
+00:01:36.680 --> 00:01:40.120
+Imagina este escenario. Tengo aquí el expediente de una paciente ficticia.
+
+34
+00:01:40.200 --> 00:01:43.800
+Es una mujer de 29 años y de profesión es contadora.
+
+35
+00:01:44.040 --> 00:01:45.600
+Es un perfil con mucho estrés potencial.
+
+36
+00:01:45.600 --> 00:01:50.000
+Y su motivo de consulta es dolor abdominal
+
+37
+00:01:50.000 --> 00:01:54.020
+cólico. Específicamente, ella lo localiza en el hemiabdomen inferior.
+
+38
+00:01:54.520 --> 00:01:56.260
+Pero este dolor no es nuevo.
+
+39
+00:01:56.400 --> 00:02:00.520
+Dice que aparece varios días por semana y ya lleva lidiando con él desde hace
+
+40
+00:02:00.520 --> 00:02:04.540
+ocho meses. Pero hay un dato clave en el
+
+41
+00:02:04.540 --> 00:02:08.620
+interrogatorio. El dolor mejora sistemáticamente después de evacuar.
+
+42
+00:02:08.620 --> 00:02:10.300
+Bueno, ese es un hallazgo cardinal.
+
+43
+00:02:10.460 --> 00:02:13.580
+Es algo que debemos clavar en la pizarra mental de inmediato.
+
+44
+00:02:13.720 --> 00:02:16.180
+La relación con la defecación es vital aquí.
+
+45
+00:02:16.420 --> 00:02:18.280
+Pero, ¿qué sabemos de la consistencia?
+
+46
+00:02:18.380 --> 00:02:19.800
+O sea, ¿cómo es su hábito intestinal?
+
+47
+00:02:20.160 --> 00:02:22.040
+Pues es un hábito completamente alternante.
+
+48
+00:02:22.180 --> 00:02:26.360
+Según el expediente, pasa por semanas de heces blandas y frecuentes, que si usamos
+
+49
+00:02:26.360 --> 00:02:28.900
+la escala de Bristol serían un tipo 6 o 7.
+
+50
+00:02:29.060 --> 00:02:33.180
+Y luego, sin previo aviso, pasa semanas de heces duras, un
+
+51
+00:02:33.180 --> 00:02:37.360
+Bristol 1 o 2. Y además de esto, refiere una distensión abdominal
+
+52
+00:02:37.360 --> 00:02:38.360
+bastante molesta.
+
+53
+00:02:38.620 --> 00:02:39.760
+Claro, la clásica hinchazón.
+
+54
+00:02:39.920 --> 00:02:44.020
+Ajá, que empeora progresivamente hacia el final del día y, curiosamente,
+
+55
+00:02:44.100 --> 00:02:47.580
+coincide de manera súper exacta con los cierres de mes en su trabajo.
+
+56
+00:02:47.840 --> 00:02:50.740
+Lo cual nos dibuja un mapa clarísimo del factor de estrés psicosocial.
+
+57
+00:02:50.940 --> 00:02:54.220
+Los cierres contables son periodos de altísima tensión.
+
+58
+00:02:54.800 --> 00:02:55.240
+Totalmente.
+
+59
+00:02:55.420 --> 00:02:59.680
+Ahora, para poder armar la hipótesis completa, necesitamos ver el otro lado de la
+
+60
+00:02:59.680 --> 00:03:00.040
+moneda.
+
+61
+00:03:00.100 --> 00:03:02.260
+¿Qué cosas no tiene la paciente?
+
+62
+00:03:02.480 --> 00:03:04.100
+Bueno, los negativos son muy limpios.
+
+63
+00:03:04.120 --> 00:03:05.800
+Y aquí es donde la cosa se pone interesante.
+
+64
+00:03:05.800 --> 00:03:10.060
+O sea, no ha visto sangre en las heces, no ha perdido peso, el
+
+65
+00:03:10.060 --> 00:03:13.740
+dolor jamás la despierta por la noche y no ha registrado episodios de fiebre.
+
+66
+00:03:14.020 --> 00:03:14.860
+Excelentes datos.
+
+67
+00:03:15.240 --> 00:03:19.440
+Sí, y tampoco hay antecedentes familiares de cáncer colorrectal, ni de enfermedad
+
+68
+00:03:19.440 --> 00:03:21.940
+celíaca, ni de enfermedad inflamatoria intestinal.
+
+69
+00:03:22.240 --> 00:03:23.760
+Perfecto. ¿Y la exploración física?
+
+70
+00:03:24.020 --> 00:03:28.140
+Todo normal. Sus signos vitales son completamente normales, su índice de masa
+
+71
+00:03:28.140 --> 00:03:32.220
+corporal es de 23 kilogramos por metro cuadrado y sus ciclos menstruales son
+
+72
+00:03:32.220 --> 00:03:32.600
+regulares.
+
+73
+00:03:32.820 --> 00:03:34.620
+El último fue hace exactamente dos semanas.
+
+74
+00:03:34.620 --> 00:03:38.620
+Bien, entonces, con este panorama sobre la mesa, llegamos al primer gran cruce de
+
+75
+00:03:38.620 --> 00:03:42.160
+caminos del caso. Y cualquiera que esté en la práctica clínica y escuche esto,
+
+76
+00:03:42.380 --> 00:03:46.540
+seguramente sentirá el impulso de armar un diagnóstico diferencial inmenso.
+
+77
+00:03:46.680 --> 00:03:47.880
+Oh, sí, 100%.
+
+78
+00:03:47.880 --> 00:03:51.780
+Ante un dolor crónico en una mujer tan joven, la mente clínica suele pensar, bueno,
+
+79
+00:03:51.860 --> 00:03:55.240
+¿será intestino irritable o será algo más siniestro que se me está escapando?
+
+80
+00:03:55.240 --> 00:03:59.700
+Exactamente. Y si te soy totalmente honesta, mi instinto primario,
+
+81
+00:03:59.720 --> 00:04:04.040
+y creo que el de la mayoría de quienes ejercemos, es ir a la segura.
+
+82
+00:04:04.100 --> 00:04:08.400
+O sea, la visión tradicional que nos han enseñado por décadas dicta que debemos
+
+83
+00:04:08.400 --> 00:04:10.040
+hacer un descarte exhaustivo.
+
+84
+00:04:10.220 --> 00:04:12.280
+Claro, el famoso diagnóstico por descarte.
+
+85
+00:04:12.400 --> 00:04:16.360
+Ajá, que es enfermedad celíaca, enfermedad inflamatoria intestinal,
+
+86
+00:04:16.520 --> 00:04:20.780
+intolerancia a la lactosa, colitis microscópica, incluso cosas
+
+87
+00:04:20.780 --> 00:04:22.580
+ginecológicas como la endometriosis.
+
+88
+00:04:22.920 --> 00:04:24.160
+Sí, la lista es larguísima.
+
+89
+00:04:24.160 --> 00:04:28.200
+Y el miedo a equivocarnos nos susurra al oído que lo más prudente es
+
+90
+00:04:28.200 --> 00:04:32.100
+descartar absolutamente todo esto primero, con laboratorios e imagen,
+
+91
+00:04:32.320 --> 00:04:36.740
+antes de, digamos, rendirnos y ponerle la etiqueta de síndrome de
+
+92
+00:04:36.740 --> 00:04:37.640
+intestino irritable.
+
+93
+00:04:37.800 --> 00:04:42.100
+Y justo aquí es donde la base de datos nos da la primera gran bofetada
+
+94
+00:04:42.100 --> 00:04:46.060
+metodológica del día. Porque esa noción de descartar todo para quedarse con lo
+
+95
+00:04:46.060 --> 00:04:47.880
+funcional es fundamentalmente incorrecta.
+
+96
+00:04:47.920 --> 00:04:48.420
+¿En serio?
+
+97
+00:04:48.420 --> 00:04:52.040
+Sí, y el síndrome de intestino irritable, según la evidencia más robusta que
+
+98
+00:04:52.040 --> 00:04:55.920
+tenemos en medsemiotics-db, no es un diagnóstico de exclusión.
+
+99
+00:04:56.340 --> 00:04:59.880
+A ver, un momento. Tengo que hacer de abogada del diablo aquí, porque
+
+100
+00:04:59.880 --> 00:05:04.360
+históricamente el intestino irritable es enseñado casi como el cesto de basura
+
+101
+00:05:04.360 --> 00:05:05.660
+de la gastroenterología, ¿no?
+
+102
+00:05:05.820 --> 00:05:06.960
+Así es como se enseñaba, sí.
+
+103
+00:05:07.100 --> 00:05:10.500
+O sea, si le haces todas las pruebas al paciente, no encuentras nada roto, nada
+
+104
+00:05:10.500 --> 00:05:14.880
+inflamado, nada sangrando, entonces, bueno, por descarte es intestino irritable.
+
+105
+00:05:14.880 --> 00:05:19.040
+Además, ponte en mis zapatos, si yo en la consulta diagnóstico intestino
+
+106
+00:05:19.040 --> 00:05:23.320
+irritable en la primera visita y resulta ser una enfermedad inflamatoria intestinal
+
+107
+00:05:23.320 --> 00:05:27.680
+incipiente que simplemente no quise investigar, la responsabilidad legal
+
+108
+00:05:27.680 --> 00:05:29.440
+y moral es completamente mía.
+
+109
+00:05:29.660 --> 00:05:31.520
+Entiendo el punto perfecto.
+
+110
+00:05:31.600 --> 00:05:35.640
+Entonces, ¿me estás diciendo que la evidencia me respalda si decido no hacerle una
+
+111
+00:05:35.640 --> 00:05:38.160
+superbatería de pruebas a esta mujer de 29 años?
+
+112
+00:05:38.160 --> 00:05:42.600
+Te respalda plenamente, siempre y cuando sepas leer el patrón, porque entiendo el
+
+113
+00:05:42.600 --> 00:05:46.440
+miedo a la responsabilidad, claro, pero la evidencia muestra que tratar al
+
+114
+00:05:46.440 --> 00:05:50.820
+intestino irritable como un diagnóstico de exclusión genera muchísimo más daño que
+
+115
+00:05:50.820 --> 00:05:51.320
+beneficio.
+
+116
+00:05:51.420 --> 00:05:52.360
+¿Por qué lo dices?
+
+117
+00:05:52.660 --> 00:05:56.880
+Porque someter a una paciente joven a una avalancha de estudios innecesarios
+
+118
+00:05:56.880 --> 00:06:01.000
+no solo dispara los costos médicos, sino que multiplica la ansiedad de la
+
+119
+00:06:01.000 --> 00:06:04.860
+paciente y eso perpetúa el ciclo cerebro-intestino que agrava los síntomas
+
+120
+00:06:04.860 --> 00:06:05.380
+iniciales.
+
+121
+00:06:05.520 --> 00:06:07.580
+Claro, la estresas más y le duele más.
+
+122
+00:06:07.580 --> 00:06:11.880
+Y lo más doloroso, desde el punto de vista verdaderamente científico,
+
+123
+00:06:11.880 --> 00:06:15.300
+es que hacer todo eso no mejora tu certeza diagnóstica.
+
+124
+00:06:15.460 --> 00:06:19.640
+El intestino irritable es un diagnóstico que se hace en positivo,
+
+125
+00:06:19.980 --> 00:06:24.040
+basado en un patrón de síntomas muy
+
+126
+00:06:24.040 --> 00:06:28.040
+característico. Haces el diagnóstico clínico primero y luego lo
+
+127
+00:06:28.040 --> 00:06:30.360
+complementas con muy pocas pruebas dirigidas.
+
+128
+00:06:30.480 --> 00:06:31.420
+Nunca es al revés.
+
+129
+00:06:31.420 --> 00:06:33.040
+Ok, ok.
+
+130
+00:06:33.180 --> 00:06:37.020
+Entonces, si le quitamos el peso a las pruebas de laboratorio iniciales,
+
+131
+00:06:37.080 --> 00:06:41.360
+pues la carga de la prueba recae 100% en la calidad de nuestro
+
+132
+00:06:41.360 --> 00:06:42.240
+interrogatorio.
+
+133
+00:06:42.900 --> 00:06:43.460
+Exactamente.
+
+134
+00:06:43.600 --> 00:06:47.880
+Si no estamos excluyendo lo malo, tenemos que estar matemáticamente seguros de lo
+
+135
+00:06:47.880 --> 00:06:52.200
+que sí estamos incluyendo. Y supongo que esto nos lleva a diseccionar el dolor
+
+136
+00:06:52.200 --> 00:06:53.820
+de nuestra paciente contadora.
+
+137
+00:06:53.820 --> 00:06:56.700
+Así es. Revisemos los hallazgos de nuevo.
+
+138
+00:06:56.940 --> 00:06:58.820
+Su dolor abdominal es recurrente.
+
+139
+00:06:58.960 --> 00:07:03.380
+Está atado directamente a la defecación y camina de la mano con estos cambios
+
+140
+00:07:03.380 --> 00:07:05.640
+en la frecuencia y la forma de las heces que mencionabas.
+
+141
+00:07:05.880 --> 00:07:10.280
+Y durante la exploración física solo encontramos una molestia leve al palpar
+
+142
+00:07:10.280 --> 00:07:12.020
+profundamente la fosa ilíaca izquierda.
+
+143
+00:07:12.080 --> 00:07:16.140
+No hay masas, no hay órganos agrandados, cero signos de irritación
+
+144
+00:07:16.140 --> 00:07:16.620
+peritoneal.
+
+145
+00:07:16.620 --> 00:07:20.940
+Lo cual encaja perfecto con la triada semiótica del intestino irritable, o sea,
+
+146
+00:07:20.980 --> 00:07:25.060
+relación con la defecación, cambio de frecuencia y cambio de consistencia.
+
+147
+00:07:25.180 --> 00:07:25.720
+¿Tal cual?
+
+148
+00:07:26.440 --> 00:07:30.940
+Ahora, a ver, si vamos a hacer este diagnóstico en positivo y confiar en él casi a
+
+149
+00:07:30.940 --> 00:07:35.280
+ciegas sin pedir 10 exámenes de sangre, yo esperaría que este
+
+150
+00:07:35.280 --> 00:07:38.400
+patrón de dolor tenga un poder estadístico monumental.
+
+151
+00:07:38.960 --> 00:07:40.260
+Claro, uno esperaría eso.
+
+152
+00:07:40.260 --> 00:07:43.580
+O sea, para justificar no pedir pruebas, quiero el número exacto.
+
+153
+00:07:43.860 --> 00:07:47.160
+Necesito un cociente de verosimilitud, un LR positivo,
+
+154
+00:07:47.600 --> 00:07:51.600
+altísimo, que me diga, no sé, la probabilidad de que esto sea
+
+155
+00:07:51.600 --> 00:07:54.860
+intestino irritable se multiplica por 10 con este dolor.
+
+156
+00:07:55.160 --> 00:07:58.960
+Y es fascinante que busques esa red de seguridad en los números porque justo aquí
+
+157
+00:07:58.960 --> 00:08:02.020
+es donde radica el gran misterio estadístico en medsemiotics-db.
+
+158
+00:08:02.340 --> 00:08:03.180
+¿A qué te refieres?
+
+159
+00:08:03.300 --> 00:08:07.580
+Para el hallazgo clínico específico de dolor abdominal en este contexto,
+
+160
+00:08:07.700 --> 00:08:10.060
+la base de datos no te da un número gigante.
+
+161
+00:08:10.260 --> 00:08:13.360
+De hecho, declara textualmente LR no medido.
+
+162
+00:08:13.560 --> 00:08:15.100
+No. ¿Cómo?
+
+163
+00:08:15.180 --> 00:08:19.220
+¿Me estás diciendo que el síntoma cardinal, la piedra angular de todo el
+
+164
+00:08:19.220 --> 00:08:23.220
+diagnóstico, no tiene un número validado que cuantifique su probabilidad?
+
+165
+00:08:23.400 --> 00:08:23.780
+Así es.
+
+166
+00:08:23.980 --> 00:08:28.120
+Pero eso no tiene sentido. O sea, ¿cómo construyes medicina basada en la
+
+167
+00:08:28.120 --> 00:08:31.300
+evidencia sin la evidencia numérica del síntoma principal?
+
+168
+00:08:31.740 --> 00:08:35.600
+Es que así es exactamente cómo funciona la evidencia cuando es estrictamente
+
+169
+00:08:35.600 --> 00:08:36.140
+rigurosa.
+
+170
+00:08:36.140 --> 00:08:38.880
+El síntoma orienta el cuadro, sin duda alguna.
+
+171
+00:08:39.000 --> 00:08:42.400
+De hecho, un dolor que no tiene ninguna relación con la defecación te obliga a
+
+172
+00:08:42.400 --> 00:08:45.260
+desechar el intestino irritable y buscar otra explicación.
+
+173
+00:08:45.340 --> 00:08:49.200
+Pero operativamente hablando, ¿no hay un cociente de
+
+174
+00:08:49.200 --> 00:08:53.600
+verosimilitud positivo publicado y validado prospectivamente para el dolor
+
+175
+00:08:53.600 --> 00:08:56.280
+abdominal general que confirme este diagnóstico?
+
+176
+00:08:56.780 --> 00:09:01.100
+Espera, ¿no hay ninguna cifra publicada sobre el dolor en toda la literatura
+
+177
+00:09:01.100 --> 00:09:02.200
+gastroenterológica?
+
+178
+00:09:02.200 --> 00:09:05.500
+Bueno, sí hay cifras, pero el tema es que hay que saber leerlas.
+
+179
+00:09:05.640 --> 00:09:10.000
+El único LR publicado sólidamente en este contexto proviene de un gran estudio del
+
+180
+00:09:10.000 --> 00:09:13.700
+2008 en la revista JAMA con más de 2,000 pacientes.
+
+181
+00:09:14.000 --> 00:09:15.600
+Ok, eso suena robusto.
+
+182
+00:09:15.600 --> 00:09:19.720
+Pero escucha bien la cifra. Es un LR negativo de 0.29,
+
+183
+00:09:19.980 --> 00:09:24.140
+con un intervalo de confianza del 95% que va de 0.12
+
+184
+00:09:24.140 --> 00:09:28.460
+a 0.72. Y el detalle súper crucial aquí
+
+185
+00:09:28.460 --> 00:09:32.740
+es que ese número de 0.29 corresponde exclusivamente a la
+
+186
+00:09:32.740 --> 00:09:34.480
+ausencia de dolor abdominal bajo.
+
+187
+00:09:34.480 --> 00:09:37.600
+Ah, ya veo. Entiendo la trampa matemática aquí.
+
+188
+00:09:37.740 --> 00:09:41.900
+O sea, un LR negativo de 0.29 es un número fuerte para
+
+189
+00:09:41.900 --> 00:09:42.640
+descartar algo.
+
+190
+00:09:42.840 --> 00:09:43.320
+Exacto.
+
+191
+00:09:43.320 --> 00:09:47.360
+Significa que si el paciente no tiene dolor abdominal bajo, la probabilidad de que
+
+192
+00:09:47.360 --> 00:09:49.580
+tenga intestino irritable cae drásticamente.
+
+193
+00:09:49.940 --> 00:09:50.700
+Sí, se desploma.
+
+194
+00:09:50.980 --> 00:09:55.380
+Pero la base de datos se niega a tomar ese número específico del dolor
+
+195
+00:09:55.380 --> 00:09:59.860
+bajo y pegárselo a la categoría general de dolor abdominal, solo
+
+196
+00:09:59.860 --> 00:10:02.900
+porque a nosotros nos resultaría conveniente para redondear el caso.
+
+197
+00:10:03.120 --> 00:10:03.920
+Leíste mi mente.
+
+198
+00:10:04.480 --> 00:10:06.740
+Es rigor epistemológico puro.
+
+199
+00:10:06.920 --> 00:10:09.260
+Está basado en el principio de parsimonia.
+
+200
+00:10:09.520 --> 00:10:13.920
+No podemos extrapolar un número de una subcategoría a un concepto
+
+201
+00:10:13.920 --> 00:10:18.180
+mucho más amplio. El dolor es el núcleo de los criterios de Roma IV, sí,
+
+202
+00:10:18.220 --> 00:10:22.660
+pero por sí solo la evidencia estricta nos dice que no cuantifica la probabilidad
+
+203
+00:10:22.660 --> 00:10:26.560
+con un número cerrado, que el clínico pueda simplemente meter en su calculadora
+
+204
+00:10:26.560 --> 00:10:27.760
+mental de probabilidades.
+
+205
+00:10:27.760 --> 00:10:31.960
+¡Qué fuerte! Bueno, esto nos empuja a buscar certeza en el otro síntoma
+
+206
+00:10:31.960 --> 00:10:36.000
+cardinal, el hábito intestinal de nuestra paciente, que recordemos
+
+207
+00:10:36.000 --> 00:10:38.640
+alterna entre la diarrea y el estreñimiento crónico.
+
+208
+00:10:39.000 --> 00:10:43.280
+Porque si el dolor general no tiene un número, seguramente los viajes al baño sí lo
+
+209
+00:10:43.280 --> 00:10:47.240
+tienen. O sea, ¿por qué es tan importante definir el hábito predominante y qué nos
+
+210
+00:10:47.240 --> 00:10:49.360
+dice la base de datos sobre su poder estadístico?
+
+211
+00:10:49.360 --> 00:10:53.280
+Bueno, la definición del hábito importa muchísimo, pero la respuesta tiene dos
+
+212
+00:10:53.280 --> 00:10:57.600
+vertientes muy distintas, una para el manejo del paciente como tal y otra para la
+
+213
+00:10:57.600 --> 00:10:58.700
+confirmación del diagnóstico.
+
+214
+00:10:58.880 --> 00:11:03.160
+Claro, porque desde la perspectiva del manejo en el consultorio, tipificar las
+
+215
+00:11:03.160 --> 00:11:05.120
+heces tiene todo el sentido del mundo.
+
+216
+00:11:05.360 --> 00:11:09.660
+El hábito predominante te define qué tipo de intestino irritable estamos
+
+217
+00:11:09.660 --> 00:11:13.480
+tratando y eso guía directamente lo que vamos a recetar a continuación.
+
+218
+00:11:13.600 --> 00:11:14.120
+Exactamente.
+
+219
+00:11:14.120 --> 00:11:18.400
+Por ejemplo, si la paciente tuviera un predominio de diarrea, la
+
+220
+00:11:18.400 --> 00:11:22.320
+evidencia te acorrala y te obliga a pensar en descartar patologías súper
+
+221
+00:11:22.320 --> 00:11:26.780
+específicas, como la enfermedad celíaca o la colitis microscópica.
+
+222
+00:11:26.840 --> 00:11:29.840
+Por eso usamos la escala de Bristol en la clínica.
+
+223
+00:11:30.080 --> 00:11:34.200
+No es lo mismo tratar a alguien con heces duras tipo 1 que a alguien con heces
+
+224
+00:11:34.200 --> 00:11:35.220
+acuosas tipo 7.
+
+225
+00:11:35.220 --> 00:11:39.520
+Totalmente de acuerdo. Pero si dejamos un momento de lado el manejo
+
+226
+00:11:39.520 --> 00:11:43.740
+y volvemos a la confirmación diagnóstica pura, nos estrellamos de nuevo contra el
+
+227
+00:11:43.740 --> 00:11:44.700
+mismo muro analítico.
+
+228
+00:11:45.220 --> 00:11:47.920
+No me digas que también dice LR no medido.
+
+229
+00:11:48.040 --> 00:11:52.320
+Sí, tal cual. Si buscas en la base de datos el síntoma de diarrea o el de
+
+230
+00:11:52.320 --> 00:11:55.780
+estreñimiento, ambos figuran con el estatus de LR no medido.
+
+231
+00:11:56.180 --> 00:11:56.660
+Increíble.
+
+232
+00:11:57.060 --> 00:11:59.100
+Describen perfectamente el cuadro clínico.
+
+233
+00:11:59.180 --> 00:12:02.820
+Y sabemos que se correlacionan maravillosamente con el tiempo de tránsito
+
+234
+00:12:02.820 --> 00:12:04.020
+intestinal anatómico.
+
+235
+00:12:04.020 --> 00:12:07.980
+Pero matemáticamente no confirman el diagnóstico por sí solos.
+
+236
+00:12:08.080 --> 00:12:11.280
+No tienen un cociente de verosimilitud que podamos usar como tal.
+
+237
+00:12:11.560 --> 00:12:15.580
+O sea que si damos un paso atrás y conectamos esto con el panorama general, la
+
+238
+00:12:15.580 --> 00:12:17.160
+situación es súper paradójica.
+
+239
+00:12:17.220 --> 00:12:21.600
+Estamos haciendo un diagnóstico en positivo, basándonos en síntomas clásicos que no
+
+240
+00:12:21.600 --> 00:12:24.500
+tienen un poder discriminativo medido matemáticamente.
+
+241
+00:12:25.040 --> 00:12:26.600
+Así de cruda es la realidad.
+
+242
+00:12:26.600 --> 00:12:30.740
+Entonces, lógicamente, si los síntomas de inclusión no tienen números
+
+243
+00:12:30.740 --> 00:12:34.940
+fuertes, la llave para separar un cuadro benigno de una enfermedad
+
+244
+00:12:34.940 --> 00:12:38.420
+orgánica grave tiene que estar escondida en el otro extremo de la balanza.
+
+245
+00:12:38.640 --> 00:12:42.780
+Y esa llave, sin duda alguna, son los signos de alarma, lo que nos introduce
+
+246
+00:12:42.780 --> 00:12:47.240
+directo al siguiente nivel de complejidad en este caso, la discriminación con
+
+247
+00:12:47.240 --> 00:12:51.720
+la evidencia y este enorme, pero enorme problema que tenemos con las banderas
+
+248
+00:12:51.720 --> 00:12:52.020
+rojas.
+
+249
+00:12:52.020 --> 00:12:56.160
+Porque si los síntomas no discriminan con números, asumimos que los signos de
+
+250
+00:12:56.160 --> 00:12:56.940
+alarma sí lo hacen.
+
+251
+00:12:57.220 --> 00:12:58.260
+Ajá, eso asumimos.
+
+252
+00:12:58.580 --> 00:13:02.480
+Pero a ver, ¿cómo trata realmente la base de datos a cosas tan dispares como la
+
+253
+00:13:02.480 --> 00:13:06.600
+anemia, la pérdida de peso inexplicable, la fiebre o la sangre en las heces?
+
+254
+00:13:06.980 --> 00:13:10.540
+Agárrate, porque aquí entramos de lleno al terreno de las contradicciones médicas.
+
+255
+00:13:10.800 --> 00:13:15.040
+A ver, a mí me gusta pensar en los signos de alarma de un paciente como si fueran
+
+256
+00:13:15.040 --> 00:13:18.000
+el sistema de seguridad de un gran edificio gubernamental.
+
+257
+00:13:18.080 --> 00:13:18.780
+Me gusta esa imagen.
+
+258
+00:13:18.780 --> 00:13:22.740
+Tienes, no sé, sensores de humo en el techo, detectores de movimiento en los
+
+259
+00:13:22.740 --> 00:13:25.200
+pasillos, cámaras de circuito cerrado en las puertas.
+
+260
+00:13:25.600 --> 00:13:30.060
+Y en nuestra mente clínica, asumimos que cualquier sensor que se active
+
+261
+00:13:30.060 --> 00:13:34.500
+va a encender exactamente la misma sirena ensordecedora en toda la
+
+262
+00:13:34.500 --> 00:13:36.100
+cuadra que grita, ¡alarma!
+
+263
+00:13:36.160 --> 00:13:37.740
+¡Hay una enfermedad orgánica!
+
+264
+00:13:37.860 --> 00:13:38.860
+¡Corran a investigar!
+
+265
+00:13:38.860 --> 00:13:42.840
+Es una analogía fantástica, pero tenemos que
+
+266
+00:13:42.840 --> 00:13:46.780
+expandirla para reflejar la realidad de la literatura, porque la evidencia nos
+
+267
+00:13:46.780 --> 00:13:50.780
+demuestra que no todos esos sensores fueron calibrados por el mismo fabricante,
+
+268
+00:13:50.820 --> 00:13:52.800
+ni tienen el mismo margen de error.
+
+269
+00:13:52.960 --> 00:13:53.240
+Claro.
+
+270
+00:13:53.400 --> 00:13:57.540
+Y aquí reside probablemente la mayor enseñanza de este análisis, sobre cómo es
+
+271
+00:13:57.540 --> 00:14:00.080
+verdaderamente la arquitectura de nuestra certeza médica.
+
+272
+00:14:00.760 --> 00:14:04.720
+Empecemos revisando los detectores de humo, la anemia y la pérdida de peso.
+
+273
+00:14:05.260 --> 00:14:07.040
+Uf, dos pesos pesados.
+
+274
+00:14:07.040 --> 00:14:11.160
+O sea, si una persona llega a tu consulta perdiendo kilos sin razón aparente y con
+
+275
+00:14:11.160 --> 00:14:15.640
+la hemoglobina por los suelos, el instinto de cualquier médico es encender todas
+
+276
+00:14:15.640 --> 00:14:19.380
+las luces de emergencia e iniciar una cacería de brujas diagnóstica buscando un
+
+277
+00:14:19.380 --> 00:14:21.620
+cáncer o una enfermedad inflamatoria severa.
+
+278
+00:14:21.700 --> 00:14:23.720
+Y ojo, es lo correcto clínicamente.
+
+279
+00:14:24.000 --> 00:14:27.800
+Ambas condiciones disparan automáticamente el estatus de signo de alarma.
+
+280
+00:14:28.080 --> 00:14:32.520
+Pero, y aquí viene el giro, cuando buscas el respaldo numérico en la base de datos,
+
+281
+00:14:32.640 --> 00:14:36.420
+te das cuenta de que estas alarmas están sostenidas mayormente por consenso.
+
+282
+00:14:36.420 --> 00:14:37.740
+Solo consenso.
+
+283
+00:14:37.940 --> 00:14:42.320
+Sí. Por ejemplo, una revisión sistemática de Park del año 2010 afirma de manera
+
+284
+00:14:42.320 --> 00:14:46.360
+categórica que tanto la anemia como la pérdida de peso tienen una muy buena
+
+285
+00:14:46.360 --> 00:14:48.780
+especificidad para detectar enfermedad orgánica.
+
+286
+00:14:49.000 --> 00:14:52.420
+Ok. Pero intuyo por tu tono que hay un problema con esa afirmación.
+
+287
+00:14:52.640 --> 00:14:56.140
+El problema es que Park no publica cifras duras en ese sentido.
+
+288
+00:14:56.440 --> 00:14:56.880
+Nada.
+
+289
+00:14:56.880 --> 00:15:00.660
+Nada. A lo largo de todo el artículo no vas a encontrar una sola sensibilidad,
+
+290
+00:15:00.920 --> 00:15:05.160
+ninguna especificidad exacta, ni un odds ratio, ni un
+
+291
+00:15:05.160 --> 00:15:08.880
+cociente de verosimilitud que le dé peso matemático a esa afirmación para este
+
+292
+00:15:08.880 --> 00:15:13.300
+contexto en específico. Por lo tanto, el estado oficial en la base es, otra vez, LR
+
+293
+00:15:13.300 --> 00:15:14.040
+no medido.
+
+294
+00:15:14.380 --> 00:15:14.860
+¡Wow!
+
+295
+00:15:15.060 --> 00:15:19.380
+Son alarmas sostenidas por el peso aplastante del consenso clínico, no por la
+
+296
+00:15:19.380 --> 00:15:19.860
+matemática.
+
+297
+00:15:19.860 --> 00:15:23.900
+¡Qué locura! O sea, confiamos nuestras decisiones, que a veces son de vida o
+
+298
+00:15:23.900 --> 00:15:27.040
+muerte, en esos signos. Y debemos hacerlo, por seguridad, claro.
+
+299
+00:15:27.280 --> 00:15:31.480
+Pero si escarbamos en los cimientos, están flotando en acuerdos de
+
+300
+00:15:31.480 --> 00:15:33.340
+expertos, no en tablas de probabilidad.
+
+301
+00:15:33.640 --> 00:15:35.480
+Es una píldora difícil de tragar, sí.
+
+302
+00:15:35.620 --> 00:15:40.000
+¿Y qué me dices de la fiebre? Porque, digamos, si esta paciente llegara con su
+
+303
+00:15:40.000 --> 00:15:44.040
+dolor abdominal crónico y de pronto, ¡pum!, tiene 39 grados de temperatura,
+
+304
+00:15:44.400 --> 00:15:46.900
+se activa la alarma de enfermedad orgánica.
+
+305
+00:15:46.900 --> 00:15:51.000
+Pues, curiosamente, la fiebre ni siquiera se incorpora como una relación
+
+306
+00:15:51.000 --> 00:15:54.280
+diagnóstica dentro del universo del intestino irritable en la base de datos.
+
+307
+00:15:54.700 --> 00:15:58.900
+Espera, ¿por qué? ¿Acaso una fiebre alta no es la definición máxima de una
+
+308
+00:15:58.900 --> 00:16:01.040
+bandera roja para descartar algo funcional?
+
+309
+00:16:01.360 --> 00:16:05.680
+Es que, plantearlo en esos términos es caer en una falacia lógica.
+
+310
+00:16:05.840 --> 00:16:07.360
+Piensa en la paciente de nuestro caso.
+
+311
+00:16:07.680 --> 00:16:12.160
+Si hoy presenta fiebre, eso no contradice mágicamente su diagnóstico de intestino
+
+312
+00:16:12.160 --> 00:16:13.320
+irritable de hace ocho meses.
+
+313
+00:16:13.820 --> 00:16:15.100
+Ah, claro.
+
+314
+00:16:15.100 --> 00:16:18.920
+Claro, simplemente te está diciendo que la fiebre pertenece a un territorio ajeno a
+
+315
+00:16:18.920 --> 00:16:22.480
+los trastornos funcionales. Te obliga a buscarle su propia explicación por
+
+316
+00:16:22.480 --> 00:16:26.360
+separado. O sea, quizá tiene una infección urinaria o un cuadro viral
+
+317
+00:16:26.360 --> 00:16:30.640
+sobreagregado, pero no te obliga a abandonar tu hipótesis inicial para explicar su
+
+318
+00:16:30.640 --> 00:16:31.380
+dolor crónico.
+
+319
+00:16:31.460 --> 00:16:33.920
+Claro, no borra el intestino irritable.
+
+320
+00:16:34.260 --> 00:16:38.400
+Exacto. Declarar la fiebre como un signo de exclusión para el intestino irritable
+
+321
+00:16:38.400 --> 00:16:42.780
+implicaría una relación mutuamente excluyente que fisiológicamente
+
+322
+00:16:42.780 --> 00:16:43.900
+simplemente no existe.
+
+323
+00:16:43.900 --> 00:16:46.660
+Tiene muchísimo sentido cuando lo pones así.
+
+324
+00:16:46.820 --> 00:16:51.200
+Un intestino irritable no te vuelve inmune a contraer una gripe o una
+
+325
+00:16:51.200 --> 00:16:52.380
+infección. Es brillante.
+
+326
+00:16:53.160 --> 00:16:57.280
+Ahora, a ver, si la anemia es consenso y la fiebre es una falacia de
+
+327
+00:16:57.280 --> 00:17:00.320
+exclusión, vamos con las cámaras de seguridad del edificio.
+
+328
+00:17:00.340 --> 00:17:02.820
+La sangre en las heces, la hematoquesia.
+
+329
+00:17:03.000 --> 00:17:05.460
+Aquí la evidencia sí tiene que ser irrefutable.
+
+330
+00:17:06.060 --> 00:17:09.140
+Sangre en el baño equivale a enfermedad orgánica, punto final.
+
+331
+00:17:09.140 --> 00:17:13.520
+Y aquí, lamentablemente, es donde las cámaras de seguridad entran
+
+332
+00:17:13.520 --> 00:17:17.460
+en cortocircuito. Y mira, este es el tipo de cosas que hace que profundizar en la
+
+333
+00:17:17.460 --> 00:17:20.640
+medicina basada en la evidencia sea tan, pero tan absorbente.
+
+334
+00:17:21.200 --> 00:17:24.720
+Cuando analizamos la hematoquesia, tenemos a dos fuentes del más alto nivel
+
+335
+00:17:24.720 --> 00:17:27.200
+académico chocando de frente a toda velocidad.
+
+336
+00:17:27.560 --> 00:17:28.660
+Uy, a ver, cuéntame de eso.
+
+337
+00:17:28.840 --> 00:17:31.600
+Por un lado, tenemos un estudio de Hammer del año 2004.
+
+338
+00:17:31.880 --> 00:17:36.260
+Y ojo, no es un artículo de opinión, es una regresión logística aplicada sobre
+
+339
+00:17:36.260 --> 00:17:37.860
+568 pacientes.
+
+340
+00:17:37.860 --> 00:17:38.700
+Un buen número.
+
+341
+00:17:38.960 --> 00:17:42.840
+Este estudio declara con muchísima firmeza que la sangre observada en el papel
+
+342
+00:17:42.840 --> 00:17:46.780
+higiénico o en el inodoro discrimina claramente a la enfermedad orgánica baja
+
+343
+00:17:46.780 --> 00:17:48.620
+frente al síndrome de intestino irritable.
+
+344
+00:17:48.780 --> 00:17:50.400
+Y aquí por fin nos regalan números.
+
+345
+00:17:50.960 --> 00:17:52.620
+Aleluya. ¿Qué números dan?
+
+346
+00:17:53.100 --> 00:17:57.820
+Reportan un odds ratio de 2.7, con un intervalo de confianza del 95%
+
+347
+00:17:57.820 --> 00:18:02.020
+que va de 1.4 a 5.1, y una P estadísticamente
+
+348
+00:18:02.020 --> 00:18:04.120
+significativa de 0.002.
+
+349
+00:18:04.120 --> 00:18:06.240
+Bueno, eso suena a caso cerrado.
+
+350
+00:18:06.420 --> 00:18:09.540
+Con esa P y ese odds ratio es innegable.
+
+351
+00:18:10.160 --> 00:18:14.660
+Suena a caso cerrado, hasta que entra al ring, nuevamente, la
+
+352
+00:18:14.660 --> 00:18:17.220
+revisión sistemática de Park de 2010.
+
+353
+00:18:17.680 --> 00:18:21.660
+Este metaanálisis revisa la literatura y concluye exactamente
+
+354
+00:18:21.660 --> 00:18:22.840
+lo contrario.
+
+355
+00:18:23.140 --> 00:18:23.900
+Lo contrario.
+
+356
+00:18:23.900 --> 00:18:27.920
+Al contrario, afirma que los signos de alarma clásicos como el sangrado rectal en
+
+357
+00:18:27.920 --> 00:18:32.120
+realidad aportan muy poco valor discriminativo para separar lo funcional
+
+358
+00:18:32.120 --> 00:18:34.180
+de lo orgánico en poblaciones generales.
+
+359
+00:18:34.280 --> 00:18:38.320
+A ver, a ver, ¿y cómo lidia una base de datos tan estricta como
+
+360
+00:18:38.320 --> 00:18:40.940
+medsemiotics-db con esta pelea de gigantes?
+
+361
+00:18:41.180 --> 00:18:45.660
+Tienes a un estudio dándote un odds ratio de 2.7 y a otro
+
+362
+00:18:45.660 --> 00:18:47.580
+diciéndote que el sangrado casi no importa.
+
+363
+00:18:47.580 --> 00:18:51.860
+Pues, ante la contradicción, la base aplica la navaja de
+
+364
+00:18:51.860 --> 00:18:54.060
+Ockham. Prefiere la parsimonia.
+
+365
+00:18:54.320 --> 00:18:56.760
+Decide no emitir una conclusión definitiva.
+
+366
+00:18:56.920 --> 00:18:58.420
+Se lava las manos, digamos.
+
+367
+00:18:58.820 --> 00:19:03.140
+Se niega a atribuirle al sangrado un poder discriminativo absoluto que no
+
+368
+00:19:03.140 --> 00:19:06.540
+consta de forma inequívoca en toda la literatura cruzada.
+
+369
+00:19:06.920 --> 00:19:08.920
+Y hay una razón técnica profunda para esto.
+
+370
+00:19:09.100 --> 00:19:13.480
+En el estudio de Hammer, un odds ratio derivado de una regresión logística
+
+371
+00:19:13.480 --> 00:19:15.500
+no significa nada en el vacío.
+
+372
+00:19:15.890 --> 00:19:17.740
+¿A qué te refieres con en el vacío?
+
+373
+00:19:17.980 --> 00:19:22.240
+Para que ese 2.7 sea válido en nuestra paciente, tendríamos que estar seguros de
+
+374
+00:19:22.240 --> 00:19:23.560
+que el modelo estadístico original
+
+375
+00:19:24.200 --> 00:19:28.540
+controló adecuadamente las covariables clave, como la edad de
+
+376
+00:19:28.540 --> 00:19:31.740
+inicio de los síntomas, el sexo del paciente o los criterios de Manning.
+
+377
+00:19:31.980 --> 00:19:36.200
+Como hay discordancia con Park, la base registra el conflicto y se abstiene de dar
+
+378
+00:19:36.200 --> 00:19:36.920
+un número mágico.
+
+379
+00:19:37.120 --> 00:19:37.560
+Claro.
+
+380
+00:19:38.180 --> 00:19:42.060
+Obviamente, en la práctica clínica, si un paciente sangra, lo estudias.
+
+381
+00:19:42.180 --> 00:19:43.620
+Eso es indudable.
+
+382
+00:19:43.620 --> 00:19:47.820
+Pero desde la epistemología médica rigurosa, el peso real del
+
+383
+00:19:47.820 --> 00:19:48.760
+síntoma está en debate.
+
+384
+00:19:49.380 --> 00:19:53.320
+En resumen, o sea, estamos construyendo un diagnóstico en positivo
+
+385
+00:19:53.320 --> 00:19:57.820
+apoyándonos en síntomas clásicos que no tienen un LR
+
+386
+00:19:57.820 --> 00:19:58.260
+medido.
+
+387
+00:19:58.340 --> 00:20:02.540
+Y al mismo tiempo, estamos descartando enfermedades catastróficas usando
+
+388
+00:20:02.540 --> 00:20:06.820
+banderas rojas que o bien se sostienen por puro consenso de expertos sin
+
+389
+00:20:06.820 --> 00:20:11.260
+cifras o se encuentran en el medio de un campo de batalla metodológico entre los
+
+390
+00:20:11.260 --> 00:20:11.920
+investigadores.
+
+391
+00:20:11.920 --> 00:20:14.040
+Es un resumen perfecto.
+
+392
+00:20:14.040 --> 00:20:16.540
+Y comprender eso es la verdadera madurez clínica.
+
+393
+00:20:17.200 --> 00:20:20.560
+Saber exactamente con cuánta certeza sabemos lo que creemos saber.
+
+394
+00:20:20.960 --> 00:20:25.400
+Lo cual nos trae de vuelta al mundo real, al consultorio, para
+
+395
+00:20:25.400 --> 00:20:27.280
+el movimiento final de este análisis.
+
+396
+00:20:27.520 --> 00:20:28.780
+Las decisiones.
+
+397
+00:20:29.180 --> 00:20:32.980
+Exacto. Tenemos que tomar decisiones sobre el cuerpo de nuestra contadora de 29
+
+398
+00:20:32.980 --> 00:20:33.380
+años.
+
+399
+00:20:33.380 --> 00:20:35.360
+Bueno, te actualizo con el caso.
+
+400
+00:20:35.600 --> 00:20:38.240
+Hemos recibido sus laboratorios iniciales básicos.
+
+401
+00:20:38.360 --> 00:20:40.680
+El hemograma es impecable.
+
+402
+00:20:40.880 --> 00:20:43.460
+La hemoglobina es perfecta, o sea, cero anemia.
+
+403
+00:20:43.620 --> 00:20:47.600
+La proteína C reactiva no muestra ningún signo de inflamación sistémica.
+
+404
+00:20:48.020 --> 00:20:51.280
+La serología para enfermedad celíaca volvió negativa.
+
+405
+00:20:51.420 --> 00:20:55.900
+Y lo más importante para el intestino, la calprotectina fecal está en niveles
+
+406
+00:20:55.900 --> 00:20:57.220
+completamente normales.
+
+407
+00:20:57.220 --> 00:21:01.700
+Perfecto. Con toda esta información alineada, llega el momento de definir la
+
+408
+00:21:01.700 --> 00:21:03.820
+conducta. ¿Qué hacemos a continuación?
+
+409
+00:21:04.220 --> 00:21:07.780
+Pues permíteme seguir jugando a la abogada del diablo un ratito más.
+
+410
+00:21:07.980 --> 00:21:10.580
+Esta mujer lleva ocho meses con dolor.
+
+411
+00:21:10.820 --> 00:21:15.100
+Su calidad de vida está afectada, se estresa cada fin de mes en el trabajo
+
+412
+00:21:15.100 --> 00:21:19.040
+y sufre. Ya le hicimos pruebas no invasivas y salieron normales.
+
+413
+00:21:19.280 --> 00:21:22.900
+¿No valdría la pena, digamos, casi por un tema de salud mental,
+
+414
+00:21:23.140 --> 00:21:26.300
+pedirle una colonoscopía para darle tranquilidad total?
+
+415
+00:21:26.300 --> 00:21:28.000
+Es una tentación enorme.
+
+416
+00:21:28.860 --> 00:21:32.860
+Claro, ya sabes, para que ambos, médico y paciente, puedan dormir en paz,
+
+417
+00:21:33.000 --> 00:21:35.480
+sabiendo que adentro todo está estructuralmente sano.
+
+418
+00:21:35.800 --> 00:21:40.260
+Es de las trampas más comunes en la gastroenterología hoy en día, y la
+
+419
+00:21:40.260 --> 00:21:43.080
+evidencia la rechaza con un no categórico.
+
+420
+00:21:43.160 --> 00:21:43.720
+Categórico.
+
+421
+00:21:43.860 --> 00:21:48.040
+Sí, indicar una colonoscopía aquí solo para calmar la ansiedad es
+
+422
+00:21:48.040 --> 00:21:48.960
+mala medicina.
+
+423
+00:21:50.080 --> 00:21:51.980
+Fijémonos en la demografía de nuestra paciente.
+
+424
+00:21:52.200 --> 00:21:53.720
+Tiene 29 años.
+
+425
+00:21:53.720 --> 00:21:58.100
+La base de datos, citando un masivo metanálisis de 2012, que
+
+426
+00:21:58.100 --> 00:22:02.440
+evaluó a más de 260,000 adultos, nos dice que la prevalencia del intestino
+
+427
+00:22:02.440 --> 00:22:06.900
+irritable disminuye drásticamente en los mayores de 50 años, con un odds ratio
+
+428
+00:22:06.900 --> 00:22:09.780
+de 0.75 frente a los menores de 50.
+
+429
+00:22:10.080 --> 00:22:10.780
+Ok, ok.
+
+430
+00:22:10.900 --> 00:22:14.440
+Nuestra paciente está exactamente en el grupo etario de máxima prevalencia.
+
+431
+00:22:14.780 --> 00:22:19.220
+Además, el simple factor demográfico de ser mujer le suma un odds ratio de
+
+432
+00:22:19.220 --> 00:22:21.420
+1.67 para padecer la enfermedad.
+
+433
+00:22:21.420 --> 00:22:25.660
+A lo que sumamos que, bueno, no tiene absolutamente ni un solo signo de alarma
+
+434
+00:22:25.660 --> 00:22:28.640
+documentado y su historial familiar está inmaculado.
+
+435
+00:22:29.520 --> 00:22:32.240
+Exactamente. La evidencia es estricta en esto.
+
+436
+00:22:32.340 --> 00:22:36.440
+La colonoscopía en este contexto se reserva exclusivamente para cuando hay banderas
+
+437
+00:22:36.440 --> 00:22:37.840
+rojas indiscutibles,
+
+438
+00:22:37.940 --> 00:22:41.500
+o cuando los síntomas de nueva aparición ocurren en pacientes que ya alcanzan la
+
+439
+00:22:41.500 --> 00:22:45.500
+edad de cribado para cáncer colorrectal, o bueno, cuando hay una carga genética
+
+440
+00:22:45.500 --> 00:22:46.360
+familiar demostrada.
+
+441
+00:22:46.580 --> 00:22:47.100
+Entiendo.
+
+442
+00:22:47.700 --> 00:22:52.140
+Someter a esta paciente joven a un procedimiento invasivo con sus
+
+443
+00:22:52.140 --> 00:22:56.540
+riesgos inherentes de perforación y sus costos asociados, buscando una enfermedad
+
+444
+00:22:56.540 --> 00:23:00.280
+que los números nos dicen que es altamente improbable, pues va en contra de las
+
+445
+00:23:00.280 --> 00:23:01.540
+guías clínicas fundamentadas.
+
+446
+00:23:01.740 --> 00:23:05.100
+Lo cual nos deja con el reto final, que es el acto de la comunicación.
+
+447
+00:23:05.640 --> 00:23:09.600
+Y me parece fascinante porque la forma en que le entregas el
+
+448
+00:23:09.600 --> 00:23:13.320
+diagnóstico a la paciente es una intervención terapéutica en sí misma.
+
+449
+00:23:13.500 --> 00:23:14.100
+Es vital.
+
+450
+00:23:14.100 --> 00:23:18.160
+Porque el peor error aquí sería decirle, bueno,
+
+451
+00:23:18.240 --> 00:23:22.740
+ya revisamos todos sus exámenes y no tiene nada grave, felicidades, está
+
+452
+00:23:22.740 --> 00:23:24.360
+usted sana, es solo estrés.
+
+453
+00:23:24.780 --> 00:23:26.340
+Uf, sí, eso es un desastre.
+
+454
+00:23:26.600 --> 00:23:30.460
+Porque la paciente no está sana, tiene dolor real y su calidad de vida está
+
+455
+00:23:30.460 --> 00:23:33.580
+mermada. Sentiría que la estamos ignorando o minimizando.
+
+456
+00:23:34.000 --> 00:23:36.720
+Validar el padecimiento es el primer paso del tratamiento.
+
+457
+00:23:36.880 --> 00:23:41.000
+Se le debe comunicar que tiene un diagnóstico clínico firmemente establecido, no la
+
+458
+00:23:41.000 --> 00:23:41.800
+ausencia de otra cosa.
+
+459
+00:23:41.800 --> 00:23:46.020
+Se le explica claramente que padece un trastorno de la interacción entre el
+
+460
+00:23:46.020 --> 00:23:47.020
+intestino y el cerebro.
+
+461
+00:23:47.160 --> 00:23:49.460
+Hay que darle nombre y apellido al problema.
+
+462
+00:23:49.820 --> 00:23:53.960
+Sí. Hay que enfatizar que es una condición real, que es crónica y benigna,
+
+463
+00:23:54.000 --> 00:23:58.340
+y que inherentemente va a tener fluctuaciones orgánicas, agudizándose en
+
+464
+00:23:58.340 --> 00:24:00.980
+periodos de tensión, como sus cierres de mes contables.
+
+465
+00:24:01.520 --> 00:24:05.940
+Y habiendo establecido esa relación de confianza, ¿cómo estructuramos el plan
+
+466
+00:24:05.940 --> 00:24:10.200
+inicial en la consulta? ¿Y qué cosas nos harían dar marcha atrás y
+
+467
+00:24:10.200 --> 00:24:11.960
+reconsiderar este diagnóstico en el futuro?
+
+468
+00:24:12.240 --> 00:24:15.980
+El manejo recomendado por la evidencia es decididamente multifactorial.
+
+469
+00:24:16.060 --> 00:24:20.020
+Si tuviéramos que usar fármacos sintomáticos, dependería de su hábito, claro.
+
+470
+00:24:20.260 --> 00:24:24.400
+Pero para esta etapa inicial, el énfasis recae con mucha más fuerza en el estilo de
+
+471
+00:24:24.400 --> 00:24:28.220
+vida. Arrancamos cimentando esa relación terapéutica que mencionaste.
+
+472
+00:24:28.340 --> 00:24:30.760
+Luego, indicamos intervenciones de primer nivel.
+
+473
+00:24:30.980 --> 00:24:35.080
+Fomento de la actividad física aeróbica, establecer una regularidad estricta en los
+
+474
+00:24:35.080 --> 00:24:39.560
+horarios de las comidas para no confundir al tránsito intestinal, y la introducción
+
+475
+00:24:39.560 --> 00:24:40.720
+de fibra soluble en la dieta.
+
+476
+00:24:40.940 --> 00:24:43.260
+¿Y el tema de la dieta? ¿Qué dice la evidencia?
+
+477
+00:24:43.480 --> 00:24:47.300
+Si notamos, a través del interrogatorio, que el dolor se dispara con ciertos
+
+478
+00:24:47.300 --> 00:24:51.280
+alimentos fermentables, la evidencia respalda probar una dieta baja en FODMAP,
+
+479
+00:24:51.440 --> 00:24:55.240
+aunque, ojo, idealmente debe ser supervisada por un profesional de la nutrición
+
+480
+00:24:55.240 --> 00:24:56.260
+para evitar deficiencias.
+
+481
+00:24:56.260 --> 00:25:00.360
+Todo esto mientras mantenemos un marco de seguridad activo, me imagino.
+
+482
+00:25:00.440 --> 00:25:04.660
+O sea, le damos el tratamiento, pero no bajamos la guardia permanentemente.
+
+483
+00:25:04.920 --> 00:25:09.160
+Solo reconsideraremos este diagnóstico funcional si en el
+
+484
+00:25:09.160 --> 00:25:13.600
+futuro aparece de la nada un signo de alarma validado, o si el patrón de
+
+485
+00:25:13.600 --> 00:25:17.960
+dolor y evacuación que lleva teniendo por ocho meses cambia de manera drástica, o
+
+486
+00:25:17.960 --> 00:25:21.280
+si hay un fracaso total y absoluto a múltiples líneas de tratamiento.
+
+487
+00:25:21.280 --> 00:25:23.760
+Ese es el algoritmo de seguridad perfecto.
+
+488
+00:25:23.840 --> 00:25:27.260
+Protege al paciente sin someterlo a intervenciones fútiles desde el día uno.
+
+489
+00:25:27.660 --> 00:25:29.740
+Llegamos al cierre de esta inmersión clínica.
+
+490
+00:25:30.100 --> 00:25:34.540
+Si la gente que nos está escuchando, que probablemente mañana estará sentada en un
+
+491
+00:25:34.540 --> 00:25:38.920
+consultorio frente a un paciente con un cuadro similar, debe llevarse un
+
+492
+00:25:38.920 --> 00:25:40.680
+solo mensaje conceptual de todo esto.
+
+493
+00:25:40.900 --> 00:25:41.880
+¿Cuál debería ser?
+
+494
+00:25:41.880 --> 00:25:46.080
+Yo estoy convencido de que el concepto fundamental es que el síndrome de
+
+495
+00:25:46.080 --> 00:25:48.760
+intestino irritable se diagnostica en positivo.
+
+496
+00:25:49.740 --> 00:25:54.220
+Es un salto de fe clínica, sí, pero basado en el reconocimiento de
+
+497
+00:25:54.220 --> 00:25:58.520
+un patrón rítmico de dolor, atado invariablemente a la defecación y a los
+
+498
+00:25:58.520 --> 00:25:59.880
+cambios del hábito intestinal.
+
+499
+00:26:00.140 --> 00:26:02.480
+Y sin la muleta de los números exactos.
+
+500
+00:26:02.480 --> 00:26:06.880
+Exacto. El clínico debe aprender a confiar en la robustez de ese patrón visual,
+
+501
+00:26:07.040 --> 00:26:11.460
+aprendiendo a tolerar la incomodidad intelectual de saber que, en las bases de
+
+502
+00:26:11.460 --> 00:26:15.840
+datos más estrictas, esos síntomas fundacionales no tienen un cociente de
+
+503
+00:26:15.840 --> 00:26:19.400
+verosimilitud matemático documentado que nos respalde con un numerito.
+
+504
+00:26:19.400 --> 00:26:23.220
+Es, en el fondo, una profunda lección de humildad científica, ¿no?
+
+505
+00:26:23.380 --> 00:26:27.840
+Lo que nosotros usamos a diario para excluir verdaderas catástrofes de salud,
+
+506
+00:26:28.100 --> 00:26:32.400
+nuestras adoradas banderas rojas, pues muchas veces no están respaldadas
+
+507
+00:26:32.400 --> 00:26:36.820
+por ecuaciones impecables, sino que se sostienen por el peso del
+
+508
+00:26:36.820 --> 00:26:41.200
+consenso de expertos o, peor aún, están atrapadas en debates sin resolver
+
+509
+00:26:41.200 --> 00:26:44.440
+entre fuentes bibliográficas opuestas, como vimos con el sangrado.
+
+510
+00:26:44.440 --> 00:26:48.900
+Entender la medicina basada en la evidencia no se trata simplemente de memorizar
+
+511
+00:26:48.900 --> 00:26:51.920
+calculadoras de riesgo o recitar números de estudios.
+
+512
+00:26:52.060 --> 00:26:56.560
+Se trata de comprender la compleja y a veces frágil arquitectura de
+
+513
+00:26:56.560 --> 00:26:57.420
+nuestra propia certeza.
+
+514
+00:26:57.780 --> 00:27:00.600
+Es un cierre poético y muy real.
+
+515
+00:27:00.720 --> 00:27:04.700
+Y justo sobre esa fragilidad quiero dejar sobre la mesa un último pensamiento
+
+516
+00:27:04.700 --> 00:27:09.060
+provocativo. Un verdadero dardo intelectual que la base de
+
+517
+00:27:09.060 --> 00:27:12.980
+datos expone y que la gastroenterología moderna aún no termina de resolver.
+
+518
+00:27:13.720 --> 00:27:15.060
+Volvamos a nuestra paciente de hoy.
+
+519
+00:27:15.460 --> 00:27:19.320
+Según lo que discutimos, ella cumple a la absoluta perfección con los criterios de
+
+520
+00:27:19.320 --> 00:27:19.640
+Roma IV.
+
+521
+00:27:20.020 --> 00:27:22.820
+Que son, a día de hoy, el estándar de oro innegable.
+
+522
+00:27:22.920 --> 00:27:26.000
+Es lo que se enseña en todas las facultades de medicina del continente.
+
+523
+00:27:26.240 --> 00:27:30.400
+Y sin embargo, resulta que si haces la revisión estricta en medsemiotics-db,
+
+524
+00:27:30.560 --> 00:27:34.920
+la validación matemática de los criterios de Roma IV simplemente no consta en
+
+525
+00:27:34.920 --> 00:27:38.160
+estas fuentes prospectivas específicas sobre pacientes derivados a estudio.
+
+526
+00:27:38.420 --> 00:27:42.220
+Me estás bromeando. ¿Roma IV no está validado matemáticamente ahí?
+
+527
+00:27:42.220 --> 00:27:45.980
+No, con un LR prospectivo sólido en esas poblaciones.
+
+528
+00:27:46.360 --> 00:27:48.980
+Y aquí es donde la paradoja te golpea fuerte.
+
+529
+00:27:49.320 --> 00:27:53.700
+Si escarbas en la literatura, te encuentras con herramientas diagnósticas muchísimo
+
+530
+00:27:53.700 --> 00:27:57.960
+más antiguas, que la práctica contemporánea casi ha olvidado por
+
+531
+00:27:57.960 --> 00:27:59.680
+completo, como los criterios de Kruis.
+
+532
+00:27:59.680 --> 00:28:03.700
+Pues resulta que los criterios de Kruis sí tienen
+
+533
+00:28:03.700 --> 00:28:07.960
+publicado un cociente de verosimilitud positivo medido, validado y
+
+534
+00:28:07.960 --> 00:28:12.440
+espectacularmente alto de 8.6, con un intervalo de
+
+535
+00:28:12.440 --> 00:28:16.560
+confianza del 95%, que va de 2.9 a 26.0.
+
+536
+00:28:16.560 --> 00:28:19.820
+¡Wow! Un LR de 8.6.
+
+537
+00:28:20.020 --> 00:28:24.440
+Así es. O sea, para ponerlo en perspectiva a la audiencia, un
+
+538
+00:28:24.440 --> 00:28:28.000
+LR mayor a 5 ya altera significativamente la probabilidad.
+
+539
+00:28:28.180 --> 00:28:32.320
+Un LR positivo de 8.6 es un monstruo
+
+540
+00:28:32.320 --> 00:28:36.240
+estadístico. Significa que si el paciente cumple los criterios de Kruis, la
+
+541
+00:28:36.240 --> 00:28:40.540
+probabilidad posprueba se dispara tan alto que podría sellar el
+
+542
+00:28:40.540 --> 00:28:44.700
+diagnóstico casi con los ojos cerrados, sin necesidad de tocar un solo tubo de
+
+543
+00:28:44.700 --> 00:28:45.260
+laboratorio.
+
+544
+00:28:45.260 --> 00:28:49.740
+Y no solo eso. Incluso si nos vamos a los viejos criterios de Roma I, que ya
+
+545
+00:28:49.740 --> 00:28:53.700
+nadie usa, también tienen un LR positivo medido de 4.8.
+
+546
+00:28:53.860 --> 00:28:58.220
+¡Qué locura! O sea, las herramientas viejas tienen mejores números
+
+547
+00:28:58.220 --> 00:28:58.780
+que las nuevas.
+
+548
+00:28:59.240 --> 00:29:03.340
+Exactamente. Y nos deja con esta reflexión incómoda, pero fascinante.
+
+549
+00:29:03.640 --> 00:29:07.720
+En nuestra práctica clínica de todos los días, defendemos y utilizamos a rajatabla
+
+550
+00:29:07.720 --> 00:29:11.660
+criterios y consensos modernos que consideramos dogmas inquebrantables.
+
+551
+00:29:11.660 --> 00:29:13.440
+Roma IV es la ley.
+
+552
+00:29:13.840 --> 00:29:17.760
+Pero cuando los pasamos por el filtro de la evidencia estadística más estricta y
+
+553
+00:29:17.760 --> 00:29:22.040
+matemática, resulta que la ciencia moderna aún no ha logrado estructurarlos ni
+
+554
+00:29:22.040 --> 00:29:25.980
+validarlos numéricamente con la misma fuerza contundente que tenían aquellas
+
+555
+00:29:25.980 --> 00:29:29.660
+herramientas clínicas que hoy, irónicamente, ya consideramos obsoletas.
+
+556
+00:29:29.660 --> 00:29:34.020
+Como decíamos al principio, como humanos, siempre vamos
+
+557
+00:29:34.020 --> 00:29:35.700
+a preferir que las cosas sean binarias.
+
+558
+00:29:35.880 --> 00:29:39.780
+Nos gustan los huesos rotos o sanos, como en una radiografía.
+
+559
+00:29:39.900 --> 00:29:42.880
+Nos encantan los LR de 8.6.
+
+560
+00:29:43.080 --> 00:29:43.980
+Nos dan paz mental.
+
+561
+00:29:43.980 --> 00:29:48.300
+Pero cuando los rayos X se apagan y los números nos abandonan, el
+
+562
+00:29:48.300 --> 00:29:52.800
+razonamiento clínico profundo y el entendimiento sincero de los límites de nuestra
+
+563
+00:29:52.800 --> 00:29:57.100
+propia evidencia es lo único que verdaderamente ilumina estas aguas
+
+564
+00:29:57.100 --> 00:29:58.040
+diagnósticas turbias.
+
+565
+00:29:58.100 --> 00:30:00.480
+Nos escuchamos en el próximo análisis profundo.

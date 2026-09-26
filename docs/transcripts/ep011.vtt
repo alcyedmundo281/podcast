@@ -1,0 +1,1766 @@
+WEBVTT
+
+NOTE
+Transcripción del episodio 11 de medsemiotics — derrame pleural exudativo.
+Generada automáticamente y corregida en terminología clínica.
+Puede contener errores; la fuente autorizada es el audio.
+
+1
+00:00:00.000 --> 00:00:04.480
+Imagínate un escenario súper común, digamos, en cualquier guardia médica a
+
+2
+00:00:04.480 --> 00:00:05.180
+las 3 de la mañana.
+
+3
+00:00:05.660 --> 00:00:08.540
+Uf, la hora donde todos los errores ocurren.
+
+4
+00:00:08.920 --> 00:00:12.520
+Totalmente. Y bueno, llegan los resultados del laboratorio de un paciente.
+
+5
+00:00:12.600 --> 00:00:16.800
+En la pantalla tienes tres indicadores distintos, todos parpadeando en rojo,
+
+6
+00:00:16.820 --> 00:00:21.020
+y todos gritando con absoluta seguridad que el paciente tiene un exudado
+
+7
+00:00:21.020 --> 00:00:21.360
+pleural.
+
+8
+00:00:21.780 --> 00:00:24.400
+Claro, y la inercia te dice que actúes ya.
+
+9
+00:00:24.920 --> 00:00:29.180
+Exacto. Así que, lógicamente, el equipo médico cambia todo el plan de tratamiento.
+
+10
+00:00:29.820 --> 00:00:31.800
+Empiezan a buscar cáncer o tuberculosis.
+
+11
+00:00:32.240 --> 00:00:36.660
+Pero a ver, ¿qué pasa si resulta que la pastilla diaria que el paciente toma
+
+12
+00:00:36.660 --> 00:00:40.240
+para el corazón acaba de engañar a esos tres marcadores al mismo tiempo?
+
+13
+00:00:40.600 --> 00:00:43.380
+Sí, esa es una trampa clínica de manual.
+
+14
+00:00:43.580 --> 00:00:48.080
+Y lo peor, de verdad, lo peor es que está disfrazada de datos objetivos, o
+
+15
+00:00:48.080 --> 00:00:50.160
+sea, de números que parecen irrefutables.
+
+16
+00:00:50.440 --> 00:00:54.120
+Sí, nos acostumbramos a pensar que la medicina interna es como, no sé, como la
+
+17
+00:00:54.120 --> 00:00:54.680
+ingeniería.
+
+18
+00:00:54.800 --> 00:00:58.820
+Tal cual. Mides algo, aplicas una fórmula matemática y listo.
+
+19
+00:00:58.820 --> 00:01:03.140
+Y ahí es exactamente donde el panorama
+
+20
+00:01:03.140 --> 00:01:07.160
+se vuelve turbio. Por eso, bienvenidos a esta inmersión clínica a fondo.
+
+21
+00:01:07.380 --> 00:01:11.480
+La misión de hoy es diseccionar un caso socrático de medsemiotics,
+
+22
+00:01:11.700 --> 00:01:14.580
+específicamente sobre el derrame pleural exudativo.
+
+23
+00:01:14.820 --> 00:01:19.080
+Y utilizando evidencia pura, sacada directamente de medsemiotics-db.
+
+24
+00:01:19.080 --> 00:01:23.480
+Exactamente. Pero ojo, el objetivo no es recitar la fisiología básica que
+
+25
+00:01:23.480 --> 00:01:25.160
+cualquiera puede leer en un libro de texto.
+
+26
+00:01:25.340 --> 00:01:29.500
+La meta de este análisis es ver cómo la probabilidad real de una enfermedad
+
+27
+00:01:29.500 --> 00:01:31.240
+cambia con cada nuevo hallazgo.
+
+28
+00:01:31.440 --> 00:01:35.600
+Y sobre todo, desarmar esas trampas cognitivas donde incluso los clínicos más
+
+29
+00:01:35.600 --> 00:01:37.100
+experimentados resbalan, ¿eh?
+
+30
+00:01:37.120 --> 00:01:38.160
+A las 3 de la mañana.
+
+31
+00:01:38.380 --> 00:01:41.780
+Sí, totalmente. A ver, vamos a desempacar esto paso a paso.
+
+32
+00:01:42.060 --> 00:01:43.880
+Empecemos con el caso clínico base.
+
+33
+00:01:44.180 --> 00:01:45.340
+Venga, ponnos en situación.
+
+34
+00:01:45.340 --> 00:01:48.020
+Bueno, se trata de un varón de 68 años.
+
+35
+00:01:48.200 --> 00:01:52.560
+Es ex fumador, tiene antecedentes de insuficiencia cardíaca con fracción de
+
+36
+00:01:52.560 --> 00:01:56.700
+eyección reducida y su tratamiento incluye furosemida de forma diaria.
+
+37
+00:01:56.940 --> 00:01:59.100
+Bien, un paciente complejo, pero muy típico.
+
+38
+00:01:59.200 --> 00:02:03.660
+Sí, bastante típico. El motivo de consulta es que lleva cinco semanas con disnea
+
+39
+00:02:03.660 --> 00:02:04.740
+de esfuerzo progresiva.
+
+40
+00:02:04.940 --> 00:02:08.140
+O sea, un deterioro funcional que ya es evidente.
+
+41
+00:02:08.140 --> 00:02:10.960
+Así es, pero hay que sumar piezas a este rompecabezas.
+
+42
+00:02:11.040 --> 00:02:15.440
+El paciente presenta tos seca, un dolor sordo en el costado derecho
+
+43
+00:02:15.440 --> 00:02:19.820
+y una pérdida de peso de unos 4 kilos que no ha buscado.
+
+44
+00:02:20.020 --> 00:02:20.280
+Wow.
+
+45
+00:02:20.420 --> 00:02:24.740
+Sí, 4 kilos, sin picos febriles y bueno, el paciente
+
+46
+00:02:24.740 --> 00:02:27.200
+refiere que siente que el diurético ya no le hace efecto.
+
+47
+00:02:27.680 --> 00:02:31.780
+Pero si revisamos el historial reciente, ojo aquí, no hay aumento
+
+48
+00:02:31.780 --> 00:02:32.580
+de peso.
+
+49
+00:02:32.800 --> 00:02:33.640
+Ah, qué interesante.
+
+50
+00:02:33.640 --> 00:02:36.460
+Tampoco hay edemas nuevos en los miembros inferiores.
+
+51
+00:02:36.600 --> 00:02:39.540
+Y sigue durmiendo con la misma cantidad de almohadas de siempre.
+
+52
+00:02:39.760 --> 00:02:42.040
+O sea, no hay ortopnea nueva.
+
+53
+00:02:42.500 --> 00:02:45.980
+Exacto. Y las constantes vitales son completamente normales.
+
+54
+00:02:46.140 --> 00:02:50.260
+Sin fiebre, frecuencia cardíaca en 92, respiratoria en 22,
+
+55
+00:02:50.660 --> 00:02:54.500
+normotenso, y está saturando al 93% con aire ambiente.
+
+56
+00:02:54.900 --> 00:02:56.620
+Pero algo tiene que haber en la placa.
+
+57
+00:02:56.620 --> 00:02:59.560
+Pues sí, la radiografía de tórax revela un derrame derecho.
+
+58
+00:03:00.020 --> 00:03:02.080
+Ocupa menos de la mitad del hemitórax.
+
+59
+00:03:02.200 --> 00:03:05.560
+Y no hay absolutamente nada de líquido en el lado izquierdo.
+
+60
+00:03:05.760 --> 00:03:10.220
+Bueno, con este panorama sobre la mesa, la inercia clínica, como decíamos antes,
+
+61
+00:03:10.440 --> 00:03:12.660
+podría empujar a una decisión muy rápida.
+
+62
+00:03:12.820 --> 00:03:14.840
+Y por eso les lanzo esta pregunta para pensar.
+
+63
+00:03:15.100 --> 00:03:18.480
+Quienes nos escuchan, tómense unos tres segundos reales para analizarlo.
+
+64
+00:03:18.480 --> 00:03:22.000
+El paciente tiene insuficiencia cardíaca y un derrame pleural.
+
+65
+00:03:22.300 --> 00:03:26.260
+¿Por qué no basta con simplemente aumentar la dosis de furosemida
+
+66
+00:03:26.260 --> 00:03:28.320
+y citarlo en dos semanas para revisión?
+
+67
+00:03:29.380 --> 00:03:31.980
+Uno, dos, tres.
+
+68
+00:03:32.400 --> 00:03:36.780
+Bueno, la respuesta es porque el cuadro clínico no se comporta como una verdadera
+
+69
+00:03:36.780 --> 00:03:38.020
+descompensación cardíaca.
+
+70
+00:03:38.220 --> 00:03:38.660
+Claro.
+
+71
+00:03:38.740 --> 00:03:42.880
+Es verdad que, por pura estadística, cuando un paciente con insuficiencia
+
+72
+00:03:42.880 --> 00:03:46.660
+cardíaca hace un derrame unilateral, pues suele ser en el lado derecho.
+
+73
+00:03:46.660 --> 00:03:49.220
+De hecho, la lateralidad no es el problema aquí.
+
+74
+00:03:49.500 --> 00:03:53.160
+Sí, el problema es que el resto del sistema no muestra signos de congestión.
+
+75
+00:03:53.500 --> 00:03:53.980
+Exactamente.
+
+76
+00:03:54.120 --> 00:03:58.180
+No hay ortopnea nueva, el peso no sube por retención de
+
+77
+00:03:58.180 --> 00:03:59.640
+líquidos, no hay edemas.
+
+78
+00:04:00.060 --> 00:04:02.780
+A ver, pero un corazón fallando sí puede causar disnea, ¿no?
+
+79
+00:04:02.900 --> 00:04:03.680
+Desde luego que sí.
+
+80
+00:04:03.940 --> 00:04:06.220
+Pero no podemos ignorar las banderas rojas.
+
+81
+00:04:06.320 --> 00:04:10.380
+Tenemos un ex fumador de 68 años con una pérdida de peso
+
+82
+00:04:10.380 --> 00:04:11.260
+inexplicada.
+
+83
+00:04:11.380 --> 00:04:12.940
+Y el dolor torácico sordo.
+
+84
+00:04:12.940 --> 00:04:17.360
+Sí, ese dolor nos habla de inflamación, de una afectación directa de la
+
+85
+00:04:17.360 --> 00:04:21.660
+pleura. Y eso es algo que un simple trasudado por fallo cardíaco rara vez
+
+86
+00:04:21.660 --> 00:04:26.020
+produce. La lección vital aquí es que tener una enfermedad crónica de
+
+87
+00:04:26.020 --> 00:04:29.880
+base no confiere una inmunidad mágica contra patologías nuevas.
+
+88
+00:04:30.340 --> 00:04:34.360
+O sea, tener una causa clarísima para un trasudado no te protege contra el
+
+89
+00:04:34.360 --> 00:04:35.600
+desarrollo de un exudado.
+
+90
+00:04:35.600 --> 00:04:38.440
+Tal cual. Y esto plantea una pregunta importante.
+
+91
+00:04:38.740 --> 00:04:41.840
+La pregunta no es si el paciente tiene o no un derrame.
+
+92
+00:04:41.980 --> 00:04:44.240
+A ver, la placa de tórax ya resolvió eso.
+
+93
+00:04:44.380 --> 00:04:45.540
+Sí, el líquido está ahí.
+
+94
+00:04:45.820 --> 00:04:49.460
+La verdadera pregunta diagnóstica es, ¿este derrame es un exudado?
+
+95
+00:04:49.580 --> 00:04:53.900
+Es decir, ¿estamos frente a una pleura enferma, digamos, atacada por un tumor
+
+96
+00:04:53.900 --> 00:04:55.080
+o por una infección?
+
+97
+00:04:55.320 --> 00:04:58.760
+¿O es simplemente el líquido filtrado por una presión hidrostática alta?
+
+98
+00:04:58.760 --> 00:05:03.100
+Exacto. Y para responder a eso, la clínica nos ha llevado a un punto
+
+99
+00:05:03.100 --> 00:05:07.580
+ciego. La única manera real de desempatar esto es ir directamente a la
+
+100
+00:05:07.580 --> 00:05:07.860
+fuente.
+
+101
+00:05:08.080 --> 00:05:08.520
+¿Pinchar?
+
+102
+00:05:08.800 --> 00:05:11.960
+Sí. Extraer el líquido y mirarlo bajo el microscopio.
+
+103
+00:05:12.240 --> 00:05:14.420
+Pues pasemos entonces a la exploración física.
+
+104
+00:05:14.760 --> 00:05:19.260
+En la base del hemitórax derecho, el médico encuentra matidez a la percusión,
+
+105
+00:05:19.340 --> 00:05:23.620
+disminución de las vibraciones vocales y abolición del murmullo
+
+106
+00:05:23.620 --> 00:05:24.040
+vesicular.
+
+107
+00:05:24.560 --> 00:05:28.520
+Y a ver, antes de seguir tirando números, detengámonos en la física de esto.
+
+108
+00:05:28.700 --> 00:05:31.700
+Me parece perfecto. No es solo recitar signos de memoria.
+
+109
+00:05:31.940 --> 00:05:35.020
+Exacto. ¿Por qué ocurre esta triada exacta?
+
+110
+00:05:35.340 --> 00:05:38.100
+Yo lo veo como un tema de transmisión acústica pura.
+
+111
+00:05:38.320 --> 00:05:42.200
+Normalmente el pulmón lleno de aire no es el mejor conductor del sonido del mundo,
+
+112
+00:05:42.240 --> 00:05:44.760
+pero permite que escuchemos el aire entrando y saliendo.
+
+113
+00:05:45.100 --> 00:05:49.020
+Claro, el sonido de las cuerdas vocales baja y genera esa resonancia que palpamos
+
+114
+00:05:49.020 --> 00:05:49.980
+en la pared torácica.
+
+115
+00:05:49.980 --> 00:05:54.240
+Sí, pero cuando se interpone un litro de líquido entre el pulmón y la pared, ese
+
+116
+00:05:54.240 --> 00:05:56.500
+líquido actúa como un aislante acústico masivo.
+
+117
+00:05:56.660 --> 00:06:00.900
+Total. Las vibraciones vocales rebotan, el murmullo del aire se
+
+118
+00:06:00.900 --> 00:06:04.960
+silencia por completo, y al percutir, pues, suena a madera sólida, a
+
+119
+00:06:04.960 --> 00:06:05.820
+matidez pura.
+
+120
+00:06:05.960 --> 00:06:08.440
+En lugar del hueco de un tambor, que es lo normal.
+
+121
+00:06:08.900 --> 00:06:12.820
+Bien, con esa sospecha clínica en mente, se realiza una ecografía a pie de cama.
+
+122
+00:06:12.820 --> 00:06:17.280
+Se observa un espacio anecoico, completamente negro en la pantalla, entre la
+
+123
+00:06:17.280 --> 00:06:20.480
+pared torácica y el pulmón, flotando por encima del diafragma.
+
+124
+00:06:20.660 --> 00:06:22.740
+Y asumo que no hay tabiques, ¿verdad?
+
+125
+00:06:22.980 --> 00:06:23.920
+No, no hay tabiques.
+
+126
+00:06:24.440 --> 00:06:28.180
+Se procede entonces a una toracocentesis diagnóstica, extrayendo un líquido
+
+127
+00:06:28.180 --> 00:06:28.960
+amarillo turbio.
+
+128
+00:06:29.040 --> 00:06:33.360
+Y un detalle fundamental aquí, se extrae sangre del paciente en ese mismísimo
+
+129
+00:06:33.360 --> 00:06:33.740
+momento.
+
+130
+00:06:34.360 --> 00:06:37.980
+Ah, un paso que jamás, pero jamás debe olvidarse.
+
+131
+00:06:38.200 --> 00:06:41.440
+Los gradientes necesitan muestras simultáneas para ser precisos.
+
+132
+00:06:41.680 --> 00:06:42.280
+Totalmente.
+
+133
+00:06:42.820 --> 00:06:46.700
+Pero aquí es donde me topo con algo en la evidencia de medsemiotics-db que me
+
+134
+00:06:46.700 --> 00:06:48.080
+chocó bastante.
+
+135
+00:06:48.460 --> 00:06:49.320
+A ver, cuéntame.
+
+136
+00:06:49.480 --> 00:06:53.900
+En el documento, bajo el hallazgo específico de derrame pleural, el estado
+
+137
+00:06:53.900 --> 00:06:56.680
+dice literalmente LR no medible.
+
+138
+00:06:56.920 --> 00:06:57.520
+Ah, sí.
+
+139
+00:06:57.800 --> 00:07:01.300
+Y a ver, sabiendo que la ecografía es el estándar de oro actual en la cabecera del
+
+140
+00:07:01.300 --> 00:07:01.740
+paciente,
+
+141
+00:07:01.980 --> 00:07:05.940
+¿cómo es posible que no se asigne un cociente de verosimilitud a un hallazgo
+
+142
+00:07:05.940 --> 00:07:07.220
+ecográfico tan claro?
+
+143
+00:07:07.220 --> 00:07:11.420
+Es una excelente duda, y la verdad toca el núcleo mismo de cómo interpretamos
+
+144
+00:07:11.420 --> 00:07:14.400
+la probabilidad en la medicina basada en evidencia.
+
+145
+00:07:14.760 --> 00:07:19.080
+Un LR, o cociente de verosimilitud, es básicamente el
+
+146
+00:07:19.080 --> 00:07:20.900
+multiplicador de nuestra sospecha inicial.
+
+147
+00:07:21.560 --> 00:07:25.560
+Claro, nos dice con qué fuerza una prueba empuja el diagnóstico hacia un lado o
+
+148
+00:07:25.560 --> 00:07:26.200
+hacia otro.
+
+149
+00:07:26.840 --> 00:07:31.300
+Exacto, pero en la estructura de esta evidencia en particular, el derrame pleural
+
+150
+00:07:31.300 --> 00:07:32.480
+es la condición de entrada.
+
+151
+00:07:32.820 --> 00:07:34.900
+O sea, es como el boleto para entrar al estudio clínico.
+
+152
+00:07:34.900 --> 00:07:38.980
+Así mismo. Todos los pacientes en esta base de datos ya tienen líquido en la
+
+153
+00:07:38.980 --> 00:07:43.160
+pleura. Sin ese líquido, pues no hay nada que dividir entre exudado o
+
+154
+00:07:43.160 --> 00:07:43.740
+trasudado.
+
+155
+00:07:44.020 --> 00:07:47.640
+Entiendo. O sea, la ecografía es espectacular para confirmar que el líquido está
+
+156
+00:07:47.640 --> 00:07:48.660
+ahí físicamente.
+
+157
+00:07:49.020 --> 00:07:53.480
+Sí, pero su capacidad para mirar un líquido anecoico todo negro en la pantalla y
+
+158
+00:07:53.480 --> 00:07:57.780
+decir, esto es cáncer o esto es un fallo cardíaco, es prácticamente nula.
+
+159
+00:07:58.340 --> 00:07:59.540
+Detecta, pero no clasifica.
+
+160
+00:07:59.540 --> 00:08:04.000
+Y hay otra razón vital para usar esa sonda ecográfica y ver el diafragma, ¿verdad?
+
+161
+00:08:04.340 --> 00:08:07.100
+Pensando en la pesadilla de cualquier residente en su primera guardia.
+
+162
+00:08:07.260 --> 00:08:11.200
+Uf, la pesadilla de confundir un derrame con líquido subdiafragmático.
+
+163
+00:08:11.320 --> 00:08:11.600
+Terrible.
+
+164
+00:08:11.920 --> 00:08:16.140
+Si uno asume que una matidez basal es un derrame, así, sin más, e
+
+165
+00:08:16.140 --> 00:08:20.020
+inserta una aguja sin mirar, puede atravesar el diafragma y ahí terminas
+
+166
+00:08:20.020 --> 00:08:20.860
+puncionando el hígado.
+
+167
+00:08:21.020 --> 00:08:21.720
+O un vaso.
+
+168
+00:08:21.720 --> 00:08:24.580
+O drenando ascitis creyendo que estás en la pleura.
+
+169
+00:08:24.900 --> 00:08:29.180
+Por eso la ecografía tiene que demostrar sin lugar a dudas que ese espacio negro
+
+170
+00:08:29.180 --> 00:08:31.860
+está por encima de la línea blanca del diafragma.
+
+171
+00:08:32.120 --> 00:08:35.520
+Bueno, volvamos al caso. Tenemos el líquido turbio y la sangre fresca.
+
+172
+00:08:35.580 --> 00:08:38.800
+Y aquí es donde entran en juego los famosos criterios de Light.
+
+173
+00:08:39.000 --> 00:08:39.920
+Los clásicos.
+
+174
+00:08:40.200 --> 00:08:44.080
+Los resultados muestran proteínas pleurales en 4.1 gramos por
+
+175
+00:08:44.080 --> 00:08:47.000
+decilitro y proteínas séricas en 6.8.
+
+176
+00:08:47.180 --> 00:08:49.020
+El cociente es 0.6.
+
+177
+00:08:49.020 --> 00:08:53.380
+Supera el límite de 0.5, así que ya tenemos un primer criterio
+
+178
+00:08:53.380 --> 00:08:53.620
+positivo.
+
+179
+00:08:54.280 --> 00:08:58.780
+Seguimos. LDH en el líquido pleural de 310 unidades por litro y
+
+180
+00:08:58.780 --> 00:09:03.140
+en el suero de 220. El laboratorio marca el límite superior normal del suero
+
+181
+00:09:03.140 --> 00:09:03.660
+en 250.
+
+182
+00:09:04.300 --> 00:09:07.900
+Bueno, eso nos deja un cociente pleural sérico de 1.4.
+
+183
+00:09:08.080 --> 00:09:11.720
+Sí. Y además, la LDH pleural de 310
+
+184
+00:09:11.720 --> 00:09:15.620
+supera ampliamente los dos tercios del límite superior normal del suero.
+
+185
+00:09:15.760 --> 00:09:18.180
+O sea, se cumplen los tres criterios de Light.
+
+186
+00:09:18.180 --> 00:09:22.460
+Y recordemos que la base de datos medsemiotics-db también
+
+187
+00:09:22.460 --> 00:09:24.120
+evalúa umbrales absolutos.
+
+188
+00:09:24.340 --> 00:09:28.760
+Esa LDH pleural superior a 200 ya es un indicador por sí
+
+189
+00:09:28.760 --> 00:09:29.000
+misma.
+
+190
+00:09:29.620 --> 00:09:31.640
+Bien, pregunta analítica para la audiencia.
+
+191
+00:09:32.300 --> 00:09:34.060
+Tómense tres segundos para pensar.
+
+192
+00:09:34.320 --> 00:09:38.200
+Sabiendo que los criterios de Light son una prueba concebida para ser altamente
+
+193
+00:09:38.200 --> 00:09:42.420
+sensible, ¿qué cociente específico registra la base de medsemiotics
+
+194
+00:09:42.420 --> 00:09:45.820
+DB y qué conclusión permite sacar en este paciente particular?
+
+195
+00:09:45.820 --> 00:09:46.740
+Bueno,
+
+196
+00:09:46.920 --> 00:09:51.280
+aquí es donde la base
+
+197
+00:09:51.280 --> 00:09:53.260
+de datos es brutalmente honesta.
+
+198
+00:09:53.380 --> 00:09:56.420
+Solo registra el cociente de verosimilitud negativo.
+
+199
+00:09:56.740 --> 00:09:59.380
+Un LR negativo de 0.04.
+
+200
+00:09:59.960 --> 00:10:00.580
+Exacto.
+
+201
+00:10:00.870 --> 00:10:04.720
+Con un intervalo de confianza estrecho entre 0.02 y 0.11.
+
+202
+00:10:04.820 --> 00:10:08.000
+Y el umbral documentado es la ausencia de los tres criterios.
+
+203
+00:10:08.220 --> 00:10:12.260
+A ver, en términos prácticos, un LR de 0.04 aplasta la
+
+204
+00:10:12.260 --> 00:10:12.860
+probabilidad.
+
+205
+00:10:13.040 --> 00:10:13.660
+Totalmente.
+
+206
+00:10:13.660 --> 00:10:18.040
+Si no cumples ningún criterio, la posibilidad de que sea un exudado cae por
+
+207
+00:10:18.040 --> 00:10:18.840
+un precipicio.
+
+208
+00:10:19.040 --> 00:10:21.620
+Esa es la magia real de los criterios de Light.
+
+209
+00:10:21.780 --> 00:10:24.720
+Su poder es destructivo. Sirven para descartar.
+
+210
+00:10:24.900 --> 00:10:27.640
+Si todo da negativo, pues respiras tranquilo.
+
+211
+00:10:27.660 --> 00:10:28.580
+Es un trasudado.
+
+212
+00:10:28.820 --> 00:10:32.060
+Pero el documento omite intencionalmente dar un LR positivo.
+
+213
+00:10:32.580 --> 00:10:36.620
+Exacto. No hay un número mágico para cuando el criterio se cumple.
+
+214
+00:10:36.620 --> 00:10:39.940
+Yo lo veo con una analogía, para visualizarlo mejor.
+
+215
+00:10:40.340 --> 00:10:44.060
+Es como usar una red de pesca industrial con una malla finísima.
+
+216
+00:10:44.260 --> 00:10:45.200
+A ver, me gusta eso.
+
+217
+00:10:45.420 --> 00:10:49.400
+Sí, atrapa absolutamente todos los peces valiosos del océano, que en nuestro caso
+
+218
+00:10:49.400 --> 00:10:50.940
+serían los exudados reales.
+
+219
+00:10:51.000 --> 00:10:51.280
+Claro.
+
+220
+00:10:51.660 --> 00:10:55.920
+Pero cuando levantas esa red al barco, también viene llena de algas, latas
+
+221
+00:10:55.920 --> 00:10:59.180
+oxidadas y botas viejas, o sea, los falsos positivos.
+
+222
+00:10:59.600 --> 00:11:04.060
+Y en el caso de este paciente de 68 años, tenemos la bota vieja más
+
+223
+00:11:04.060 --> 00:11:05.840
+engañosa de toda la medicina interna.
+
+224
+00:11:05.840 --> 00:11:07.720
+La famosa trampa del diurético.
+
+225
+00:11:07.920 --> 00:11:11.660
+Y aquí es donde necesito hacer de abogado del diablo, si me permitas.
+
+226
+00:11:11.780 --> 00:11:12.760
+Adelante, dispara.
+
+227
+00:11:13.060 --> 00:11:17.040
+Si la furosemida es un diurético potente que elimina el líquido del cuerpo para
+
+228
+00:11:17.040 --> 00:11:17.700
+aliviar el corazón,
+
+229
+00:11:18.240 --> 00:11:22.060
+¿por qué no elimina también las proteínas y la LDH de la pleura de forma
+
+230
+00:11:22.060 --> 00:11:22.640
+proporcional?
+
+231
+00:11:22.940 --> 00:11:25.320
+¿No deberían bajar todos los niveles al mismo tiempo?
+
+232
+00:11:25.660 --> 00:11:29.860
+Suena lógico, pero es una cuestión de permeabilidad y tamaño molecular.
+
+233
+00:11:30.260 --> 00:11:34.400
+La furosemida actúa en el riñón, bajando el volumen de agua en todo el sistema
+
+234
+00:11:34.400 --> 00:11:34.820
+vascular.
+
+235
+00:11:34.820 --> 00:11:36.520
+Bien, hasta ahí estamos de acuerdo.
+
+236
+00:11:36.800 --> 00:11:41.040
+Entonces, cuando la presión hidrostática baja, el cuerpo intenta reabsorber
+
+237
+00:11:41.040 --> 00:11:43.440
+líquido del espacio pleural hacia los capilares.
+
+238
+00:11:43.640 --> 00:11:46.600
+Pero los capilares pleurales son membranas semipermeables.
+
+239
+00:11:46.960 --> 00:11:49.160
+Ah, claro. El agua es una molécula diminuta.
+
+240
+00:11:49.480 --> 00:11:52.340
+Exacto. El agua cruza rápidamente de vuelta a la sangre.
+
+241
+00:11:52.500 --> 00:11:56.760
+Pero la enzima LDH es una macromolécula gigante, y las
+
+242
+00:11:56.760 --> 00:11:57.900
+proteínas también lo son.
+
+243
+00:11:58.120 --> 00:12:00.140
+Entonces se quedan atrapadas en la cavidad.
+
+244
+00:12:00.140 --> 00:12:04.460
+Tal cual. El agua se evapora, figurativamente hablando, y los solutos
+
+245
+00:12:04.460 --> 00:12:08.700
+pesados se concentran. El resultado es un líquido pleural que, aunque
+
+246
+00:12:08.700 --> 00:12:12.840
+originado por un simple problema de presión cardíaca, ahora tiene una densidad de
+
+247
+00:12:12.840 --> 00:12:17.280
+proteínas y LDH tan alta que los criterios de Light lo leen como un
+
+248
+00:12:17.280 --> 00:12:17.760
+exudado.
+
+249
+00:12:17.940 --> 00:12:20.340
+O sea, un falso positivo fisiológico.
+
+250
+00:12:20.340 --> 00:12:22.860
+Un exudado fabricado por el propio tratamiento.
+
+251
+00:12:23.040 --> 00:12:27.160
+Y el juicio clínico aquí es crucial, porque la base de datos no tiene una
+
+252
+00:12:27.160 --> 00:12:29.640
+fórmula matemática exacta para corregir esto.
+
+253
+00:12:29.980 --> 00:12:33.780
+No hay un LR documentado que ajuste el impacto de la furosemida.
+
+254
+00:12:34.040 --> 00:12:35.780
+¿Y qué nos exige la evidencia entonces?
+
+255
+00:12:36.380 --> 00:12:40.660
+Ante un paciente con diuréticos y un Light positivo, la evidencia te
+
+256
+00:12:40.660 --> 00:12:41.460
+exige detenerte.
+
+257
+00:12:41.740 --> 00:12:45.660
+Tienes que pedir pruebas de confirmación que no dependan tanto de esos gradientes
+
+258
+00:12:45.660 --> 00:12:46.200
+alterados.
+
+259
+00:12:46.420 --> 00:12:49.040
+Bueno, y aquí es donde se pone realmente interesante la cosa.
+
+260
+00:12:49.040 --> 00:12:53.140
+En el líquido de nuestro paciente se solicita colesterol, un marcador clave.
+
+261
+00:12:53.240 --> 00:12:57.280
+El resultado muestra un colesterol pleural de 78 mg por
+
+262
+00:12:57.280 --> 00:12:59.380
+decilitro y un sérico de 190.
+
+263
+00:12:59.800 --> 00:13:01.840
+Esto nos da un cociente de 0.41.
+
+264
+00:13:02.160 --> 00:13:06.160
+Y con esos números, ya entramos de lleno en el territorio de los marcadores
+
+265
+00:13:06.160 --> 00:13:07.040
+confirmatorios.
+
+266
+00:13:07.040 --> 00:13:11.280
+Revisemos los cocientes de verosimilitud documentados en la evidencia para estas
+
+267
+00:13:11.280 --> 00:13:11.680
+pruebas.
+
+268
+00:13:12.090 --> 00:13:16.560
+La LDH pleural elevada, por encima de 200, tiene un LR
+
+269
+00:13:16.560 --> 00:13:17.720
+positivo de 18.
+
+270
+00:13:18.140 --> 00:13:19.460
+Un número bastante fuerte.
+
+271
+00:13:19.800 --> 00:13:24.640
+Sí. Luego, el cociente de colesterol pleural sobre sérico, mayor a 0.3,
+
+272
+00:13:24.780 --> 00:13:26.900
+tiene un LR positivo de 14.
+
+273
+00:13:27.300 --> 00:13:27.740
+Bien.
+
+274
+00:13:27.920 --> 00:13:32.260
+Y luego tenemos el colesterol pleural aislado, cuando supera los 55 miligramos
+
+275
+00:13:32.260 --> 00:13:33.120
+por decilitro,
+
+276
+00:13:33.160 --> 00:13:36.560
+que muestra un LR positivo reportado como un rango enorme.
+
+277
+00:13:37.040 --> 00:13:39.180
+De 7.1 a 250.
+
+278
+00:13:39.980 --> 00:13:41.920
+Sin una estimación puntual fija.
+
+279
+00:13:42.160 --> 00:13:43.740
+Exacto, sin estimación puntual.
+
+280
+00:13:43.960 --> 00:13:46.360
+Así que piensen en un escenario frecuente de hospital.
+
+281
+00:13:46.800 --> 00:13:48.100
+Tres segundos para pensarlo.
+
+282
+00:13:48.280 --> 00:13:52.140
+Un colega revisa la literatura rápida, ve ese límite superior y te dice,
+
+283
+00:13:52.220 --> 00:13:56.420
+mira, el colesterol pleural aislado tiene un cociente de verosimilitud de 250.
+
+284
+00:13:57.080 --> 00:13:58.660
+Este paciente tiene 78.
+
+285
+00:13:58.900 --> 00:14:02.840
+La probabilidad de exudado acaba de subir al 99.9%.
+
+286
+00:14:02.840 --> 00:14:03.820
+Caso cerrado.
+
+287
+00:14:03.980 --> 00:14:05.480
+¿Qué le contestamos a ese colega?
+
+288
+00:14:05.480 --> 00:14:07.980
+1, 2, 3.
+
+289
+00:14:08.160 --> 00:14:11.620
+Pues le contestamos que está jugando a los dados con las estadísticas.
+
+290
+00:14:12.120 --> 00:14:16.420
+Totalmente. Tomar un rango de 7.1 a 250 y elegir
+
+291
+00:14:16.420 --> 00:14:19.980
+convenientemente el 250 es un sesgo de confirmación de manual.
+
+292
+00:14:20.300 --> 00:14:24.620
+Y además, la fuente resumen que agrupa la evidencia no especifica la calidad
+
+293
+00:14:24.620 --> 00:14:28.900
+metodológica ni el tamaño de la muestra de los estudios que arrojaron esos picos
+
+294
+00:14:28.900 --> 00:14:29.460
+extremos.
+
+295
+00:14:29.860 --> 00:14:32.980
+Presumir de esa certeza artificial es muy peligroso.
+
+296
+00:14:32.980 --> 00:14:35.820
+Entonces, ¿qué debería sacar el clínico de ese rango?
+
+297
+00:14:36.060 --> 00:14:37.420
+La dirección de la flecha.
+
+298
+00:14:37.700 --> 00:14:40.820
+Incluso si tomamos el límite más pesimista, ese 7.1,
+
+299
+00:14:41.000 --> 00:14:45.240
+sigue siendo un salto probabilístico sustancial que confirma un exudado.
+
+300
+00:14:45.420 --> 00:14:45.700
+Claro.
+
+301
+00:14:45.820 --> 00:14:49.660
+Por eso medsemiotics-db lo posiciona como una herramienta potente,
+
+302
+00:14:49.760 --> 00:14:53.720
+pero se niega a darle un número fijo que infle nuestra confianza falsamente.
+
+303
+00:14:54.100 --> 00:14:56.440
+Ahora, llevemos esto a la calculadora bayesiana.
+
+304
+00:14:56.760 --> 00:14:59.460
+Otro momento para que la audiencia piense tres segunditos.
+
+305
+00:14:59.460 --> 00:15:03.960
+Si sabemos que la LDH pleural por sí sola tiene un LR positivo
+
+306
+00:15:03.960 --> 00:15:08.400
+de 18, ¿deberíamos multiplicar ese número por el LR de 14
+
+307
+00:15:08.400 --> 00:15:12.520
+del colesterol para estar matemáticamente acorazados en nuestro
+
+308
+00:15:12.520 --> 00:15:13.100
+diagnóstico?
+
+309
+00:15:13.660 --> 00:15:15.480
+Uno, dos, tres.
+
+310
+00:15:16.000 --> 00:15:20.440
+Esta es quizás la trampa matemática más común en todo el razonamiento clínico.
+
+311
+00:15:20.640 --> 00:15:22.840
+Y la respuesta es un no rotundo, ¿verdad?
+
+312
+00:15:22.920 --> 00:15:24.040
+No se puede multiplicar.
+
+313
+00:15:24.120 --> 00:15:25.440
+Bajo ninguna circunstancia.
+
+314
+00:15:25.440 --> 00:15:27.000
+Pero, a ver, explícamelo.
+
+315
+00:15:27.040 --> 00:15:31.440
+Si ambas pruebas miden el líquido y ambas salieron altísimas, lógicamente me siento
+
+316
+00:15:31.440 --> 00:15:34.420
+el doble de seguro de que hay un proceso inflamatorio grave.
+
+317
+00:15:34.600 --> 00:15:36.160
+¿Por qué la matemática me frena ahí?
+
+318
+00:15:36.400 --> 00:15:39.480
+Porque el teorema de Bayes requiere que las pruebas sean completamente
+
+319
+00:15:39.480 --> 00:15:41.840
+independientes para poder encadenarlas.
+
+320
+00:15:41.860 --> 00:15:44.100
+Y aquí, amigo mío, no lo son.
+
+321
+00:15:44.280 --> 00:15:45.440
+No son independientes.
+
+322
+00:15:45.440 --> 00:15:49.920
+Para nada. Tanto la acumulación de la enzima LDH como la
+
+323
+00:15:49.920 --> 00:15:54.420
+acumulación de colesterol derivan de exactamente la misma falla fisiopatológica,
+
+324
+00:15:54.500 --> 00:15:58.920
+un aumento patológico en la permeabilidad vascular de la pleura o
+
+325
+00:15:58.920 --> 00:16:00.220
+la destrucción celular in situ.
+
+326
+00:16:00.460 --> 00:16:04.860
+Y además estamos midiendo ambos marcadores en la misma jeringa de líquido, sacada
+
+327
+00:16:04.860 --> 00:16:06.240
+en el mismo bendito segundo.
+
+328
+00:16:06.640 --> 00:16:11.100
+Exacto. El colesterol llega ahí porque las células inflamatorias se degradan
+
+329
+00:16:11.100 --> 00:16:15.340
+o porque la barrera capilar está tan rota que deja pasar las lipoproteínas.
+
+330
+00:16:15.440 --> 00:16:19.540
+Al final del día, ambas pruebas están gritando que la puerta de la membrana pleural
+
+331
+00:16:19.540 --> 00:16:23.980
+se quedó abierta. Multiplicar un LR de 18 por uno de 14 sería
+
+332
+00:16:23.980 --> 00:16:26.240
+como contar la misma puerta abierta dos veces.
+
+333
+00:16:27.200 --> 00:16:31.660
+Matemáticamente, inflarías la probabilidad posprueba a un porcentaje ficticio que
+
+334
+00:16:31.660 --> 00:16:35.800
+rozaría al infinito. La forma rigurosa de actuar aquí es usar el
+
+335
+00:16:35.800 --> 00:16:40.040
+LR más robusto por sí solo, en este caso el de la LDH
+
+336
+00:16:40.040 --> 00:16:41.840
+pleural o el cociente de colesterol.
+
+337
+00:16:41.840 --> 00:16:46.280
+Y observar que el otro marcador coincide y apoya la dirección clínica, pero sin
+
+338
+00:16:46.280 --> 00:16:47.100
+multiplicar nada.
+
+339
+00:16:47.460 --> 00:16:48.500
+Esa es la clave.
+
+340
+00:16:48.960 --> 00:16:51.920
+Llegamos entonces al momento de interpretar el cuadro completo.
+
+341
+00:16:52.300 --> 00:16:55.640
+El laboratorio nos entrega los análisis restantes de líquido.
+
+342
+00:16:55.700 --> 00:16:57.860
+Hay predominio de linfocitos.
+
+343
+00:16:57.860 --> 00:16:59.780
+Los niveles de glucosa son normales.
+
+344
+00:17:00.090 --> 00:17:02.200
+El pH es un sólido 7.38.
+
+345
+00:17:02.480 --> 00:17:04.640
+La tinción de Gram no muestra bacterias.
+
+346
+00:17:04.700 --> 00:17:07.120
+Y el paciente sigue sin registrar temperatura alta.
+
+347
+00:17:07.460 --> 00:17:08.000
+Bueno.
+
+348
+00:17:08.080 --> 00:17:11.660
+Con la LDH y el colesterol confirmando el diagnóstico en paralelo,
+
+349
+00:17:11.840 --> 00:17:16.180
+Y superando con creces los umbrales para descartar la trampa de la furosemida, la
+
+350
+00:17:16.180 --> 00:17:17.720
+conclusión no deja lugar a dudas.
+
+351
+00:17:17.980 --> 00:17:20.200
+Estamos ante un exudado genuino.
+
+352
+00:17:20.720 --> 00:17:21.260
+Definitivamente.
+
+353
+00:17:21.580 --> 00:17:26.020
+Y si conectamos todo el razonamiento, esta confirmación no es solo un ejercicio
+
+354
+00:17:26.020 --> 00:17:26.720
+académico bonito.
+
+355
+00:17:27.040 --> 00:17:29.700
+Esto cambia radicalmente el destino del paciente.
+
+356
+00:17:30.040 --> 00:17:34.400
+El plan ya no puede ser, vamos a ajustar el diurético y ver qué pasa con su
+
+357
+00:17:34.400 --> 00:17:34.640
+corazón.
+
+358
+00:17:35.040 --> 00:17:35.800
+Absolutamente no.
+
+359
+00:17:36.000 --> 00:17:39.620
+El fallo cardíaco no es el culpable primario de este líquido.
+
+360
+00:17:39.620 --> 00:17:42.980
+Hay un proceso agresivo ocurriendo en ese pulmón.
+
+361
+00:17:43.480 --> 00:17:47.600
+Tenemos a un paciente en su sexta década, ex fumador pesado,
+
+362
+00:17:47.700 --> 00:17:51.780
+que está perdiendo peso de forma insidiosa, con un dolor sordo y un
+
+363
+00:17:51.780 --> 00:17:53.560
+exudado dominado por linfocitos.
+
+364
+00:17:53.860 --> 00:17:57.320
+Es un escenario que te obliga a pensar en etiologías graves de inmediato.
+
+365
+00:17:57.520 --> 00:18:01.460
+Sí, la sospecha de una neoplasia maligna, digamos un carcinoma
+
+366
+00:18:01.460 --> 00:18:05.820
+broncogénico oculto o metástasis pleurales, salta a la cima de la
+
+367
+00:18:05.820 --> 00:18:06.120
+lista.
+
+368
+00:18:06.120 --> 00:18:10.040
+Y dependiendo del contexto epidemiológico local, de donde nos escuchen,
+
+369
+00:18:10.160 --> 00:18:14.460
+una tuberculosis pleural también encaja perfectamente con un líquido linfocitario
+
+370
+00:18:14.460 --> 00:18:16.300
+unilateral sin fiebre alta inicial.
+
+371
+00:18:16.820 --> 00:18:17.460
+Exactamente.
+
+372
+00:18:17.600 --> 00:18:21.600
+Y la fuente establece directrices muy, pero muy estrictas sobre cómo
+
+373
+00:18:21.600 --> 00:18:22.640
+proceder a partir de aquí.
+
+374
+00:18:22.860 --> 00:18:25.480
+Los próximos pasos clínicos son innegociables.
+
+375
+00:18:25.760 --> 00:18:30.100
+Se requiere enviar el líquido para citología, buscando células malignas, cultivo
+
+376
+00:18:30.100 --> 00:18:33.780
+específico para micobacterias y medición de adenosina desaminasa.
+
+377
+00:18:33.900 --> 00:18:34.760
+La famosa ADA.
+
+378
+00:18:34.760 --> 00:18:38.760
+Sí. Además, el protocolo indica una tomografía de tórax con contraste.
+
+379
+00:18:38.760 --> 00:18:43.220
+Y ojo, un detalle técnico importante, la tomografía rinde muchísimo más si
+
+380
+00:18:43.220 --> 00:18:45.280
+se hace después de evacuar gran parte del derrame.
+
+381
+00:18:45.460 --> 00:18:48.340
+Claro, para que el líquido no comprima el parénquima pulmonar.
+
+382
+00:18:48.500 --> 00:18:50.660
+Exacto, y esconde pequeños nódulos malignos.
+
+383
+00:18:51.020 --> 00:18:55.160
+Si todo eso vuelve negativo o inconcluso, el paso final lógico es una
+
+384
+00:18:55.160 --> 00:18:55.900
+biopsia pleural.
+
+385
+00:18:56.160 --> 00:19:00.560
+Pero junto con todo este rigor diagnóstico, hay que aplicar un rigor crítico sobre
+
+386
+00:19:00.560 --> 00:19:02.280
+nuestra propia herramienta de evidencia.
+
+387
+00:19:02.460 --> 00:19:02.860
+Es cierto.
+
+388
+00:19:02.860 --> 00:19:07.020
+Parte de usar la medicina basada en la evidencia es ser transparente sobre los
+
+389
+00:19:07.020 --> 00:19:08.520
+puntos ciegos de las bases de datos.
+
+390
+00:19:08.840 --> 00:19:13.160
+Claro, lo que medsemiotics-db no sabe o simplemente no puede afirmar con los
+
+391
+00:19:13.160 --> 00:19:13.960
+datos actuales.
+
+392
+00:19:14.160 --> 00:19:17.860
+Sí, por un lado, no tenemos una probabilidad pre-prueba universal
+
+393
+00:19:17.860 --> 00:19:19.460
+documentada para el exudado.
+
+394
+00:19:19.600 --> 00:19:23.800
+En los macroestudios, que evalúan miles de toracocentesis, no hay un
+
+395
+00:19:23.800 --> 00:19:25.020
+consenso limpio que diga
+
+396
+00:19:25.020 --> 00:19:29.260
+el 40% son exudados en la población general que llega a urgencias.
+
+397
+00:19:29.260 --> 00:19:33.720
+Y tratar de sumar las prevalencias de cáncer, neumonía y tuberculosis para
+
+398
+00:19:33.720 --> 00:19:36.360
+fabricar esas cifras sería un error metodológico grave.
+
+399
+00:19:36.600 --> 00:19:40.820
+Terrible. Y por otro lado, está el impacto exacto del diurético, que ya
+
+400
+00:19:40.820 --> 00:19:41.340
+discutimos.
+
+401
+00:19:41.880 --> 00:19:45.400
+Sabemos que la furosemida arruina la especificidad de los criterios de Light,
+
+402
+00:19:45.520 --> 00:19:49.640
+pero la base no ofrece una tasa exacta de reclasificación o un
+
+403
+00:19:49.640 --> 00:19:51.740
+índice de corrección matemática perfecta.
+
+404
+00:19:51.840 --> 00:19:55.240
+O sea, nos obliga a operar en ese margen de incertidumbre funcional.
+
+405
+00:19:55.840 --> 00:19:59.940
+Totalmente. La medicina clínica real exige que entendamos la dirección de la
+
+406
+00:19:59.940 --> 00:20:02.760
+evidencia, incluso cuando el número exacto no está disponible.
+
+407
+00:20:03.020 --> 00:20:07.080
+Entonces, para ir cerrando, ¿qué significa todo esto en la práctica?
+
+408
+00:20:07.560 --> 00:20:10.700
+Si mañana en la guardia tienen que enfrentarse a un paciente que respira con
+
+409
+00:20:10.700 --> 00:20:14.480
+dificultad por un derrame, la regla de oro que deben recordar es esta.
+
+410
+00:20:14.700 --> 00:20:15.100
+A ver.
+
+411
+00:20:15.660 --> 00:20:18.940
+Las pruebas de líquido pleural tienen flechas de dirección única.
+
+412
+00:20:19.220 --> 00:20:21.440
+No funcionan igual hacia arriba que hacia abajo.
+
+413
+00:20:21.440 --> 00:20:25.900
+Los criterios de Light son una red gigante diseñada para descartar.
+
+414
+00:20:26.020 --> 00:20:29.540
+Su poder reside casi enteramente en el resultado negativo.
+
+415
+00:20:29.680 --> 00:20:33.700
+Por el contrario, la LDH y el colesterol son lupas
+
+416
+00:20:33.700 --> 00:20:37.980
+confirmatorias. Y si el paciente tiene furosemida u otro diurético en su
+
+417
+00:20:37.980 --> 00:20:42.200
+historial reciente, un Light positivo no es una sentencia firme de exudado.
+
+418
+00:20:42.580 --> 00:20:46.660
+Es una alarma de incendios pidiendo que confirmes con los otros marcadores antes de
+
+419
+00:20:46.660 --> 00:20:47.940
+alterar la vida del paciente.
+
+420
+00:20:47.940 --> 00:20:52.100
+Y mira, como pensamiento provocador final, para dejar a quienes nos
+
+421
+00:20:52.100 --> 00:20:56.260
+escuchan, me gustaría retomar esa imposibilidad matemática de multiplicar los
+
+422
+00:20:56.260 --> 00:20:58.140
+cocientes del colesterol y la LDH.
+
+423
+00:20:58.460 --> 00:21:02.480
+Lo entendimos bien porque ambos miden la misma filtración en la misma gota de
+
+424
+00:21:02.480 --> 00:21:06.400
+líquido, ¿verdad? Pero la medicina moderna está inundada de
+
+425
+00:21:06.400 --> 00:21:10.820
+automatización. Recibimos paneles con 20, 30 resultados simultáneos.
+
+426
+00:21:10.820 --> 00:21:14.900
+Uf, perfiles completos, donde vemos cinco valores distintos alterados al mismo
+
+427
+00:21:14.900 --> 00:21:19.200
+tiempo y el cerebro automáticamente dice, ah, estoy segurísimo del diagnóstico.
+
+428
+00:21:19.340 --> 00:21:20.860
+Ese es el verdadero peligro.
+
+429
+00:21:21.040 --> 00:21:25.440
+¿Cuántas veces en la práctica diaria estamos experimentando una inmensa y
+
+430
+00:21:25.440 --> 00:21:29.880
+falsa seguridad clínica simplemente porque la máquina nos imprime cinco indicadores
+
+431
+00:21:29.880 --> 00:21:33.260
+en rojo, sin detenernos a pensar que a nivel celular,
+
+432
+00:21:33.460 --> 00:21:37.960
+fisiopatológicamente, esos cinco indicadores están midiendo exactamente el
+
+433
+00:21:37.960 --> 00:21:39.920
+mismo fenómeno biológico redundante?
+
+434
+00:21:39.920 --> 00:21:43.260
+Es una ilusión de certeza construida sobre datos repetidos.
+
+435
+00:21:43.340 --> 00:21:47.560
+Es un recordatorio fantástico de que procesar números nunca,
+
+436
+00:21:47.680 --> 00:21:51.140
+pero nunca, reemplazará el pensar en la fisiología del paciente.
+
+437
+00:21:51.420 --> 00:21:54.880
+Y bueno, con esa idea cerramos esta inmersión clínica a fondo.
+
+438
+00:21:55.120 --> 00:21:59.080
+Me encantó. El rigor analítico debe guiar el proceso, pero es el
+
+439
+00:21:59.080 --> 00:22:02.660
+entendimiento del mecanismo oculto lo que evita que caigamos en la trampa.
+
+440
+00:22:02.920 --> 00:22:05.700
+Totalmente de acuerdo. Hasta el próximo análisis de evidencia.
