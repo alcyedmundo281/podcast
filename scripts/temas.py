@@ -96,6 +96,9 @@ AGENTE = "medsemiotics-podcast/1.0 (+https://powersemiotics.com/podcast/)"
 # de esa semana, como en ep001 y ep003; el caso en GitHub se reconoce también.
 BASE_COPILOT = "https://github.com/alcyedmundo281/medsemiotics-copilot/blob/main"
 PATRON_CASO_COPILOT = "caso_clinico_socratico_*.md"
+# Versiones del mismo caso para una audiencia: la guía del estudiante es la hoja
+# de trabajo sin razonamientos y ya tiene episodio a través del caso base.
+VARIANTES_CASO_COPILOT = ("_estudiante", "_docente")
 ESPECIALIDADES = {"NEURO": "neurologia", "GASTRO": "gastroenterologia"}
 
 # Campos que no aportan nada a un guion de audio: metadatos de control
@@ -240,6 +243,8 @@ def cargar_casos_copilot(fuente: str) -> list[Tema]:
     semanas = semanas_del_silabo(raiz)
     temas: list[Tema] = []
     for ruta in sorted((raiz / "docs").glob(PATRON_CASO_COPILOT)):
+        if ruta.stem.endswith(VARIANTES_CASO_COPILOT):
+            continue
         clave = ruta.stem.removeprefix("caso_clinico_socratico_")
         topic_id = clave.replace("_", "-")
         semana = semanas.get(topic_id, {})
