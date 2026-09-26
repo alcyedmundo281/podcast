@@ -198,7 +198,11 @@ porque pisaría las correcciones hechas a mano.
    Decisión del autor: el modelo **puede descargar el audio** de NotebookLM
    sin pedir confirmación. La duración la fija NotebookLM; no se consulta ni
    se regenera por ella.
-2. Masterizar: mono, 96 kbps, −19 LUFS, pico real bajo −1,5 dBTP.
+2. Masterizar: mono, 96 kbps, −19 LUFS, pico real bajo −1,5 dBTP. Desde el
+   `.m4a` de NotebookLM, en **dos pasadas** con WAV intermedio a −2,5 dBTP
+   (comandos en el README): una sola pasada, o normalizar directo a MP3, deja
+   el pico real por encima de 0 dBTP por los sobrepicos de la codificación.
+   Se verifica midiendo el MP3 final, no el WAV.
 3. `gh release create epNNN epNNN.mp3 --target main --title "..."`.
 4. Pegar `entrada.yml` en `podcast.yml`, completar los `REVISAR`, añadir la
    transcripción en `docs/transcripts/` (ver «Transcribir un episodio») y
