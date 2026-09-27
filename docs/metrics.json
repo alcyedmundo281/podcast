@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T13:35:44+00:00",
+  "generated_at": "2026-09-27T14:32:07+00:00",
   "repo": "alcyedmundo281/podcast",
   "total_downloads": 125,
   "episode_count": 12,
@@ -12,7 +12,7 @@
       "downloads": 3,
       "size_bytes": 10919436,
       "released": true,
-      "delta": 3
+      "delta": 0
     },
     {
       "slug": "derrame-pleural-exudativo",
@@ -22,7 +22,7 @@
       "downloads": 3,
       "size_bytes": 15913944,
       "released": true,
-      "delta": 3
+      "delta": 0
     },
     {
       "slug": "mononucleosis-infecciosa",
@@ -32,7 +32,7 @@
       "downloads": 3,
       "size_bytes": 21051707,
       "released": true,
-      "delta": 3
+      "delta": 0
     },
     {
       "slug": "sindrome-de-intestino-irritable",
@@ -42,7 +42,7 @@
       "downloads": 3,
       "size_bytes": 21610937,
       "released": true,
-      "delta": 3
+      "delta": 0
     },
     {
       "slug": "meningitis-aguda",
@@ -52,7 +52,7 @@
       "downloads": 4,
       "size_bytes": 14263214,
       "released": true,
-      "delta": 4
+      "delta": 0
     },
     {
       "slug": "cirrosis-hepatica",
@@ -62,7 +62,7 @@
       "downloads": 3,
       "size_bytes": 18051492,
       "released": true,
-      "delta": 1
+      "delta": 0
     },
     {
       "slug": "hepatitis-viral-aguda",
@@ -72,7 +72,7 @@
       "downloads": 9,
       "size_bytes": 21411570,
       "released": true,
-      "delta": 3
+      "delta": 0
     },
     {
       "slug": "esclerosis-multiple-neuromielitis-optica",
@@ -82,7 +82,7 @@
       "downloads": 9,
       "size_bytes": 19077164,
       "released": true,
-      "delta": 3
+      "delta": 0
     },
     {
       "slug": "hipertension-arterial-esencial",
@@ -92,7 +92,7 @@
       "downloads": 11,
       "size_bytes": 20746969,
       "released": true,
-      "delta": 3
+      "delta": 0
     },
     {
       "slug": "paralisis-supranuclear-progresiva",
@@ -102,7 +102,7 @@
       "downloads": 17,
       "size_bytes": 15191468,
       "released": true,
-      "delta": 4
+      "delta": 0
     },
     {
       "slug": "artritis-psoriasica",
@@ -112,7 +112,7 @@
       "downloads": 22,
       "size_bytes": 10110572,
       "released": true,
-      "delta": 3
+      "delta": 0
     },
     {
       "slug": "demencias",
@@ -122,9 +122,9 @@
       "downloads": 38,
       "size_bytes": 12800758,
       "released": true,
-      "delta": 4
+      "delta": 0
     }
   ],
-  "delta_since": "2026-09-25",
-  "total_delta": 37
+  "delta_since": "2026-09-26",
+  "total_delta": 0
 }
