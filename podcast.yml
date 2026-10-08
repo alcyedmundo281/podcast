@@ -72,6 +72,34 @@ show:
 # =============================================================================
 
 episodes:
+  - slug: "ictericia-via-biliar"
+    number: 13
+    season: 1
+    title: "Errores fatales en la colangitis aguda"
+    pub_date: "2026-10-07T21:05:00-05:00"
+    duration: "00:17:23"
+    tag: "ep013"
+    audio_file: "ep013.mp3"
+    topic: "gastroenterologia/ictericia-via-biliar"
+    transcript: "transcripts/ep013.vtt"
+    source_url: "https://powersemiotics.com/medsemiotics/gastroenterologia/ictericia-via-biliar.html"
+    description: >-
+      Una mujer de 58 años con dolor en hipocondrio derecho, fiebre e
+      ictericia recibe antibióticos y observación, y seis horas después está
+      en choque. A partir del caso socrático de la cátedra de
+      Gastroenterología y Semiótica Digestiva (UCE / HCAM, semana 14), este
+      episodio recorre cómo la coluria y la acolia delatan la bilirrubina
+      conjugada, por qué una lipasa de 95 U/L no es pancreatitis y qué dice
+      el cociente R (aproximadamente 1,2) sobre un patrón colestásico. Con
+      la probabilidad alta de coledocolitiasis de la ASGE se va directo a
+      la CPRE sin colangio-RM, y con los criterios de Tokyo 2018 la
+      colangitis es definitiva y de grado II. De ahí sale el error central:
+      la palabra «moderada» invita a observar, pero el antibiótico trata la
+      bacteriemia y no la obstrucción; el grado II exige drenaje temprano y
+      el grado III, drenaje urgente, y la colecistectomía puede esperar.
+      Cierra con la ictericia indolora, la vesícula palpable no dolorosa y
+      por qué no se coloca un stent sin estadificar.
+
   - slug: "aneurisma-de-aorta-abdominal"
     number: 12
     season: 1
