@@ -416,5 +416,24 @@
       "artritis-psoriasica": 23,
       "demencias": 39
     }
+  },
+  {
+    "date": "2026-10-09",
+    "total": 139,
+    "by_episode": {
+      "ictericia-via-biliar": 2,
+      "aneurisma-de-aorta-abdominal": 4,
+      "derrame-pleural-exudativo": 4,
+      "mononucleosis-infecciosa": 4,
+      "sindrome-de-intestino-irritable": 4,
+      "meningitis-aguda": 5,
+      "cirrosis-hepatica": 4,
+      "hepatitis-viral-aguda": 10,
+      "esclerosis-multiple-neuromielitis-optica": 10,
+      "hipertension-arterial-esencial": 12,
+      "paralisis-supranuclear-progresiva": 18,
+      "artritis-psoriasica": 23,
+      "demencias": 39
+    }
   }
 ]
