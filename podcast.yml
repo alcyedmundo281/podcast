@@ -72,6 +72,41 @@ show:
 # =============================================================================
 
 episodes:
+  - slug: "faringitis-estreptococica"
+    number: 14
+    season: 1
+    title: "Faringitis estreptocócica: la tabla 2x2 y el engaño del VPP"
+    pub_date: "2026-10-16T21:11:41-05:00"
+    duration: "00:20:59"
+    tag: "ep014"
+    audio_file: "ep014.mp3"
+    topic: "infectologia/faringitis-estreptococica-exudado-criterios-centor"
+    transcript: "transcripts/ep014.vtt"
+    source_url: "https://powersemiotics.com/medsemiotics/post.html?slug=faringitis-estreptococica-exudado-criterios-centor"
+    description: >-
+      Un niño de 9 años llega con odinofagia de dos días, fiebre de
+      38,6 °C, sin tos ni rinorrea, y un brote de «anginas» en su aula
+      diez días antes. A partir del caso HM6009 de medsemiotics, este
+      episodio levanta la tabla 2x2 para mostrar por qué la sensibilidad
+      y la especificidad son constantes de fábrica mientras el VPP y el
+      VPN son esclavos de la prevalencia. Partimos de la probabilidad
+      basal de 0,37 (IC 95 % 0,32 a 0,43) en niños que consultan por
+      odinofagia —que cae al 24 % en los menores de cinco años— y
+      explicamos por qué la odinofagia misma figura como «LR no
+      medible»: es el criterio de inclusión del metaanálisis, y sumarla
+      sería contar dos veces el mismo dato. Después pesamos los
+      hallazgos: el exudado amigdalino apenas triplica la probabilidad
+      (LR+ 3,4), el faríngeo la duplica (LR+ 2,1), la exposición
+      reciente casi no la mueve (LR+ 1,9) y la ausencia de adenopatía
+      cervical anterior dolorosa, el cociente negativo más fuerte
+      (LR− 0,6), la deja todavía por encima del 20 %. Por qué
+      multiplicar esos cocientes es contar tres veces el mismo
+      incendio, cómo la escala de McIsaac lleva al niño a un 51 a 53 %
+      y por qué ese 52 % cruza el umbral de prueba pero no el de
+      tratamiento empírico de Pauker y Kassirer. Cierra con la regla
+      que no se negocia en pediatría: una prueba rápida negativa exige
+      cultivo faríngeo.
+
   - slug: "ictericia-via-biliar"
     number: 13
     season: 1

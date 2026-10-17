@@ -1,0 +1,1674 @@
+WEBVTT
+
+NOTE
+Transcripción del episodio 14 de medsemiotics — Faringitis estreptocócica.
+Generada automáticamente y corregida en terminología clínica.
+Puede contener errores; la fuente autorizada es el audio.
+
+1
+00:00:00.000 --> 00:00:04.320
+3 de la mañana en la guardia, el peor horario para tomar decisiones. Sin duda.
+
+2
+00:00:04.320 --> 00:00:08.700
+Totalmente. Imaginemos el escenario: llega un escolar, nueve
+
+3
+00:00:08.700 --> 00:00:12.700
+años, odinofagia severa, fiebre, y al abrir la boca...
+
+4
+00:00:12.700 --> 00:00:16.820
+Bueno, al abrir la boca ahí está el clásico exudado
+
+5
+00:00:16.820 --> 00:00:21.260
+amigdalino. Exacto, un exudado blanquecino, del libro de texto. A la mano
+
+6
+00:00:21.260 --> 00:00:25.740
+del clínico casi se mueve sola hacia el recetario para prescribir amoxicilina. El
+
+7
+00:00:25.740 --> 00:00:29.800
+famoso ojo clínico grita que eso es bacteriano. Sí, sí, sí, pero...
+
+8
+00:00:29.800 --> 00:00:34.160
+Pero la pregunta es, ¿y si esa reacción instintiva fuera una trampa?
+
+9
+00:00:34.340 --> 00:00:35.220
+Esa es la cuestión.
+
+10
+00:00:35.520 --> 00:00:39.660
+¿Y si esa confianza ciega en lo visual es básicamente una trampa matemática que,
+
+11
+00:00:39.680 --> 00:00:43.320
+digamos, está alimentando una epidemia global de resistencia a los antimicrobianos?
+
+12
+00:00:43.500 --> 00:00:45.400
+Es que es una ilusión óptica.
+
+13
+00:00:45.740 --> 00:00:47.300
+Disfrazada de experiencia médica, claro.
+
+14
+00:00:47.500 --> 00:00:51.120
+Lo que llamamos arte clínico a las 3 de la mañana suele ser, estadísticamente
+
+15
+00:00:51.120 --> 00:00:53.760
+hablando, una excusa para no hacer las cuentas.
+
+16
+00:00:53.840 --> 00:00:54.300
+Tal cual.
+
+17
+00:00:54.420 --> 00:00:57.620
+Y justo por eso estamos aquí. Bienvenidos a esta inmersión profunda.
+
+18
+00:00:57.620 --> 00:01:01.920
+Esta es una sesión rigurosa de análisis que corresponde a la sesión 3 del
+
+19
+00:01:01.920 --> 00:01:03.440
+curso de medsemiotics.
+
+20
+00:01:04.480 --> 00:01:05.220
+Así es.
+
+21
+00:01:05.680 --> 00:01:10.060
+Nuestra misión hoy no es solamente revisar un caso clínico, vamos a diseccionar
+
+22
+00:01:10.060 --> 00:01:13.260
+la toma de decisiones usando un caso real, el caso
+
+23
+00:01:13.260 --> 00:01:17.000
+HM6009 de faringitis estreptocócica.
+
+24
+00:01:17.160 --> 00:01:18.780
+Un caso fascinante, por cierto.
+
+25
+00:01:19.080 --> 00:01:22.520
+Muchísimo. Queremos desarmar uno de los errores cognitivos más
+
+26
+00:01:22.520 --> 00:01:25.400
+enraizados en nuestra práctica diaria,
+
+27
+00:01:25.400 --> 00:01:28.180
+La ilusión de la tabla de contingencia 2x2.
+
+28
+00:01:28.460 --> 00:01:32.600
+Y cómo los valores predictivos, el VPP y el VPN, nos
+
+29
+00:01:32.600 --> 00:01:36.200
+engañan de manera sistemática si decidimos ignorar la prevalencia.
+
+30
+00:01:36.380 --> 00:01:40.640
+Claro, y para desarmar esa trampa, metodológicamente hablando, tenemos que entender
+
+31
+00:01:40.640 --> 00:01:44.860
+una diferencia fundamental. O sea, la sensibilidad y la especificidad de
+
+32
+00:01:44.860 --> 00:01:48.920
+cualquier prueba, ya sea un hisopado o un hallazgo físico, son propiedades
+
+33
+00:01:48.920 --> 00:01:49.900
+intrínsecas.
+
+34
+00:01:50.000 --> 00:01:51.160
+Son de fábrica, digamos.
+
+35
+00:01:51.160 --> 00:01:53.220
+Exacto, son constantes de fábrica.
+
+36
+00:01:53.500 --> 00:01:57.740
+Pero a pie de cama, esas constantes no responden la pregunta que de verdad
+
+37
+00:01:57.740 --> 00:02:02.220
+importa. Al médico no le sirve saber cuántos enfermos en un laboratorio
+
+38
+00:02:02.220 --> 00:02:03.720
+cerrado detecta esta prueba.
+
+39
+00:02:04.100 --> 00:02:04.840
+Sí, eso es teoría.
+
+40
+00:02:05.060 --> 00:02:09.380
+Lo que necesita saber en ese momento es qué probabilidad tiene este paciente, el
+
+41
+00:02:09.380 --> 00:02:12.880
+que está ahí sentado, de estar enfermo si la prueba me da positiva.
+
+42
+00:02:13.020 --> 00:02:16.780
+Claro. Y la matemática nos demuestra que esa respuesta cambia drásticamente
+
+43
+00:02:16.780 --> 00:02:18.820
+dependiendo del contexto en el que estemos.
+
+44
+00:02:19.200 --> 00:02:19.680
+Completamente.
+
+45
+00:02:19.680 --> 00:02:23.200
+A ver, vamos a aterrizar esta abstracción directamente con los datos del documento
+
+46
+00:02:23.200 --> 00:02:26.680
+HM6009. La viñeta clínica es súper común.
+
+47
+00:02:26.920 --> 00:02:30.720
+Niño de 9 años, odinofagia intensa de 2 días de evolución.
+
+48
+00:02:30.860 --> 00:02:32.420
+Ajá, el dolor de garganta típico.
+
+49
+00:02:32.560 --> 00:02:36.960
+Sí. Inició con fiebre, 38.6°C, malestar general y
+
+50
+00:02:36.960 --> 00:02:39.460
+una frecuencia cardíaca de 104 latidos por minuto.
+
+51
+00:02:39.960 --> 00:02:41.400
+Taquicardia por la fiebre, lógico.
+
+52
+00:02:41.580 --> 00:02:44.760
+Exacto. Datos negativos en el interrogatorio que son vitales.
+
+53
+00:02:44.820 --> 00:02:46.800
+No hay tos y no hay rinorrea.
+
+54
+00:02:46.800 --> 00:02:51.120
+Pero, ojo, hay un dato epidemiológico que es el que siempre hace que los padres
+
+55
+00:02:51.120 --> 00:02:52.040
+entren en pánico.
+
+56
+00:02:52.160 --> 00:02:53.120
+El brote en la escuela.
+
+57
+00:02:53.460 --> 00:02:55.740
+Tal cual. Hace 10 días hubo un brote en su aula.
+
+58
+00:02:55.860 --> 00:02:58.040
+Varios compañeros faltaron por anginas.
+
+59
+00:02:58.740 --> 00:03:01.920
+Entonces, antes siquiera de sacar el bajalenguas, tenemos que establecer una
+
+60
+00:03:01.920 --> 00:03:02.100
+base
+
+61
+00:03:02.100 --> 00:03:06.220
+matemática. ¿Con qué probabilidad pre-test o de partida estamos trabajando?
+
+62
+00:03:06.820 --> 00:03:10.240
+Bueno, necesitamos un punto de partida anclado en evidencia poblacional,
+
+63
+00:03:10.380 --> 00:03:12.760
+no en la corazonada del médico de guardia.
+
+64
+00:03:12.900 --> 00:03:13.120
+Claro.
+
+65
+00:03:13.120 --> 00:03:17.320
+Si revisamos la literatura, hay un meta-análisis gigantesco en
+
+66
+00:03:17.320 --> 00:03:20.540
+pediatría que agrupa datos de 29 estudios rigurosos.
+
+67
+00:03:20.600 --> 00:03:24.780
+Y ahí encontramos que la probabilidad basal, o sea, la prevalencia pre-test
+
+68
+00:03:24.780 --> 00:03:29.220
+de faringitis estreptocócica en menores de 18 años con dolor de garganta,
+
+69
+00:03:29.360 --> 00:03:33.640
+es de 0.37, un 37% exacto,
+
+70
+00:03:33.640 --> 00:03:37.940
+y con un intervalo de confianza del 95% muy estrecho, de
+
+71
+00:03:37.940 --> 00:03:40.080
+0.32 a 0.43.
+
+72
+00:03:40.800 --> 00:03:42.800
+Esa es nuestra línea de salida real.
+
+73
+00:03:42.800 --> 00:03:45.720
+Ok, pero esa cifra no aplica para todos, ¿verdad?
+
+74
+00:03:45.920 --> 00:03:48.160
+Para nada. Eso es vital entenderlo.
+
+75
+00:03:48.240 --> 00:03:52.740
+Si este paciente tuviera menos de 5 años, esa prevalencia cae en picada
+
+76
+00:03:52.740 --> 00:03:54.280
+al 24%.
+
+77
+00:03:54.280 --> 00:03:55.860
+Wow. ¿Por qué tanta diferencia?
+
+78
+00:03:56.220 --> 00:04:00.280
+Por la inmadurez de los receptores epiteliales a los que se adhiere el estreptococo
+
+79
+00:04:00.280 --> 00:04:02.800
+del grupo A. Y bueno, ni hablemos de los adultos.
+
+80
+00:04:02.800 --> 00:04:05.420
+En adultos, la prevalencia es apenas de un 10%.
+
+81
+00:04:05.420 --> 00:04:09.720
+A ver, quiero hacer una pausa acá y presionar un poco sobre este 37%
+
+82
+00:04:09.720 --> 00:04:11.580
+inicial en el caso de nuestro escolar.
+
+83
+00:04:11.740 --> 00:04:11.940
+Dale.
+
+84
+00:04:12.800 --> 00:04:17.040
+9 años. Y el síntoma principal, la odinofagia, es tan
+
+85
+00:04:17.040 --> 00:04:20.580
+pero tan severa que dejó de tragar sólidos, rechaza los líquidos.
+
+86
+00:04:21.480 --> 00:04:25.180
+Intuitivamente, ¿no debería ese dolor tan incapacitante disparar nuestra
+
+87
+00:04:25.180 --> 00:04:29.400
+probabilidad basal muy por encima de ese 37% antes incluso de
+
+88
+00:04:29.400 --> 00:04:29.840
+revisarlo?
+
+89
+00:04:30.080 --> 00:04:31.860
+Y eso es lo que cualquiera pensaría.
+
+90
+00:04:31.980 --> 00:04:36.420
+Pero lo fascinante de la epidemiología clínica es cómo nos obliga a frenar esa
+
+91
+00:04:36.420 --> 00:04:38.580
+intuición. La respuesta es no.
+
+92
+00:04:38.700 --> 00:04:39.140
+¿No?
+
+93
+00:04:39.140 --> 00:04:43.600
+No, de hecho, en las bases de datos, la odinofagia aparece con un cociente
+
+94
+00:04:43.600 --> 00:04:47.780
+de verosimilitud, un LR, etiquetado formalmente como
+
+95
+00:04:47.780 --> 00:04:48.880
+no medible.
+
+96
+00:04:49.040 --> 00:04:53.140
+Espera, ¿no medible? Eso suena a que la estadística simplemente se rindió.
+
+97
+00:04:53.260 --> 00:04:56.520
+¿Por qué no se puede medir algo tan evidente y central en el caso?
+
+98
+00:04:56.840 --> 00:05:01.060
+Porque estaríamos cometiendo un error colosal, un error de doble conteo.
+
+99
+00:05:01.380 --> 00:05:01.960
+Ah, claro.
+
+100
+00:05:02.180 --> 00:05:06.340
+O sea, la odinofagia es el síntoma que define a la población que estamos
+
+101
+00:05:06.340 --> 00:05:06.960
+estudiando.
+
+102
+00:05:06.960 --> 00:05:10.380
+Es literalmente el criterio de inclusión del metanálisis.
+
+103
+00:05:10.600 --> 00:05:12.240
+O sea, no están evaluando a niños sanos.
+
+104
+00:05:12.780 --> 00:05:16.620
+Exacto. Los investigadores no midieron a niños que caminaban por el parque.
+
+105
+00:05:16.820 --> 00:05:20.960
+Midieron exclusivamente a niños que llegan a urgencias porque les duele la
+
+106
+00:05:20.960 --> 00:05:21.320
+garganta.
+
+107
+00:05:21.520 --> 00:05:22.360
+Claro, claro.
+
+108
+00:05:22.780 --> 00:05:26.940
+Entonces, el dolor de garganta no es una prueba diagnóstica para discriminar dentro
+
+109
+00:05:26.940 --> 00:05:27.540
+de ese grupo.
+
+110
+00:05:27.740 --> 00:05:29.880
+Es el boleto de entrada a la estadística.
+
+111
+00:05:30.200 --> 00:05:34.240
+Si tomas ese 37% que ya asume que al niño le duele,
+
+112
+00:05:34.240 --> 00:05:38.580
+Y le sumas puntos extras en tu mente porque le duele mucho, estás inflando
+
+113
+00:05:38.580 --> 00:05:39.680
+los números, totalmente,
+
+114
+00:05:39.920 --> 00:05:42.840
+estás sumando el mismo fenómeno biológico dos veces.
+
+115
+00:05:43.080 --> 00:05:45.340
+Es como, a ver, es como leer una estadística
+
+116
+00:05:45.340 --> 00:05:49.840
+sobre la probabilidad de fractura de tibia en pacientes ingresados tras un
+
+117
+00:05:49.840 --> 00:05:51.300
+choque de moto y
+
+118
+00:05:51.300 --> 00:05:55.260
+luego aumentar esa probabilidad mentalmente sólo porque el paciente te dice si
+
+119
+00:05:55.260 --> 00:05:56.160
+vengo de chocar en
+
+120
+00:05:56.160 --> 00:05:58.520
+moto. Exacto, un ejemplo perfecto.
+
+121
+00:05:58.540 --> 00:06:01.500
+Ya estabas parado sobre ese dato para obtener tu prevalencia
+
+122
+00:06:02.080 --> 00:06:06.180
+Y bueno, esto nos lleva directo a la atención metodológica central de esta sesión.
+
+123
+00:06:06.620 --> 00:06:10.780
+Quiero hacer una pregunta socrática y dejemos que quienes nos
+
+124
+00:06:10.780 --> 00:06:14.440
+escuchan lo piensen un segundo. Si la sensibilidad y
+
+125
+00:06:14.440 --> 00:06:18.160
+especificidad de una prueba rápida de antígeno son valores
+
+126
+00:06:18.160 --> 00:06:22.460
+estadísticamente fijos, ¿por qué su utilidad clínica real
+
+127
+00:06:22.460 --> 00:06:26.180
+cambia de forma radical si a este mismo niño lo atienden en un consultorio de
+
+128
+00:06:26.180 --> 00:06:30.420
+atención primaria un martes cualquiera, frente a si lo atienden en urgencias
+
+129
+00:06:30.420 --> 00:06:31.420
+pediátricas durante
+
+130
+00:06:33.320 --> 00:06:35.560
+Esa pregunta es clave.
+
+131
+00:06:35.600 --> 00:06:39.900
+Y es lo que separa al clínico que entiende la epidemiología del que solo hace
+
+132
+00:06:39.900 --> 00:06:40.700
+medicina mecánica.
+
+133
+00:06:40.840 --> 00:06:41.340
+Totalmente.
+
+134
+00:06:41.440 --> 00:06:44.860
+El tema es que caemos en el error del clínico intuitivo.
+
+135
+00:06:44.980 --> 00:06:48.140
+Nuestra mente, evolutivamente, busca tajos.
+
+136
+00:06:48.200 --> 00:06:50.060
+Y fusionamos conceptos.
+
+137
+00:06:50.340 --> 00:06:54.500
+Confundimos la sensibilidad con el valor predictivo positivo, el VPP.
+
+138
+00:06:54.740 --> 00:06:56.360
+Y son cosas muy distintas.
+
+139
+00:06:56.360 --> 00:06:59.500
+Completamente. La sensibilidad es técnica.
+
+140
+00:06:59.780 --> 00:07:04.080
+Es la capacidad del hisopo de detectar el antígeno en alguien que ya sabemos con
+
+141
+00:07:04.080 --> 00:07:05.400
+certeza que tiene estreptococo.
+
+142
+00:07:05.600 --> 00:07:08.100
+Pero en la vida real no tenemos esa certeza divina.
+
+143
+00:07:08.560 --> 00:07:12.940
+Exacto. Lo que el médico quiere saber es el VPP, o sea, cuál es la
+
+144
+00:07:12.940 --> 00:07:17.100
+probabilidad real de que este niño en particular esté infectado si la
+
+145
+00:07:17.100 --> 00:07:18.480
+rayita del test da positivo.
+
+146
+00:07:18.480 --> 00:07:21.680
+Y aquí entra la regla inquebrantable.
+
+147
+00:07:21.840 --> 00:07:26.020
+El VPP y el VPN son esclavos absolutos de la
+
+148
+00:07:26.020 --> 00:07:26.560
+prevalencia.
+
+149
+00:07:26.780 --> 00:07:27.960
+Esclavos de la prevalencia.
+
+150
+00:07:28.100 --> 00:07:32.460
+Sí. Si el niño llega en un pico epidémico, la prevalencia basal
+
+151
+00:07:32.460 --> 00:07:36.660
+sube. Y al subir la prevalencia, el VPP de esa misma prueba,
+
+152
+00:07:36.860 --> 00:07:40.580
+con la misma sensibilidad técnica, se dispara hacia arriba.
+
+153
+00:07:40.920 --> 00:07:44.940
+Me gusta ilustrar esto con la analogía del detector de metales en la playa.
+
+154
+00:07:45.000 --> 00:07:46.140
+Creo que lo hace muy visual.
+
+155
+00:07:46.400 --> 00:07:47.060
+A ver, cuéntame.
+
+156
+00:07:47.060 --> 00:07:49.900
+Imagina que compras un detector de metales.
+
+157
+00:07:49.960 --> 00:07:54.400
+Las especificaciones de fábrica te dicen que detecta el 95% del metal
+
+158
+00:07:54.400 --> 00:07:56.240
+bajo la arena. Esa es tu sensibilidad.
+
+159
+00:07:56.580 --> 00:07:58.060
+Ajá, la constante de fábrica.
+
+160
+00:07:58.300 --> 00:08:01.220
+Exacto. El aparato pita siempre igual frente al metal.
+
+161
+00:08:01.580 --> 00:08:05.780
+Pero el valor predictivo positivo es lo que significa ese pitido
+
+162
+00:08:05.780 --> 00:08:07.400
+específico en tu contexto.
+
+163
+00:08:07.660 --> 00:08:08.120
+Claro.
+
+164
+00:08:08.120 --> 00:08:12.140
+Si estás en una playa pública al azar y pita, la
+
+165
+00:08:12.140 --> 00:08:14.680
+probabilidad de que encuentres oro es bajísima.
+
+166
+00:08:14.800 --> 00:08:17.480
+Casi seguro es una corcholata de refresco.
+
+167
+00:08:17.760 --> 00:08:22.240
+Pero si estás caminando literalmente dentro de una veta en una
+
+168
+00:08:22.240 --> 00:08:26.380
+mina de oro, donde la prevalencia es altísima, la probabilidad de que ese
+
+169
+00:08:26.380 --> 00:08:30.060
+mismo pitido técnico signifique oro puro cambia por completo.
+
+170
+00:08:30.300 --> 00:08:31.940
+Es una analogía brillante.
+
+171
+00:08:31.940 --> 00:08:36.240
+Y si llevamos ese detector de metales directamente a la garganta de nuestro escolar
+
+172
+00:08:36.240 --> 00:08:40.540
+de 9 años, empezamos a ver por qué nuestros ojos nos engañan si no hacemos
+
+173
+00:08:40.540 --> 00:08:41.720
+el ajuste por contexto.
+
+174
+00:08:42.080 --> 00:08:44.500
+Pasemos entonces a la exploración física.
+
+175
+00:08:44.940 --> 00:08:49.300
+Le abrimos la boca al paciente, amígdalas rojas, hipertróficas, y
+
+176
+00:08:49.300 --> 00:08:51.820
+vemos el famoso exudado blanquecino y purulento.
+
+177
+00:08:51.820 --> 00:08:56.000
+Ajá. Y aquí la evidencia de precisión diagnóstica nos dice que el
+
+178
+00:08:56.000 --> 00:09:00.400
+exudado amigdalino tiene un cociente de verosimilitud positivo, un LR
+
+179
+00:09:00.400 --> 00:09:02.300
+positivo de 3.4.
+
+180
+00:09:02.420 --> 00:09:03.200
+3.4.
+
+181
+00:09:03.340 --> 00:09:05.760
+O sea, es el hallazgo clínico aislado más fuerte.
+
+182
+00:09:06.060 --> 00:09:08.720
+Sí, es el de mayor peso para faringitis estreptocócica.
+
+183
+00:09:08.800 --> 00:09:11.120
+Pero hay que traducir ese 3.4 a la práctica.
+
+184
+00:09:11.240 --> 00:09:15.320
+Un LR de 3.4 significa que ver ese pus apenas triplica tu
+
+185
+00:09:15.320 --> 00:09:16.340
+probabilidad pretest.
+
+186
+00:09:17.020 --> 00:09:17.580
+Exactamente.
+
+187
+00:09:17.740 --> 00:09:21.280
+Sube el riesgo, claro, pero ni de cerca te garantiza el diagnóstico bacteriano.
+
+188
+00:09:21.280 --> 00:09:25.460
+Además, el documento HM6009 hace una distinción
+
+189
+00:09:25.460 --> 00:09:26.940
+topográfica superinteresante.
+
+190
+00:09:27.200 --> 00:09:29.760
+No todo el exudado vale lo mismo en la matemática.
+
+191
+00:09:30.020 --> 00:09:30.500
+¿Ah, no?
+
+192
+00:09:30.700 --> 00:09:30.980
+No.
+
+193
+00:09:31.000 --> 00:09:35.040
+Si el exudado está solo en la pared posterior de la faringe y no sobre las
+
+194
+00:09:35.040 --> 00:09:35.680
+amígdalas per
+
+195
+00:09:35.680 --> 00:09:38.560
+se, el LR positivo cae a 2.1.
+
+196
+00:09:38.680 --> 00:09:42.300
+Wow, o sea que solo duplica la probabilidad en lugar de triplicarla.
+
+197
+00:09:42.540 --> 00:09:42.980
+Tal cual.
+
+198
+00:09:43.080 --> 00:09:46.460
+Y si sumamos el interrogatorio, el hecho de que tuvo contacto reciente con la
+
+199
+00:09:46.460 --> 00:09:46.800
+epidemia
+
+200
+00:09:46.800 --> 00:09:50.600
+escolar, ese dato aporta un LR positivo de 1.9.
+
+201
+00:09:50.600 --> 00:09:55.080
+Ok, entonces, cada uno de estos hallazgos mueve la aguja, pero lo
+
+202
+00:09:55.080 --> 00:09:56.560
+hace de forma súper modesta.
+
+203
+00:09:56.640 --> 00:09:57.160
+Muy modesta.
+
+204
+00:09:57.400 --> 00:10:01.880
+Y aquí es donde la exploración física nos exige buscar lo que no está presente.
+
+205
+00:10:02.220 --> 00:10:03.840
+Ah, los LR negativos.
+
+206
+00:10:04.140 --> 00:10:08.120
+Exacto. Palpamos el cuello de este escolar y notamos algo importante.
+
+207
+00:10:08.440 --> 00:10:11.220
+No hay adenopatía cervical anterior dolorosa.
+
+208
+00:10:11.280 --> 00:10:13.400
+El ganglio no está reactivo.
+
+209
+00:10:13.500 --> 00:10:14.100
+Dato clave.
+
+210
+00:10:14.100 --> 00:10:18.740
+Clavísimo. El LR negativo para la ausencia de este hallazgo es de 0.6.
+
+211
+00:10:18.900 --> 00:10:21.620
+Y es fundamental entender la matemática acá.
+
+212
+00:10:21.700 --> 00:10:25.840
+De todos los signos, la falta de adenopatía es lo que estadísticamente
+
+213
+00:10:25.840 --> 00:10:28.580
+más reduce la probabilidad de estreptococo.
+
+214
+00:10:28.860 --> 00:10:31.540
+Pero a ver, pongamos ese 0.6 bajo la lupa.
+
+215
+00:10:31.660 --> 00:10:36.140
+Si partimos del 37% de prevalencia base, aplicar un LR
+
+216
+00:10:36.140 --> 00:10:40.640
+negativo de 0.6 apenas nos baja la probabilidad a un veintitantos por ciento.
+
+217
+00:10:41.100 --> 00:10:41.720
+Exacto.
+
+218
+00:10:41.720 --> 00:10:45.580
+Reduce el riesgo a poco más de la mitad, pero no está descartando nada.
+
+219
+00:10:45.800 --> 00:10:46.300
+Para nada.
+
+220
+00:10:46.620 --> 00:10:50.380
+Si un médico en urgencias decide no hacer prueba rápida diciendo, no tiene
+
+221
+00:10:50.380 --> 00:10:51.600
+ganglios, seguro es viral,
+
+222
+00:10:51.720 --> 00:10:56.180
+y asume que un LR negativo cercano a 1 es un botón de apagado
+
+223
+00:10:56.180 --> 00:10:56.700
+diagnóstico,
+
+224
+00:10:56.860 --> 00:10:59.540
+va a dejar pasar decenas de infecciones activas.
+
+225
+00:11:00.040 --> 00:11:00.560
+100%.
+
+226
+00:11:00.560 --> 00:11:04.480
+Y fíjate que la ausencia de hipertrofia amigdalina reduce todavía menos.
+
+227
+00:11:04.840 --> 00:11:07.240
+Tiene un LR negativo de 0.63.
+
+228
+00:11:07.240 --> 00:11:11.660
+O sea, la ausencia de estos signos no es un permiso para mandar al paciente
+
+229
+00:11:11.660 --> 00:11:13.380
+a casa solo con paracetamol.
+
+230
+00:11:13.780 --> 00:11:18.060
+Definitivamente no. Ahora, quiero que abordemos el peligro opuesto,
+
+231
+00:11:18.140 --> 00:11:21.300
+la gran tentación de sumar todo lo positivo.
+
+232
+00:11:21.700 --> 00:11:25.200
+Uh, aquí es donde la mente clínica quiere tomar el atajo irresistible.
+
+233
+00:11:25.500 --> 00:11:29.680
+Si el exudado suma con un LR de 3.4 y el compañero
+
+234
+00:11:29.680 --> 00:11:33.460
+enfermo suma con un LR de 1.9, la lógica humana te dice,
+
+235
+00:11:33.520 --> 00:11:34.460
+asocia todo.
+
+236
+00:11:34.680 --> 00:11:36.180
+Claro, la trampa intuitiva.
+
+237
+00:11:36.180 --> 00:11:40.580
+Saco el celular, abro un nomograma de Fagan y simplemente multiplico el 3.4
+
+238
+00:11:40.580 --> 00:11:43.100
+por el 1.9. Me da un riesgo altísimo.
+
+239
+00:11:43.280 --> 00:11:47.320
+¿Por qué no acumular esos valores matemáticos para justificar que le recete
+
+240
+00:11:47.320 --> 00:11:48.340
+antibióticos en este segundo?
+
+241
+00:11:48.760 --> 00:11:51.260
+Porque es un suicidio estadístico.
+
+242
+00:11:51.980 --> 00:11:53.880
+Suicidio estadístico. Me encanta el término.
+
+243
+00:11:54.000 --> 00:11:57.860
+Es que si haces eso, caes de lleno en la falacia de asumir la independencia
+
+244
+00:11:57.860 --> 00:11:58.300
+condicional.
+
+245
+00:11:58.660 --> 00:12:00.040
+Explícanos eso, porque es complejo.
+
+246
+00:12:00.040 --> 00:12:04.520
+Es probablemente la trampa matemática más peligrosa y menos comprendida.
+
+247
+00:12:04.760 --> 00:12:06.340
+El porqué biológico es simple.
+
+248
+00:12:06.460 --> 00:12:10.220
+Para que puedas multiplicar libremente dos cocientes de verosimilitud en la
+
+249
+00:12:10.220 --> 00:12:14.240
+calculadora, ambos hallazgos deben ser estadísticamente independientes entre sí.
+
+250
+00:12:14.440 --> 00:12:16.280
+O sea, operar por vías totalmente distintas.
+
+251
+00:12:16.800 --> 00:12:20.540
+Exacto. Tienen que ser vías separadas una vez que la enfermedad ya está ahí.
+
+252
+00:12:20.640 --> 00:12:24.920
+Pero la faringitis estreptocócica, el exudado, la hipertrofia de las
+
+253
+00:12:24.920 --> 00:12:28.860
+amígdalas y la adenopatía dolorosa son fenómenos colineales.
+
+254
+00:12:28.860 --> 00:12:31.260
+Son expresiones del mismo proceso inflamatorio.
+
+255
+00:12:31.460 --> 00:12:34.920
+Misma bacteria, mismas citoquinas, misma región anatómica.
+
+256
+00:12:35.060 --> 00:12:39.140
+Es como si vieras un incendio en una casa, a través de tres ventanas distintas en
+
+257
+00:12:39.140 --> 00:12:39.820
+la misma fachada,
+
+258
+00:12:39.880 --> 00:12:42.680
+y multiplicaras la probabilidad de fuego por tres,
+
+259
+00:12:43.280 --> 00:12:45.640
+concluyendo que hay tres incendios independientes.
+
+260
+00:12:45.900 --> 00:12:47.540
+Estás contando el mismo fuego tres veces.
+
+261
+00:12:47.760 --> 00:12:52.100
+Tal cual. Si asumes independencia condicional y multiplicas los LR
+
+262
+00:12:52.100 --> 00:12:54.800
+del exudado, la hipertrofia y el ganglio,
+
+263
+00:12:58.880 --> 00:13:03.300
+Puedes ver que el VPP está en el 90% de riesgo cuando está mucho más
+
+264
+00:13:03.300 --> 00:13:03.640
+abajo.
+
+265
+00:13:03.800 --> 00:13:07.200
+Entonces estamos en un callejón sin salidas y tratamos de hacer la matemática
+
+266
+00:13:07.200 --> 00:13:07.540
+mental.
+
+267
+00:13:07.860 --> 00:13:11.100
+No podemos multiplicar los signos por la colinealidad.
+
+268
+00:13:11.880 --> 00:13:16.020
+Necesitamos un número real, limpio de sesgos, para tomar la decisión en
+
+269
+00:13:16.020 --> 00:13:16.400
+urgencias.
+
+270
+00:13:17.140 --> 00:13:21.500
+¿Cómo esquivamos esto sin tener que hacer una regresión logística mental a las 3 de
+
+271
+00:13:21.500 --> 00:13:21.800
+la mañana?
+
+272
+00:13:21.800 --> 00:13:25.780
+Bueno, para eso existe la investigación validada, las famosas reglas de predicción
+
+273
+00:13:25.780 --> 00:13:26.180
+clínica.
+
+274
+00:13:26.340 --> 00:13:27.760
+Claro, alguien ya hizo las cuentas.
+
+275
+00:13:28.040 --> 00:13:31.640
+Exacto. Como no podemos ajustar esa colinealidad en tiempo real,
+
+276
+00:13:31.740 --> 00:13:36.060
+dependemos de modelos estadísticos que ya pesaron cada variable y eliminaron el
+
+277
+00:13:36.060 --> 00:13:37.320
+doble conteo. En
+
+278
+00:13:37.320 --> 00:13:39.040
+este escenario usamos la escala de McIsaac.
+
+279
+00:13:39.160 --> 00:13:40.840
+Que básicamente son los criterios de
+
+280
+00:13:40.840 --> 00:13:43.900
+Centor modificados. Modificados y ajustados
+
+281
+00:13:43.900 --> 00:13:46.100
+metodológicamente por la variable edad, sí.
+
+282
+00:13:46.320 --> 00:13:48.900
+Vamos a aplicar el rigor de McIsaac a
+
+283
+00:13:48.900 --> 00:13:53.360
+A nuestra paciente HM6009, paso a paso para entender
+
+284
+00:13:53.360 --> 00:13:54.940
+el porqué biológico.
+
+285
+00:13:55.120 --> 00:13:58.720
+Primero, tiene fiebre de 38.6, un punto.
+
+286
+00:13:58.900 --> 00:14:03.140
+Un punto, porque la fiebre alta correlaciona fuerte con la carga pirogénica
+
+287
+00:14:03.140 --> 00:14:03.640
+bacteriana.
+
+288
+00:14:03.940 --> 00:14:04.520
+Perfecto.
+
+289
+00:14:04.720 --> 00:14:07.600
+Segundo, ausencia de tos, suma otro punto.
+
+290
+00:14:07.860 --> 00:14:12.020
+Ojo acá, suma porque biológicamente la tos persistente y la
+
+291
+00:14:12.020 --> 00:14:15.760
+rinorrea son banderas rojas gigantes de una etiología viral difusa.
+
+292
+00:14:22.480 --> 00:14:26.680
+Y finalmente, la variable clave de McIsaac, la edad.
+
+293
+00:14:26.840 --> 00:14:30.680
+Tiene 9 años. Esto lo pone en el grupo de máximo riesgo
+
+294
+00:14:30.680 --> 00:14:33.060
+inmunológico, que va de los 3 a los 14 años.
+
+295
+00:14:33.240 --> 00:14:33.900
+Cuarto punto.
+
+296
+00:14:34.140 --> 00:14:38.300
+Si fuera un adulto mayor de 45 años, restaría un punto, porque su
+
+297
+00:14:38.300 --> 00:14:40.480
+probabilidad a priori es bajísima.
+
+298
+00:14:40.640 --> 00:14:43.760
+Pero nuestro escolar se lleva un puntaje de McIsaac de 4.
+
+299
+00:14:43.760 --> 00:14:47.860
+Bien, ahora traducimos ese 4 a probabilidad real.
+
+300
+00:14:48.000 --> 00:14:52.140
+La evidencia prospectiva nos indica que un puntaje de 4 a 5 en
+
+301
+00:14:52.140 --> 00:14:55.960
+McIsaac nos mueve de ese 37% inicial a una
+
+302
+00:14:55.960 --> 00:15:00.420
+probabilidad post-test, o prevalencia ajustada, que se consolida
+
+303
+00:15:00.420 --> 00:15:03.500
+entre un 0.51 y un 0.53.
+
+304
+00:15:03.880 --> 00:15:08.340
+O sea, estamos hablando de un 51 al 53% de probabilidad de
+
+305
+00:15:08.340 --> 00:15:11.220
+que sea estreptococo beta hemolítico del grupo A.
+
+306
+00:15:11.380 --> 00:15:12.100
+Así es.
+
+307
+00:15:12.100 --> 00:15:16.100
+Y llegamos a la encrucijada definitiva, el abismo entre la
+
+308
+00:15:16.100 --> 00:15:17.820
+estadística y la acción clínica.
+
+309
+00:15:18.000 --> 00:15:20.860
+Tienes al niño sintomático y a los padres angustiados.
+
+310
+00:15:21.040 --> 00:15:25.120
+Un modelo validado te dice que la probabilidad es más o menos 52%.
+
+311
+00:15:25.120 --> 00:15:29.600
+Es literalmente lanzar una moneda al aire que cae apenitas a favor de la
+
+312
+00:15:29.600 --> 00:15:29.900
+bacteria.
+
+313
+00:15:30.440 --> 00:15:34.580
+Exacto. Para muchísimos médicos, un 52% frente a un paciente
+
+314
+00:15:34.580 --> 00:15:38.240
+sufriendo es justificante total para sacar el talonario y prescribir antibióticos
+
+315
+00:15:38.240 --> 00:15:41.180
+empíricos, por si acaso, dicen, para cubrirse.
+
+316
+00:15:41.180 --> 00:15:45.040
+Pero, si aplicamos la teoría de decisiones pura,
+
+317
+00:15:45.060 --> 00:15:49.320
+cruzamos el umbral terapéutico, los famosos umbrales de Pauker y Kassirer
+
+318
+00:15:49.320 --> 00:15:50.640
+con un 52%.
+
+319
+00:15:50.980 --> 00:15:55.100
+La respuesta estricta basada en la evidencia de los estándares de precisión
+
+320
+00:15:55.100 --> 00:15:56.520
+es un rotundo no.
+
+321
+00:15:56.700 --> 00:15:57.480
+No cruzamos.
+
+322
+00:15:57.680 --> 00:16:00.380
+No, no cruzamos el umbral para terapias ciegas.
+
+323
+00:16:00.500 --> 00:16:04.800
+Y para entender esto hay que volver a Stephen Pauker y Jerome Kassirer en los
+
+324
+00:16:04.800 --> 00:16:06.700
+70s. Ellos revolucionaron esto.
+
+325
+00:16:06.920 --> 00:16:08.400
+El concepto de umbrales.
+
+326
+00:16:08.400 --> 00:16:12.900
+Sí, el umbral terapéutico no es un número rígido, es un equilibrio
+
+327
+00:16:12.900 --> 00:16:16.320
+dinámico entre el costo de equivocarse y el beneficio de acertar.
+
+328
+00:16:16.460 --> 00:16:20.320
+Un 52% justifica cruzar el umbral de prueba, sin
+
+329
+00:16:20.320 --> 00:16:24.680
+duda, pero no justifica el umbral de tratamiento
+
+330
+00:16:24.680 --> 00:16:29.140
+empírico. ¿Por qué? Porque tratar guiado solo por ese número tiene un costo
+
+331
+00:16:29.140 --> 00:16:33.060
+biomédico gigantesco. Destruyes el microbioma intestinal del niño,
+
+332
+00:16:33.240 --> 00:16:37.460
+asumes riesgo de anafilaxia y fomentas la resistencia antimicrobiana
+
+333
+00:16:37.460 --> 00:16:37.940
+poblacional.
+
+334
+00:16:37.940 --> 00:16:42.420
+Todo eso para medicalizar lo que, en el 48% restante de
+
+335
+00:16:42.420 --> 00:16:45.280
+los casos, es una infección viral que se va a curar sola.
+
+336
+00:16:45.800 --> 00:16:48.740
+Es que tenemos que entender la simetría del riesgo en esta decisión.
+
+337
+00:16:48.980 --> 00:16:52.680
+Claro, seamos muy sinceros. El objetivo real de dar penicilina o
+
+338
+00:16:52.680 --> 00:16:56.820
+amoxicilina acá no es que le deje de doler la garganta 12 horas antes.
+
+339
+00:16:56.920 --> 00:16:58.920
+Ese beneficio sintomático es mínimo.
+
+340
+00:16:59.540 --> 00:17:00.020
+Marginal.
+
+341
+00:17:00.060 --> 00:17:04.020
+El fantasma real que persigue a la pediatría es prevenir la secuela inmunológica,
+
+342
+00:17:04.100 --> 00:17:07.140
+la fiebre reumática aguda y el daño valvular cardíaco.
+
+343
+00:17:07.140 --> 00:17:10.260
+Esa es la clave de bóveda de todo este análisis.
+
+344
+00:17:10.780 --> 00:17:13.980
+Erradicar el estreptococo para prevenir la fiebre reumática.
+
+345
+00:17:14.340 --> 00:17:18.280
+Pero la matemática del riesgo hoy nos demuestra que la incidencia de fiebre
+
+346
+00:17:18.280 --> 00:17:22.020
+reumática es muy baja en la mayoría de los países desarrollados.
+
+347
+00:17:22.200 --> 00:17:26.680
+O sea que el número necesario a tratar, el NNT, para prevenir un solo caso es
+
+348
+00:17:26.680 --> 00:17:27.380
+astronómico.
+
+349
+00:17:27.380 --> 00:17:32.380
+Gigantesco. Si tratamos empíricamente a todos los niños que llegan con un McIsaac de 4,
+
+350
+00:17:32.720 --> 00:17:37.120
+causamos un daño colateral tremendo por uso masivo de antibióticos, solo
+
+351
+00:17:37.120 --> 00:17:39.280
+para prevenir un evento rarísimo.
+
+352
+00:17:39.620 --> 00:17:43.420
+Por eso las guías clínicas nos obligan a frenar el impulso, nos exigen la
+
+353
+00:17:43.420 --> 00:17:44.720
+confirmación etiológica.
+
+354
+00:17:45.120 --> 00:17:49.040
+Exacto. La conducta médica correcta para este escolar es solicitar una prueba
+
+355
+00:17:49.040 --> 00:17:50.820
+rápida de detección de antígeno.
+
+356
+00:17:50.940 --> 00:17:54.760
+Pero compliquemos el escenario, que la guardia nunca es tan limpia.
+
+357
+00:17:54.900 --> 00:17:55.180
+A ver.
+
+358
+00:17:55.180 --> 00:17:56.840
+Pedimos la prueba rápida.
+
+359
+00:17:57.200 --> 00:18:00.400
+Esperamos los 15 minutos. Y la rayita no pinta.
+
+360
+00:18:00.480 --> 00:18:04.680
+Es negativa. Tenemos un McIsaac de 4 y un test rápido
+
+361
+00:18:04.680 --> 00:18:06.260
+negativo. Listo.
+
+362
+00:18:06.320 --> 00:18:10.440
+Le damos una palmada en la espalda a la madre, recetamos ibuprofeno y cerramos el
+
+363
+00:18:10.440 --> 00:18:10.580
+caso.
+
+364
+00:18:10.900 --> 00:18:15.040
+Los estándares internacionales sobre estudios de precisión, te hablo de iniciativas
+
+365
+00:18:15.040 --> 00:18:19.360
+como STARD y QUADAS-2, son inflexibles en esto para pediatría.
+
+366
+00:18:19.900 --> 00:18:20.960
+Absolutamente no.
+
+367
+00:18:21.080 --> 00:18:22.400
+No podemos mandarlo a casa.
+
+368
+00:18:22.400 --> 00:18:26.640
+Si la prueba rápida resulta negativa en un niño o adolescente, es
+
+369
+00:18:26.640 --> 00:18:31.140
+metodológica y clínicamente obligatorio confirmar ese negativo con un
+
+370
+00:18:31.140 --> 00:18:32.000
+cultivo faríngeo.
+
+371
+00:18:32.020 --> 00:18:34.860
+Y eso nos regresa al problema de la sensibilidad intrínseca.
+
+372
+00:18:35.220 --> 00:18:39.160
+Exactamente. En el laboratorio, en condiciones ideales, la prueba es
+
+373
+00:18:39.160 --> 00:18:39.940
+excelente.
+
+374
+00:18:39.980 --> 00:18:44.460
+Pero a pie de cama, en la vida real, con una muestra faríngea que quizá
+
+375
+00:18:44.460 --> 00:18:48.740
+no se tomó con la técnica perfecta, con un niño moviéndose, la sensibilidad
+
+376
+00:18:48.740 --> 00:18:49.220
+cae.
+
+377
+00:18:49.360 --> 00:18:50.560
+Genera falsos negativos.
+
+378
+00:18:50.560 --> 00:18:54.720
+Y si el VPP depende de la prevalencia, el valor predictivo
+
+379
+00:18:54.720 --> 00:18:56.700
+negativo también se ve muy comprometido.
+
+380
+00:18:56.940 --> 00:19:00.960
+Con el riesgo acumulado de complicaciones supurativas y fiebre reumática en
+
+381
+00:19:00.960 --> 00:19:04.300
+menores, no podemos permitirnos que se escape un falso negativo.
+
+382
+00:19:04.540 --> 00:19:08.200
+O sea, la prueba rápida es brillante para iniciar tratamiento inmediato si es
+
+383
+00:19:08.200 --> 00:19:11.540
+positiva, porque el VPP es altísimo en un brote epidémico.
+
+384
+00:19:11.740 --> 00:19:15.940
+Ajá, pero su sensibilidad imperfecta exige que el cultivo, que es el
+
+385
+00:19:15.940 --> 00:19:19.000
+estándar de oro, tenga la última palabra si sale negativa.
+
+386
+00:19:19.000 --> 00:19:23.480
+¡Qué bárbaro! Todo esto reescribe por completo el papel del examen físico en
+
+387
+00:19:23.480 --> 00:19:27.220
+nuestra mente. Nos enseña que ese exudado purulento que vemos a las 3 de la mañana
+
+388
+00:19:27.220 --> 00:19:29.460
+no está ahí para autorizar una receta.
+
+389
+00:19:29.640 --> 00:19:32.260
+Ese es el corolario perfecto de la sesión.
+
+390
+00:19:32.380 --> 00:19:36.660
+Si tuviéramos que destilar toda esta evidencia metodológica, se resume
+
+391
+00:19:36.660 --> 00:19:41.160
+en que ningún elemento clínico aislado, ni la fiebre, ni la exposición,
+
+392
+00:19:41.260 --> 00:19:44.240
+ni siquiera ese exudado amigdalino impresionante,
+
+393
+00:19:44.240 --> 00:19:48.740
+Tiene el poder estadístico para diagnosticar o excluir por sí solo la
+
+394
+00:19:48.740 --> 00:19:50.160
+faringitis estreptocócica.
+
+395
+00:19:50.260 --> 00:19:51.480
+¿No son la sentencia final?
+
+396
+00:19:51.740 --> 00:19:56.180
+Son las variables de entrada. Estratifican el riesgo y nos dicen a qué subgrupo
+
+397
+00:19:56.180 --> 00:19:57.160
+hay que hacerle pruebas.
+
+398
+00:19:57.480 --> 00:20:00.880
+La clínica guía la prueba, no la prescripción ciega.
+
+399
+00:20:01.100 --> 00:20:04.160
+Lo cual nos deja con una inquietud bastante fascinante para el futuro, ¿no?
+
+400
+00:20:04.600 --> 00:20:08.620
+Sabiendo que, evolutivamente, nuestra mente fracasa al calcular la independencia
+
+401
+00:20:08.620 --> 00:20:09.960
+condicional en la madrugada,
+
+402
+00:20:09.960 --> 00:20:14.120
+¿Y que nuestro ojo clínico es seducido tan fácil por la ilusión de la tabla
+
+403
+00:20:14.120 --> 00:20:14.640
+2x2?
+
+404
+00:20:14.880 --> 00:20:16.740
+Es una trampa en la que caemos todos.
+
+405
+00:20:17.160 --> 00:20:21.000
+¿Llegará el día en que la inteligencia artificial, ya integrada en los expedientes
+
+406
+00:20:21.000 --> 00:20:24.800
+electrónicos, bloquee físicamente nuestra capacidad de emitir una receta de
+
+407
+00:20:24.800 --> 00:20:27.520
+antibióticos hasta que se registre el resultado del cultivo?
+
+408
+00:20:27.880 --> 00:20:28.620
+Oh, qué locura.
+
+409
+00:20:29.020 --> 00:20:32.640
+Quizás el futuro de la medicina no consista en enseñarnos a hacer mejores cálculos
+
+410
+00:20:32.640 --> 00:20:35.780
+matemáticos, sino en aceptar nuestras limitaciones cognitivas.
+
+411
+00:20:35.780 --> 00:20:39.720
+Dejar que el sistema nos proteja de nuestros propios atajos intuitivos.
+
+412
+00:20:40.100 --> 00:20:44.600
+Porque la intuición, sin el rigor de la tabla 2x2, no es arte clínico,
+
+413
+00:20:44.680 --> 00:20:45.840
+es puro azar.
+
+414
+00:20:46.000 --> 00:20:49.280
+Una idea contundente para reflexionar en la próxima guardia.
+
+415
+00:20:49.480 --> 00:20:53.420
+Algo para masticar mientras esperan los resultados de su próximo hisopado.
+
+416
+00:20:53.940 --> 00:20:55.980
+Gracias por acompañarnos en este análisis.
+
+417
+00:20:56.320 --> 00:20:58.560
+Hasta la próxima Inmersión Profunda.
