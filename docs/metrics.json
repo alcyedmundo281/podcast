@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T12:39:44+00:00",
+  "generated_at": "2026-10-18T12:57:03+00:00",
   "repo": "alcyedmundo281/podcast",
   "total_downloads": 182,
   "episode_count": 14,
@@ -12,7 +12,7 @@
       "downloads": 4,
       "size_bytes": 15111462,
       "released": true,
-      "delta": 4
+      "delta": 0
     },
     {
       "slug": "ictericia-via-biliar",
@@ -22,7 +22,7 @@
       "downloads": 5,
       "size_bytes": 12522519,
       "released": true,
-      "delta": 3
+      "delta": 0
     },
     {
       "slug": "aneurisma-de-aorta-abdominal",
@@ -32,7 +32,7 @@
       "downloads": 7,
       "size_bytes": 10919436,
       "released": true,
-      "delta": 3
+      "delta": 0
     },
     {
       "slug": "derrame-pleural-exudativo",
@@ -42,7 +42,7 @@
       "downloads": 7,
       "size_bytes": 15913944,
       "released": true,
-      "delta": 3
+      "delta": 0
     },
     {
       "slug": "mononucleosis-infecciosa",
@@ -52,7 +52,7 @@
       "downloads": 7,
       "size_bytes": 21051707,
       "released": true,
-      "delta": 3
+      "delta": 0
     },
     {
       "slug": "sindrome-de-intestino-irritable",
@@ -62,7 +62,7 @@
       "downloads": 7,
       "size_bytes": 21610937,
       "released": true,
-      "delta": 3
+      "delta": 0
     },
     {
       "slug": "meningitis-aguda",
@@ -72,7 +72,7 @@
       "downloads": 8,
       "size_bytes": 14263214,
       "released": true,
-      "delta": 3
+      "delta": 0
     },
     {
       "slug": "cirrosis-hepatica",
@@ -82,7 +82,7 @@
       "downloads": 7,
       "size_bytes": 18051492,
       "released": true,
-      "delta": 3
+      "delta": 0
     },
     {
       "slug": "hepatitis-viral-aguda",
@@ -92,7 +92,7 @@
       "downloads": 13,
       "size_bytes": 21411570,
       "released": true,
-      "delta": 3
+      "delta": 0
     },
     {
       "slug": "esclerosis-multiple-neuromielitis-optica",
@@ -102,7 +102,7 @@
       "downloads": 13,
       "size_bytes": 19077164,
       "released": true,
-      "delta": 3
+      "delta": 0
     },
     {
       "slug": "hipertension-arterial-esencial",
@@ -112,7 +112,7 @@
       "downloads": 15,
       "size_bytes": 20746969,
       "released": true,
-      "delta": 3
+      "delta": 0
     },
     {
       "slug": "paralisis-supranuclear-progresiva",
@@ -122,7 +122,7 @@
       "downloads": 21,
       "size_bytes": 15191468,
       "released": true,
-      "delta": 3
+      "delta": 0
     },
     {
       "slug": "artritis-psoriasica",
@@ -132,7 +132,7 @@
       "downloads": 26,
       "size_bytes": 10110572,
       "released": true,
-      "delta": 3
+      "delta": 0
     },
     {
       "slug": "demencias",
@@ -142,9 +142,9 @@
       "downloads": 42,
       "size_bytes": 12800758,
       "released": true,
-      "delta": 3
+      "delta": 0
     }
   ],
-  "delta_since": "2026-10-16",
-  "total_delta": 43
+  "delta_since": "2026-10-17",
+  "total_delta": 0
 }
